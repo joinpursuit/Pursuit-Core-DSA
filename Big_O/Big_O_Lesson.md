@@ -33,6 +33,8 @@ We usally talk much more about time complexity.
 From fastest to slowest:
 O(1), O(log(n)), O(n), O(nlog(n)), O(n<sup>2</sup>), O(2<sup>n</sup>), O(n!)
 
+Visualization: 
+![From Big O Cheat Sheet](https://github.com/C4Q/AC-DSA/blob/master/Big_O/images/BigOCheatSheet.png)
 
 ##Other
 
