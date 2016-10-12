@@ -55,8 +55,10 @@ func linearTime(arr: [String]) {
 
 In this example, increasing the size of our array does increase how long it takes our function to run.  Going back to our days with algebra, we can even make a math function that explaines the relationship between the count and the runtime:
 
-
->! f(n) = 10n
+<details> 
+  <summary>What is the relationship? </summary>
+   f(n) = 10n
+</details>
 
 Therefore, we say that this has a runtime of O(n).
 
@@ -421,9 +423,10 @@ func doStuff(arr: [Int]) {
 }	
 ```
 
-What is the runtime of doStuff(arr:)?
-
->! O(n<sup>3</sup>)
+<details>
+	<summary>What is the runtime of doStuff(arr:)?</summary>
+	O(n<sup>3</sup>)
+</details>	
 
 ###Example Two:
 func doOtherStuff(arr: [Int]) {
@@ -441,10 +444,10 @@ func doOtherStuff(arr: [Int]) {
 	}
 }	
 
-What is the runtime of doOtherStuff(arr:)?
-
->! O(n<sup>2</sup>)
-
+<details>
+	<summary>What is the runtime of doOtherStuff(arr:)?</summary>
+	O(n<sup>2</sup>)
+</details>
 
 ###Example Three:
 ```swift
@@ -462,13 +465,16 @@ func bar(myArr: [Int]) {
 }	
 ```
 
-What is the runtime of foo(myArr:)?
+<details>
+	<summary>What is the runtime of foo(myArr:)?</summary>
+	O(n)
+</details>
 
->! O(n)
 
-What is the runtime of var(myArr:)?
-
->! O(n<sup>2</sup>)
+<details>
+	<summary> What is the runtime of bar(myArr:)? </summary>
+	O(n<sup>2</sup>)
+</details>
 
 
 
@@ -482,9 +488,14 @@ func secondSmallestWithSort(myArr: [Int]) -> Int? {
 }
 ```
 
-What is the runtime of secondSmallestWithSort(myArr:)?
+<details>
+	<summary> What is the runtime of secondSmallestWithSort(myArr:)? </summary>
+	O(n * log(n) )
+	
+	Sorting things takes n * log(n) time.  We'll review why later.
+	
+</details>
 
->! O(n * log(n) ).  Sorting things takes n * log(n) time.  We'll review why later.
 
 ###Example Five:
 ```swift
@@ -513,4 +524,11 @@ func secondSmallest(myArr: [Int]) -> Int? {
 
 What is the runtime of secondSmallestWithSort(myArr:)?
 
->! O(n).  We have O(n) + O(n), but as n gets bigger and bigger, we only care about the highest order.
+<details>
+	<summary> What is the runtime of secondSmallest(myArr:)? </summary>
+	O(n)
+	
+	We have O(n) + O(n), but as n gets bigger and bigger, we only care about the highest order.
+
+</details>
+
