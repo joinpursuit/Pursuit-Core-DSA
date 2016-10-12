@@ -469,6 +469,7 @@ func doStuff(arr: [Int]) {
 </details>	
 
 ###Example Two:
+```swift
 func doOtherStuff(arr: [Int]) {
 	for num in arr {
 		print(num)
@@ -483,6 +484,7 @@ func doOtherStuff(arr: [Int]) {
 		print(num)
 	}
 }	
+```
 
 <details>
 	<summary>What is the runtime of doOtherStuff(arr:)?</summary>
@@ -561,8 +563,6 @@ func secondSmallest(myArr: [Int]) -> Int? {
 	return secondMin
 }
 ```
-
-What is the runtime of secondSmallestWithSort(myArr:)?
 
 <details>
 	<summary> What is the runtime of secondSmallest(myArr:)? </summary>
