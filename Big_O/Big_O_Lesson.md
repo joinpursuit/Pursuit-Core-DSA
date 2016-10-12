@@ -85,7 +85,9 @@ This one's a little more complicated.  Let's break it down.
 
 Our code will then print out each pair of names.  Here's are a few sample inputs and outputs:
 
-Input: ["Agnes"]
+
+**Input: ["Agnes"]**
+
 <details> 
   <summary> Output: </summary>
     
@@ -94,7 +96,7 @@ Input: ["Agnes"]
 </details>
 
 
-Input: ["Agnes", "Bart"]
+**Input: ["Agnes", "Bart"]**
 <details> 
   <summary> Output: </summary>
     
@@ -105,7 +107,7 @@ Input: ["Agnes", "Bart"]
 	
 </details>
 
-Input: ["Agnes", "Bart", "Carl"]
+**Input: ["Agnes", "Bart", "Carl"]**
 <details> 
   <summary> Output: </summary>
     
@@ -121,7 +123,7 @@ Input: ["Agnes", "Bart", "Carl"]
 	
 </details>
 
-Input: ["Agnes", "Bart", "Carl", "Duffman"]
+**Input: ["Agnes", "Bart", "Carl", "Duffman"]**
 <details> 
   <summary> Output: </summary>
     
