@@ -60,7 +60,10 @@ In this example, increasing the size of our array does increase how long it take
    f(n) = 10n
 </details>
 
-Therefore, we say that this has a runtime of O(n).
+<details> 
+  <summary>What is the runtime? </summary>
+   O(n)
+</details>
 
 ####Where'd the 10 go?
 
@@ -82,58 +85,68 @@ This one's a little more complicated.  Let's break it down.
 
 Our code will then print out each pair of names.  Here's are a few sample inputs and outputs:
 
-```
-input: ["Agnes"]
-output:
-Player One: Agnes, Player Two: Agnes
-```
+Input: ["Agnes"]
+<details> 
+  <summary> Output: </summary>
+    
+	Player One: Agnes, Player Two: Agnes
+	
+</details>
 
-```
-input: ["Agnes", "Bart"]
-output:
-Player One: Agnes, Player Two: Agnes
-Player One: Agnes, Player Two: Bart
-Player One: Bart, Player Two: Agnes
-Player One: Bart, Player Two: Bart
-```
 
-```
-input: ["Agnes", "Bart", "Carl"]
-output:
-Player One: Agnes, Player Two: Agnes
-Player One: Agnes, Player Two: Bart
-Player One: Agnes, Player Two: Carl
-Player One: Bart, Player Two: Agnes
-Player One: Bart, Player Two: Bart
-Player One: Bart, Player Two: Carl
-Player One: Carl, Player Two: Agnes
-Player One: Carl, Player Two: Bart
-Player One: Carl, Player Two: Carl
-```
+Input: ["Agnes", "Bart"]
+<details> 
+  <summary> Output: </summary>
+    
+	Player One: Agnes, Player Two: Agnes
+	Player One: Agnes, Player Two: Bart
+	Player One: Bart, Player Two: Agnes
+	Player One: Bart, Player Two: Bart
+	
+</details>
 
-```
-input: ["Agnes", "Bart", "Carl", "Duffman"]
-output:
-Player One: Agnes, Player Two: Agnes
-Player One: Agnes, Player Two: Bart
-Player One: Agnes, Player Two: Carl
-Player One: Agnes, Player Two: Duffman
-Player One: Bart, Player Two: Agnes
-Player One: Bart, Player Two: Bart
-Player One: Bart, Player Two: Carl
-Player One: Bart, Player Two: Duffman
-Player One: Carl, Player Two: Agnes
-Player One: Carl, Player Two: Bart
-Player One: Carl, Player Two: Carl
-Player One: Carl, Player Two: Duffman
-Player One: Duffman, Player Two: Agnes
-Player One: Duffman, Player Two: Bart
-Player One: Duffman, Player Two: Carl
-Player One: Duffman, Player Two: Duffman
+Input: ["Agnes", "Bart", "Carl"]
+<details> 
+  <summary> Output: </summary>
+    
+	Player One: Agnes, Player Two: Agnes
+	Player One: Agnes, Player Two: Bart
+	Player One: Agnes, Player Two: Carl
+	Player One: Bart, Player Two: Agnes
+	Player One: Bart, Player Two: Bart
+	Player One: Bart, Player Two: Carl
+	Player One: Carl, Player Two: Agnes
+	Player One: Carl, Player Two: Bart
+	Player One: Carl, Player Two: Carl	
+	
+</details>
 
-```
+Input: ["Agnes", "Bart", "Carl", "Duffman"]
+<details> 
+  <summary> Output: </summary>
+    
+	Player One: Agnes, Player Two: Agnes
+	Player One: Agnes, Player Two: Bart
+	Player One: Agnes, Player Two: Carl
+	Player One: Agnes, Player Two: Duffman
+	Player One: Bart, Player Two: Agnes
+	Player One: Bart, Player Two: Bart
+	Player One: Bart, Player Two: Carl
+	Player One: Bart, Player Two: Duffman
+	Player One: Carl, Player Two: Agnes
+	Player One: Carl, Player Two: Bart
+	Player One: Carl, Player Two: Carl
+	Player One: Carl, Player Two: Duffman
+	Player One: Duffman, Player Two: Agnes
+	Player One: Duffman, Player Two: Bart
+	Player One: Duffman, Player Two: Carl
+	Player One: Duffman, Player Two: Duffman
+	
+</details>
+
 
 Let's format the count of the array, number of print statements and the runtime.
+
 
 |arr.count (n) | Number of print statements | Runtime |
 |---|---|---|
@@ -142,11 +155,16 @@ Let's format the count of the array, number of print statements and the runtime.
 | 3 | 9 | 90 ms |
 | 4 | 16 | 160 ms |
 
-What function describes the relationship between n and the runtime?
+<details>
+	<summary> What function describes the relationship between *n* and the runtime? </summary>
+	f(n) = 10n<sup>2</sup>
+</details>	
+	
+<details>
+	<summary> What is the runtime? </summary>
+	O(n<sup>2</sup>)
+</details>	
 
->! f(n) = 10n<sup>2</sup>
-
-Therefore, we can conclude that the runtime of this is O(n<sup>2</sup>)
 
 We can then extrapolate to fill in the same chart we were using above.
 
@@ -204,13 +222,15 @@ func exampleOne(string str: String, withCharacter c: Character) -> Bool {
 }	
 ```
 
-What is the runtime of exampleOne(string:withCharacter:)?
+<details>
+	<summary>What is the runtime of exampleOne(string:withCharacter:)?</summary>
+	O(n)
+</details>	
 
->! O(n)
-
-Explanation:
-
->! We might need to look at each of the n characters inside str.characters.  "n" here represents str.characters.count.  The more characters we have in our string, the longer it will take to find our target character
+<details>
+	<summary> Explanation: </summary>
+	We might need to look at each of the n characters inside str.characters.  "n" here represents 	str.characters.count.  The more characters we have in our string, the longer it will take to find 	our target character
+</details>	
 
 
 ```swift
@@ -221,14 +241,16 @@ func exampleTwo(arr: [String]) {
 }
 ```
 	
-What is the runtime of exampleTwo(arr:)?
+<details>
+	<summary>What is the runtime of exampleTwo(arr:)?</summary>
+	O(1)
+</details>	
 	
->! O(1)
 	
-	
-Explanation:
-	
->! No matter how big our array is, this will always print "Many printings" 1,000,000 times.  While this would take a really long time, it is always the ***same*** amount of time.  It will take a constant time to run this function and it is entirely independant of the count of arr.
+<details>
+	<summary>Explanation: </summary>
+	No matter how big our array is, this will always print "Many printings" 1,000,000 times.  While this 	would take a really long time, it is always the ***same*** amount of time.  It will take a constant 	time to run this function and it is entirely independant of the count of arr.
+</details>	
 
 
 ```swift
@@ -243,13 +265,15 @@ func exampleThree(arr: [Int]) -> Int {
 }
 ```
 
-What is the runtime of exampleThree(arr:)?
+<details>
+	<summary>What is the runtime of exampleThree(arr:)?</summary>
+	O(n<sup>2</sup>)
+</details>	
 
->! O(n<sup>2</sup>)
-
-Explanation
-
->! Our for loop goes over each of *n* Ints.  Then for each of those Ints, we run contains, which will go over each of *n* Ints.  We would then end up looking at *n<sup>2</sup>* Ints in total.
+<details>
+	<summary>Explanation: </summary>
+	Our for loop goes over each of *n* Ints.  Then for each of those Ints, we run contains, which will 	go over each of *n* Ints.  We would then end up looking at *n<sup>2</sup>* Ints in total.
+</details>	
 
 
 ##Worst Case, Average Case and Best Case
@@ -279,17 +303,20 @@ func bestAverageAndWorstFunc(arr: [Int]) {
 }
 ```
 
-Best Case Runtime
+<details>
+	<summary>Best Case Runtime</summary>
+	O(1)
+</details>	
 
->! O(1)
+<details>
+	<summary>Worst Case Runtime</summary>
+	O(n<sup>2</sup>)
+</details>	
 
-Worst Case Runtime
-
->! O(n<sup>2</sup>)
-
-Average Case Runtime
-
->! O(n)
+<details>
+	<summary>Average Case Runtime</summary>
+	O(n)
+</details>	
 
 In most situations, the average case runtime and the worst case runtime are the same.  But it's good to know the difference.
 
@@ -306,19 +333,24 @@ func exampleOne(string str: String, withCharacter c: Character) -> Bool {
 }	
 ```
 
-What is the *worst case* runtime for exampleOne(array:withCharacter:)?
+<details>
+	<summary> What is the *worst case* runtime for exampleOne(array:withCharacter:)? </summary>
+	O(n)
+</details>	
 
->! O(n)
 
-What is the *best case* runtime for exampleOne(array:withCharacter:)?
+<details>
+	<summary> What is the *best case* runtime for exampleOne(array:withCharacter:)? </summary>
+	O(1)
+</details>	
 
->! O(1)
 
-Explanation:
-
->! In the worst case situation, our target character is always at the end of the array.  We would need to look at each of *n* elements before we would find it.  
->
->In the best case situation, our target character is always first, so we only ever need to look at one thing.
+<details>
+	<summary>Explanation:</summary>
+	In the worst case situation, our target character is always at the end of the array.  We would need 	to look at each of *n* elements before we would find it.  
+	In the best case situation, our target character is always first, so we only ever need to look at 
+	one thing.
+</details>	
 
 
 ```swift
@@ -328,17 +360,22 @@ func exampleTwo(arr: [String]) {
 	}
 }
 ```
-What is the *worst case* runtime for exampleOne(array:withCharacter:)?
 
->! O(1)
+<details>
+	<summary> What is the *worst case* runtime for exampleTwo(arr:)? </summary>
+	O(1)
+</details>	
 
-What is the *best case* runtime for exampleOne(array:withCharacter:)?
 
->! O(1)
+<details>
+	<summary> What is the *best case* runtime for exampleTwo(arr:)? </summary>
+	O(1)
+</details>
 
-Explanation:
-
->! Same as above.  This will do the same thing no matter what the input is.
+<details>
+	<summary>Explanation:</summary>
+	This will do the same thing no matter what the input is.
+</details>	
 
 ```swift
 func exampleThree(arr: [Int]) -> Int {
@@ -352,18 +389,21 @@ func exampleThree(arr: [Int]) -> Int {
 }
 ```
 
-What is the *worst case* runtime for exampleOne(array:withCharacter:)?
-
->! O(n<sup>2</sup>)
-
-What is the *best case* runtime for exampleOne(array:withCharacter:)?
-
->! O(n)
+<details>
+	<summary> What is the *worst case* runtime for exampleThree(arr:)? </summary>
+	O(n<sup>2</sup>)
+</details>	
 
 
->! In the worst case situation, our array looks something like [1,4,7,10,13,16].  Contains will always search the full length of the array for each element.  This menas that we would look at *n* elements *n* times.
->
-> In the best case, our array looks something like [3,2,2,2,2,2,2].  We still need to look at every element once, but contains could stop on the first Int each time.
+<details>
+	<summary> What is the *best case* runtime for exampleThree(arr:)? </summary>
+	O(n)
+</details>
+
+<details>
+	<summary>Explanation:</summary>
+	In the worst case situation, our array looks something like [1,4,7,10,13,16].  Contains will always 	search the full length of the array for each element.  This menas that we would look at *n* elements 	*n* times. In the best case, our array looks something like [3,2,2,2,2,2,2].  We still need to look 	at every element once, but contains could stop on the first Int each time.
+</details>	
 
 
 ##Compound Runtimes
@@ -387,14 +427,14 @@ func compoundRuntimes(arr: [Int]) {
 	}
 }
 ```
-
-How long would it take to run this code?
-
->! O(1) + O(n) + O(n<sup>2</sup>)
+<details>
+	<summary>How long would it take to run this code?</summary>
+	O(1) + O(n) + O(n<sup>2</sup>)
+</details>	
 
 Let's see how the runtime increases with count using our chart from above
 
-|arr.count (n) | Runtime: O(1) | Runtime: O(n) | Runtime: O(n<sup>2</sup>) | Runtime: O(1) + O(n) + O(n<sup>2</sup>) |
+|arr.count (n) | Runtime: O(1) | Runtime: O(n) | Runtime: O(n<sup>2</sup>) | <details><summary>compoundRuntimes(arr:)</summary>Runtime: O(1) + O(n) + O(n<sup>2</sup>) |
 |---|---|---|---|---|
 | 1 | 10 ms | 10 ms |10 ms | 30 ms |
 | 10 | 10 ms | 100 ms | 1000 ms = 1 s | 1110 ms = 1.11 s |
