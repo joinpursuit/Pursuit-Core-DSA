@@ -216,7 +216,9 @@ An array on its own as a data structure, is one dimensional. However, arrays can
   7. Virtual Reality
 8. Multi-Dimensional
   9. Mostly advanced mathematics and physics
-  
+ 
+![2D Array Numbered](./Images/2darray_numbered.png)
+![Single and 2D Array](./Images/arrays.png)
 
 # Quick Exercises
 
@@ -246,6 +248,8 @@ How would the code be different if:
 ** Sudoku **
 
 Rules: The is a 9x9 gird where the objective is to place the numbers 1 to 9 in the empty squares so that each _row_, each _column_ and each _3x3 box_ contains the same number only once.
+
+![Sudoku Example](./Images/sudokuExample.png)
 
 Exercise: Write a function that will check whether or not a fully filled sudoku board is a valid solution. 
   - Input: 2D Array of Ints ranging from 1-9 
