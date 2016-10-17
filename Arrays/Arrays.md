@@ -86,18 +86,23 @@ print(sizeOfString)
 // prints: 24 
 ```
 
+![Allocating Memory for An Array and Its Contents](./Images/allocatingArray.png)
+
 The memory address for the reference to the array struct can differ from the contiguous memory allocated for the contents of the array:
 
 ```swift
 withUnsafePointer(to: &stringArray[0]) { p in
 
   print("Element: \(stringArray[0]),   Address: \(p)")
-  //prints: Element: this,   Address: 0x00006080000f8ea0)
+  //prints: Element: this,   Address: 0x00006100000e1820)
 }
 ```
 
-But what is for certain, is that there will be contiguous 24 byte blocks from the first element of that array. And we can verify this in two ways.
+But what is for certain, is that there will be contiguous 24 byte blocks from the first element of that array. 
 
+![Contiguous Address Space](./Images/addressSpaceAndSteps.png)
+
+And we can verify this in two ways.
 
 *With Code*
 
@@ -129,6 +134,7 @@ withUnsafePointer(to: &stringArray[0]) { p in
 | 2 | "a"     | 0x00006100000e1850 | 0x50 | (16^1) * 5) + (16^0 * 0) = 80   | 24 bytes |
 | 3 | "test"  | 0x00006100000e1868 | 0x68 | (16^1) * 6) + (16^0 * 8) = 104  | 24 bytes |
 
+![Hex Math Applied](./Images/calculatedAddresses.png)
 
 Though, because the array has a fixed size, inserting an element is going to result in the array being recreated elsewhere in memory with enough contiguous space for the additional element. 
 
