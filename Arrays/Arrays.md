@@ -204,7 +204,7 @@ An array is stored as a contiguous block of memory, which determines its perform
 # Multi-Dimensional Arrays
 An array on its own as a data structure, is one dimensional. However, arrays can contain any reference or value type.. like other arrays. An array who's elements are arrays, are called multi-dimensional arrays. 
 
-** Common Multi-Dimensional Arrays **
+**Common Multi-Dimensional Arrays**
 
 1. Two-Dimensional
   1. Game boards (Chess, Checkers, Bingo, Sudoku, etc.) 
@@ -216,13 +216,12 @@ An array on its own as a data structure, is one dimensional. However, arrays can
   7. Virtual Reality
 8. Multi-Dimensional
   9. Mostly advanced mathematics and physics
- 
-![2D Array Numbered](./Images/2darray_numbered.png)
+  
 ![Single and 2D Array](./Images/arrays.png)
 
 # Quick Exercises
 
-** Two Dimensional Array Iterrations **
+**Two Dimensional Array Iterrations**
 
 Iterate through a two dimensional array of integers And print out all the elements starting with the first row and ending with the last row.:
 
@@ -237,7 +236,6 @@ let inputArray: [[Int]] = [
 // output should look like: "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20"
 ```
 
-
 How would the code be different if:
 
 1. You started with the first column and ended with the last column?
@@ -245,11 +243,11 @@ How would the code be different if:
 3. You print only the diagonal? How about exclude the diagonal?
 4. You print only the items on the border?
 
-** Sudoku **
+**Sudoku**
 
 Rules: The is a 9x9 gird where the objective is to place the numbers 1 to 9 in the empty squares so that each _row_, each _column_ and each _3x3 box_ contains the same number only once.
 
-![Sudoku Example](./Images/sudokuExample.png)
+![Sudoku Example](./Images/sudokuExamples.png)
 
 Exercise: Write a function that will check whether or not a fully filled sudoku board is a valid solution. 
   - Input: 2D Array of Ints ranging from 1-9 
