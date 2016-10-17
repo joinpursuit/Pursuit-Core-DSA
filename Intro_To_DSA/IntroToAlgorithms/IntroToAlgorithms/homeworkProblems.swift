@@ -51,30 +51,17 @@ func isPrime(x: Int) -> Bool {
 //Write an anglorithm that removes all characters from a String matching an input character
 
 func removeCharacter(s: String, c: Character) -> String {
-  var returnThis = ""
-  for char in s.characters {
-    if char != c {
-      returnThis.append(char)
-    }
-  }
-  return returnThis
+  let a = String(s.characters.filter({$0 != c}))
+  return a
 }
 
 //Write an algorithm that removes all characters from a String contained within an input array of characters
 
 func removeMultipleCharacters(s: String, arr: [Character]) -> String {
-  var buffer = ""
   var returningString = ""
-  for i in arr {
-    if !buffer.contains(String(i)) {
-      buffer.append(i)
-    }
-  }
-  
   for i in s.characters {
-    if !buffer.contains(String(i)) {
-      returningString.append(i)
-    }
+    guard !arr.contains(i) else { continue }
+    returningString.append(i)
   }
   return returningString
 }
