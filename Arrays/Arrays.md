@@ -6,14 +6,18 @@ Resource Links:
 1. [Basics of Array Manipulations in Swift - We Swift](https://www.weheartswift.com/arrays/)
 2. [Interactive Demo of Array Traversing & Other - UWaterloo](http://cscircles.cemc.uwaterloo.ca/13-lists/)
 3. [Introduction to Data Structures - mycodeschool via Youtube](https://www.youtube.com/watch?v=92S4zgXN17o&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
-4. [Data Structures: List as Abstract Data Type - mycodeschool via Youtube ](https://www.youtube.com/watch?v=HdFG8L1sajw&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=2)
-5. [Data Structures: Arrays v. Linked Lists](https://www.youtube.com/watch?v=lC-yYCOnN8Q&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=4)
+4. [Data Structures: List as Abstract Data Type - mycodeschool via Youtube](https://www.youtube.com/watch?v=HdFG8L1sajw&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=2)
+5. [Data Structures: Arrays v. Linked Lists - mycodeschool via Youtube](https://www.youtube.com/watch?v=lC-yYCOnN8Q&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=4)
+
+> The mycodeschool playlist the videos are listed in, are a tremendously well done resource for basics in computer science. I'd recommend viewing the playlist as needed beyond these 3 links listed
 
 Helpful Links:
 
 1. [Hexadecimal Arithmetic](https://www.tutorialspoint.com/computer_logical_organization/hexadecimal_arithmetic.htm)
 2. [Array Data Structure - Wikipedia](https://en.wikipedia.org/wiki/Array_data_structure)
 3. [Array Data Type - Wikipedia](https://en.wikipedia.org/wiki/Array_data_type)
+
+> It may not be incredibly clear yet the difference between an array as a data structure and as a data type, so you may find it helpful to avoid these links until later on in the DSA lessons
 
 # Core Concepts
 
@@ -39,7 +43,7 @@ For example, if we know that:
 2. The memory address of where the array is stored
 3. We want the 6th element in the array
 
-We can infer `array[6] = (4 bytes * 6th index) + (Memory Address of array[0])`
+We can infer `array[6] = (4 bytes * 6 index) + (Memory Address of array[0])`. This will make more sense when we explore the hexadecimal math behind this pseudo-equation. 
 
 **5. Mutability**
 
