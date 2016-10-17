@@ -312,7 +312,7 @@ Example:
 
 *Sample Input*: ["Hello there!  How's it going?"]
 
-*Sample Output*: 7
+*Sample Output*: 8
 
 
 
