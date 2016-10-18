@@ -12,7 +12,7 @@ func problemOne(arr: [Int]) {
 }
 ```
 
-problemOne(arr:) runtime: O(n)
+problemOne(arr:) runtime: O(1)
 
 
 ```swift
