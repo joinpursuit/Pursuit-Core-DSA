@@ -10,7 +10,7 @@ import Foundation
 
 //Given an array of Ints, return a tuple where:
 //The first element is the number of negative values
-//The second element is the number of zeros 
+//The second element is the number of zeros
 //The third element is the number of positive values.
 
 
@@ -49,7 +49,7 @@ func isPrime(x: Int) -> Bool {
     let denominator = [2,3,4,5,7]
     for i in denominator {
         if x % i == 0 {
-        return false
+            return false
         }
     }
     return true
@@ -58,14 +58,14 @@ func isPrime(x: Int) -> Bool {
 //Write an anglorithm that removes all characters from a String matching an input character
 
 func removeCharacter(s: String, c: Character) -> String {
-//    var newString: String = ""
-//    for x in s.characters {
-//        if x != c {
-//        newString.append(x)
-//        }
-//    }
-//    
-//    return newString
+    //    var newString: String = ""
+    //    for x in s.characters {
+    //        if x != c {
+    //        newString.append(x)
+    //        }
+    //    }
+    //
+    //    return newString
     let char = s.characters.filter{$0 != c }
     return String(char)
 }
@@ -74,12 +74,12 @@ func removeCharacter(s: String, c: Character) -> String {
 
 func removeMultipleCharacters(s: String, arr: [Character]) -> String {
     var newString: String = ""
-
+    
     for char in s.characters {
         if !arr.contains(char) {
-        newString.append(char)
+            newString.append(char)
         }
-        }
+    }
     return newString
-  
+    
 }
