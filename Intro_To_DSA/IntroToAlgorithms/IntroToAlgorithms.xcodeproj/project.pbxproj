@@ -157,6 +157,7 @@
 				TargetAttributes = {
 					543C46711DB1554F007AA320 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7NBTE6SY4Z;
 						ProvisioningStyle = Automatic;
 					};
 					543C46851DB1554F007AA320 = {
@@ -351,6 +352,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7NBTE6SY4Z;
 				INFOPLIST_FILE = IntroToAlgorithms/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = c4q.IntroToAlgorithms;
@@ -363,6 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7NBTE6SY4Z;
 				INFOPLIST_FILE = IntroToAlgorithms/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = c4q.IntroToAlgorithms;
@@ -418,6 +421,7 @@
 				543C46911DB1554F007AA320 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		543C46921DB1554F007AA320 /* Build configuration list for PBXNativeTarget "IntroToAlgorithmsTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +430,7 @@
 				543C46941DB1554F007AA320 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
