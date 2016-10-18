@@ -24,7 +24,6 @@ class IntroToAlgorithmsTests: XCTestCase {
     func testposZeroNeg() {
         let myMethod = posZeroNeg
         XCTAssert(myMethod([1,4,2,3,21,1342,32]) == (0,0,7))
-        
     }
     
     func testsecondSmallest() {
