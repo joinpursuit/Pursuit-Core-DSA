@@ -47,7 +47,7 @@ func problemFour(arr: [Int]) {
 }
 ```
 
-problemFour(arr:) runtime: O(n)
+problemFour(arr:) runtime: O(n^3)
 
 
 ```swift
@@ -61,7 +61,7 @@ func problemFive(arr: [Int]) {
 }
 ```
 
-problemFive(arr:) runtime: O(n)
+problemFive(arr:) runtime: O(n^3)
 
 
 ```swift
@@ -74,4 +74,4 @@ func problemSix(arr: [Int]) {
 }
 ```
 
-problemSix(arr:) runtime: O(n^2)
+problemSix(arr:) runtime: O(n^4)
