@@ -310,9 +310,9 @@ Example:
 
 **Write a function that returns how many vowels are in a String**
 
-*Sample Input*: ["Hello there!  How's it going?"]
+*Sample Input*: "Hello there!  How's it going?"
 
-*Sample Output*: 7
+*Sample Output*: 8
 
 
 
