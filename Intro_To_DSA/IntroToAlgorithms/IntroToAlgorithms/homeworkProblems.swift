@@ -108,12 +108,12 @@ func removeMultipleCharacters(s: String, arr: [Character]) -> String {
     var appendedString = ""
     
     outer: for char in s.characters {
-        for c in arr {
-            if c != char {
-                appendedString += String(char)
+        for c in arr{
+            if c == char {
                 continue outer
             }
         }
+        appendedString.append(char)
     }
     return appendedString
 }
