@@ -12,7 +12,11 @@ func problemOne(arr: [Int]) {
 }
 ```
 
+<<<<<<< HEAD
 problemOne(arr:) runtime: O(1)
+=======
+problemOne(arr:) runtime: 
+>>>>>>> 4c128da1e326da839fa1e7f5faecc7ca2d7c6a68
 
 
 ```swift
@@ -25,7 +29,11 @@ func problemTwo(arr: [Int]) {
 }
 ```
 
+<<<<<<< HEAD
 problemTwo(arr:) runtime: O(1)
+=======
+problemTwo(arr:) runtime: 
+>>>>>>> 4c128da1e326da839fa1e7f5faecc7ca2d7c6a68
 
 
 ```swift
@@ -36,7 +44,11 @@ func problemThree(arr: [Int]) {
 }
 ```
 
+<<<<<<< HEAD
 problemThree(arr:) runtime: O(1)
+=======
+problemThree(arr:) runtime: 
+>>>>>>> 4c128da1e326da839fa1e7f5faecc7ca2d7c6a68
 
 
 ```swift
@@ -47,7 +59,11 @@ func problemFour(arr: [Int]) {
 }
 ```
 
+<<<<<<< HEAD
 problemFour(arr:) runtime: O(1)
+=======
+problemFour(arr:) runtime: 
+>>>>>>> 4c128da1e326da839fa1e7f5faecc7ca2d7c6a68
 
 
 ```swift
@@ -61,7 +77,11 @@ func problemFive(arr: [Int]) {
 }
 ```
 
+<<<<<<< HEAD
 problemFive(arr:) runtime: O(1)
+=======
+problemFive(arr:) runtime: 
+>>>>>>> 4c128da1e326da839fa1e7f5faecc7ca2d7c6a68
 
 
 ```swift
@@ -74,4 +94,8 @@ func problemSix(arr: [Int]) {
 }
 ```
 
+<<<<<<< HEAD
 problemSix(arr:) runtime: O(1)
+=======
+problemSix(arr:) runtime: 
+>>>>>>> 4c128da1e326da839fa1e7f5faecc7ca2d7c6a68
