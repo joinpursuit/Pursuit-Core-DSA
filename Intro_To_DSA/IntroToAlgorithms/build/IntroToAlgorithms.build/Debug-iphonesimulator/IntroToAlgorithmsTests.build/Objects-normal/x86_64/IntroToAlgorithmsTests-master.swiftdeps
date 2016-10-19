@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "cb30f8833c4501493cde874818d04855"
+build_time: [530076059, 386051000]
+inputs:
+  "/Users/Shashi/Projects/AC-DSA/Intro_To_DSA/IntroToAlgorithms/IntroToAlgorithmsTests/IntroToAlgorithmsTests.swift": [530053352, 0]
