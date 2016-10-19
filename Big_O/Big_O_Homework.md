@@ -13,6 +13,9 @@ func problemOne(arr: [Int]) {
 ```
 
 problemOne(arr:) runtime: 
+O(1) - constant
+Prints the value of i 999 times 
+
 
 
 ```swift
@@ -26,6 +29,8 @@ func problemTwo(arr: [Int]) {
 ```
 
 problemTwo(arr:) runtime: 
+O(n^2) - quadratic
+Iterates over array while iterating over array for the total count of the array ??
 
 
 ```swift
@@ -37,6 +42,10 @@ func problemThree(arr: [Int]) {
 ```
 
 problemThree(arr:) runtime: 
+O(n^2) - quadratic
+Runs the problemOne function 1000 times
+
+
 
 
 ```swift
@@ -46,8 +55,12 @@ func problemFour(arr: [Int]) {
     }
 }
 ```
+**
 
 problemFour(arr:) runtime: 
+O(n^2) - quadratic
+Nested for loops interating over the array 
+
 
 
 ```swift
@@ -62,6 +75,9 @@ func problemFive(arr: [Int]) {
 ```
 
 problemFive(arr:) runtime: 
+O(n^2) + O(n^2)
+> O(n^2) - quadratic 
+Takes the highest order of power
 
 
 ```swift
@@ -75,3 +91,5 @@ func problemSix(arr: [Int]) {
 ```
 
 problemSix(arr:) runtime: 
+> O(n^2)
+Each nesed 'for' loop will run the code in their body the same amount of time (arr.count) while iterating over each element of the array.
