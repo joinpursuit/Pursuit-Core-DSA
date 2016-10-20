@@ -12,7 +12,7 @@ func problemOne(arr: [Int]) {
 }
 ```
 
-problemOne(arr:) runtime: 
+problemOne(arr:) runtime: linear
 
 
 ```swift
@@ -25,7 +25,7 @@ func problemTwo(arr: [Int]) {
 }
 ```
 
-problemTwo(arr:) runtime: 
+problemTwo(arr:) runtime: quadratic
 
 
 ```swift
@@ -36,7 +36,7 @@ func problemThree(arr: [Int]) {
 }
 ```
 
-problemThree(arr:) runtime: 
+problemThree(arr:) runtime: quadratic
 
 
 ```swift
@@ -47,7 +47,7 @@ func problemFour(arr: [Int]) {
 }
 ```
 
-problemFour(arr:) runtime: 
+problemFour(arr:) runtime:  n^3
 
 
 ```swift
@@ -61,7 +61,7 @@ func problemFive(arr: [Int]) {
 }
 ```
 
-problemFive(arr:) runtime: 
+problemFive(arr:) runtime: n^3
 
 
 ```swift
@@ -74,4 +74,4 @@ func problemSix(arr: [Int]) {
 }
 ```
 
-problemSix(arr:) runtime: 
+problemSix(arr:) runtime: n^4
