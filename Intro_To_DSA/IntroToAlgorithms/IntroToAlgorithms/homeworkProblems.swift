@@ -43,6 +43,8 @@ func secondSmallest(myArr: [Int]) -> Int? {
     return nil
 }
 
+
+
 //A number is prime if it is only evenly divisible by 1 and itself.  Write an algorithm that checks if an Int is prime
 
 func isPrime(x: Int) -> Bool {
