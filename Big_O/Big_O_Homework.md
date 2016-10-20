@@ -61,7 +61,7 @@ func problemFive(arr: [Int]) {
 }
 ```
 
-problemFive(arr:) runtime: O(2*(n^3))
+problemFive(arr:) runtime: O(n^3)
 
 
 ```swift
