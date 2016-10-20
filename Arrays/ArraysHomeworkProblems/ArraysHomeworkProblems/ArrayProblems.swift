@@ -15,7 +15,12 @@ import Foundation
 //Sample output: [1,2,3,4,5,0]
 
 func problemOne(arr: [Int]) -> [Int] {
-    return []
+    var output = [Int]()
+    for i in 1..<arr.count {
+        output.append(arr[i])
+    }
+    output.append(arr[0])
+    return output
 }
 
 
@@ -25,10 +30,20 @@ func problemOne(arr: [Int]) -> [Int] {
 //Sample input: [0,1,2,3,4,5], 3
 //Sample output: [3,4,5,0,1,2]
 
+
 func problemTwo(arr: [Int], x: Int) -> [Int] {
-    return []
+    var output = [Int]()
+    let index = x % arr.count
+    for i in index..<arr.count {
+        output.append(arr[i])
+    }
+    for i in 0..<index {
+        output.append(arr[i])
+    }
+    return output
 }
 
+//Problem Three
 //Write a function that accepts two strings, and returns true if one string is rotation of the other, taking letter case into account.
 // A string rotation is when you take a string, remove some letters from its end, then append them to the front. For example, “swift” rotated by two characters would be “ftswi”.
 
@@ -42,6 +57,29 @@ func problemTwo(arr: [Int], x: Int) -> [Int] {
 //Sample output 3: false
 
 func problemThree(strOne: String, strTwo: String) -> Bool {
+    guard strOne.characters.count == strTwo.characters.count else { return false }
+    
+    var offsetNum = 0
+    var index = strOne.startIndex
+    var theyMatch = false
+    var matchCount = 0
+
+    for letter in strTwo.characters {
+        index = strOne.index(strOne.startIndex, offsetBy: offsetNum)
+        if letter == strOne[index] {
+            theyMatch = true
+            matchCount += 1
+        } else {
+            theyMatch = false
+            matchCount = 0
+        }
+        offsetNum += 1
+    }
+    
+    if theyMatch && matchCount == strOne.characters.count {
+        return true
+    }
+    
     return false
 }
 
@@ -63,7 +101,25 @@ func problemThree(strOne: String, strTwo: String) -> Bool {
 //|(1 + 5 + 9) - (3 + 5 + 11)| = |15 - 19| = |-4| = 4
 
 func problemFour(arr: [[Int]]) -> Int {
-    return 0
+    let size = arr.count
+    var topLeftToBottomRightSum = 0
+    var topRightToBottomLeftSum = 0
+    
+    var row = 0
+    var column = size - 1
+
+    for i in 0..<size {
+        topLeftToBottomRightSum += arr[i][i]
+        topRightToBottomLeftSum += arr[row][column]
+        row += 1
+        column -= 1
+    }
+
+    let diff = topLeftToBottomRightSum - topRightToBottomLeftSum
+    if diff < 0 {
+        return 0 - diff
+    }
+    return diff
 }
 
 
@@ -84,6 +140,24 @@ func problemFour(arr: [[Int]]) -> Int {
 //|(4 + 1 + 3 + 3) - (5 + 9 + 1 + 9)| = |11 - 24| = |-13| = 13
 
 func problemFive(arr: [[Int]]) -> Int {
-    return 0
+    let size = arr.count
+    var topLeftToBottomRightSum = 0
+    var topRightToBottomLeftSum = 0
+    
+    var row = 0
+    var column = size - 1
+    
+    for i in 0..<size {
+        topLeftToBottomRightSum += arr[i][i]
+        topRightToBottomLeftSum += arr[row][column]
+        row += 1
+        column -= 1
+    }
+    
+    let diff = topLeftToBottomRightSum - topRightToBottomLeftSum
+    if diff < 0 {
+        return 0 - diff
+    }
+    return diff
 }
 
