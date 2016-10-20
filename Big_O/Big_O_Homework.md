@@ -58,7 +58,7 @@ func problemFour(arr: [Int]) {
 **
 
 problemFour(arr:) runtime: 
-O(n^2) - quadratic
+O(n^3) - quadratic
 Nested for loops interating over the array 
 
 
@@ -91,5 +91,5 @@ func problemSix(arr: [Int]) {
 ```
 
 problemSix(arr:) runtime: 
-> O(n^2)
+> O(n^3)
 Each nesed 'for' loop will run the code in their body the same amount of time (arr.count) while iterating over each element of the array.
