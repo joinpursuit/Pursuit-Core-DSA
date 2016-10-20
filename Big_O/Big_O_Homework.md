@@ -6,13 +6,13 @@ Work on these problems in your fork of the AC-DSA repo.  Add the runtimes below,
 
 ```swift
 func problemOne(arr: [Int]) {
-    for i in 0..<1000 {
+    for i in 0..< 1000 {
         print(i)
     }
 }
 ```
 
-problemOne(arr:) runtime: 
+problemOne(arr:) runtime: O(1)
 
 
 ```swift
@@ -25,7 +25,7 @@ func problemTwo(arr: [Int]) {
 }
 ```swift
 
-problemTwo(arr:) runtime: 
+problemTwo(arr:) runtime: O(n^2)
 
 
 ```swift
@@ -36,7 +36,7 @@ func problemThree(arr: [Int]) {
 }
 ```
 
-problemThree(arr:) runtime: 
+problemThree(arr:) runtime: O(1)
 
 
 ```swift
@@ -47,7 +47,7 @@ func problemFour(arr: [Int]) {
 }
 ```
 
-problemFour(arr:) runtime: 
+problemFour(arr:) runtime: O(n^3)
 
 
 ```swift
@@ -61,7 +61,7 @@ func problemFive(arr: [Int]) {
 }
 ```
 
-problemFive(arr:) runtime: 
+problemFive(arr:) runtime: O(n^3)
 
 
 ```swift
@@ -74,4 +74,4 @@ func problemSix(arr: [Int]) {
 }
 ```
 
-problemSix(arr:) runtime: 
+problemSix(arr:) runtime: O(n^4)
