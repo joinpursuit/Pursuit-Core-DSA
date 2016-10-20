@@ -12,7 +12,8 @@ func problemOne(arr: [Int]) {
 }
 ```
 
-problemOne(arr:) runtime: 
+problemOne(arr:) runtime: O(1)
+
 
 
 ```swift
@@ -25,7 +26,9 @@ func problemTwo(arr: [Int]) {
 }
 ```
 
-problemTwo(arr:) runtime: 
+
+problemTwo(arr:) runtime: o(n^2)
+
 
 
 ```swift
@@ -36,7 +39,9 @@ func problemThree(arr: [Int]) {
 }
 ```
 
-problemThree(arr:) runtime: 
+
+problemThree(arr:) runtime: o(1)
+
 
 
 ```swift
@@ -47,7 +52,9 @@ func problemFour(arr: [Int]) {
 }
 ```
 
-problemFour(arr:) runtime: 
+
+
+problemFour(arr:) runtime: O(n^3)
 
 
 ```swift
@@ -61,7 +68,7 @@ func problemFive(arr: [Int]) {
 }
 ```
 
-problemFive(arr:) runtime: 
+problemFive(arr:) runtime: O(n)
 
 
 ```swift
@@ -74,4 +81,4 @@ func problemSix(arr: [Int]) {
 }
 ```
 
-problemSix(arr:) runtime: 
+problemSix(arr:) runtime: O(n ^ 4)

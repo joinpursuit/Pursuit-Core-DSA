@@ -37,34 +37,31 @@ func posZeroNeg(myArr: [Int]) -> (Int, Int, Int) {
 //Given an array of Ints, return the second smallest integer.  Assume every value is unique.  Return nil if the array has less than two elements
 
 func secondSmallest(myArr: [Int]) -> Int? {
-    if myArr.count > 1 {
-        return myArr.sorted()[1]
-    } else {
-        return myArr[0]
+    //    if myArr.count > 1 {
+    //        return myArr.sorted()[1]
+    //    } else {
+    //        return myArr[0]
+    //    }
+    var smallest = myArr[0]
+    var secondSmallest: Int?
+    
+    if myArr.count > 2 {
+        for i in 2..<myArr.count {
+            if myArr[i] < smallest {
+                secondSmallest = smallest
+                smallest = myArr[i]
+            }
+            if let ss = secondSmallest, smallest > ss {
+                smallest = ss
+            }
+        }
+    }else {
+        if myArr[0] > myArr[1] {
+            smallest = myArr[1]
+        }
     }
-    //    var smallest = myArr[0]
-    //    var secondSmallest: Int?
-    //
-    //    if myArr.count > 2 {
-    //    for i in 2..<myArr.count {
-    //        if myArr[i] > myArr [i - 1] {
-    //            smallest = myArr[i]
-    //            myArr[i - 1] = smallest
-    //
-    //            for
-    //
-    //        }
-    //        }
-    //        else {
-    //
-    //        }
-    //    }else {
-    //        if myArr[0] > myArr[1] {
-    //            smallest = myArr[1]
-    //        }
-    //    return smallest
+    return secondSmallest
 }
-
 //A number is prime if it is only evenly divisible by 1 and itself.  Write an algorithm that checks if an Int is prime
 
 
@@ -84,7 +81,7 @@ func isPrime(x: Int) -> Bool {
             return false
         }
         i += 1
-
+        
     }
     return true
 }
