@@ -130,6 +130,10 @@ func problemFour(arr: [[Int]]) -> Int {
     for i in 0..<size {
         topLeftToBottomRightSum += arr[i][i]
         topRightToBottomLeftSum += arr[row][column]
+        
+        /* The following could have been used instead of initializing row/column */
+        //topRightToBottomLeftSum += arr[i][(size-i)-1]
+        
         row += 1
         column -= 1
     }
