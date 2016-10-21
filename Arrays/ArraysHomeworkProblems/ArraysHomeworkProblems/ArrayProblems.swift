@@ -57,30 +57,50 @@ func problemTwo(arr: [Int], x: Int) -> [Int] {
 //Sample output 3: false
 
 func problemThree(strOne: String, strTwo: String) -> Bool {
-    guard strOne.characters.count == strTwo.characters.count else { return false }
+    if strOne.characters.count != strTwo.characters.count { return false }
     
-    var offsetNum = 0
-    var index = strOne.startIndex
     var theyMatch = false
-    var matchCount = 0
-
-    for letter in strTwo.characters {
-        index = strOne.index(strOne.startIndex, offsetBy: offsetNum)
-        if letter == strOne[index] {
+    var strOneOffsetNum = 0
+    var strTwoOffsetNum = 0
+    var currentStrOneIndex = strOne.startIndex
+    var currentStrTwoIndex = strTwo.startIndex
+    
+    //go through each letter in strOne
+    while currentStrOneIndex < strOne.endIndex {
+        //if letters match, look at the next letters of both strings
+        if strOne[currentStrOneIndex] == strTwo[currentStrTwoIndex] {
             theyMatch = true
-            matchCount += 1
+            strOneOffsetNum += 1
+            currentStrOneIndex = strOne.index(strOne.startIndex, offsetBy: strOneOffsetNum)
+            strTwoOffsetNum += 1
+            currentStrTwoIndex = strTwo.index(strTwo.startIndex, offsetBy: strTwoOffsetNum)
         } else {
+            //if letters don't match, look at the next letter of strOne
             theyMatch = false
-            matchCount = 0
+            strOneOffsetNum += 1
+            currentStrOneIndex = strOne.index(strOne.startIndex, offsetBy: strOneOffsetNum)
         }
-        offsetNum += 1
     }
     
-    if theyMatch && matchCount == strOne.characters.count {
-        return true
-    }
+    //if by the end of strOne, the letters haven't started matching, return false
+    if !theyMatch { return false }
     
-    return false
+    //keep going through strTwo, return to the beginning of strOne
+    strOneOffsetNum = 0
+    currentStrOneIndex = strOne.index(strOne.startIndex, offsetBy: strOneOffsetNum)
+    
+    while currentStrTwoIndex < strTwo.endIndex {
+        if strOne[currentStrOneIndex] == strTwo[currentStrTwoIndex] {
+            theyMatch = true
+            strOneOffsetNum += 1
+            currentStrOneIndex = strOne.index(strOne.startIndex, offsetBy: strOneOffsetNum)
+            strTwoOffsetNum += 1
+            currentStrTwoIndex = strTwo.index(strTwo.startIndex, offsetBy: strTwoOffsetNum)
+        } else {
+            return false
+        }
+    }
+    return true
 }
 
 
@@ -89,8 +109,8 @@ func problemThree(strOne: String, strTwo: String) -> Bool {
 
 //Input visualization
 /*
-  1  2  3
-  4  5  6
+ 1  2  3
+ 4  5  6
  11  8  9
  */
 
@@ -107,14 +127,14 @@ func problemFour(arr: [[Int]]) -> Int {
     
     var row = 0
     var column = size - 1
-
+    
     for i in 0..<size {
         topLeftToBottomRightSum += arr[i][i]
         topRightToBottomLeftSum += arr[row][column]
         row += 1
         column -= 1
     }
-
+    
     let diff = topLeftToBottomRightSum - topRightToBottomLeftSum
     if diff < 0 {
         return 0 - diff
@@ -128,7 +148,7 @@ func problemFour(arr: [[Int]]) -> Int {
 
 //Input visualization
 /*
- 4 1 2 5 
+ 4 1 2 5
  3 1 9 2
  4 1 3 8
  9 2 4 3
