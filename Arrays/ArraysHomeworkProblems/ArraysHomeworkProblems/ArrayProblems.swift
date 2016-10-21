@@ -15,8 +15,17 @@ import Foundation
 //Sample output: [1,2,3,4,5,0]
 
 func problemOne(arr: [Int]) -> [Int] {
-    return []
+    var lastInt: Int
+    var newArr = [Int]()
+    
+    lastInt = arr[0]
+    newArr = arr
+    newArr.removeFirst()
+    newArr.append(lastInt)
+    
+    return newArr
 }
+
 
 
 //Problem Two
@@ -26,8 +35,19 @@ func problemOne(arr: [Int]) -> [Int] {
 //Sample output: [3,4,5,0,1,2]
 
 func problemTwo(arr: [Int], x: Int) -> [Int] {
-    return []
+    var newArr = [Int]()
+    let holdingArr = [arr[0...(x-1)]]
+    
+    newArr = arr
+    for num in holdingArr{
+        for (key , value) in num.enumerated(){
+            newArr.remove(at: key )
+            newArr.append(value)
+        }
+    }
+    return newArr
 }
+
 
 //Write a function that accepts two strings, and returns true if one string is rotation of the other, taking letter case into account.
 // A string rotation is when you take a string, remove some letters from its end, then append them to the front. For example, “swift” rotated by two characters would be “ftswi”.
@@ -63,7 +83,10 @@ func problemThree(strOne: String, strTwo: String) -> Bool {
 //|(1 + 5 + 9) - (3 + 5 + 11)| = |15 - 19| = |-4| = 4
 
 func problemFour(arr: [[Int]]) -> Int {
-    return 0
+    let firstDia = arr[0][0] + arr[1][1] + arr[2][2]
+    let secondDia = arr[0][2] + arr[1][1] + arr[2][0]
+    let difference = abs(firstDia - secondDia)
+    return difference
 }
 
 
@@ -84,6 +107,15 @@ func problemFour(arr: [[Int]]) -> Int {
 //|(4 + 1 + 3 + 3) - (5 + 9 + 1 + 9)| = |11 - 24| = |-13| = 13
 
 func problemFive(arr: [[Int]]) -> Int {
+    var firstDia = 0
+    var secondDia = 0
+    
+    for row in arr {
+        for column in row {
+            
+        
+        }
+        }
     return 0
 }
 
