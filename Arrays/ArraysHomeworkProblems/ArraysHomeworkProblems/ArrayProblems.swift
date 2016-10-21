@@ -15,7 +15,12 @@ import Foundation
 //Sample output: [1,2,3,4,5,0]
 
 func problemOne(arr: [Int]) -> [Int] {
-    return []
+    var sortedArr = [Int]()
+    for i in 1..<arr.count {
+        sortedArr.append(arr[i])
+    }
+    sortedArr.append(arr[0])
+    return sortedArr
 }
 
 
@@ -26,7 +31,15 @@ func problemOne(arr: [Int]) -> [Int] {
 //Sample output: [3,4,5,0,1,2]
 
 func problemTwo(arr: [Int], x: Int) -> [Int] {
-    return []
+    var sortedArr = [Int]()
+    let count = x%arr.count
+    for i in count..<arr.count {
+        sortedArr.append(arr[i])
+    }
+    for j in 0..<count {
+        sortedArr.append(arr[j])
+    }
+    return sortedArr
 }
 
 //Write a function that accepts two strings, and returns true if one string is rotation of the other, taking letter case into account.
@@ -42,7 +55,38 @@ func problemTwo(arr: [Int], x: Int) -> [Int] {
 //Sample output 3: false
 
 func problemThree(strOne: String, strTwo: String) -> Bool {
-    return false
+    let strOneArr = Array(strOne.characters)
+    let strTwoArr = Array(strTwo.characters)
+    var isShifted = Bool()
+    
+    
+    func problemTwo(arr: [Character], x: Int) -> [Character] {
+        var sortedArr = [Character]()
+        for i in x..<arr.count {
+            sortedArr.append(arr[i])
+        }
+        for i in 0..<x {
+            sortedArr.append(arr[i])
+        }
+        return sortedArr
+    }
+    
+    if strOneArr.count == strTwoArr.count {
+        
+        let arrayCount = strOneArr.count
+        for i in 0..<arrayCount {
+            let newArr = problemTwo(arr: strOneArr, x: i)
+            if newArr == strTwoArr {
+                isShifted = true
+                break
+            }
+        }
+    }
+    else {
+        isShifted = false
+    }
+    
+    return isShifted
 }
 
 
@@ -63,7 +107,15 @@ func problemThree(strOne: String, strTwo: String) -> Bool {
 //|(1 + 5 + 9) - (3 + 5 + 11)| = |15 - 19| = |-4| = 4
 
 func problemFour(arr: [[Int]]) -> Int {
-    return 0
+    let arrCount = 3
+    var sum1 = Int()
+    var sum2 = Int()
+    
+    for i in 0..<arrCount {
+        sum1 += arr[i][i]
+        sum2 += arr[i][2-i]
+    }
+    return abs(sum1-sum2)
 }
 
 
@@ -84,6 +136,14 @@ func problemFour(arr: [[Int]]) -> Int {
 //|(4 + 1 + 3 + 3) - (5 + 9 + 1 + 9)| = |11 - 24| = |-13| = 13
 
 func problemFive(arr: [[Int]]) -> Int {
-    return 0
+    let arrCount = arr.count
+    var sum1 = Int()
+    var sum2 = Int()
+    
+    for i in 0..<arrCount {
+        sum1 += arr[i][i]
+        sum2 += arr[i][(arrCount-1)-i]
+    }
+    return abs(sum1-sum2)
 }
 
