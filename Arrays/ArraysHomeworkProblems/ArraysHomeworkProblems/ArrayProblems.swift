@@ -48,10 +48,10 @@ func problemTwo(arr: [Int], x: Int) -> [Int] {
 //Sample output 3: false
 
 func problemThree(strOne: String, strTwo: String) -> Bool {
-    var temp = Array(strTwo.characters)
+    var temp = Array(strOne.characters)
     for _ in 0..<temp.count{
-        temp.append(temp.remove(at: 0))
-        if String(temp) == strOne{
+        temp.insert(temp.removeLast(), at: 0)
+        if String(temp) == strTwo{
             return true
         }
     }
