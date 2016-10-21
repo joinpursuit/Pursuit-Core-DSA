@@ -27,6 +27,11 @@ func problemOne(arr: [Int]) -> [Int] {
         }
     }
     return array
+    // var newArr = [Int]()
+    //for i in 1...arr.count{
+        //newArr.append(arr[i%arr.count]
+    //}
+    //return newArr
 }
 
 
@@ -39,6 +44,7 @@ func problemOne(arr: [Int]) -> [Int] {
 //XCTAssert(problemTwo(arr: [4,2,0,14,1,-92,100_000_000], x: 40) == [-92, 100000000, 4, 2, 0, 14, 1])
 
 func problemTwo(arr: [Int], x: Int) -> [Int] {
+    
     var array = arr
     for i in 0..<array.count - x{
         let temp = array[i]
@@ -53,7 +59,24 @@ func problemTwo(arr: [Int], x: Int) -> [Int] {
         }
     }
     return array
-}
+    /*
+    let startingIndex = x
+    var newArr = [Int]()
+    for i in startingIndex..<startingIndex + arr.count {
+        newArr.append(arr[i%arr.count])
+    }
+    return newArr
+    */
+    /*
+    var newArr = [Int]()
+    let startingIndex = x%arr.count
+    for i in startingIndex..<startingIndex + arr.count {
+        print(i%arr.count)
+        newArr.append(i%arr.count)
+    }
+    return newArr
+    */
+ }
 
 //Write a function that accepts two strings, and returns true if one string is rotation of the other, taking letter case into account.
 // A string rotation is when you take a string, remove some letters from its end, then append them to the front. For example, “swift” rotated by two characters would be “ftswi”.
@@ -67,6 +90,21 @@ func problemTwo(arr: [Int], x: Int) -> [Int] {
 //Sample input 3: "abc", "a"
 //Sample output 3: false
 
+func problemThree(stringOne: String, stringTwo: String) -> Bool {
+    let rotate = {(a:String) -> String in
+        return a.substring(from: a.index(a.startIndex, offsetBy: 1)) + a.substring(to: a.index(a.startIndex, offsetBy: 1))
+    }
+    var rotatedStringOne: String = rotate(stringOne)
+    while rotatedStringOne != stringOne{
+        if rotatedStringOne == stringTwo{
+            return true
+        }
+        rotatedStringOne = rotate(rotatedStringOne)
+    }
+    return false
+}
+
+/*
 func problemTwoCharacters(arr: [Character], x: Int) -> String{
     var string = ""
     var array = arr
@@ -103,7 +141,7 @@ func problemThree(strOne: String, strTwo: String) -> Bool {
     
     return false
 }
-
+*/
 
 //Problem Four
 //Given a square matrix of size 3 x 3 , calculate the absolute value of the difference between the sums of its diagonals.
@@ -166,6 +204,15 @@ func problemFive(arr: [[Int]]) -> Int {
                 sumOfBackward += arr[row][column]
             }
         }
+        /*
+        var rightDiag = 0
+        var leftDiag = 0
+        for i in 0..<arr.count{
+            rightDiag += arr[i][i]
+            leftDiag += arr[arr.count-1-i][i]
+        }
+        return abs(leftDiag - rightDiag)
+         */
     }
     return abs(sumOfForward - sumOfBackward)
 }
