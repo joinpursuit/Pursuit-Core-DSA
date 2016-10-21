@@ -15,7 +15,11 @@ import Foundation
 //Sample output: [1,2,3,4,5,0]
 
 func problemOne(arr: [Int]) -> [Int] {
-    return []
+    var newArr: [Int] = arr
+    let firstItem = arr[0]
+    newArr.remove(at: 0)
+    newArr.append(firstItem)
+    return newArr
 }
 
 
@@ -26,7 +30,15 @@ func problemOne(arr: [Int]) -> [Int] {
 //Sample output: [3,4,5,0,1,2]
 
 func problemTwo(arr: [Int], x: Int) -> [Int] {
-    return []
+    let y = x % arr.count
+    var newArr: [Int] = []
+    for i in y..<arr.count {
+        newArr.append(arr[i])
+    }
+    for i in 0..<y {
+        newArr.append(arr[i])
+    }
+    return newArr
 }
 
 //Write a function that accepts two strings, and returns true if one string is rotation of the other, taking letter case into account.
@@ -63,9 +75,29 @@ func problemThree(strOne: String, strTwo: String) -> Bool {
 //|(1 + 5 + 9) - (3 + 5 + 11)| = |15 - 19| = |-4| = 4
 
 func problemFour(arr: [[Int]]) -> Int {
-    return 0
+    var diagOneSum = 0
+    var diagTwoSum = 0
+    
+    for i in 0..<arr.count {
+        for j in 0..<arr.count {
+            if i == j {
+                diagOneSum += arr[i][j]
+                print("A \(arr[i][j])")
+            }
+            if i + j == arr.count - 1 {
+                diagTwoSum += arr[i][j]
+                print(arr[i][j])
+            }
+        }
+    }
+    
+    let diff = diagOneSum - diagTwoSum
+    if diff < 0 {
+        return diff * -1
+    } else {
+        return diff
+    }
 }
-
 
 //Problem Five
 //Given a square matrix of size n x n , calculate the absolute value of the difference between the sums of its diagonals.
@@ -84,6 +116,27 @@ func problemFour(arr: [[Int]]) -> Int {
 //|(4 + 1 + 3 + 3) - (5 + 9 + 1 + 9)| = |11 - 24| = |-13| = 13
 
 func problemFive(arr: [[Int]]) -> Int {
-    return 0
+    var diagOneSum = 0
+    var diagTwoSum = 0
+    
+    for i in 0..<arr.count {
+        for j in 0..<arr.count {
+            if i == j {
+                diagOneSum += arr[i][j]
+                print("A \(arr[i][j])")
+            }
+            if i + j == arr.count - 1 {
+                diagTwoSum += arr[i][j]
+                print(arr[i][j])
+            }
+        }
+    }
+    
+    let diff = diagOneSum - diagTwoSum
+    if diff < 0 {
+        return diff * -1
+    } else {
+        return diff
+    }
 }
 
