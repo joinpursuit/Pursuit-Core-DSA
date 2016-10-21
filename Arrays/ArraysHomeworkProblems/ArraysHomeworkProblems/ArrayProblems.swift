@@ -15,7 +15,10 @@ import Foundation
 //Sample output: [1,2,3,4,5,0]
 
 func problemOne(arr: [Int]) -> [Int] {
-    return []
+    var newArr = arr
+    newArr.append(newArr[0])
+    newArr.removeFirst()
+    return newArr
 }
 
 
@@ -26,7 +29,12 @@ func problemOne(arr: [Int]) -> [Int] {
 //Sample output: [3,4,5,0,1,2]
 
 func problemTwo(arr: [Int], x: Int) -> [Int] {
-    return []
+   var newArr = arr
+    for _ in 0..<x {
+        newArr.append(newArr[0])
+        newArr.removeFirst()
+    }
+    return newArr
 }
 
 //Write a function that accepts two strings, and returns true if one string is rotation of the other, taking letter case into account.
@@ -42,7 +50,17 @@ func problemTwo(arr: [Int], x: Int) -> [Int] {
 //Sample output 3: false
 
 func problemThree(strOne: String, strTwo: String) -> Bool {
-    return false
+    var returnThing = false
+    let strOneInChars = strOne.characters
+    var strTwoInChars = strTwo.characters
+    for char in strTwoInChars {
+        strTwoInChars.append(char)
+        strTwoInChars.removeFirst()
+        if String(strOneInChars) == String(strTwoInChars) {
+            returnThing = true
+        }
+    }
+    return returnThing
 }
 
 
@@ -63,7 +81,7 @@ func problemThree(strOne: String, strTwo: String) -> Bool {
 //|(1 + 5 + 9) - (3 + 5 + 11)| = |15 - 19| = |-4| = 4
 
 func problemFour(arr: [[Int]]) -> Int {
-    return 0
+    return abs((arr[0][0] + arr[1][1] + arr[2][2]) - (arr[0][2] + arr[1][1] + arr[2][0]))
 }
 
 
@@ -84,6 +102,16 @@ func problemFour(arr: [[Int]]) -> Int {
 //|(4 + 1 + 3 + 3) - (5 + 9 + 1 + 9)| = |11 - 24| = |-13| = 13
 
 func problemFive(arr: [[Int]]) -> Int {
-    return 0
+    var leftToRightDiagonal = 0
+    var rightToLeftDiagonal = 0
+    var amountInArr = arr[0].count
+    for (index, arrInArr) in arr.enumerated() {
+       leftToRightDiagonal += (arrInArr[index])
+    }
+    for arrInArr in arr {
+        amountInArr -= 1
+        rightToLeftDiagonal += arrInArr[amountInArr]
+    }
+    return abs(leftToRightDiagonal - rightToLeftDiagonal)
 }
 
