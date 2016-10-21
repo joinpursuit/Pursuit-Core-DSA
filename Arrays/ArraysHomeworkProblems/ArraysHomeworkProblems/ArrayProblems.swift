@@ -15,7 +15,17 @@ import Foundation
 //Sample output: [1,2,3,4,5,0]
 
 func problemOne(arr: [Int]) -> [Int] {
-    return []
+    var resultArray = arr
+    let firstElement = arr[0]
+    
+    for (index, _) in resultArray.enumerated() {
+        if index == resultArray.count - 1 {
+            resultArray[index] = firstElement
+        }else {
+            resultArray[index] = resultArray[index+1]
+        }
+    }
+    return resultArray
 }
 
 
@@ -26,7 +36,15 @@ func problemOne(arr: [Int]) -> [Int] {
 //Sample output: [3,4,5,0,1,2]
 
 func problemTwo(arr: [Int], x: Int) -> [Int] {
-    return []
+    var output = [Int]()
+    let index = x % arr.count
+    for i in index..<arr.count {
+        output.append(arr[i])
+    }
+    for i in 0..<index {
+        output.append(arr[i])
+    }
+    return output
 }
 
 //Write a function that accepts two strings, and returns true if one string is rotation of the other, taking letter case into account.
@@ -42,9 +60,16 @@ func problemTwo(arr: [Int], x: Int) -> [Int] {
 //Sample output 3: false
 
 func problemThree(strOne: String, strTwo: String) -> Bool {
+    var temp = Array(strOne.characters)
+    for _ in 0..<temp.count{
+        temp.insert(temp.removeLast(), at: 0)
+        if String(temp) == strTwo{
+            return true
+        }
+    }
     return false
 }
-
+   
 
 //Problem Four
 //Given a square matrix of size 3 x 3 , calculate the absolute value of the difference between the sums of its diagonals.
