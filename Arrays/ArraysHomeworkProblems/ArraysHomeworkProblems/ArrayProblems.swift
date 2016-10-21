@@ -51,11 +51,13 @@ func problemTwo(arr: [Int], x: Int) -> [Int] {
 //Sample output 3: false
 
 func problemThree(strOne: String, strTwo: String) -> Bool {
-	guard strOne.characters.count == strTwo.characters.count else { return false }
-	var tempString = Array(strOne.characters)
-	for _ in 0..<strOne.characters.count {
-	tempString.append(tempString.remove(at: 0))
-		if tempString == Array(strTwo.characters) {
+	let range = strOne.characters.count
+	guard range == strTwo.characters.count else { return false }
+	var stringOne = Array(strOne.characters)
+	let stringTwo = Array(strTwo.characters)
+	for _ in 0..<range {
+	stringOne.insert(stringOne.remove(at: range - 1), at: 0)
+		if stringOne == stringTwo {
 			return true
 		}
 	}
