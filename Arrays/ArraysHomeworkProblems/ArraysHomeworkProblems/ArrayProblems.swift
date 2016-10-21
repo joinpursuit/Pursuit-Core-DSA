@@ -91,7 +91,6 @@ func problemThree(strOne: String, strTwo: String) -> Bool {
     
     while currentStrTwoIndex < strTwo.endIndex {
         if strOne[currentStrOneIndex] == strTwo[currentStrTwoIndex] {
-            theyMatch = true
             strOneOffsetNum += 1
             currentStrOneIndex = strOne.index(strOne.startIndex, offsetBy: strOneOffsetNum)
             strTwoOffsetNum += 1
