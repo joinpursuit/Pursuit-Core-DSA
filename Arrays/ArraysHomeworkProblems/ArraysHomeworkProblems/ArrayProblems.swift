@@ -14,9 +14,20 @@ import Foundation
 //Sample input: [0,1,2,3,4,5]
 //Sample output: [1,2,3,4,5,0]
 
+let arr = [0,1,2,3,4,5]
+
+
 func problemOne(arr: [Int]) -> [Int] {
-    return []
+    var newArr = arr
+    if arr.count > 0 {
+        newArr.append(newArr[0])
+        newArr.removeFirst()
+    }
+    return newArr
 }
+/*
+ O(n)
+ */
 
 
 //Problem Two
@@ -26,8 +37,16 @@ func problemOne(arr: [Int]) -> [Int] {
 //Sample output: [3,4,5,0,1,2]
 
 func problemTwo(arr: [Int], x: Int) -> [Int] {
-    return []
+    var newArr = arr
+    for _ in 0..<x {
+        newArr.append(newArr[0])
+        newArr.removeFirst()
+    }
+    return newArr
 }
+/*
+ O(n)
+ */
 
 //Write a function that accepts two strings, and returns true if one string is rotation of the other, taking letter case into account.
 // A string rotation is when you take a string, remove some letters from its end, then append them to the front. For example, “swift” rotated by two characters would be “ftswi”.
