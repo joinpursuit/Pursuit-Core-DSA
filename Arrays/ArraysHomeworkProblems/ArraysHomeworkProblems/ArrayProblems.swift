@@ -35,16 +35,22 @@ func problemOne(arr: [Int]) -> [Int] {
 //Sample output: [3,4,5,0,1,2]
 
 func problemTwo(arr: [Int], x: Int) -> [Int] {
-    var newArr = [Int]()
-    let holdingArr = [arr[0...(x-1)]]
-    
-    newArr = arr
-    for num in holdingArr{
-        for (key , value) in num.enumerated(){
-            newArr.remove(at: key )
-            newArr.append(value)
-        }
-    }
+//    var newArr = [Int]()
+//    let startingIndex = x%arr.count
+//    for i in startingIndex ..<startingIndex.count {
+//        newArr.append(arr[i%arr.count])
+//    }
+    //------
+//    var newArr = [Int]()
+//    let holdingArr = [arr[0...(x-1)]]
+//    
+//    newArr = arr
+//    for num in holdingArr{
+//        for (key , value) in num.enumerated(){
+//            newArr.remove(at: key )
+//            newArr.append(value)
+//        }
+//    }
     return newArr
 }
 
