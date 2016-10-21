@@ -27,6 +27,7 @@ func problemTwo(arr: [Int]) {
     }
 }
 ```
+//O(n * m) -- still quadratic, but shows that there are differeces bw loops
 
 problemTwo(arr:) runtime: 
 O(n^2) - quadratic
