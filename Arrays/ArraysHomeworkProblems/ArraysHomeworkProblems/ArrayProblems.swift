@@ -15,7 +15,9 @@ import Foundation
 //Sample output: [1,2,3,4,5,0]
 
 func problemOne(arr: [Int]) -> [Int] {
-    return []
+	var array = arr
+	array.append(array.remove(at: 0))
+	return array
 }
 
 
@@ -26,8 +28,15 @@ func problemOne(arr: [Int]) -> [Int] {
 //Sample output: [3,4,5,0,1,2]
 
 func problemTwo(arr: [Int], x: Int) -> [Int] {
-    return []
+	var array = arr
+	let range = x % arr.count
+	for index in 0..<range {
+		array.remove(at: 0)
+		array.append(arr[index])
+	}
+	return array
 }
+
 
 //Write a function that accepts two strings, and returns true if one string is rotation of the other, taking letter case into account.
 // A string rotation is when you take a string, remove some letters from its end, then append them to the front. For example, “swift” rotated by two characters would be “ftswi”.
@@ -42,7 +51,15 @@ func problemTwo(arr: [Int], x: Int) -> [Int] {
 //Sample output 3: false
 
 func problemThree(strOne: String, strTwo: String) -> Bool {
-    return false
+	guard strOne.characters.count == strTwo.characters.count else { return false }
+	var tempString = Array(strOne.characters)
+	for _ in 0..<strOne.characters.count {
+	tempString.append(tempString.remove(at: 0))
+		if tempString == Array(strTwo.characters) {
+			return true
+		}
+	}
+	return false
 }
 
 
@@ -63,7 +80,21 @@ func problemThree(strOne: String, strTwo: String) -> Bool {
 //|(1 + 5 + 9) - (3 + 5 + 11)| = |15 - 19| = |-4| = 4
 
 func problemFour(arr: [[Int]]) -> Int {
-    return 0
+	var firstDiagonal = 0
+	var secondDiagonal = 0
+	
+	for x in 0..<arr.count {
+		for y in 0..<arr.count {
+			if x == y {
+				firstDiagonal += arr[x][y]
+			}
+			if x + y == arr.count-1 {
+				secondDiagonal += arr[x][y]
+			}
+		}
+	}
+	
+	return abs(firstDiagonal - secondDiagonal)
 }
 
 
@@ -84,6 +115,20 @@ func problemFour(arr: [[Int]]) -> Int {
 //|(4 + 1 + 3 + 3) - (5 + 9 + 1 + 9)| = |11 - 24| = |-13| = 13
 
 func problemFive(arr: [[Int]]) -> Int {
-    return 0
+	var firstDiagonal = 0
+	var secondDiagonal = 0
+	
+	for x in 0..<arr.count {
+		for y in 0..<arr.count {
+			if x == y {
+				firstDiagonal += arr[x][y]
+			}
+			if x + y == arr.count-1 {
+				secondDiagonal += arr[x][y]
+			}
+		}
+	}
+	
+	return abs(firstDiagonal - secondDiagonal)
 }
 
