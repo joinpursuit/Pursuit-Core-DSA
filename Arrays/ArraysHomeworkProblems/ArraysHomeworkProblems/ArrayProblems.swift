@@ -61,6 +61,17 @@ func problemTwo(arr: [Int], x: Int) -> [Int] {
 //Sample output 3: false
 
 func problemThree(strOne: String, strTwo: String) -> Bool {
+    let two = Array(strTwo.characters)
+    var reorderedStrTwo = two
+    
+    for _ in 0..<two.count { //O(n) - linear
+        reorderedStrTwo.append(reorderedStrTwo[0]) //O(1) constant below
+        reorderedStrTwo.removeFirst()
+        if String(reorderedStrTwo) == strOne {
+            return true
+        } else { continue }
+    }
+    
     return false
 }
 
