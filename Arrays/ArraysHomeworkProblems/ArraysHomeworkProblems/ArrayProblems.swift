@@ -15,9 +15,17 @@ import Foundation
 //Sample output: [1,2,3,4,5,0]
 
 func problemOne(arr: [Int]) -> [Int] {
-    return []
-}
-
+        var outputArray = Array(repeating: 0, count: arr.count)
+    
+        for (i, value) in arr.enumerated() {
+            if i == 0 {
+                outputArray[arr.count - 1] = value
+            } else {
+                outputArray[i - 1] = value
+            }
+        }
+        return outputArray
+    }
 
 //Problem Two
 //Write an algorithm that moves every element in an array of Ints (x) spaces to the left
@@ -26,7 +34,12 @@ func problemOne(arr: [Int]) -> [Int] {
 //Sample output: [3,4,5,0,1,2]
 
 func problemTwo(arr: [Int], x: Int) -> [Int] {
-    return []
+    var outputArray = Array(repeating: 0, count: arr.count)
+    
+    for (i, value) in arr.enumerated() {
+        
+    }
+    return outputArray
 }
 
 //Write a function that accepts two strings, and returns true if one string is rotation of the other, taking letter case into account.
