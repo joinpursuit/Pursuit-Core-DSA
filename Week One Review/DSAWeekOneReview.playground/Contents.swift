@@ -259,10 +259,68 @@ let inputArray: [[Int]] = [
 //e) Print out only numbers not on the border
 
 
+func arrayStuff(inputArr: [[Int]], command: Character) {
+    
+    func a() {
+        for _ in 0..<inputArr.count {
+            for j in 0...inputArr.count {
+                print("\(inputArr[j])")
+            }
+        }
+    }
+    
+    func b(inputArr: [[Int]]) {
+        for i in 0...inputArr.count {
+            print("\n")
+            for j in 0..<inputArr.count {
+                print("\(inputArr[j][i])")
+            }
+        }
+    }
+    
+    func c(inputArr: [[Int]]) {
+        for i in 0..<inputArr.count {
+            print("\(inputArr[i][i])", terminator: " ")
+        }
+        print("\n")
+        for i in 0..<inputArr.count {
+            print("\(inputArr[i][inputArr.count - i])", terminator: " ")
+        }
+    }
+
+    /*
+     switch command {
+     case "a":
+     return a()
+     case "b":
+     return b()
+     case "c":
+     return c()
+     case "d":
+     return d()
+     case "e":
+     return e()
+     default:
+     break;
+     }
+     */
+}
 
 
 
+func a(inputArr: [[Int]]) {
+    for i in 0..<inputArr.count {
+        for j in 0...inputArr.count {
+            if i == 0 || i == inputArr.count {
+                print("\(inputArr[i][j])", terminator: " ")
+                print()
+            }
+            
+        }
+    }
+}
 
+    a(inputArr: inputArray)
 
 
 //4) Sudoku
