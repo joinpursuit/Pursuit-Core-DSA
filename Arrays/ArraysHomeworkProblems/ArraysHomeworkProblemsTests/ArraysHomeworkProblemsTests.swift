@@ -30,7 +30,7 @@ class ArraysHomeworkProblemsTests: XCTestCase {
     
     func testproblemTwo() {
         XCTAssert(problemTwo(arr: [0,1,2,3,4,5], x: 3) == [3, 4, 5, 0, 1, 2])
-        XCTAssert(problemTwo(arr: [42,1,-42,1,3,6,1], x: 4) == [3, 6, 1, 42, 1, -41, -1])
+        XCTAssert(problemTwo(arr: [42,1,-42,1,3,6,1], x: 4) == [3, 6, 1, 42, 1, -42, 1])
         XCTAssert(problemTwo(arr: [4,2,0,14,1,-92,100_000_000], x: 40) == [-92, 100000000, 4, 2, 0, 14, 1])
     }
     
@@ -51,7 +51,7 @@ class ArraysHomeworkProblemsTests: XCTestCase {
     func testproblemFive() {
         XCTAssert(problemFive(arr: [[4,1,2,5],[3,1,9,2],[4,1,3,8],[9,2,4,3]]) == 13)
         XCTAssert(problemFive(arr: [[2,4],[6,7]]) == 1)
-        XCTAssert(problemFive(arr: [[1,5,2,3,6],[123,23,132,1,-1],[924,29,19-13,2],[190,10,313,12,0],[-19,13,102,12,-111]]) == 73)
+        XCTAssert(problemFive(arr: [[1,5,2,3,6],[123,23,132,1,-1],[924,29,19,-13,2],[190,10,313,12,0],[-19,13,102,12,-111]]) == 73)
     }
     
     func testPerformanceExample() {

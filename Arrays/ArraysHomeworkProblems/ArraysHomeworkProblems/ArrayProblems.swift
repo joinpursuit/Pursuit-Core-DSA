@@ -15,7 +15,16 @@ import Foundation
 //Sample output: [1,2,3,4,5,0]
 
 func problemOne(arr: [Int]) -> [Int] {
-    return []
+    var newArr = [Int]()
+    let start = arr[0]
+    for i in arr {
+        if i != start {
+            newArr.append(i)
+        }
+    }
+    newArr.append(start)
+    
+    return newArr
 }
 
 
@@ -26,7 +35,29 @@ func problemOne(arr: [Int]) -> [Int] {
 //Sample output: [3,4,5,0,1,2]
 
 func problemTwo(arr: [Int], x: Int) -> [Int] {
-    return []
+    
+    var newArr1 = [Int]()
+    var newArr2 = [Int]()
+    var amountToMove = x
+    
+    if x > arr.count {
+        amountToMove = x/arr.count
+    }
+    
+    for i in 0..<arr.count {
+        if i >= amountToMove {
+            newArr1.append(arr[i])
+            print(newArr1)
+        } else {
+            newArr2.append(arr[i])
+            print(newArr2)
+        }
+    }
+    
+    let newArr = newArr1 + newArr2
+    
+    
+    return newArr
 }
 
 //Write a function that accepts two strings, and returns true if one string is rotation of the other, taking letter case into account.
@@ -42,6 +73,22 @@ func problemTwo(arr: [Int], x: Int) -> [Int] {
 //Sample output 3: false
 
 func problemThree(strOne: String, strTwo: String) -> Bool {
+    
+    
+    
+    for x in 0..<strTwo.characters.count {
+        
+        let newString1 = strTwo.replacingCharacters(in: strTwo.startIndex..<strTwo.index(strTwo.startIndex, offsetBy: x), with: "")
+        let newString2 = strTwo.replacingCharacters(in: strTwo.index(strTwo.startIndex, offsetBy: x)..<strTwo.endIndex, with: "")
+        
+        
+        
+        if strOne == newString1 + newString2 {
+            return true
+        }
+    }
+    
+    
     return false
 }
 
@@ -63,9 +110,18 @@ func problemThree(strOne: String, strTwo: String) -> Bool {
 //|(1 + 5 + 9) - (3 + 5 + 11)| = |15 - 19| = |-4| = 4
 
 func problemFour(arr: [[Int]]) -> Int {
-    return 0
+    
+    var sum1 = 0
+    var sum2 = 0
+    
+    for i in 0..<arr.count {
+        let j = arr[i].count - i - 1
+        sum1 += arr[i][i]
+        sum2 += arr[i][j]
+    }
+    
+    return abs(sum1 - sum2)
 }
-
 
 //Problem Five
 //Given a square matrix of size n x n , calculate the absolute value of the difference between the sums of its diagonals.
@@ -84,6 +140,15 @@ func problemFour(arr: [[Int]]) -> Int {
 //|(4 + 1 + 3 + 3) - (5 + 9 + 1 + 9)| = |11 - 24| = |-13| = 13
 
 func problemFive(arr: [[Int]]) -> Int {
-    return 0
+    var sum1 = 0
+    var sum2 = 0
+    
+    for i in 0..<arr.count {
+        let j = arr[i].count - i - 1
+        sum1 += arr[i][i]
+        sum2 += arr[i][j]
+    }
+    
+    return abs(sum1 - sum2)
 }
 
