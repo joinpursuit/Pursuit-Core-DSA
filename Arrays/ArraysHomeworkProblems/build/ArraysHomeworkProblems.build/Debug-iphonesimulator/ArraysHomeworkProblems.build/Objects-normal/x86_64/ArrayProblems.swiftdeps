@@ -9,26 +9,26 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "Bool"
+- !private "Array"
 - "problemTwo"
 - "problemFour"
-- !private "+="
-- !private "-"
-- "Int"
 - !private "BooleanLiteralType"
 - "problemOne"
-- "problemFive"
-- !private "Character"
-- !private "%"
-- !private "IntegerLiteralType"
-- !private "FloatLiteralType"
+- "Int"
 - "String"
-- !private "..<"
 - "problemThree"
-- !private "Array"
 - !private "abs"
-- "AssignmentPrecedence"
+- !private "..<"
 - !private "=="
+- !private "%"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "FloatLiteralType"
+- "problemFive"
+- !private "IntegerLiteralType"
+- !private "+="
+- !private "Character"
+- !private "-"
 depends-member:
 - !private ["Ps9AnyObject", "characters"]
 - !private ["Sa", "Index"]

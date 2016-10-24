@@ -58,8 +58,7 @@ func problemThree(strOne: String, strTwo: String) -> Bool {
     let strOneArr = Array(strOne.characters)
     let strTwoArr = Array(strTwo.characters)
     var isShifted = Bool()
-    
-    
+     
     func problemTwo(arr: [Character], x: Int) -> [Character] {
         var sortedArr = [Character]()
         for i in x..<arr.count {
