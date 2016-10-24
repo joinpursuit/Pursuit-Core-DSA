@@ -12,21 +12,81 @@ var str = "Hello, playground"
 
 /*
 1) Write an algorithm with the following runtimes:
+a) O(1) 
+ */
 
-a) O(1)
- 
+ func constantTime(arr: [Int]) -> Int {
+    return arr[0]
+ }
+/*
 b) O(n)
- 
-c) O(nlog(n))
- 
-d) O(n^2)
- 
-e) O(n^3)
- 
-f) O(n^4)
+*/
 
+ func linearTime(arr: [Int]) -> Int {
+    var count = 0
+    for _ in arr {
+        count += 1
+    }
+    return count
+ }
+
+/*
+c) O(nlog(n))
+*/
+
+ func NLogNTime(arr: [Int]) {
+    arr.sorted(by: >)
+ }
+
+/*
+d) O(n^2)
+*/
+
+ func NSqrdTime(arr: [Int]) {
+    var count = 0
+    for _ in arr {
+        for _ in arr {
+            count += 1
+        }
+    }
+ }
+
+/*
+e) O(n^3)
+*/
+
+ func NCubed(arr: [Int]) {
+    for _ in 0...arr.count{
+        NSqrdTime(arr: arr)
+    }
+ }
+
+/*
+f) O(n^4)
+*/
+ 
+ func NQuartic(arr: [Int]) {
+    for _ in 0...arr.count {
+        NCubed(arr: arr)
+    }
+ }
+
+/*
 g) O(n^2 * log(n))
 */
+ 
+ func NSqrdLogN(arr: [[Int]]) -> [[Int]] {
+    var returnArr = [[Int]]()
+    for interiorArr in arr {
+        returnArr.append(interiorArr.sorted())
+    }
+    return returnArr
+ }
+
+
+
+
+
 
 /*
 2) Identify the runtimes of the following algorithms
@@ -39,8 +99,9 @@ func problemA(myString: String) {
         }
     }
 }
- 
-//Runtime: 
+
+
+//Runtime: O(n^2)
 
 func problemB(myArr: [[Int]]) {
     var otherArr = [[Int]]()
@@ -51,7 +112,7 @@ func problemB(myArr: [[Int]]) {
     }
 }
 
-//Runtime:
+//Runtime: O(n^2)
 
 func problemC(myArr: [Int]) -> Bool {
     if myArr.count < 10_000 {
@@ -61,19 +122,19 @@ func problemC(myArr: [Int]) -> Bool {
     }
 }
 
-//Runtime:
+//Runtime: O(1)
 
 func problemD(myArr: [Bool]) -> [Bool] {
     return myArr.map{!$0}
 }
 
-//Runtime:
+//Runtime: O(n)
 
 func problemE(myArr: [Int]) -> [Int] {
     return myArr.filter{$0 > 5}.map{$0 * 3}.sorted(by: <)
 }
 
-//Runtime:
+//Runtime: O(n * log(n))
 
 func problemF(myArr: Int) {
     for i in 0..<myArr {
@@ -81,13 +142,13 @@ func problemF(myArr: Int) {
     }
 }
 
-//Runtime:
+//Runtime: O(n)
 
 func problemG(myArr: [[[[[[String]]]]]]) {
     print(myArr[0][0][0][0][0].contains("hi!"))
 }
 
-//Runtime:
+//Runtime: O(n)
 
 func problemH(arrOne: [Int], arrTwo: [Int]) {
     var counter = 0
@@ -100,7 +161,7 @@ func problemH(arrOne: [Int], arrTwo: [Int]) {
     }
 }
 
-//Runtime:
+//Runtime: O(n^3)
 
 func problemI(isEnabled: Bool) {
     for _ in 0..<(isEnabled ? 10 : 1_000_000) {
@@ -108,17 +169,21 @@ func problemI(isEnabled: Bool) {
     }
 }
 
-//Runtime:
+//Runtime: O(1)
+
+
+
+
 
 //Arrays - the data structure
 //1) You have an array of 100 Strings (24 bytes each) at memory address 0ff3c0000.
 
-//a)What is the memory address of the 1st element?
-//b)What is the memory address of the 2nd element?
-//c)What is the memory address of the 4th element?
-//d)What is the memory address of the 14th element?
-//e)What is the memory address of the 52nd element?
-//f)What is the memory address of the 58th element?
+//a)What is the memory address of the 1st element? 0ff3c0000
+//b)What is the memory address of the 2nd element? 0ff3c0018
+//c)What is the memory address of the 4th element? 0ff3c0048
+//d)What is the memory address of the 14th element? 0ff3c0138
+//e)What is the memory address of the 52nd element? 4c8
+//f)What is the memory address of the 58th element? 558
 
 
 
@@ -126,38 +191,41 @@ func problemI(isEnabled: Bool) {
 
 var myArr = [13,41,3,13,13,12,12,1,9]
 
-//a)
+//a) O(1)
 myArr.popLast()
 
-//b)
+//b) O(n)
 myArr.contains(1)
 
-//c
+//c O(n)
 myArr.index(of: 9)
 
-//d
+//d O(1)
 myArr.count
 
-//e
+//e O(n)
 myArr.insert(8, at: 0)
 
-//f
+//f O(n)
 myArr.remove(at: 4)
 
-//g
+//g O(n)
 myArr.reverse()
 
-//h
+//h O(nlog(n))
 let h = myArr.sorted(by: >)
 
-//i
+//i O(n)
 let i = myArr.map{$0 * 2}
 
-//j
+//j O(n)
 let j = myArr.filter{$0>0}
 
-//k
+//k O(n)
 let k = myArr.reduce(0, +)
+
+
+
 
 
 //3) Given the array below write code that does the following:
