@@ -117,6 +117,7 @@ func problemFour(arr: [[Int]]) -> Int {
 //|(4 + 1 + 3 + 3) - (5 + 9 + 1 + 9)| = |11 - 24| = |-13| = 13
 
 func problemFive(arr: [[Int]]) -> Int {
+	
 	var firstDiagonal = 0
 	var secondDiagonal = 0
 	
