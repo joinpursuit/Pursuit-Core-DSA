@@ -1,0 +1,68 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Node"
+- "LinkedList"
+provides-nominal:
+- "C19LinkedListsHomework4Node"
+- "C19LinkedListsHomework10LinkedList"
+provides-member:
+- ["C19LinkedListsHomework4Node", ""]
+- ["C19LinkedListsHomework10LinkedList", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Bool"
+- !private "BooleanLiteralType"
+- "Int"
+- "LinkedList"
+- "Node"
+- !private "IntegerLiteralType"
+- "Equatable"
+- !private "FloatLiteralType"
+depends-member:
+- ["Ps9AnyObject", "Node"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", ""]
+- ["Sb", "deinit"]
+- ["SQ", "deinit"]
+- ["Si", "deinit"]
+- ["C19LinkedListsHomework10LinkedList", "Bool"]
+- ["C19LinkedListsHomework10LinkedList", "Int"]
+- ["C19LinkedListsHomework10LinkedList", "Node"]
+- ["C19LinkedListsHomework10LinkedList", "T"]
+- ["C19LinkedListsHomework10LinkedList", "append"]
+- ["C19LinkedListsHomework10LinkedList", "contains"]
+- ["C19LinkedListsHomework10LinkedList", "count"]
+- ["C19LinkedListsHomework10LinkedList", "deinit"]
+- ["C19LinkedListsHomework10LinkedList", "getElement"]
+- ["C19LinkedListsHomework10LinkedList", "head"]
+- ["C19LinkedListsHomework10LinkedList", "init"]
+- ["C19LinkedListsHomework10LinkedList", "insert"]
+- ["C19LinkedListsHomework10LinkedList", "printAllKeys"]
+- ["C19LinkedListsHomework10LinkedList", "remove"]
+- ["C19LinkedListsHomework4Node", "Node"]
+- ["C19LinkedListsHomework4Node", "T"]
+- ["C19LinkedListsHomework4Node", "deinit"]
+- ["C19LinkedListsHomework4Node", "init"]
+- ["C19LinkedListsHomework4Node", "key"]
+- ["C19LinkedListsHomework4Node", "next"]
+- ["Sq", "deinit"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- "SQ"
+- "Si"
+- "C19LinkedListsHomework10LinkedList"
+- "C19LinkedListsHomework4Node"
+- "Sq"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "24f308b2d193e992334bc0ebf77b9bf2"

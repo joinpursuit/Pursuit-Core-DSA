@@ -1,0 +1,7 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "c92a4d29d06b0a5e0a21b1607aabe4bf"
+build_time: [530653839, 823195000]
+inputs:
+  "/Users/Shashi/Projects/AC-DSA/Linked Lists/LinkedListsHomework/LinkedList.swift": [530647931, 0]
+  "/Users/Shashi/Projects/AC-DSA/Linked Lists/LinkedListsHomework/LinkedListsHomework/ViewController.swift": [530647931, 0]
+  "/Users/Shashi/Projects/AC-DSA/Linked Lists/LinkedListsHomework/LinkedListsHomework/AppDelegate.swift": [530647931, 0]
