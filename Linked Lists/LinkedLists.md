@@ -16,7 +16,7 @@ Last week, we reviewed how [arrays](/link) are stored organized and stored in me
 
 <details>
 	<summary>Append an element to an array</summary>
-	O(n)
+	O(1)
 </details>
 
 <details>
