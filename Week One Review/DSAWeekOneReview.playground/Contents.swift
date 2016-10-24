@@ -333,11 +333,16 @@ func a(inputArr: [[Int]]) {
  
  Input: 2D Array of Ints ranging from 1-9
  Output: True or false
- func checkSudokuBoard(sudokuBoard:[[Int]]) -> Bool {
- return true
- }
- 
  */
+
+func checkSudokuBoard(sudokuBoard:[[Int]]) -> Bool {
+    for i in 0..<sudokuBoard.count {
+        for j in 0..<sudokuBoard[i].count {
+            
+        }
+    }
+    return true
+}
 
 
 
