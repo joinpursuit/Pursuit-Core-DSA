@@ -13,8 +13,6 @@ class Node<T> {
     var next: Node?
 }
 
-
-
 class LinkedList<T: Equatable> {
     var head  = Node<T>()
     func printAllKeys() {
