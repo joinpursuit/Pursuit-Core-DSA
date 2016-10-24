@@ -30,7 +30,11 @@ class ArraysHomeworkProblemsTests: XCTestCase {
     
     func testproblemTwo() {
         XCTAssert(problemTwo(arr: [0,1,2,3,4,5], x: 3) == [3, 4, 5, 0, 1, 2])
+<<<<<<< HEAD
         XCTAssert(problemTwo(arr: [42,1,-42,1,3,6,1], x: 4) == [3, 6, 1, 42, 1, -42, 1])
+=======
+        XCTAssert(problemTwo(arr: [42,1,-42,1,3,6,1], x: 4) == [3, 6, 1, 42, 1, -41, -1])
+>>>>>>> 3b51f6daa17e2ede5790a9732121660c910a751f
         XCTAssert(problemTwo(arr: [4,2,0,14,1,-92,100_000_000], x: 40) == [-92, 100000000, 4, 2, 0, 14, 1])
     }
     

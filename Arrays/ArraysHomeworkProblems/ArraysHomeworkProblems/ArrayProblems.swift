@@ -54,6 +54,8 @@ func problemTwo(arr: [Int], x: Int) -> [Int] {
 //Sample output 3: false
 
 func problemThree(strOne: String, strTwo: String) -> Bool {
+    
+    
     return false
 }
 
@@ -78,17 +80,23 @@ func problemFour(arr: [[Int]]) -> Int {
     var diagOneSum = 0
     var diagTwoSum = 0
     
+//    for i in 0..<arr.count {
+//        for j in 0..<arr.count {
+//            if i == j {
+//                diagOneSum += arr[i][j]
+//                print("A \(arr[i][j])")
+//            }
+//            if i + j == arr.count - 1 {
+//                diagTwoSum += arr[i][j]
+//                print(arr[i][j])
+//            }
+//        }
+//    }
     for i in 0..<arr.count {
-        for j in 0..<arr.count {
-            if i == j {
-                diagOneSum += arr[i][j]
-                print("A \(arr[i][j])")
-            }
-            if i + j == arr.count - 1 {
-                diagTwoSum += arr[i][j]
-                print(arr[i][j])
-            }
-        }
+        diagOneSum += arr[i][i]
+        diagTwoSum += arr[i][arr.count - 1 - i]
+        print(arr[i][i])
+        print(arr[i][arr.count - 1 - i])
     }
     
     let diff = diagOneSum - diagTwoSum
@@ -132,11 +140,15 @@ func problemFive(arr: [[Int]]) -> Int {
         }
     }
     
-    let diff = diagOneSum - diagTwoSum
-    if diff < 0 {
-        return diff * -1
-    } else {
-        return diff
+    for i in 0..<arr.count {
+        diagOneSum += arr[i][i]
+        diagTwoSum += arr[i][arr.count - 1 - i]
+        print(arr[i][i])
+        print(arr[i][arr.count - 1 - i])
     }
+
+    
+    
+    return abs(diagOneSum - diagTwoSum)
 }
 
