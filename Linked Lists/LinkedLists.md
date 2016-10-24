@@ -48,7 +48,7 @@ A linked list is a way of storing information.  A linked list consists of a seri
 
 ###Access an element
 
-![Linked List Access](http://interactivepython.org/runestone/static/pythonds/_images/linkedlist.png)
+![Linked List Access](https://upload.wikimedia.org/wikipedia/commons/6/6d/Singly-linked-list.svg)
 
 <details>
 	<summary>Runtime</summary>
@@ -79,7 +79,7 @@ A linked list is a way of storing information.  A linked list consists of a seri
 
 ###Find an element
 
-![Linked List Find](http://interactivepython.org/runestone/static/pythonds/_images/linkedlist.png)
+![Linked List Find](https://upload.wikimedia.org/wikipedia/commons/6/6d/Singly-linked-list.svg)
 
 <details>
 	<summary>Runtime</summary>
