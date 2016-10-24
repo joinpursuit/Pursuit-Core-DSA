@@ -23,7 +23,7 @@ func problemTwo(arr: [Int]) {
         }
     }
 }
-```swift
+```
 
 problemTwo(arr:) runtime: 
 
