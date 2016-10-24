@@ -15,7 +15,12 @@ import Foundation
 //Sample output: [1,2,3,4,5,0]
 
 func problemOne(arr: [Int]) -> [Int] {
-    return []
+    var newArr = [Int]()
+    for i in 1...arr.count {
+      newArr.append(arr[i % arr.count])
+    }
+    return newArr
+  
 }
 
 
@@ -25,8 +30,13 @@ func problemOne(arr: [Int]) -> [Int] {
 //Sample input: [0,1,2,3,4,5], 3
 //Sample output: [3,4,5,0,1,2]
 
-func problemTwo(arr: [Int], x: Int) -> [Int] {
-    return []
+func problem(arr: [Int], x: Int) -> [Int] {
+  let startingIndex = x
+  var newArr = [Int]()
+  for i in startingIndex..<startingIndex + arr.count {
+    newArr.append(arr[i % arr.count])
+  }
+  return newArr
 }
 
 //Write a function that accepts two strings, and returns true if one string is rotation of the other, taking letter case into account.
@@ -42,7 +52,16 @@ func problemTwo(arr: [Int], x: Int) -> [Int] {
 //Sample output 3: false
 
 func problemThree(strOne: String, strTwo: String) -> Bool {
-    return false
+  let rotate = { (a: String) -> String in
+    return a.substring(from: a.index(a.startIndex, offsetBy: 1)) + a.substring(to: a.index(a.startIndex, offsetBy: 1))
+  }
+  let rotateStringOne: String = rotate(strOne)
+  while rotateStringOne != strOne {
+    if rotateStringOne == strTwo {
+      return true
+    }
+  }
+  return false
 }
 
 
@@ -84,6 +103,12 @@ func problemFour(arr: [[Int]]) -> Int {
 //|(4 + 1 + 3 + 3) - (5 + 9 + 1 + 9)| = |11 - 24| = |-13| = 13
 
 func problemFive(arr: [[Int]]) -> Int {
-    return 0
+  var rightDiag = 0
+  var leftDiag = 0
+  for i in 0..<arr.count {
+    rightDiag += arr[i][i]
+    leftDiag += arr[arr.count - 1 - i][i]
+  }
+  return abs(leftDiag - rightDiag)
 }
 
