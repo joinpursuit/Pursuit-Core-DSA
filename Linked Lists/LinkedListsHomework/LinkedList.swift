@@ -13,16 +13,42 @@ class Node<T> {
     var next: Node?
 }
 
-
-
 class LinkedList<T: Equatable> {
-    var head  = Node<T>()
+    let head  = Node<T>()
     func printAllKeys() {
-        
+        var currentNode = head
+        while currentNode.next != nil {
+            print(currentNode.key)
+            currentNode = currentNode.next!
+        }
     }
-    var count: Int {return 0}
+    var count: Int {
+        if head.key == nil {
+            return 0
+        }
+        var counter = 1
+        var currentNode = head
+        while currentNode.next != nil {
+            counter += 1
+            currentNode = currentNode.next!
+        }
+        return counter
+    }
     
-    func append(element newKey: T) {}
+    func append(element: T) {
+        if head.key == nil {
+            head.key = element
+        } else {
+            var currentNode = head
+            while currentNode.next != nil {
+                currentNode = currentNode.next!
+            }
+            let newNode = Node<T>()
+            newNode.key = element
+            currentNode.next = newNode
+        }
+    
+    }
     
     func getElement(at Index: Int) -> Node<T>? {return nil}
     
@@ -32,5 +58,4 @@ class LinkedList<T: Equatable> {
     
     func remove(at index: Int) {}
 }
-
 
