@@ -13,6 +13,7 @@ import Foundation
 
 //Sample input: [0,1,2,3,4,5]
 //Sample output: [1,2,3,4,5,0]
+<<<<<<< HEAD
 var arr = [0,1,2,3,4,5]
 
 func problemOne(arr: [Int]) -> [Int] {
@@ -21,13 +22,27 @@ func problemOne(arr: [Int]) -> [Int] {
     return array
 }
 
+=======
+
+func problemOne(arr: [Int]) -> [Int] {
+    return []
+}
+
+
+>>>>>>> 651ce02de621c4b491cde842010e72b74d53d33e
 //Problem Two
 //Write an algorithm that moves every element in an array of Ints (x) spaces to the left
 
 //Sample input: [0,1,2,3,4,5], 3
 //Sample output: [3,4,5,0,1,2]
 
+<<<<<<< HEAD
 
+=======
+func problemTwo(arr: [Int], x: Int) -> [Int] {
+    return []
+}
+>>>>>>> 651ce02de621c4b491cde842010e72b74d53d33e
 
 //Write a function that accepts two strings, and returns true if one string is rotation of the other, taking letter case into account.
 // A string rotation is when you take a string, remove some letters from its end, then append them to the front. For example, “swift” rotated by two characters would be “ftswi”.
