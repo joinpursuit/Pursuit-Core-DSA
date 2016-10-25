@@ -11,12 +11,54 @@ import XCTest
 
 class LinkedListTesting: XCTestCase {
     
-    var myList = LinkedList<Int>()
-    var myCopy = LinkedList<Int>()
+    var myList = LinkedList<T>()
+    var myCopy = LinkedList<T>()
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        class Node<T> {
+            var key: T!
+            var next: Node?
+        }
+        
+        class List<T: Equatable> {
+            let head = Node<T>()
+            
+           
+            func append(_ element: T) {
+                if head.key == nil {
+                    head.key = element
+                } else {
+                    var currentNode = head
+                    while currentNode.next != nil {
+                        currentNode = currentNode.next!
+                    }
+                    let newNode = Node<T>()
+                    newNode.key = element
+                    currentNode.next = newNode
+                }
+            }
+            var count: Int {
+                if head.key == nil {
+                    return 0
+                }
+                var counter = 1
+                var currentNode = head
+                while currentNode.next != nil {
+                    counter += 1
+                    currentNode = currentNode.next!
+                }
+                return counter
+            }
+        }
+        
+
+        
+        
+        
+        
         myList.head.key = 5
         myList.head.next = Node()
         myList.head.next?.key = 14
@@ -31,6 +73,8 @@ class LinkedListTesting: XCTestCase {
         myCopy.head.next?.next?.key = 30
 
     }
+    
+    
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
