@@ -48,7 +48,7 @@ class LinkedListTesting: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         myCopy.head.next?.next?.next = Node()
         myCopy.head.next?.next?.next?.key = 6
-        myList.append(element: 6)
+        myList.append(6)
         XCTAssert(myList.head.next?.next?.next?.key == myCopy.head.next?.next?.next?.key)
     }
     func testInsert() {
