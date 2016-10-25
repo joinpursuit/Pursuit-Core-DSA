@@ -19,10 +19,10 @@ class LinkedList<T: Equatable> {
     var head  = Node<T>()
     
     func printAllKeys() {
-        var currentNode = head
-        while currentNode.next != nil {
-            print(currentNode.key)
-            currentNode = currentNode.next!
+        var currentNode: Node? = head
+        while currentNode != nil {
+            print(currentNode?.key)
+            currentNode = currentNode?.next!
         }
     }
     
