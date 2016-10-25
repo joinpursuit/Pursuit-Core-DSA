@@ -19,11 +19,15 @@ class LinkedList<T: Equatable> {
     var head  = Node<T>()
     
     func printAllKeys() {
+        //if you make current node an optional, you can just check that condition
+        // currentNode: Node? = head
+        // while currentNode != nil
         var currentNode = head
         while currentNode.next != nil {
             print(currentNode.key)
             currentNode = currentNode.next!
         }
+        //then you don't need this line, I can use that principle for all of the functions
         print(currentNode.key)
         
     }
