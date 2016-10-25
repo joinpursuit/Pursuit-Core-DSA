@@ -21,6 +21,7 @@ class LinkedList<T: Equatable> {
             print(currentNode.key)
             currentNode = currentNode.next!
         }
+        print(currentNode.key)
     }
     var count: Int {
         if head.key == nil {
@@ -47,12 +48,29 @@ class LinkedList<T: Equatable> {
             newNode.key = element
             currentNode.next = newNode
         }
-    
     }
     
-    func getElement(at Index: Int) -> Node<T>? {return nil}
+    func getElement(at Index: Int) -> Node<T>? {
+        var currentNode = head
+        var currentIndex = 0
+        
+        while currentIndex < Index {
+            if currentNode.next == nil {
+                return nil
+            }
+            currentIndex += 1
+            currentNode = currentNode.next!
+        }
+        
+        return currentNode
+    }
     
-    func insert(_ key: T, at index: Int) {}
+    func insert(_ key: T, at index: Int) {
+        
+        
+        
+        
+    }
     
     func contains(element targetKey: T) -> Bool {return false}
     
