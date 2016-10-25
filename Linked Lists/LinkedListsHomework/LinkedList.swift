@@ -17,20 +17,105 @@ class Node<T> {
 
 class LinkedList<T: Equatable> {
     var head  = Node<T>()
+    
+    
     func printAllKeys() {
-        
+        var currentNode = head
+        while currentNode.next != nil {
+            print(currentNode.key)
+            currentNode = currentNode.next!
+        }
+        print(currentNode.key)
     }
-    var count: Int {return 0}
     
-    func append(element newKey: T) {}
+    var count: Int {
+        if head.key == nil {
+            return 0
+        }
+        
+        var counter = 1
+        var currentNode = head
+        while currentNode.next != nil {
+            counter += 1
+        currentNode = currentNode.next!
+        }
+        
+        return counter
+    }
     
-    func getElement(at Index: Int) -> Node<T>? {return nil}
+    func append(element newKey: T) {
+        if head.key == nil {
+            head.key = newKey
+        } else {
+            var currentNode = head
+            while currentNode.next != nil {
+                currentNode = currentNode.next!
+            }
+            let newNode = Node<T>()
+            newNode.key = newKey
+            currentNode = currentNode.next!
+        }
     
-    func insert(_ key: T, at index: Int) {}
+    }
     
-    func contains(element targetKey: T) -> Bool {return false}
+    func getElement(at Index: Int) -> Node<T>? {
+        var counter = 0
+        var currentNode = head
+        while currentNode.next != nil {
+            if counter == Index {
+                return currentNode
+            }
+            currentNode = currentNode.next!
+            counter += 1
+        }
+        return nil}
     
-    func remove(at index: Int) {}
+    func insert(_ key: T, at index: Int) {
+        var counter = 1
+        var currentNode = head
+        while currentNode.next != nil {
+                if counter == index {
+                let newNode = Node<T>()
+               newNode.key = key
+                newNode.next = currentNode.next
+                currentNode.next = newNode
+                break
+            }
+            currentNode = currentNode.next!
+            counter += 1
+            
+            
+        }
+    }
+    
+    func contains(element targetKey: T) -> Bool {
+        if head.key == targetKey {
+            return true
+        }
+        var currentNode = head
+        while currentNode.next != nil {
+            currentNode = currentNode.next!
+            if currentNode.key == targetKey {
+                return true
+            }
+        }
+        return false
+    }
+    
+    func remove(at index: Int) {
+        var counter = 0
+        var currentNode = head
+        
+        while currentNode.next != nil {
+            if counter == index {
+                currentNode.next = currentNode.next?.next
+                break
+            }
+        
+            //currentNode = currentNode.next!
+            counter += 1
+        }
+    }
 }
 
 
