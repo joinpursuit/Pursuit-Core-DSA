@@ -54,8 +54,8 @@ class LinkedList<T: Equatable> {
 	
 	func getElement(at Index: Int) -> Node<T>? {
 		var currentNode = head
-		var counter = 1
-		while counter <= Index {
+		var counter = 0
+		while counter < Index {
 			if currentNode.next != nil {
 				currentNode = currentNode.next!
 				counter += 1
@@ -108,6 +108,19 @@ class LinkedList<T: Equatable> {
 		} else {
 			currentNode.key = nil
 		}
+	}
+	
+	func reverse() {
+		var previousNode: Node<T>? = nil
+		var currentNode: Node<T>? = head
+		while currentNode != nil {
+			let temp = currentNode!.next
+			
+			currentNode!.next = previousNode
+			previousNode = currentNode
+			currentNode = temp
+		}
+		self.head = previousNode!
 	}
 }
 
