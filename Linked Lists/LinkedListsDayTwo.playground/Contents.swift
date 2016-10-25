@@ -48,13 +48,5 @@ class LinkedList<T: Equatable> {
     }
 }
 
-let myList = LinkedList<Int>()
-
-myList.append(2)
-myList.append(10)
-myList.append(19)
-
-myList.printAllKeys()
-print(myList.count)
 
 
