@@ -1,6 +1,6 @@
 //
-//  LinkedList.swift
-//  LinkedListsHomework
+//  DoublyLinkedList.swift
+//  LinkedListsHomeworkTwo
 //
 //  Created by C4Q  on 10/24/16.
 //  Copyright © 2016 C4Q . All rights reserved.
@@ -14,8 +14,10 @@ class Node<T> {
     var previous: Node?
 }
 
+
 class LinkedList<T: Equatable> {
     var head  = Node<T>()
+    
     
     func printAllKeys() {
         
@@ -31,6 +33,6 @@ class LinkedList<T: Equatable> {
     func contains(element targetKey: T) -> Bool {return false}
     
     func remove(at index: Int) {}
+    
+    func reverse() {}
 }
-
-
