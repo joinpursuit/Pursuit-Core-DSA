@@ -57,17 +57,21 @@ class LinkedList<T: Equatable> {
         }
     }
 
-    func getElement(at Index: Int) -> Node<T>? {
-        var count = 0
-        var currentNode = head
-        while currentNode.next != nil {
-            if count == Index {
-            return currentNode
+    func getElement(at index: Int) -> Node<T>? {
+        if (index > self.count - 1 || index < 0 || head.key == nil) {
+            return nil
+        } else {
+            var count = 0
+            var currentNode = head
+            while currentNode.next != nil {
+                if count == index {
+                    return currentNode
+                }
+                currentNode = currentNode.next!
+                count += 1
             }
-            currentNode = currentNode.next!
-            count += 1
+            return nil
         }
-        return nil
     }
     
     subscript(i: Int) -> Node<T>? {
@@ -98,32 +102,52 @@ class LinkedList<T: Equatable> {
     }
     
     func insert(_ key: T, at index: Int) {
-        var count = 1
-        var currentNode = head
-        while currentNode.next != nil {
-            if count == index {
-                let newNode = Node<T>()
-                newNode.key = key
-                newNode.next = currentNode.next
-                currentNode.next = newNode
-                break
+        if (index > self.count - 1 || index < 0 || head.key == nil) {
+            return
+        } else {
+            var count = 1
+            var currentNode = head
+            while currentNode.next != nil {
+                if count == index {
+                    let newNode = Node<T>()
+                    newNode.key = key
+                    newNode.next = currentNode.next
+                    currentNode.next = newNode
+                    break
+                }
+                currentNode = currentNode.next!
+                count += 1
             }
-            currentNode = currentNode.next!
-            count += 1
         }
     }
 
     func remove(at index: Int) {
-        var count = 0
-        var currentNode = head
-        while currentNode.next != nil {
-            if count == index - 1 {
-                currentNode.next = currentNode.next?.next
-                break
+        if (index > self.count - 1 || index < 0 || head.key == nil) {
+            return
+        } else {
+            var count = 0
+            var currentNode = head
+            while currentNode.next != nil {
+                if count == index - 1 {
+                    currentNode.next = currentNode.next?.next
+                    break
+                }
+                currentNode = currentNode.next!
+                count += 1
             }
-            currentNode = currentNode.next!
-            count += 1
         }
+    }
+    
+    func reverse() {
+        var previousNode: Node<T>? = nil
+        var currentNode: Node<T>? = head
+        while currentNode != nil {
+            let temp = currentNode!.next
+            currentNode!.next = previousNode
+            previousNode = currentNode
+            currentNode = temp
+        }
+        head = previousNode!
     }
     
 }
