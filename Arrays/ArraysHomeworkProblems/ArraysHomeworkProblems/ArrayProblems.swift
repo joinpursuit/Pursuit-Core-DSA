@@ -34,13 +34,17 @@ func problemOne(arr: [Int]) -> [Int] {
 //Sample output: [3,4,5,0,1,2]
 
 func problemTwo(arr: [Int], x: Int) -> [Int] {
-    var outputArray = Array(repeating: 0, count: arr.count)
-    
-    for (i, value) in arr.enumerated() {
-        
+    let y = x % arr.count
+    var outputArray: [Int] = []
+    for i in y..<arr.count {
+        outputArray.append(arr[i])
+    }
+    for i in 0..<y {
+        outputArray.append(arr[i])
     }
     return outputArray
 }
+
 
 //Write a function that accepts two strings, and returns true if one string is rotation of the other, taking letter case into account.
 // A string rotation is when you take a string, remove some letters from its end, then append them to the front. For example, “swift” rotated by two characters would be “ftswi”.
