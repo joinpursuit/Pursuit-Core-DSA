@@ -11,14 +11,16 @@ import Foundation
 class Node<T> {
     var key: T!
     var next: Node?
+    var previous: Node?
 }
-
-
 
 class LinkedList<T: Equatable> {
     var head  = Node<T>()
     
+<<<<<<< HEAD
     
+=======
+>>>>>>> 74b60d88e1113a7ee0062358f2eeaf7f3248cd43
     func printAllKeys() {
         var currentNode = head
         while currentNode.next != nil {
