@@ -78,6 +78,7 @@ func problemThree(strOne: String, strTwo: String) -> Bool {
     
     for x in 0..<strTwo.characters.count {
         
+        
         let newString1 = strTwo.replacingCharacters(in: strTwo.startIndex..<strTwo.index(strTwo.startIndex, offsetBy: x), with: "")
         let newString2 = strTwo.replacingCharacters(in: strTwo.index(strTwo.startIndex, offsetBy: x)..<strTwo.endIndex, with: "")
         
