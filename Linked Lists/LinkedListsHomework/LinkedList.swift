@@ -9,13 +9,18 @@
 import Foundation
 
 class Node<T> {
+<<<<<<< HEAD
   var key: T!
   var next: Node?
+=======
+    var key: T!
+    var next: Node?
+    var previous: Node?
+>>>>>>> 74b60d88e1113a7ee0062358f2eeaf7f3248cd43
 }
 
-
-
 class LinkedList<T: Equatable> {
+<<<<<<< HEAD
   var head  = Node<T>()
   
   func printAllKeys() {
@@ -23,6 +28,12 @@ class LinkedList<T: Equatable> {
     while currentNode.next != nil {
       print(currentNode.key)
       currentNode = currentNode.next!
+=======
+    var head  = Node<T>()
+    
+    func printAllKeys() {
+        
+>>>>>>> 74b60d88e1113a7ee0062358f2eeaf7f3248cd43
     }
     print(currentNode.next!)
   }
