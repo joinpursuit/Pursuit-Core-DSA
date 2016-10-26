@@ -24,9 +24,27 @@ class LinkedListsHomeworkTwoTests: XCTestCase {
     myList.append(element: 10)
     
     
-    myCopy.append(element: 3)
-    myCopy.append(element: 5)
-    myCopy.append(element: 10)
+        myCopy.append(element: 3)
+        myCopy.append(element: 5)
+        myCopy.append(element: 10)
+        
+        
+        mySecondList.append(element: 2)
+        mySecondList.append(element: 9)
+        mySecondList.append(element: 14)
+        
+        mySecondCopy.append(element: 2)
+        mySecondCopy.append(element: 9)
+        mySecondCopy.append(element: 14)
+
+        myMergedList.append(element: 2)
+        myMergedList.append(element: 3)
+        myMergedList.append(element: 5)
+        myMergedList.append(element: 9)
+        myMergedList.append(element: 10)
+        myMergedList.append(element: 14)
+        
+    }
     
     
     mySecondList.append(element: 2)

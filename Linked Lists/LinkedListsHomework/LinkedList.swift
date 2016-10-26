@@ -15,8 +15,11 @@ class Node<T> {
 =======
     var key: T!
     var next: Node?
+<<<<<<< HEAD
     var previous: Node?
 >>>>>>> 74b60d88e1113a7ee0062358f2eeaf7f3248cd43
+=======
+>>>>>>> 508aea3b9a0434e2bbb7125488be8a91c82c7e87
 }
 
 class LinkedList<T: Equatable> {
@@ -32,8 +35,17 @@ class LinkedList<T: Equatable> {
     var head  = Node<T>()
     
     func printAllKeys() {
+<<<<<<< HEAD
         
 >>>>>>> 74b60d88e1113a7ee0062358f2eeaf7f3248cd43
+=======
+        var currentNode: Node? = head
+        while currentNode != nil {
+            print(currentNode?.key)
+            currentNode = currentNode?.next
+        }
+
+>>>>>>> 508aea3b9a0434e2bbb7125488be8a91c82c7e87
     }
     print(currentNode.next!)
   }
