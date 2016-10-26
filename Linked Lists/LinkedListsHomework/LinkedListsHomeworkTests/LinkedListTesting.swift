@@ -65,7 +65,6 @@ class LinkedListTesting: XCTestCase {
         XCTAssert(myList.head.next?.key == myCopy.head.next?.key)
         XCTAssert(myList.head.next?.next?.key == myCopy.head.next?.next?.key)
         XCTAssert(myList.head.next?.next?.next?.key == myCopy.head.next?.next?.next?.key)
-        
     }
     func testContains() {
         // This is an example of a functional test case.
