@@ -11,8 +11,8 @@ import XCTest
 
 class LinkedListTesting: XCTestCase {
     
-    var myList = LinkedList<T>()
-    var myCopy = LinkedList<T>()
+    var myList = LinkedList<Int>()
+    var myCopy = LinkedList<Int>()
     
     override func setUp() {
         super.setUp()
@@ -21,45 +21,25 @@ class LinkedListTesting: XCTestCase {
         class Node<T> {
             var key: T!
             var next: Node?
-        }
-        
-        class List<T: Equatable> {
-            let head = Node<T>()
-            
+            class LinkedList<T:Equatable> {
+                var head = Node<T>()
+                 func printAllKeys() {
+                var temp = Node<T>()
+                while temp.key != nil && temp.next != nil {
+                    print (temp.key)
+                    temp = temp.next!
+            }
            
-            func append(_ element: T) {
-                if head.key == nil {
-                    head.key = element
-                } else {
-                    var currentNode = head
-                    while currentNode.next != nil {
-                        currentNode = currentNode.next!
-                    }
-                    let newNode = Node<T>()
-                    newNode.key = element
-                    currentNode.next = newNode
                 }
-            }
-            var count: Int {
-                if head.key == nil {
-                    return 0
-                }
-                var counter = 1
-                var currentNode = head
-                while currentNode.next != nil {
-                    counter += 1
-                    currentNode = currentNode.next!
-                }
-                return counter
             }
         }
         
-
         
         
         
         
-        myList.head.key = 5
+        
+      /*  myList.head.key = 5
         myList.head.next = Node()
         myList.head.next?.key = 14
         myList.head.next?.next = Node()
@@ -71,6 +51,7 @@ class LinkedListTesting: XCTestCase {
         myCopy.head.next?.key = 14
         myCopy.head.next?.next = Node()
         myCopy.head.next?.next?.key = 30
+ */
 
     }
     
