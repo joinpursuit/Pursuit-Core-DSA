@@ -13,8 +13,6 @@ class Node<T> {
     var next: Node?
 }
 
-
-
 class LinkedList<T: Equatable> {
     var head  = Node<T>()
     
@@ -24,6 +22,10 @@ class LinkedList<T: Equatable> {
             print(currentNode?.key)
             currentNode = currentNode?.next
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 321c09273869ee2667f77230880a936df0b168f8
     }
     
     var count: Int {
