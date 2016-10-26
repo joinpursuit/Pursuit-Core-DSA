@@ -57,24 +57,50 @@ class LinkedList<T: Comparable> {
 
     //Problem One
     //See Exercise One (https://github.com/C4Q/AC-DSA/blob/master/Linked%20Lists/LinkedListsDayTwo.md)
-    func equals(listOne: LinkedList<T>, listTwo: LinkedList<T>) -> Bool {
-        let currentNodeOne: Node<T>! = head
-        let currentNodeTwo: Node<T>! = listTwo.head
-        while (currentNodeOne != nil && currentNodeTwo != nil) {
-            if currentNodeOne.key != currentNodeTwo.key {
+    func equals(otherList: LinkedList) -> Bool { // this is a method inside a linkedlist class
+        guard self.count == otherList.count else { return false }
+        
+        var selfCurrentNode: Node? = self.head
+        var otherCurrentNode: Node? = otherList.head
+        
+        while selfCurrentNode != nil {
+            if selfCurrentNode?.key! != otherCurrentNode?.key! {
                 return false
             } else {
+                selfCurrentNode = selfCurrentNode?.next
+                otherCurrentNode = otherCurrentNode?.next
+            }
         }
-    }
         return true
 }
 
 //Problem Two
 //See Exercise Three (https://github.com/C4Q/AC-DSA/blob/master/Linked%20Lists/LinkedListsDayTwo.md)
 
-func mergeSortedLists<T: Comparable>(listOne: LinkedList<T>, listTwo: LinkedList<T>) -> LinkedList<T> {
-    let listOneNode: Node<T>! = head
-    let listTwoNode: Node<T>! = head
-    return LinkedList<T>()
+    func mergeSortedLists<T: Comparable>(listOne: LinkedList<T>, listTwo: LinkedList<T>) -> LinkedList<T> {
+        var listOneCurrentNode: Node? = listOne.head
+        var listTwoCurrentNode: Node? = listTwo.head
+        let finalList = LinkedList<T>()
+        
+        while listOneCurrentNode != nil && listTwoCurrentNode != nil {
+            if (listOneCurrentNode?.key)! < (listTwoCurrentNode?.key)! {
+                finalList.append(element: (listOneCurrentNode?.key)!)
+                listOneCurrentNode = listOneCurrentNode?.next
+            } else {
+                finalList.append(element: (listTwoCurrentNode?.key)!)
+                listTwoCurrentNode = listTwoCurrentNode?.next
+            }
+        }
+        // check if the two linkedlists are the same length
+        while listOneCurrentNode != nil {
+            finalList.append(element: (listOneCurrentNode?.key)!)
+            listOneCurrentNode = listOneCurrentNode?.next // will return nil if listOne is shorter
+        }
+        
+        while listTwoCurrentNode != nil {
+            finalList.append(element: (listTwoCurrentNode?.key)!)
+            listTwoCurrentNode = listTwoCurrentNode?.next
+        }
+        return finalList
     }
 }
