@@ -67,8 +67,8 @@ class LinkedListsHomeworkTwoTests: XCTestCase {
         XCTAssert(myCopy.equals(otherList: myList) == false)
     }
     
-    func testMergeSorted() {
-        XCTAssert(mergeSortedLists(listOne: myList, listTwo: mySecondList).equals(otherList: myMergedList))
+    func testMergeSortedLists() {
+        XCTAssert(myMergedList.mergeSortedLists(listOne: myList, listTwo: mySecondList).equals(otherList: myMergedList) == true)
     }
     
     func testPerformanceExample() {

@@ -54,18 +54,53 @@ class LinkedList<T: Comparable> {
         currentNode.next = Node()
         currentNode.next!.key = newKey
     }
-
+    
     //Problem One
     //See Exercise One (https://github.com/C4Q/AC-DSA/blob/master/Linked%20Lists/LinkedListsDayTwo.md)
     func equals(otherList: LinkedList ) -> Bool {
+        guard self.count == otherList.count else { return false }
+        
+        var currentNode: Node? = self.head
+        var otherNode: Node? = otherList.head
+        
+        while currentNode != nil && otherNode != nil {
+            if currentNode?.key! != otherNode?.key! {
+                return false
+            }
+            currentNode = currentNode?.next!
+            otherNode = otherNode?.next!
+        }
         return true
     }
     
-}
-
-//Problem Two
-//See Exercise Three (https://github.com/C4Q/AC-DSA/blob/master/Linked%20Lists/LinkedListsDayTwo.md)
-
-func mergeSortedLists<T: Comparable>(listOne: LinkedList<T>, listTwo: LinkedList<T>) -> LinkedList<T> {
-    return LinkedList<T>()
+    //Problem Two
+    //See Exercise Three (https://github.com/C4Q/AC-DSA/blob/master/Linked%20Lists/LinkedListsDayTwo.md)
+    
+    func mergeSortedLists<T: Comparable>(listOne: LinkedList<T>, listTwo: LinkedList<T>) -> LinkedList<T> {
+        var listOneCurrentNode: Node? = listOne.head
+        var listTwoCurrentNode: Node? = listTwo.head
+        let finalList = LinkedList<T>()
+        
+        while listOneCurrentNode != nil && listTwoCurrentNode != nil {
+            if (listOneCurrentNode?.key)! < (listTwoCurrentNode?.key)! {
+                finalList.append(element: (listOneCurrentNode?.key)!)
+                listOneCurrentNode = listOneCurrentNode?.next
+            } else {
+                finalList.append(element: (listTwoCurrentNode?.key)!)
+                listTwoCurrentNode = listTwoCurrentNode?.next
+            }
+        }
+        
+        while listOneCurrentNode != nil {
+            finalList.append(element: (listOneCurrentNode?.key)!)
+            listOneCurrentNode = listOneCurrentNode?.next
+        }
+        
+        while listTwoCurrentNode != nil {
+            finalList.append(element: (listTwoCurrentNode?.key)!)
+            listTwoCurrentNode = listTwoCurrentNode?.next
+        }
+        return finalList
+    }
+    
 }
