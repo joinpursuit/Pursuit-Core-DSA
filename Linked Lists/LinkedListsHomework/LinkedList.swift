@@ -59,7 +59,6 @@ class LinkedList<T: Equatable> {
             currentNode.next = Node<T>()
             currentNode.next?.key = element
         }
-        
     }
     
     func getElement(at Index: Int) -> Node<T>? {
@@ -76,8 +75,8 @@ class LinkedList<T: Equatable> {
             currentNode = next
             
         }
-        
-        return nil}
+        return nil
+    }
     
     func insert(_ key: T, at index: Int) {
         
@@ -120,7 +119,7 @@ class LinkedList<T: Equatable> {
                 return true
             }
             
-            guard let next = currentNode.next else{ return false}
+            guard let next = currentNode.next else {return false}
             currentNode = next
             
         }
