@@ -9,6 +9,7 @@
 import Foundation
 
 class Node<T> {
+<<<<<<< HEAD
 	var key: T!
 	var next: Node?
 }
@@ -122,6 +123,30 @@ class LinkedList<T: Equatable> {
 		}
 		self.head = previousNode!
 	}
+=======
+    var key: T!
+    var next: Node?
+    var previous: Node?
+}
+
+class LinkedList<T: Equatable> {
+    var head  = Node<T>()
+    
+    func printAllKeys() {
+        
+    }
+    var count: Int {return 0}
+    
+    func append(element newKey: T) {}
+    
+    func getElement(at Index: Int) -> Node<T>? {return nil}
+    
+    func insert(_ key: T, at index: Int) {}
+    
+    func contains(element targetKey: T) -> Bool {return false}
+    
+    func remove(at index: Int) {}
+>>>>>>> 74b60d88e1113a7ee0062358f2eeaf7f3248cd43
 }
 
 
