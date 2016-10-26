@@ -11,7 +11,6 @@ import Foundation
 class Node<T> {
     var key: T!
     var next: Node?
-    var previous: Node?
 }
 
 class LinkedList<T: Equatable> {
@@ -23,7 +22,7 @@ class LinkedList<T: Equatable> {
             print(currentNode.key)
             currentNode = currentNode.next
         }
-        
+
     }
     var count: Int {
         if head.key == nil {
@@ -45,7 +44,6 @@ class LinkedList<T: Equatable> {
         }
         let newNode = Node<T>()
         newNode.key = newKey
-        newNode.previous = currentNode
         currentNode.next = newNode
        
     }
@@ -70,10 +68,7 @@ class LinkedList<T: Equatable> {
         let newNode = Node<T>()
         newNode.key = key
         newNode.next = currentNode.next
-        currentNode.next?.previous = newNode
         currentNode.next = newNode
-        newNode.previous = currentNode
-        
     }
     
     func contains(element targetKey: T) -> Bool {

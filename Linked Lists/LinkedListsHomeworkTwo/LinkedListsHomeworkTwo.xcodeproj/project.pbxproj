@@ -13,7 +13,7 @@
 		5457470D1DBF034E0008D049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5457470C1DBF034E0008D049 /* Assets.xcassets */; };
 		545747101DBF034E0008D049 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5457470E1DBF034E0008D049 /* LaunchScreen.storyboard */; };
 		5457471B1DBF034E0008D049 /* LinkedListsHomeworkTwoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5457471A1DBF034E0008D049 /* LinkedListsHomeworkTwoTests.swift */; };
-		545747271DBF03840008D049 /* DoublyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545747261DBF03840008D049 /* DoublyLinkedList.swift */; };
+		545747271DBF03840008D049 /* DayTwoLinkedListProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545747261DBF03840008D049 /* DayTwoLinkedListProblems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 		545747161DBF034E0008D049 /* LinkedListsHomeworkTwoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedListsHomeworkTwoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5457471A1DBF034E0008D049 /* LinkedListsHomeworkTwoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListsHomeworkTwoTests.swift; sourceTree = "<group>"; };
 		5457471C1DBF034E0008D049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		545747261DBF03840008D049 /* DoublyLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
+		545747261DBF03840008D049 /* DayTwoLinkedListProblems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayTwoLinkedListProblems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 		545747041DBF034E0008D049 /* LinkedListsHomeworkTwo */ = {
 			isa = PBXGroup;
 			children = (
-				545747261DBF03840008D049 /* DoublyLinkedList.swift */,
+				545747261DBF03840008D049 /* DayTwoLinkedListProblems.swift */,
 				545747251DBF035F0008D049 /* iOS Stuff */,
 			);
 			path = LinkedListsHomeworkTwo;
@@ -211,7 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				545747081DBF034E0008D049 /* ViewController.swift in Sources */,
-				545747271DBF03840008D049 /* DoublyLinkedList.swift in Sources */,
+				545747271DBF03840008D049 /* DayTwoLinkedListProblems.swift in Sources */,
 				545747061DBF034E0008D049 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
