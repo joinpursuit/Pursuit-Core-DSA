@@ -76,38 +76,30 @@ class LinkedList<T: Comparable> {
 //See Exercise Three (https://github.com/C4Q/AC-DSA/blob/master/Linked%20Lists/LinkedListsDayTwo.md)
 
 func mergeSortedLists<T: Comparable>(listOne: LinkedList<T>, listTwo: LinkedList<T>) -> LinkedList<T> {
-    let newNode = Node<T>()
-    var currenNode: Node! = listOne.head
-    while currenNode.next != nil {
-        if newNode.key == nil{
-            newNode.key = currenNode.key
-        }else if newNode.next == nil{
-            if currenNode.key >= newNode.key{
-                newNode.key = currenNode.key
-            }else{
-                newNode.next?.key = newNode.key
-                newNode.key = currenNode.key
-            }
-        }else{
-            var tempNode: Node! = newNode
-            if newNode.key >= currenNode.key{
-                let tempNode = Node<T>()
-                tempNode.key = key
-                tempNode.next = currentNode.next
-                currentNode.next = temp
-            }
-            while newNode.next != nil {
-                if currenNode.key >= tempNode.key{
-                    
-                }
-            }
+    var listOneCurrentNode: Node? = listOne.head
+    var listTwoCurrentNode: Node? = listTwo.head
+    let finalList = LinkedList<T>()
+    
+    while listOneCurrentNode != nil && listTwoCurrentNode != nil {
+        if (listOneCurrentNode?.key)! < (listTwoCurrentNode?.key)! {
+            finalList.append(element: (listOneCurrentNode?.key)!)
+            listOneCurrentNode = listOneCurrentNode?.next
+        } else {
+            finalList.append(element: (listTwoCurrentNode?.key)!)
+            listTwoCurrentNode = listTwoCurrentNode?.next
         }
-
-        currenNode = currenNode.next
     }
     
+    while listOneCurrentNode != nil {
+        finalList.append(element: (listOneCurrentNode?.key)!)
+        listOneCurrentNode = listOneCurrentNode?.next
+    }
     
-    return LinkedList<T>()
+    while listTwoCurrentNode != nil {
+        finalList.append(element: (listTwoCurrentNode?.key)!)
+        listTwoCurrentNode = listTwoCurrentNode?.next
+    }
+    return finalList
 }
 
 
