@@ -11,13 +11,13 @@ import Foundation
 class Node<T> {
     var key: T!
     var next: Node?
-    var previous: Node?
 }
 
 class LinkedList<T: Equatable> {
     var head  = Node<T>()
     
     func printAllKeys() {
+<<<<<<< HEAD
         //if you make current node an optional, you can just check that condition
         // currentNode: Node? = head
         // while currentNode != nil
@@ -29,6 +29,14 @@ class LinkedList<T: Equatable> {
         //then you don't need this line, I can use that principle for all of the functions
         print(currentNode.key)
         
+=======
+        var currentNode: Node? = head
+        while currentNode != nil {
+            print(currentNode?.key)
+            currentNode = currentNode?.next
+        }
+
+>>>>>>> 321c09273869ee2667f77230880a936df0b168f8
     }
     
     var count: Int {

@@ -1,14 +1,22 @@
 //: Playground - noun: a place where people can play
 
-import UIKit
-
-var str = "Hello, playground"
+func swapConstant(arr: [Int]) -> [Int] {
+    guard  arr.count > 0  else { return arr }
+    var array = arr
+    let temp = arr[0]
+    array[0] = arr[arr.count - 1]
+    array[arr.count - 1] = temp
+    return arr
+}
+var arr = [1,45,2]
+swapConstant(arr: arr)
 
 class Node<T> {
     var key: T!
     var next: Node?
 }
 
+<<<<<<< HEAD
 class LinkedList<T: Equatable> {
     var head = Node<T>()
     
@@ -43,8 +51,22 @@ class LinkedList<T: Equatable> {
         while currentNode.next != nil {
             counter += 1
             currentNode = currentNode.next!
+=======
+
+class LinkedList<T> {
+    var head = Node<T>()
+    func reverse() {
+        var previousNode: Node<T>? = nil
+        var currentNode: Node<T>? = head
+        while currentNode != nil {
+            
+            let temp = currentNode!.next
+            currentNode!.next = previousNode
+            previousNode = currentNode
+            currentNode = temp
+>>>>>>> 321c09273869ee2667f77230880a936df0b168f8
         }
-        return counter
+        self.head = previousNode!
     }
     
     func reverse() {
