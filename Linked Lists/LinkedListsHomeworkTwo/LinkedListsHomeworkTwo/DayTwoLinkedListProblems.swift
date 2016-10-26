@@ -57,7 +57,17 @@ class LinkedList<T: Comparable> {
 
     //Problem One
     //See Exercise One (https://github.com/C4Q/AC-DSA/blob/master/Linked%20Lists/LinkedListsDayTwo.md)
-    func equals(otherList: LinkedList ) -> Bool {
+    func equals(list: LinkedList, otherList: LinkedList ) -> Bool {
+        var a = list.head
+        var b = otherList.head
+        while (a != nil && b != nil) {
+            if (a.key != b.key) {
+                return false
+            }
+            a = a.next!
+            b = b.next!
+            
+        }
         return true
     }
     
@@ -67,5 +77,19 @@ class LinkedList<T: Comparable> {
 //See Exercise Three (https://github.com/C4Q/AC-DSA/blob/master/Linked%20Lists/LinkedListsDayTwo.md)
 
 func mergeSortedLists<T: Comparable>(listOne: LinkedList<T>, listTwo: LinkedList<T>) -> LinkedList<T> {
+    let mergedList = LinkedList<T>()
+    var a = mergedList.head
+   
+/*
+    while listOne != nil && listTwo != nil {
+        if listOne.head.key < listTwo.head.key {
+            a.next = listOne.head
+            a = listOne.head
+            listOne = listOne.head.next
+        } else {
+            mergedList.head.next = listTwo.head
+         
+
+
     return LinkedList<T>()
 }
