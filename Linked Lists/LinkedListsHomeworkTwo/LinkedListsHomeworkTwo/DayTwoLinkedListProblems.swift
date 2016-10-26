@@ -72,6 +72,25 @@ class LinkedList<T: Comparable> {
         return true
     }
     
+    func equals2(otherList: LinkedList ) -> Bool {
+        guard self.count == otherList.count else {
+            return false
+        }
+        var currentNode: Node? = self.head
+        var otherCurrentNode: Node? = otherList.head
+        while currentNode?.next != nil && otherCurrentNode?.next != nil {
+            if currentNode?.key != otherCurrentNode?.key {
+                print("currentNode.key \(currentNode?.key)")
+                print("otherNode.key \(otherCurrentNode?.key)")
+                return false
+            } else {
+                currentNode = currentNode?.next!
+                otherCurrentNode = otherCurrentNode?.next!
+            }
+        }
+        return true
+    }
+    
 }
 
 //Problem Two
@@ -107,6 +126,34 @@ func mergeSortedLists<T: Comparable>(listOne: LinkedList<T>, listTwo: LinkedList
     while firstList.next != nil {
         mergedSortedList.head.next = firstList
         firstList = firstList.next!
+    }
+    print(mergedSortedList.head)
+    return mergedSortedList
+}
+
+func mergeSortedLists2<T: Comparable>(listOne: LinkedList<T>, listTwo: LinkedList<T>) -> LinkedList<T> {
+    let mergedSortedList = LinkedList<T>()
+    var firstList: Node? = listOne.head
+    var secondList: Node? = listTwo.head
+    
+    while firstList != nil && secondList != nil {
+        if (firstList?.key)! < (secondList?.key)!  {
+            if mergedSortedList.head.key == nil {
+                mergedSortedList.append(element: (firstList?.key)!)
+                firstList = firstList?.next
+            } else {
+                mergedSortedList.append(element: (secondList?.key)!)
+                secondList = secondList?.next!
+            }
+        }
+    }
+    while secondList != nil {
+        mergedSortedList.append(element: (firstList?.key)!)
+        secondList = secondList?.next!
+    }
+    while firstList != nil {
+        mergedSortedList.append(element: (secondList?.key)!)
+        firstList? = (firstList?.next!)!
     }
     print(mergedSortedList.head)
     return mergedSortedList
