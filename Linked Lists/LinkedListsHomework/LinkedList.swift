@@ -27,6 +27,14 @@ class LinkedList<T: Equatable> {
         }
     }
     
+    func printAllKeys2() {
+        var temp: Node? = head
+        while temp != nil {
+            print(temp?.key)
+            temp = temp?.next
+        }
+    }
+    
     var count: Int {
         if head.key == nil {
             return 0
@@ -53,9 +61,9 @@ class LinkedList<T: Equatable> {
         currentNode.next = newNode
     }
     
-    func getElement(at Index: Int) -> Node<T>? {
+    func getElement2(at Index: Int) -> Node<T>? {
         var currentNode = head
-        var counter = 1
+        var counter = 0
         while currentNode.next != nil {
             if counter == Index {
                 return currentNode
@@ -67,25 +75,45 @@ class LinkedList<T: Equatable> {
         return nil
     }
     
+    func getElement(at index: Int) -> Node<T>?{
+        if index > self.count - 1 || index < 0 || head.key == nil {
+            return nil
+        } else {
+            var currentNode = head
+            var currentIndex = 0
+            while currentIndex != index {
+                currentNode = currentNode.next!
+                currentIndex += 1
+            }
+            return currentNode
+        }
+    }
+    
+    
     func insert(_ key: T, at index: Int) {
         var currentNode = head
         var tempNode = Node<T>()
-        var counter = 1
-        if head.key == nil {
+        var counter = 0
+        if index > self.count - 1 || index < 0 || head.key == nil {
             head.key = key
-        }
-        while currentNode.next != nil{
-            if counter == index {
-                tempNode = currentNode
-                currentNode.key = key
-                currentNode.next = tempNode.next
-                tempNode.next = currentNode
-                break
-            } else {
-                currentNode = currentNode.next!
-                counter += 1
+        } else {
+            while currentNode.next != nil{
+                if counter == index {
+                    tempNode = currentNode
+                    currentNode.key = key
+                    currentNode.next = tempNode.next
+                    tempNode.next = currentNode
+                    break
+                } else {
+                    currentNode = currentNode.next!
+                    counter += 1
+                }
             }
         }
+        
+    }
+    
+    func insert2 (_key: T, at index: Int) {
     }
     
     func contains(element targetKey: T) -> Bool {

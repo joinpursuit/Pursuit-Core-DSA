@@ -88,6 +88,17 @@ class LinkedListTesting: XCTestCase {
         XCTAssert(myList.head.next?.key == myCopy.head.next?.key)
     }
     
+    func testGetElement() {
+        let nodeIndexTwo = (myList.head.next?.next)!
+        let testIndexTwo = myList.getElement(at: 2)!
+        XCTAssert(nodeIndexTwo.key == testIndexTwo.key)
+        
+        let nodeIndexOne = (myList.head.next)!
+        let testIndexOne = myList.getElement(at: 1)!
+        XCTAssert(nodeIndexOne.key == testIndexOne.key)
+        
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
