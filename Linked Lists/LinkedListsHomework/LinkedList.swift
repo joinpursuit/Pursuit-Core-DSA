@@ -13,12 +13,16 @@ class Node<T> {
     var next: Node?
 }
 
-
-
 class LinkedList<T: Equatable> {
     var head  = Node<T>()
+    
     func printAllKeys() {
-        
+        var currentNode: Node? = head
+        while currentNode != nil {
+            print(currentNode?.key)
+            currentNode = currentNode?.next
+        }
+
     }
     var count: Int {return 0}
     
