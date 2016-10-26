@@ -11,7 +11,6 @@ import Foundation
 class Node<T> {
     var key: T!
     var next: Node?
-    var previous: Node?
 }
 
 class LinkedList<T: Equatable> {
@@ -19,6 +18,7 @@ class LinkedList<T: Equatable> {
     
 
     func printAllKeys() {
+
         var currentNode = head
         while currentNode.next != nil {
             print(currentNode.key)
@@ -40,6 +40,14 @@ class LinkedList<T: Equatable> {
         }
         
         return counter
+
+        var currentNode: Node? = head
+        while currentNode != nil {
+            print(currentNode?.key)
+            currentNode = currentNode?.next
+        }
+
+>>>>>>> 152ebcbc3744988038a608b04c70b77254a5e489
     }
     
     func append(element newKey: T) {
