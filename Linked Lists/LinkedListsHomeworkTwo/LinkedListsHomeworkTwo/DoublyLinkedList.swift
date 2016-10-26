@@ -131,4 +131,25 @@ class LinkedList<T: Equatable> {
         }
         self.head = previousNode!
     }
+    
+    
+    func equals(otherList: LinkedList) -> Bool {
+        guard self.count == otherList.count else {
+            return false
+        }
+        
+        var selfCurrentNode: Node? = self.head
+        var otherCurrentNode: Node? = otherList.head
+        while selfCurrentNode != nil {
+            if selfCurrentNode?.key! != otherCurrentNode?.key! {
+                return false
+            }
+            else {
+                selfCurrentNode = selfCurrentNode?.next
+                otherCurrentNode = otherCurrentNode?.next
+            }
+        }
+        return true
+    }
+    
 }
