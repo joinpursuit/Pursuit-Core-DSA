@@ -14,10 +14,32 @@ import Foundation
 //Sample input: [0,1,2,3,4,5]
 //Sample output: [1,2,3,4,5,0]
 
-func problemOne(arr: [Int]) -> [Int] {
-    return []
-}
+//func problemOne(arr: [Int]) -> [Int] {
+//    return []
+//}
 
+//func problemOne(arr: [Int]) -> [Int] {
+//    var newArr = [Int]()
+//    let index = arr[0]
+//    for numbers in arr {
+//        switch numbers {
+//        case index:
+//            continue
+//        default:
+//            newArr.append(arr[numbers])
+//        }
+//    }
+//    return newArr
+//}
+
+func problemOne(arr: [Int]) -> [Int] {
+    var newArr = [Int]()
+    let a = arr[0]
+    newArr = arr
+    newArr.removeFirst()
+    newArr.append(a)
+    return newArr
+}
 
 //Problem Two
 //Write an algorithm that moves every element in an array of Ints (x) spaces to the left
@@ -26,7 +48,16 @@ func problemOne(arr: [Int]) -> [Int] {
 //Sample output: [3,4,5,0,1,2]
 
 func problemTwo(arr: [Int], x: Int) -> [Int] {
-    return []
+    var counter = x
+    var mutArr = arr
+    for _ in arr {
+        while counter > 0 {
+            let a = mutArr.removeFirst()
+            mutArr.append(a)
+            counter -= 1
+        }
+    }
+    return mutArr
 }
 
 //Write a function that accepts two strings, and returns true if one string is rotation of the other, taking letter case into account.
@@ -42,6 +73,15 @@ func problemTwo(arr: [Int], x: Int) -> [Int] {
 //Sample output 3: false
 
 func problemThree(strOne: String, strTwo: String) -> Bool {
+    
+    var tempString = strOne.characters
+    let a = tempString.removeLast()
+    tempString.insert(a, at: tempString.startIndex)
+    
+    
+    if strTwo == String(tempString) {
+        return true
+    }
     return false
 }
 
