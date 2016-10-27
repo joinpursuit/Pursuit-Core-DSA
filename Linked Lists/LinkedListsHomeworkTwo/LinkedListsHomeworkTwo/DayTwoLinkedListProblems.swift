@@ -59,6 +59,7 @@ class LinkedList<T: Comparable> {
     //See Exercise One 
     //Write a function that checks if two linked lists are the same
     func equals(otherList: LinkedList ) -> Bool {
+<<<<<<< HEAD
         guard self.count == otherList.count else {return false}
         //guard command? what does this do?
         var selfCurrentNode: Node? = self.head
@@ -67,6 +68,16 @@ class LinkedList<T: Comparable> {
             if selfCurrentNode?.key! != otherCurrentNode?.key {
                 return false
                 
+=======
+        guard self.count == otherList.count else {
+            return false
+        }
+        var selfCurrentNode: Node? = self.head
+        var otherCurrentNode: Node? = otherList.head
+        while selfCurrentNode != nil {
+            if selfCurrentNode?.key! != otherCurrentNode?.key! {
+                return false
+>>>>>>> 508aea3b9a0434e2bbb7125488be8a91c82c7e87
             } else {
                 selfCurrentNode = selfCurrentNode?.next
                 otherCurrentNode = otherCurrentNode?.next
@@ -74,8 +85,11 @@ class LinkedList<T: Comparable> {
         }
         return true
     }
+<<<<<<< HEAD
     
     
+=======
+>>>>>>> 508aea3b9a0434e2bbb7125488be8a91c82c7e87
 }
 
 //Problem Two
