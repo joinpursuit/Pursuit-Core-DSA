@@ -16,7 +16,6 @@ class Node<T> {
     var next: Node?
 }
 
-<<<<<<< HEAD
 class LinkedList<T: Equatable> {
     var head = Node<T>()
     
@@ -51,22 +50,8 @@ class LinkedList<T: Equatable> {
         while currentNode.next != nil {
             counter += 1
             currentNode = currentNode.next!
-=======
-
-class LinkedList<T> {
-    var head = Node<T>()
-    func reverse() {
-        var previousNode: Node<T>? = nil
-        var currentNode: Node<T>? = head
-        while currentNode != nil {
-            
-            let temp = currentNode!.next
-            currentNode!.next = previousNode
-            previousNode = currentNode
-            currentNode = temp
->>>>>>> 321c09273869ee2667f77230880a936df0b168f8
         }
-        self.head = previousNode!
+        return counter
     }
     
     func reverse() {
@@ -134,10 +119,45 @@ func swapConstant (arr: inout [Int]) -> [Int] {
     return arr
 }
 
-var arr = [1, 45, 2]
+var arr2 = [1, 45, 2]
 swapConstant(arr: &arr)
 
 
+
+func mergeSortedLists<T: Comparable>(listOne: LinkedList<T>, listTwo: LinkedList<T>) -> LinkedList<T> {
+    
+    var currentNodeListOne: Node<T>? = listOne.head
+    let currentNodeListTwo: Node<T>? = listTwo.head
+    var previousNode: Node<T>? = nil
+    
+    while currentNodeListOne != nil {
+        currentNodeListOne = currentNodeListOne!.next
+        if currentNodeListOne?.next == nil {
+            currentNodeListOne?.next = currentNodeListTwo
+            currentNodeListOne? = listOne.head
+        }
+    }
+    
+    while currentNodeListOne != nil {
+        let temp = currentNodeListOne!.next
+        
+        
+        if let next = currentNodeListOne!.next, currentNodeListOne!.key > next.key {
+            currentNodeListOne!.next = previousNode
+            previousNode = currentNodeListOne
+            currentNodeListOne = temp
+        }
+    }
+    
+    let mergedList = LinkedList<T>()
+    mergedList.head = currentNodeListOne!
+    
+    while currentNodeListOne != nil {
+        print(currentNodeListOne!.key)
+    }
+    
+    return mergedList
+}
 
 
 var list = LinkedList<Int>()

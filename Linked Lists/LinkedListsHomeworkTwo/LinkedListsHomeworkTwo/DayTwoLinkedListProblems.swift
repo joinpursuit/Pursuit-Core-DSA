@@ -8,13 +8,13 @@
 
 import Foundation
 
-class Node<T: Equatable> {
+class Node<T: Comparable> {
     var key: T!
     var next: Node?
 }
 
 
-class LinkedList<T: Equatable> {
+class LinkedList<T: Comparable> {
     var head  = Node<T>()
     
     func printAllKeys() {
