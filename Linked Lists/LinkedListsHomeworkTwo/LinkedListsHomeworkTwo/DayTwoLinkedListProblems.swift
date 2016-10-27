@@ -90,9 +90,7 @@ class LinkedList<T: Comparable> {
         }
         return true
     }
-    
 }
-
 //Problem Two
 //See Exercise Three (https://github.com/C4Q/AC-DSA/blob/master/Linked%20Lists/LinkedListsDayTwo.md)
 

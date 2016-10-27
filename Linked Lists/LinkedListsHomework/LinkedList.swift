@@ -51,19 +51,33 @@ class LinkedList<T: Equatable> {
         currentNode.next = newNode
     }
     
-    func getElement(at Index: Int) -> Node<T>? {
-        var currentNode = head
-        var counter = 1
-        while currentNode.next != nil {
-            if counter == Index {
-                return currentNode
-            } else {
+    func getElement(at index: Int) ->Node<T>! {
+        if index > self.count - 1 || index < 0 || head.key == nil {
+            return nil
+        } else {
+            var currentNode = head
+            var counter = 0
+            while counter != index {
                 currentNode = currentNode.next!
                 counter += 1
             }
+            return currentNode
         }
-        return nil
     }
+    
+//    func getElement(at Index: Int) -> Node<T>? {
+//        var currentNode = head
+//        var counter = 1
+//        while currentNode.next != nil {
+//            if counter == Index {
+//                return currentNode
+//            } else {
+//                currentNode = currentNode.next!
+//                counter += 1
+//            }
+//        }
+//        return nil
+//    }
     
     func insert(_ key: T, at index: Int) {
         if index > self.count - 1 || index < 0 || head.key == nil {
