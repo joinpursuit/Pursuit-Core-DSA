@@ -13,6 +13,9 @@ class Node<T: Comparable> {
     var next: Node?
 }
 
+class otherLinkedList {
+    var head = Node<T>()
+}
 
 class LinkedList<T: Comparable> {
     var head  = Node<T>()
@@ -64,8 +67,8 @@ class LinkedList<T: Comparable> {
         var currentNode = head
         var otherCurrentNode = otherList.head
         
-        ifcurrentNode && otherCurrentNode != nil {
-            while currentNode == otherCurrentNode {
+        if currentNode && otherCurrentNode != nil {
+            while currentNode == otherCurrentNode       {
                 while currentNode.next == otherCurrentNode.next {
                     return true
                 }
@@ -75,8 +78,25 @@ class LinkedList<T: Comparable> {
         currentNode = currentNode.next!
         otherCurrentNode = otherCurrentNode.next!
         
+        var selfCurrentNode: Node? = self.head
+        var otherCurrentNode: Node? = otherList.head
+        while selfCurrentNode != nil && otherCurrentNode != nil {
+            if self.currentNode>,key! != otherCurrentNode?.key! {
+                return false
+            }   else {
+                selfCurrentNode = selfCurrentNode?.next
+                otherCurrentNode = otherCurrentNode?.next
+            }
+            return true
+        }
+   
+        
+        
+        
+        
 }
-
+    
+    =
 //Problem Two
 //See Exercise Three (https://github.com/C4Q/AC-DSA/blob/master/Linked%20Lists/LinkedListsDayTwo.md)
 
