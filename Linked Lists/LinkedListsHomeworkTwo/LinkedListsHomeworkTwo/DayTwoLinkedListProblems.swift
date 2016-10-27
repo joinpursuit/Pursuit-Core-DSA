@@ -15,6 +15,7 @@ class Node<T: Comparable> {
 
 
 class LinkedList<T: Comparable> {
+<<<<<<< HEAD
 	var head  = Node<T>()
 	
 	func printAllKeys() {
@@ -71,6 +72,66 @@ class LinkedList<T: Comparable> {
 		}
 		return true
 	}
+=======
+    var head  = Node<T>()
+    
+    func printAllKeys() {
+        
+        var currentNode: Node<T>! = head
+        
+        while currentNode != nil {
+            print(currentNode.key)
+            currentNode = currentNode.next
+        }
+    }
+    
+    var count: Int {
+        if head.key == nil {
+            return 0
+        } else {
+            var currentNode = head
+            var counter = 1
+            while currentNode.next != nil {
+                currentNode = currentNode.next!
+                counter += 1
+            }
+            return counter
+        }
+    }
+    
+    func append(element newKey: T) {
+        guard head.key != nil else {
+            head.key = newKey
+            return
+        }
+        
+        var currentNode = head
+        while currentNode.next != nil {
+            currentNode = currentNode.next!
+        }
+        currentNode.next = Node()
+        currentNode.next!.key = newKey
+    }
+
+    //Problem One
+    //See Exercise One (https://github.com/C4Q/AC-DSA/blob/master/Linked%20Lists/LinkedListsDayTwo.md)
+    func equals(otherList: LinkedList ) -> Bool {
+        guard self.count == otherList.count else {
+            return false
+        }
+        var selfCurrentNode: Node? = self.head
+        var otherCurrentNode: Node? = otherList.head
+        while selfCurrentNode != nil {
+            if selfCurrentNode?.key! != otherCurrentNode?.key! {
+                return false
+            } else {
+                selfCurrentNode = selfCurrentNode?.next
+                otherCurrentNode = otherCurrentNode?.next
+            }
+        }
+        return true
+    }
+>>>>>>> 508aea3b9a0434e2bbb7125488be8a91c82c7e87
 }
 
 //Problem Two
