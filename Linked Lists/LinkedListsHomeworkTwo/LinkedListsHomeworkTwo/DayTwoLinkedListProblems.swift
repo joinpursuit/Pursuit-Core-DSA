@@ -86,6 +86,30 @@ class LinkedList<T: Comparable> {
     }
 }
 
+//check that the two are the same lengths and output
+//check the head and compare to other lists head, repeat comparison onto .next nodes
+
+/* Correction:
+ 
+ func equals(otherList: LinkedList ) -> Bool {
+ guard self.count == otherList.count else {
+ return false }
+ var selfCurrentNode: Node? = self.head
+ var otherCurrentNode: Node? = otherList.head
+ 
+ while selfCurrentNode != nil {
+    if selfCurrentNode?.key! != otherCurrentNode.key! {
+    return false
+ } else {
+    selfCurrentNode = selfCurrentNode?.next
+    otherCurrentNode = otherCurrentNode?.next
+ }
+ }
+ return true
+ }
+ }
+ */
+
 //Problem Two
 //See Exercise Three (https://github.com/C4Q/AC-DSA/blob/master/Linked%20Lists/LinkedListsDayTwo.md)
 
@@ -114,6 +138,35 @@ func mergeSortedLists<T: Comparable>(listOne: LinkedList<T>, listTwo: LinkedList
     }
 }
     
-    
+    /* Correction:
+ 
+ func mergeSortedLists<T: Comparable>(listOne: LinkedList<T>, listTwo: LinkedList<T>) -> LinkedList<T> {
+ var listOneCurrentNode: Node? = listOne.head
+ var listTwoCurrentNode: Node? = listTwo.head
+ let finalList = LinkedList<T>()
+ 
+ while listOneCurrentNode != nil && listTwoCurrentNode != nil {
+ if (listOneCurrentNode?.key)! < (listTwoCurrentNode?.key)! {
+ finalList.append(element: (listOneCurrentNode?.key)!)
+ listOneCurrentNode = listOneCurrentNode?.next
+ } else {
+ finalList.append(element: (listTwoCurrentNode?.key)!)
+ listTwoCurrentNode = listTwoCurrentNode?.next
+ }
+ }
+ 
+ while listOneCurrentNode != nil {
+ finalList.append(element: (listOneCurrentNode?.key)!)
+ listOneCurrentNode = listOneCurrentNode?.next
+ }
+ 
+ while listTwoCurrentNode != nil {
+ finalList.append(element: (listTwoCurrentNode?.key)!)
+ listTwoCurrentNode = listTwoCurrentNode?.next
+ }
+ return finalList
+ }
+ 
+ */
 
 
