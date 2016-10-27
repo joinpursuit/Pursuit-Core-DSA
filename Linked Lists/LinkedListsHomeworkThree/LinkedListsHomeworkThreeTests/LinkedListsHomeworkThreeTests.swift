@@ -103,12 +103,14 @@ class LinkedListsHomeworkThreeTests: XCTestCase {
     }
     
     func testRemove() {
-        myCopy.head.next = myCopy.head.next?.next
+        myCopy.head.next = myCopy.head.next?.next?.next
         myCopy.head.next?.next?.previous = myCopy.head
         myList.remove(at: 1)
         var myListCurrent: Node? = myList.head.next
         var myCopyCurrent: Node? = myCopy.head.next
         while myListCurrent != nil && myCopyCurrent != nil {
+            dump(myCopyCurrent)
+            
             XCTAssert(myListCurrent?.key == myCopyCurrent?.key)
             myListCurrent = myListCurrent?.previous
             myCopyCurrent = myCopyCurrent?.previous
