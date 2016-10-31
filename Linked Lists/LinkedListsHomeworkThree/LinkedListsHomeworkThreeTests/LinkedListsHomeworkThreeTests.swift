@@ -77,7 +77,6 @@ class LinkedListsHomeworkThreeTests: XCTestCase {
         let nodeIndexTwo = (myList.head.next?.next)!
         let testIndexTwo = myList.getElement(at: 2)!
         XCTAssert(nodeIndexTwo.key == testIndexTwo.key)
-        
         let nodeIndexOne = (myList.head.next)!
         let testIndexOne = myList.getElement(at: 1)!
         XCTAssert(nodeIndexOne.key == testIndexOne.key)
