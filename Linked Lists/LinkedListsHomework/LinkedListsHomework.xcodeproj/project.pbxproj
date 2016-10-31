@@ -27,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4BD624B11DC7B56E00EDF56D /* LinkedListSolutions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = LinkedListSolutions.playground; path = Solution/LinkedListSolutions.playground; sourceTree = "<group>"; };
 		545746D11DBE6EF80008D049 /* LinkedListsHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkedListsHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545746D41DBE6EF80008D049 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		545746D61DBE6EF80008D049 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				545746F41DBE6F0D0008D049 /* LinkedList.swift */,
+				4BD624B11DC7B56E00EDF56D /* LinkedListSolutions.playground */,
 				545746D31DBE6EF80008D049 /* LinkedListsHomework */,
 				545746E81DBE6EF80008D049 /* LinkedListsHomeworkTests */,
 				545746D21DBE6EF80008D049 /* Products */,
@@ -422,6 +424,7 @@
 				545746F01DBE6EF80008D049 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		545746F11DBE6EF80008D049 /* Build configuration list for PBXNativeTarget "LinkedListsHomeworkTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +433,7 @@
 				545746F31DBE6EF80008D049 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

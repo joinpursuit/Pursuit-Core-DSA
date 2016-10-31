@@ -20,11 +20,23 @@ class LinkedList<T: Equatable> {
     var head = Node<T>()
     
     var count: Int {
-        return 0
+        var currentNode = self.head
+        var counter = 0
+        while currentNode.next != nil {
+            currentNode.previous = currentNode
+            currentNode = currentNode.next!
+            counter += 1
+        }
+        counter += 1
+        
+        return counter
     }
     
     //empty list check
     func isEmpty() -> Bool {
+        if self.head == nil {
+            return true
+        }
         return false
     }
     
