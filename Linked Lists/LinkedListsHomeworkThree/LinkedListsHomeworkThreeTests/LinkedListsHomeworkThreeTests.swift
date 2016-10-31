@@ -104,7 +104,11 @@ class LinkedListsHomeworkThreeTests: XCTestCase {
     
     func testRemove() {
         myCopy.head.next = myCopy.head.next?.next
+<<<<<<< HEAD
         myCopy.head.next?.next?.previous = myCopy.head
+=======
+        myCopy.head.next?.previous = myCopy.head
+>>>>>>> 607363b2f7754fc5fec293484caeaeaf223d265a
         myList.remove(at: 1)
         var myListCurrent: Node? = myList.head.next
         var myCopyCurrent: Node? = myCopy.head.next
