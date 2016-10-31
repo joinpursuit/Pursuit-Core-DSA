@@ -58,6 +58,7 @@ class LinkedList<T: Comparable> {
     //Problem One
     //See Exercise One (https://github.com/C4Q/AC-DSA/blob/master/Linked%20Lists/LinkedListsDayTwo.md)
     func equals(otherList: LinkedList ) -> Bool {
+<<<<<<< HEAD
         guard self.count == otherList.count else { return false }
         
         var currentNode: Node? = self.head
@@ -102,4 +103,28 @@ class LinkedList<T: Comparable> {
         }
         return finalList
     }
+=======
+        guard self.count == otherList.count else {
+            return false
+        }
+        var selfCurrentNode: Node? = self.head
+        var otherCurrentNode: Node? = otherList.head
+        while selfCurrentNode != nil {
+            if selfCurrentNode?.key! != otherCurrentNode?.key! {
+                return false
+            } else {
+                selfCurrentNode = selfCurrentNode?.next
+                otherCurrentNode = otherCurrentNode?.next
+            }
+        }
+        return true
+    }
+}
+
+//Problem Two
+//See Exercise Three (https://github.com/C4Q/AC-DSA/blob/master/Linked%20Lists/LinkedListsDayTwo.md)
+
+func mergeSortedLists<T: Comparable>(listOne: LinkedList<T>, listTwo: LinkedList<T>) -> LinkedList<T> {
+    return LinkedList<T>()
+>>>>>>> a0cea5eb4a498429a9f60504b0506bb4db806836
 }
