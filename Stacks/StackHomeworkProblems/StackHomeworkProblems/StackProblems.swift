@@ -11,9 +11,17 @@ import Foundation
 
 //Problem One:
 //Find the largest integer in a Stack of Ints
-
+//[1,2,3,4]
 func largest(stack: Stack<Int>) -> Int {
-    return 0
+    var max = 0
+    var current = 0
+    while !stack.isEmpty() {
+        if current > max {
+            max = current
+            current = stack.pop()!
+        }
+    }
+    return max
 }
 
 
@@ -21,7 +29,13 @@ func largest(stack: Stack<Int>) -> Int {
 //Find the sum of a Stack of Ints
 
 func sum(stack: Stack<Int>) -> Int {
-    return 0
+    var current = 0
+    var sum = 0
+    while !stack.isEmpty() {
+        sum += current
+        current = stack.pop()!
+    }
+    return sum
 }
 
 //Problem Three:
@@ -33,7 +47,7 @@ func sum(stack: Stack<Int>) -> Int {
  2
  9
  3
-*/
+ */
 
 //Sample output:
 /*
@@ -41,11 +55,18 @@ func sum(stack: Stack<Int>) -> Int {
  9
  2
  4
-*/
+ */
 
-func reverse<T>(stack: Stack<T>) -> Stack<T> {
-    return Stack<T>()
+
+func reverse<T: Comparable>(stack: Stack<T>) -> Stack<T> {
+    
+    var tempStack = Stack<T>()
+    while !stack.isEmpty() {
+        tempStack.push(element: stack.pop()!)
+    }
+    return tempStack
 }
+
 
 
 //Problem Four:
