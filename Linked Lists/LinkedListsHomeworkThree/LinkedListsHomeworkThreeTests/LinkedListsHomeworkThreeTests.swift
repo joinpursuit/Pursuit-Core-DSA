@@ -102,6 +102,7 @@ class LinkedListsHomeworkThreeTests: XCTestCase {
         }
     }
     
+<<<<<<< HEAD
 //    func testRemove() {
 //        myCopy.head.next = myCopy.head.next?.next
 //        myCopy.head.next?.next?.previous = myCopy.head
@@ -130,6 +131,21 @@ class LinkedListsHomeworkThreeTests: XCTestCase {
 		}
 	}
 	
+=======
+    func testRemove() {
+        myCopy.head.next = myCopy.head.next?.next
+        myCopy.head.next?.previous = myCopy.head
+        myList.remove(at: 1)
+        var myListCurrent: Node? = myList.head.next
+        var myCopyCurrent: Node? = myCopy.head.next
+        while myListCurrent != nil && myCopyCurrent != nil {
+            XCTAssert(myListCurrent?.key == myCopyCurrent?.key)
+            myListCurrent = myListCurrent?.previous
+            myCopyCurrent = myCopyCurrent?.previous
+        }
+    }
+    
+>>>>>>> 607363b2f7754fc5fec293484caeaeaf223d265a
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
