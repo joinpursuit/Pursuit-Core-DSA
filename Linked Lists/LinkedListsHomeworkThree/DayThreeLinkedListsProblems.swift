@@ -20,11 +20,22 @@ class LinkedList<T: Equatable> {
     var head = Node<T>()
     
     var count: Int {
-        return 0
+        if head.key == nil {
+            return 0
+        } else {
+            var currentNode = head
+            var counter = 1
+            while currentNode.next != nil {
+                currentNode = currentNode.next!
+                counter += 1
+            }
+            return counter
+        }
     }
     
     //empty list check
     func isEmpty() -> Bool {
+        guard head.key != nil else { return true }
         return false
     }
     
@@ -32,17 +43,32 @@ class LinkedList<T: Equatable> {
     
     //add link item
     func append(element key: T) {
-  
+        guard head.key != nil else {
+            head.key = key
+            return
+        }
+        
+        var currentNode = head
+        while currentNode.next != nil {
+            currentNode = currentNode.next!
+        }
+        let newNode = Node<T>()
+        currentNode.next = newNode
+        newNode.previous = currentNode
+        newNode.key = key
     }
     
     //print all keys for the class
     func printAllKeys() {
-
+        var currentNode: Node? = head
+        while currentNode != nil {
+            print(currentNode?.key)
+            currentNode = currentNode?.next
+        }
     }
     
     //obtain link at a specific index
     func getElement(at index: Int) ->Node<T>! {
-        return Node<T>()
     }
     
     //insert at specific index

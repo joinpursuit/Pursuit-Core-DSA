@@ -102,5 +102,4 @@ class LinkedList<T: Comparable> {
         }
         return finalList
     }
-    
 }
