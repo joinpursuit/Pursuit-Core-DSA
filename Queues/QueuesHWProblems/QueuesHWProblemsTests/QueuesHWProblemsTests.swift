@@ -30,7 +30,7 @@ class QueuesHWProblemsTests: XCTestCase {
         myQ.enQueue(newElement: 7)
         
         let a = myQ.deQueue()
-        print(a)
+        print(a!)
 
         
         myQueue.enQueue(newElement: 5)
