@@ -18,7 +18,7 @@ In our dish stack above, the last dish that we put away will be the first one we
 
 ##Methods
 
-A stacks has the following methods:
+A stack has the following methods:
 
 **push()** : Adds a new element to the top of the stack
 
