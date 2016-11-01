@@ -57,15 +57,16 @@ func sum(stack: Stack<Int>) -> Int {
  4
  */
 
-
+/*
 func reverse<T: Comparable>(stack: Stack<T>) -> Stack<T> {
     
-    var tempStack = Stack<T>()
+    var newStack = T
     while !stack.isEmpty() {
-        tempStack.push(element: stack.pop()!)
+        newStack = stack.pop()
     }
-    return tempStack
+    return newStack
 }
+*/
 
 
 
@@ -73,7 +74,21 @@ func reverse<T: Comparable>(stack: Stack<T>) -> Stack<T> {
 //Determine if two stacks are equal
 
 func equalStacks<T: Equatable>(stackOne: Stack<T>, stackTwo: Stack<T>) -> Bool {
-    return false
+    var answer = false
+    var currentOne = stackOne.peek()
+    var currentTwo = stackTwo.peek()
+    
+    while !stackOne.isEmpty() && !stackTwo.isEmpty() {
+        currentOne = stackOne.pop()
+        currentTwo = stackTwo.pop()
+        if currentOne != currentTwo {
+            answer = false
+            break
+        } else {
+            answer = true
+        }
+    }
+    return answer
 }
 
 
@@ -81,7 +96,10 @@ func equalStacks<T: Equatable>(stackOne: Stack<T>, stackTwo: Stack<T>) -> Bool {
 //Write a function that pushes a new element to the bottom of a Stack
 
 func pushBottom<T>(stack: Stack<T>, newElement: T) -> Stack<T> {
+    var newStack = Stack<T>()
+    
     return Stack<T>()
+    
 }
 
 //Problem Six:
