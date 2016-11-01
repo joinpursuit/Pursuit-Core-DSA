@@ -76,6 +76,8 @@ class QueuesHWProblemsTests: XCTestCase {
         reversedMyQueue.enQueue(newElement: 5)
         let userReversed = reverse(q: myQueue)
         
+        XCTAssertTrue(!userReversed.isEmpty())
+        
         while !(reversedMyQueue.isEmpty()) && !(userReversed.isEmpty()) {
             XCTAssertTrue(reversedMyQueue.deQueue() == userReversed.deQueue())
         }
