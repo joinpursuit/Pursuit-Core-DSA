@@ -13,7 +13,19 @@ import Foundation
 //Find the largest integer in a Stack of Ints
 
 func largest(stack: Stack<Int>) -> Int {
-    return 0
+    var tempStack = Stack<Int>()
+    var largest = stack.peek()!
+    while !stack.isEmpty() {
+        let top = stack.pop()!
+        if top > largest {
+            largest = top
+        }
+        tempStack.push(element: top)
+    }
+    while !tempStack.isEmpty() {
+        stack.push(element: tempStack.pop()!)
+    }
+    return largest
 }
 
 
@@ -21,7 +33,20 @@ func largest(stack: Stack<Int>) -> Int {
 //Find the sum of a Stack of Ints
 
 func sum(stack: Stack<Int>) -> Int {
-    return 0
+    var sum = 0
+    var tempStack = Stack<Int>()
+    
+    while !stack.isEmpty() {
+        let top = stack.pop()!
+        sum += top
+        tempStack.push(element: top)
+    }
+    
+    while !tempStack.isEmpty() {
+        stack.push(element: tempStack.pop()!)
+    }
+    
+    return sum
 }
 
 //Problem Three:
@@ -33,7 +58,7 @@ func sum(stack: Stack<Int>) -> Int {
  2
  9
  3
-*/
+ */
 
 //Sample output:
 /*
@@ -41,10 +66,20 @@ func sum(stack: Stack<Int>) -> Int {
  9
  2
  4
-*/
+ */
 
 func reverse<T>(stack: Stack<T>) -> Stack<T> {
-    return Stack<T>()
+    var newStack = Stack<T>()
+    var tempStack = Stack<T>()
+    while !stack.isEmpty() {
+        let top = stack.pop()!
+        newStack.push(element: top)
+        tempStack.push(element: top)
+    }
+    while !tempStack.isEmpty() {
+        stack.push(element: tempStack.pop()!)
+    }
+    return newStack
 }
 
 
@@ -52,7 +87,39 @@ func reverse<T>(stack: Stack<T>) -> Stack<T> {
 //Determine if two stacks are equal
 
 func equalStacks<T: Equatable>(stackOne: Stack<T>, stackTwo: Stack<T>) -> Bool {
-    return false
+    
+    if stackOne === stackTwo { return true }
+    
+    var stack1Temp = Stack<T>()
+    var stack2Temp = Stack<T>()
+    var isEqual = true
+    
+    while !stackOne.isEmpty() || !stackTwo.isEmpty() {
+        let top1 = stackOne.pop()
+        if top1 != nil {
+            stack1Temp.push(element: top1!)
+        }
+        let top2 = stackTwo.pop()
+        if top2 != nil {
+            stack2Temp.push(element: top2!)
+        }
+        
+        if top1 != top2 {
+            isEqual = false
+            break
+        }
+    }
+    
+    while !stack1Temp.isEmpty() || !stack2Temp.isEmpty() {
+        if !stack1Temp.isEmpty() {
+            stackOne.push(element: stack1Temp.pop()!)
+        }
+        if !stack2Temp.isEmpty() {
+            stackTwo.push(element: stack2Temp.pop()!)
+        }
+    }
+    
+    return isEqual
 }
 
 
@@ -60,7 +127,15 @@ func equalStacks<T: Equatable>(stackOne: Stack<T>, stackTwo: Stack<T>) -> Bool {
 //Write a function that pushes a new element to the bottom of a Stack
 
 func pushBottom<T>(stack: Stack<T>, newElement: T) -> Stack<T> {
-    return Stack<T>()
+    var reversedStack = reverse(stack: stack)
+    var newStack = Stack<T>()
+    newStack.push(element: newElement)
+    
+    while !reversedStack.isEmpty() {
+        newStack.push(element: reversedStack.pop()!)
+    }
+    
+    return newStack
 }
 
 //Problem Six:
@@ -77,13 +152,39 @@ func pushBottom<T>(stack: Stack<T>, newElement: T) -> Stack<T> {
 
 
 func isBalanced(str: String) -> Bool {
-    return false
+    var beginNum = 0
+    var endNum = 0
+    for c in str.characters {
+        if c == "(" {
+            beginNum += 1
+        } else {
+            if c == ")" {
+                endNum += 1
+            }
+        }
+    }
+    return beginNum == endNum
 }
 
 //Bonus: Problem Seven:
 //Use a stack to convert a number in decimal to binary
 
 func convertToBinary(_ num: Int) -> String {
-    return ""
+    var stackOfBinary = Stack<Int>()
+    var newNum = num
+    while newNum >= 1 {
+    if newNum % 2 == 1 {
+        stackOfBinary.push(element: 1)
+    } else {
+        stackOfBinary.push(element: 0)
+    }
+        newNum /= 2
+    }
+    var newString = ""
+    while !stackOfBinary.isEmpty() {
+        let ones = String(stackOfBinary.pop()!)
+        newString.append(ones)
+    }
+    return newString
 }
 

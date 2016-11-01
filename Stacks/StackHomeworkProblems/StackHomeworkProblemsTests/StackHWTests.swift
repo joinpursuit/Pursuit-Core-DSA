@@ -14,6 +14,7 @@ class StackHomeworkProblemsTests: XCTestCase {
     var myStack = Stack<Int>()
     var emptyStack = Stack<Int>()
     var myOtherStack = Stack<Int>()
+    var myThirdStack = Stack<Int>()
     
     override func setUp() {
         super.setUp()
@@ -25,6 +26,10 @@ class StackHomeworkProblemsTests: XCTestCase {
         myOtherStack.push(element: 15)
         myOtherStack.push(element: 120)
         myOtherStack.push(element: 2)
+        
+        myThirdStack.push(element: 15)
+        myThirdStack.push(element: 120)
+        myThirdStack.push(element: 2)
         
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -65,6 +70,7 @@ class StackHomeworkProblemsTests: XCTestCase {
         XCTAssertTrue(equalStacks(stackOne: myStack, stackTwo: myStack))
         XCTAssertTrue(equalStacks(stackOne: myOtherStack, stackTwo: myOtherStack))
         XCTAssertTrue(equalStacks(stackOne: emptyStack, stackTwo: emptyStack))
+        XCTAssertTrue(equalStacks(stackOne: myOtherStack, stackTwo: myThirdStack))
     }
     
     func testPushBottom() {
@@ -82,7 +88,7 @@ class StackHomeworkProblemsTests: XCTestCase {
     func testIsBalanced() {
         XCTAssertTrue(isBalanced(str: "((()))"))
         XCTAssertFalse(isBalanced(str: "((())"))
-        XCTAssertFalse(isBalanced(str: "(()((())()))"))
+        XCTAssertTrue(isBalanced(str: "(()((())()))"))
         XCTAssertTrue(isBalanced(str: "(()((())(())))"))
     }
     

@@ -1,22 +1,30 @@
-//: Playground - noun: a place where people can play
+import UIKit
 
 class StackWithArr<T> {
     private var arr = Array<T>()
     
-    func pop(){
-        
+    func pop() -> T? {
+        //return arr.popLast()
+        guard arr.count > 0 else {
+            return nil
+        }
+        return arr.remove(at: arr.count-1)
     }
     
-    func push() {
-        
+    func push(newElement: T) { // does not need to return something
+        arr.append(newElement)
     }
     
-    func peek() {
-
+    func peek() -> T? {
+        guard arr.count > 0 else {
+            return nil
+        }
+        return arr.last
     }
     
-    func isEmpty() {
-        
+    func isEmpty() -> Bool {
+        return arr.isEmpty
+        //return arr.count == 0
     }
 }
 
@@ -36,11 +44,13 @@ class LinkedList<T> {
 // new -> H -> 2 -> 3
 
 
+// Using first thing of linkedList as the top of a stack - it uses less time
+
 class StackWithLL<T> {
     private var list = LinkedList<T>()
     //pop
     func pop() -> T? {
-        guard list.head.next != nil else {
+         guard list.head.next != nil else {
             list.head.key = nil
             return nil
         }
@@ -48,6 +58,7 @@ class StackWithLL<T> {
         list.head = list.head.next!
         return oldKey
     }
+    
     //push
     func push(element: T) {
         if list.head.key == nil {
