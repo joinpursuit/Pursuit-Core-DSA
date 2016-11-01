@@ -1,5 +1,6 @@
-//: Playground - noun: a place where people can play
+import UIKit
 
+<<<<<<< HEAD
 import Foundation
 
 class StackWithArr<T> {
@@ -36,13 +37,51 @@ class StackWithArr<T> {
 let myStack = StackWithArr<Int>()
 myStack.push(newElement: 9)
 myStack.push(newElement: 38)
+=======
+var str = "Hello, playground"
+class StackWithArr<T> {
+    private var arr = Array<T>()
+    
+    func pop() -> T? {
+        //      return arr.popLast()
+        guard arr.count != 0 else {
+            return nil
+        }
+        return arr.remove(at: arr.count-1)
+    }
+    
+    func push(newElement: T) {
+        arr.append(newElement)
+    }
+    
+    func peek() -> T? {
+        guard arr.count != 0 else {
+            return nil
+        }
+        return arr[arr.count-1]
+    }
+    
+    func isEmpty() -> Bool {
+        //return arr.isEmpty
+        return arr.count == 0
+    }
+}
+
+let myStack = StackWithArr<Int>()
+print("Stack with arr output:")
+myStack.push(newElement: 9)
+myStack.push(newElement: 39)
+>>>>>>> 6a76c2fbc84133a6804ddd9c810e352983aa6ff5
 print(myStack.peek())
 myStack.pop()
 print(myStack.peek())
 print(myStack.isEmpty())
+<<<<<<< HEAD
 myStack.pop()
 print(myStack.isEmpty())
 myStack.peek()
+=======
+>>>>>>> 6a76c2fbc84133a6804ddd9c810e352983aa6ff5
 
 class Node<T> {
 	var key: T!
@@ -53,11 +92,8 @@ class LinkedList<T> {
 	var head = Node<T>()
 }
 
-// H -> 2 -> 3
-// new -> H -> 2 -> 3
-
-
 class StackWithLL<T> {
+<<<<<<< HEAD
 	private var list = LinkedList<T>()
 	//pop
 	func pop() -> T? {
@@ -165,3 +201,44 @@ convertToBinaryS(50)
 convertToBinaryS(51)
 convertToBinaryS(1)
 convertToBinaryS(2)
+=======
+    private var list = LinkedList<T>()
+    func pop() -> T? {
+        let oldHead = list.head.key
+        if let next = list.head.next {
+            list.head = next
+        } else {
+            list.head = Node<T>()
+        }
+        return oldHead
+    }
+    func push(newElement: T) {
+        guard list.head.key != nil else {
+            list.head.key = newElement
+            return
+        }
+        let newNode = Node<T>()
+        newNode.key = newElement
+        newNode.next = list.head
+        list.head = newNode
+    }
+    func peek() -> T? {
+        return list.head.key
+    }
+    func isEmpty() -> Bool {
+        return list.head.key == nil
+    }
+}
+
+let myStackLL = StackWithLL<Int>()
+print("Stack with LL output:")
+myStackLL.push(newElement: 9)
+myStackLL.push(newElement: 39)
+print(myStackLL.peek())
+myStackLL.pop()
+print(myStackLL.peek())
+print(myStackLL.isEmpty())
+myStackLL.pop()
+print(myStackLL.isEmpty())
+myStackLL.pop()
+>>>>>>> 6a76c2fbc84133a6804ddd9c810e352983aa6ff5
