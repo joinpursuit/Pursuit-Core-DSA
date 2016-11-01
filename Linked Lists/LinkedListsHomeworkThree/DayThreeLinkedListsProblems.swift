@@ -95,20 +95,23 @@ class LinkedList<T: Equatable> {
     //remove at specific index
     func remove(at index: Int) {
         var currentNode: Node? = head
+        
         if index < 2 {
             self.head = (currentNode?.next)!
             head.previous = nil
+            
         }else{
             var count: Int = 0
+            
             while count < index {
                 currentNode = currentNode?.next
                 count += 1
             }
+            
             let nextNode: Node? = currentNode?.next?.next
             currentNode?.next = nextNode
             nextNode?.previous = currentNode
         }
-        
     }
 }
 
