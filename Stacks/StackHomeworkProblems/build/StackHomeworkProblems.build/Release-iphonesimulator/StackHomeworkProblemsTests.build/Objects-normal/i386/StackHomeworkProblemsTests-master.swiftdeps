@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "ba70c0fcdc3b86f409a0932b8902d146"
+build_time: [531287967, 836123000]
+inputs:
+  "/Users/Shashi/Projects/AC-DSA/Stacks/StackHomeworkProblems/StackHomeworkProblemsTests/StackHWTests.swift": [9223372036854775807, 0]

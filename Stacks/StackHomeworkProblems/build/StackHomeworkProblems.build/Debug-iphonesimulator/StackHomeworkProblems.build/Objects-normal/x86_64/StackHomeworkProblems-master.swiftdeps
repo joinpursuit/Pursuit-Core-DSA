@@ -1,0 +1,8 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "2c24916ecdd6e14c9e6a31a5b2441ccf"
+build_time: [531288729, 506373000]
+inputs:
+  "/Users/Shashi/Projects/AC-DSA/Stacks/StackHomeworkProblems/StackHomeworkProblems/Stack.swift": [531254421, 0]
+  "/Users/Shashi/Projects/AC-DSA/Stacks/StackHomeworkProblems/StackHomeworkProblems/ViewController.swift": [531254421, 0]
+  "/Users/Shashi/Projects/AC-DSA/Stacks/StackHomeworkProblems/StackHomeworkProblems/AppDelegate.swift": [531254421, 0]
+  "/Users/Shashi/Projects/AC-DSA/Stacks/StackHomeworkProblems/StackHomeworkProblems/StackProblems.swift": [531288729, 0]
