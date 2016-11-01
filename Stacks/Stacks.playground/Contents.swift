@@ -3,20 +3,32 @@
 class StackWithArr<T> {
     private var arr = Array<T>()
     
-    func pop(){
+    func pop() -> T? {
+        //return arr.popLast()
+        guard arr.count != 0 else {
+            return nil
+        }
         
+        let last = arr[arr.count - 1]
+        arr.remove(at: arr.count - 1)
+        return last
     }
     
-    func push() {
-        
+    func push(newElement: T) {
+        arr.append(newElement)
     }
     
-    func peek() {
-
+    func peek() -> T? {
+        guard arr.count != 0 else {
+            return nil
+        }
+        
+        return arr.last
     }
     
-    func isEmpty() {
-        
+    func isEmpty() -> Bool {
+        //return arr.isEmpty
+        return arr.count != 0
     }
 }
 
@@ -40,20 +52,38 @@ class StackWithLL<T> {
     private var list = LinkedList<T>()
     //pop
     func pop() -> T? {
-        guard list.head.next != nil else {
-            list.head.key = nil
-            return nil
+//        guard list.head.next != nil else {
+//            list.head.key = nil
+//            return nil
+//        }
+//        let oldKey = list.head.key
+//        list.head = list.head.next!
+//        return oldKey
+        let oldHead = list.head.key
+        
+        if let next = list.head.next {
+            list.head = next
+        } else {
+            list.head = Node<T>()
         }
-        let oldKey = list.head.key
-        list.head = list.head.next!
-        return oldKey
+        
+        return oldHead
     }
     //push
     func push(element: T) {
-        if list.head.key == nil {
+//        if list.head.key == nil {
+//            list.head.key = element
+//            return
+//        }
+//        let newNode = Node<T>()
+//        newNode.key = element
+//        newNode.next = list.head
+//        list.head = newNode
+        guard list.head.key != nil else {
             list.head.key = element
             return
         }
+        
         let newNode = Node<T>()
         newNode.key = element
         newNode.next = list.head
