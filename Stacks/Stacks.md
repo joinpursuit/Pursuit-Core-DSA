@@ -41,7 +41,7 @@ A stack has the following methods:
 </details>	
 
 <details>
-	<summarys>Insert an element </summary>
+	<summary>Insert an element </summary>
 	O(1)
 </details>	
 
