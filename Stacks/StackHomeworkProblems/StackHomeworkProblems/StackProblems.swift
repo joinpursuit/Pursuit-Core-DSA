@@ -77,8 +77,9 @@ func equalStacks<T: Equatable>(stackOne: Stack<T>, stackTwo: Stack<T>) -> Bool {
     var results = false
     var a = stackOne.peek()
     var b = stackTwo.peek()
+    
     if stackOne.isEmpty() && stackTwo.isEmpty() {
-        return true
+        results = true
     }
     while !stackOne.isEmpty() && !stackTwo.isEmpty() {
         a = stackOne.pop()
