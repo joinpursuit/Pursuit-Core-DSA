@@ -3,24 +3,40 @@
 class StackWithArr<T> {
     private var arr = Array<T>()
     
-    func pop(){
-        
+    func pop() -> T? {
+        //        return arr.popLast()
+        guard arr.count != 0 else {
+            return nil
+        }
+        let last = arr[arr.count - 1]
+        arr.remove(at: arr.count - 1)
+        return last
     }
     
-    func push() {
-        
+    func push(newElement: T) {
+        arr.append(newElement)
     }
     
-    func peek() {
-
+    func peek() -> T? {
+        guard arr.count != 0 else {
+            return nil
+        }
+        return arr[arr.count - 1]
     }
     
-    func isEmpty() {
-        
+    func isEmpty() -> Bool {
+        return arr.count == 0
     }
 }
 
 let myStack = StackWithArr<Int>()
+print("Stack with arr output:")
+myStack.push(newElement: 9)
+myStack.push(newElement: 39)
+print(myStack.peek())
+myStack.pop()
+print(myStack.peek())
+print(myStack.isEmpty())
 
 
 class Node<T> {
@@ -72,3 +88,13 @@ class StackWithLL<T> {
 }
 
 let myStackLL = StackWithLL<Int>()
+print("Stack with LL output:")
+myStackLL.push(element: 9)
+myStackLL.push(element: 39)
+print(myStackLL.peek())
+myStackLL.pop()
+print(myStackLL.peek())
+print(myStackLL.isEmpty())
+myStackLL.pop()
+print(myStackLL.isEmpty())
+

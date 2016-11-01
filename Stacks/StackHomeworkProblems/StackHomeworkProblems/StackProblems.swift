@@ -13,7 +13,21 @@ import Foundation
 //Find the largest integer in a Stack of Ints
 
 func largest(stack: Stack<Int>) -> Int {
-    return 0
+//    let maxStack = Stack<Int>()
+//    maxStack.push(element: stack.pop()!)
+//    if maxStack.peek()! < stack.peek()! {
+//        maxStack.push(element: stack.peek()!)
+//    }
+//    return maxStack.peek()!
+    
+    var max = 0
+    while !(stack.isEmpty()) {
+        let top = stack.pop()!
+        if top > max {
+            max = top
+        }
+    }
+    return max
 }
 
 
@@ -21,7 +35,12 @@ func largest(stack: Stack<Int>) -> Int {
 //Find the sum of a Stack of Ints
 
 func sum(stack: Stack<Int>) -> Int {
-    return 0
+    var total = 0
+    while !(stack.isEmpty()) {
+        total += stack.peek()!
+        stack.pop()!
+    }
+    return total
 }
 
 //Problem Three:
@@ -44,7 +63,12 @@ func sum(stack: Stack<Int>) -> Int {
 */
 
 func reverse<T>(stack: Stack<T>) -> Stack<T> {
-    return Stack<T>()
+    let reversedStack = Stack<T>()
+    while !(stack.isEmpty()) {
+        reversedStack.push(element: stack.peek()!)
+        stack.pop()!
+    }
+    return reversedStack
 }
 
 
@@ -52,7 +76,7 @@ func reverse<T>(stack: Stack<T>) -> Stack<T> {
 //Determine if two stacks are equal
 
 func equalStacks<T: Equatable>(stackOne: Stack<T>, stackTwo: Stack<T>) -> Bool {
-    return false
+    
 }
 
 
