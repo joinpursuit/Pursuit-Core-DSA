@@ -57,16 +57,16 @@ func sum(stack: Stack<Int>) -> Int {
  4
  */
 
-/*
+
 func reverse<T: Comparable>(stack: Stack<T>) -> Stack<T> {
     
-    var newStack = T
-    while !stack.isEmpty() {
-        newStack = stack.pop()
+    let newStack = Stack<T>()
+    while !(stack.isEmpty()) {
+        newStack.push(element: stack.pop()!)
     }
     return newStack
 }
-*/
+
 
 
 
@@ -96,9 +96,11 @@ func equalStacks<T: Equatable>(stackOne: Stack<T>, stackTwo: Stack<T>) -> Bool {
 //Write a function that pushes a new element to the bottom of a Stack
 
 func pushBottom<T>(stack: Stack<T>, newElement: T) -> Stack<T> {
-    var newStack = Stack<T>()
-    
-    return Stack<T>()
+    let newStack = newElement as! Stack<T>
+    while !stack.isEmpty() {
+    newStack.push(element: stack.pop()!)
+    }
+    return newStack
     
 }
 
@@ -114,15 +116,51 @@ func pushBottom<T>(stack: Stack<T>, newElement: T) -> Stack<T> {
 //Sample input: (()((())()))
 //Sample output: false
 
-
+//not finished
 func isBalanced(str: String) -> Bool {
-    return false
+    var check = true
+    //change str to stack
+    let tempStr = str.components(separatedBy: "")
+    let tempStack = Stack<String>()
+    for i in tempStr {
+        tempStack.push(element: i)
+    }
+    
+    //stacks
+    var leftCount = 0
+    var rightCount = 0
+    while !tempStack.isEmpty() {
+        let current = tempStack.pop()
+        if current == "(" {
+            leftCount += 1
+        } else {
+            rightCount += 1
+        }
+    }
+    
+    //conditionals
+    if leftCount != rightCount {
+        check = false
+    }
+    return check
 }
 
 //Bonus: Problem Seven:
 //Use a stack to convert a number in decimal to binary
 
 func convertToBinary(_ num: Int) -> String {
+    let numStack = Stack<Int>()
+    numStack.push(element: num)
+    
+    let binary = Stack<String>()
+    while numStack.peek()! != 0 {
+            binary.push(element: String(numStack.peek()!%2))
+    }
+    
+    //convert to string
+    
+    
+    
     return ""
 }
 
