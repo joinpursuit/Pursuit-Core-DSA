@@ -1,6 +1,8 @@
-//: Playground - noun: a place where people can play
+import UIKit
 
+var str = "Hello, playground"
 class StackWithArr<T> {
+
   private var arr = Array<T>()
   
   func pop() -> T? {
@@ -25,7 +27,13 @@ class StackWithArr<T> {
 }
 
 let myStack = StackWithArr<Int>()
-
+print("Stack with arr output:")
+myStack.push(newElement: 9)
+myStack.push(newElement: 39)
+print(myStack.peek())
+myStack.pop()
+print(myStack.peek())
+print(myStack.isEmpty())
 
 class Node<T> {
   var key: T!
@@ -35,10 +43,6 @@ class Node<T> {
 class LinkedList<T> {
   var head = Node<T>()
 }
-
-// H -> 2 -> 3
-// new -> H -> 2 -> 3
-
 
 class StackWithLL<T> {
   private var list = LinkedList<T>()
@@ -76,3 +80,13 @@ class StackWithLL<T> {
 }
 
 let myStackLL = StackWithLL<Int>()
+print("Stack with LL output:")
+myStackLL.push(element: 9)
+myStackLL.push(element: 39)
+print(myStackLL.peek())
+myStackLL.pop()
+print(myStackLL.peek())
+print(myStackLL.isEmpty())
+myStackLL.pop()
+print(myStackLL.isEmpty())
+myStackLL.pop()
