@@ -144,3 +144,24 @@ func convertToBinary(_ num: Int) -> String {
 
 convertToBinary(50)
 
+func convertToBinaryS(_ num: Int) -> String {
+	let newStack = StackWithArr<String>()
+	var myNum = num
+	var str = ""
+	
+	while myNum > 0 {
+		newStack.push(newElement: String(myNum % 2))
+		myNum = myNum / 2
+	}
+	while !newStack.isEmpty() {
+		let binaryStr = newStack.pop()
+		str += binaryStr!
+	}
+	
+	return str
+}
+
+convertToBinaryS(50)
+convertToBinaryS(51)
+convertToBinaryS(1)
+convertToBinaryS(2)
