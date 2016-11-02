@@ -17,13 +17,13 @@ class QueuesHWProblemsTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-//        while !(myQueue.isEmpty()) {
-//            myQueue.deQueue()
-//        }
-//        while !(otherQueue.isEmpty()) {
-//            otherQueue.deQueue()
-//        }
-        
+        while !(myQueue.isEmpty()) {
+            myQueue.deQueue()
+        }
+        while !(otherQueue.isEmpty()) {
+            otherQueue.deQueue()
+        }
+		
         let myQ = Queue<Int>()
         myQ.enQueue(newElement: 39)
         myQ.enQueue(newElement: 10)
@@ -67,21 +67,23 @@ class QueuesHWProblemsTests: XCTestCase {
         XCTAssertFalse(isSorted(q: otherQueue)!)
         XCTAssertNil(isSorted(q: emptyQueue))
     }
-    
-    func testReverse() {
-        let reversedMyQueue = Queue<Int>()
-        reversedMyQueue.enQueue(newElement: 17)
-        reversedMyQueue.enQueue(newElement: 13)
-        reversedMyQueue.enQueue(newElement: 10)
-        reversedMyQueue.enQueue(newElement: 5)
-        let userReversed = reverse(q: myQueue)
-        
-        while !(reversedMyQueue.isEmpty()) && !(userReversed.isEmpty()) {
-            XCTAssertTrue(reversedMyQueue.deQueue() == userReversed.deQueue())
-        }
-        XCTAssertNil(reverse(q: emptyQueue).peek())
-    }
-    
+
+	func testReverse() {
+		let reversedMyQueue = Queue<Int>()
+		reversedMyQueue.enQueue(newElement: 17)
+		reversedMyQueue.enQueue(newElement: 13)
+		reversedMyQueue.enQueue(newElement: 10)
+		reversedMyQueue.enQueue(newElement: 5)
+		let userReversed = reverse(q: myQueue)
+		
+		XCTAssertTrue(!userReversed.isEmpty())
+		
+		while !(reversedMyQueue.isEmpty()) && !(userReversed.isEmpty()) {
+			XCTAssertTrue(reversedMyQueue.deQueue() == userReversed.deQueue())
+		}
+		XCTAssertNil(reverse(q: emptyQueue).peek())
+	}
+	
     func testEquals() {
         let myQueueCopy = Queue<Int>()
         myQueueCopy.enQueue(newElement: 5)

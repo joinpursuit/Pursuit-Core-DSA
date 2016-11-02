@@ -13,7 +13,7 @@ class Node<T> {
     var next: Node<T>?
 }
 
-class LinekdList<T> {
+class LinkedList<T> {
     var head: Node<T>
     var tail: Node<T>
     init() {
@@ -23,7 +23,7 @@ class LinekdList<T> {
 }
 
 class Queue<T> {
-    private var list = LinekdList<T>()
+    private var list = LinkedList<T>()
     
     func enQueue(newElement: T) {
         if list.head.key == nil {
