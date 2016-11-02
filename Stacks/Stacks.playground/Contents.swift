@@ -1,15 +1,13 @@
-//: Playground - noun: a place where people can play
-
 class StackWithArr<T> {
     private var arr = Array<T>()
     
     func pop() -> T?{
         guard arr.count != 0 else {return nil}
         return arr.remove(at: arr.count - 1)
-//        return arr.popLast()
-//        let last = arr[arr.count - 1]
-//        arr.remove(at: arr.count-1)
-//        return last
+        //        return arr.popLast()
+        //        let last = arr[arr.count - 1]
+        //        arr.remove(at: arr.count-1)
+        //        return last
     }
     
     func push(newElement: T) {
@@ -57,7 +55,7 @@ class StackWithLL1<T>{
         if let next = list.head.next {
             list.head = next
         } else {
-        list.head = Node<T>()
+            list.head = Node<T>()
         }
         return oldHead
     }
