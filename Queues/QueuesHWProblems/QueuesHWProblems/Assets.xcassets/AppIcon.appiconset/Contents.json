@@ -2,19 +2,6 @@
   "images" : [
     {
       "idiom" : "iphone",
-<<<<<<< HEAD
-      "size" : "20x20",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "iphone",
-      "size" : "20x20",
-      "scale" : "3x"
-    },
-    {
-      "idiom" : "iphone",
-=======
->>>>>>> 6a76c2fbc84133a6804ddd9c810e352983aa6ff5
       "size" : "29x29",
       "scale" : "2x"
     },
@@ -45,19 +32,6 @@
     },
     {
       "idiom" : "ipad",
-<<<<<<< HEAD
-      "size" : "20x20",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "ipad",
-      "size" : "20x20",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "ipad",
-=======
->>>>>>> 6a76c2fbc84133a6804ddd9c810e352983aa6ff5
       "size" : "29x29",
       "scale" : "1x"
     },
@@ -85,14 +59,6 @@
       "idiom" : "ipad",
       "size" : "76x76",
       "scale" : "2x"
-<<<<<<< HEAD
-    },
-    {
-      "idiom" : "ipad",
-      "size" : "83.5x83.5",
-      "scale" : "2x"
-=======
->>>>>>> 6a76c2fbc84133a6804ddd9c810e352983aa6ff5
     }
   ],
   "info" : {

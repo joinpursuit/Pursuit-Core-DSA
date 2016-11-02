@@ -13,6 +13,7 @@ import Foundation
 //Find the largest integer in a Stack of Ints
 
 func largest(stack: Stack<Int>) -> Int {
+<<<<<<< HEAD
     var max = 0
     var current = stack.peek()!
     while !stack.isEmpty() {
@@ -24,6 +25,9 @@ func largest(stack: Stack<Int>) -> Int {
     }
     return max
     
+=======
+    return 0
+>>>>>>> 6a76c2fbc84133a6804ddd9c810e352983aa6ff5
 }
 
 
@@ -31,6 +35,7 @@ func largest(stack: Stack<Int>) -> Int {
 //Find the sum of a Stack of Ints
 
 func sum(stack: Stack<Int>) -> Int {
+<<<<<<< HEAD
     var current = stack.peek()!
     var sum = 0
     while !stack.isEmpty() {
@@ -38,6 +43,9 @@ func sum(stack: Stack<Int>) -> Int {
     sum += current
     }
     return sum
+=======
+    return 0
+>>>>>>> 6a76c2fbc84133a6804ddd9c810e352983aa6ff5
 }
 
 //Problem Three:
@@ -59,6 +67,7 @@ func sum(stack: Stack<Int>) -> Int {
  4
 */
 
+<<<<<<< HEAD
 func reverse<T:Comparable>(stack: Stack<T>) -> Stack<T> {
  let reversedStack = Stack<T>()
    while !stack.isEmpty() {
@@ -66,6 +75,10 @@ func reverse<T:Comparable>(stack: Stack<T>) -> Stack<T> {
     }
     return reversedStack
     
+=======
+func reverse<T>(stack: Stack<T>) -> Stack<T> {
+    return Stack<T>()
+>>>>>>> 6a76c2fbc84133a6804ddd9c810e352983aa6ff5
 }
 
 
@@ -73,6 +86,7 @@ func reverse<T:Comparable>(stack: Stack<T>) -> Stack<T> {
 //Determine if two stacks are equal
 
 func equalStacks<T: Equatable>(stackOne: Stack<T>, stackTwo: Stack<T>) -> Bool {
+<<<<<<< HEAD
     
     var results = false
     var a = stackOne.peek()
@@ -102,6 +116,17 @@ func pushBottom<T:Comparable>(stack: Stack<T>, newElement: T) -> Stack<T> {
     var newStack =  reverse(stack: stack)
     newStack.push(element: newElement)
     return reverse(stack: newStack)
+=======
+    return false
+}
+
+
+//Problem Five:
+//Write a function that pushes a new element to the bottom of a Stack
+
+func pushBottom<T>(stack: Stack<T>, newElement: T) -> Stack<T> {
+    return Stack<T>()
+>>>>>>> 6a76c2fbc84133a6804ddd9c810e352983aa6ff5
 }
 
 //Problem Six:

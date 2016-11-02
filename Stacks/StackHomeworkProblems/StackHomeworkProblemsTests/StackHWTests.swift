@@ -79,10 +79,19 @@ class StackHomeworkProblemsTests: XCTestCase {
         
     }
     
+<<<<<<< HEAD
     func testIsBalanced() {
         XCTAssertTrue(isBalanced(str: "((()))"))
         XCTAssertFalse(isBalanced(str: "((())"))
         XCTAssertTrue(isBalanced(str: "(()((())()))"))
+=======
+    //
+    
+    func testIsBalanced() {
+        XCTAssertTrue(isBalanced(str: "((()))"))
+        XCTAssertFalse(isBalanced(str: "((())"))
+        XCTAssertFalse(isBalanced(str: "(()((())()))"))
+>>>>>>> 6a76c2fbc84133a6804ddd9c810e352983aa6ff5
         XCTAssertTrue(isBalanced(str: "(()((())(())))"))
     }
     
