@@ -69,7 +69,13 @@ func isSorted<T: Comparable>(q: Queue<T>) -> Bool? {
 
 //Return a reversed queue.
 func reverse<T>(q: Queue<T>) -> Queue<T> {
-    return Queue<T>()
+    
+    let tempStack = Queue<T>()
+    while !(q.isEmpty()) {
+        var stax = q.deQueue()
+        tempStack.enQueue(newElement: stax!)
+    }
+    return tempStack
 }
 
 //Determine if two queues are equal.
@@ -79,9 +85,10 @@ func areEqual<T: Equatable>(qOne: Queue<T>, qTwo: Queue<T>) -> Bool {
     let q1 = qOne.deQueue()
     let q2 = qTwo.deQueue()
     
-    while q1 == q2 {
-        return true
-    }
+    while !(qOne.isEmpty()) && !(qTwo.isEmpty()) {
+        if q1 == q2 {
+            return true
+        }
     
     return false
 }
