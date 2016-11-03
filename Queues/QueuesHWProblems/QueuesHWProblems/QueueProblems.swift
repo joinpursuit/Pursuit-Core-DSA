@@ -9,61 +9,6 @@
 import Foundation
 
 //In all problems, the input queue should be in its original state after your function is done running.
-
-/*
-class Node<T> {
-    var key: T?
-    var next: Node<T>?
-}
-
-class LinekdList<T> {
-    var head: Node<T>
-    var tail: Node<T>
-    init() {
-        self.head = Node<T>()
-        self.tail = head
-    }
-}
-
-class Queue<T> {
-    private var list = LinekdList<T>()
-    
-    func enQueue(newElement: T) {
-        if list.head.key == nil {
-            list.head.key = newElement
-            return
-        } else {
-            let newNode = Node<T>()
-            newNode.key = newElement
-            list.tail.next = newNode
-            list.tail = newNode
-        }
-    }
-    
-    func deQueue() -> T? {
-        if let oldHeadKey = list.head.key {
-            if let nextNode = list.head.next {
-                list.head = nextNode
-            } else {
-                list.head.key = nil
-            }
-            return oldHeadKey
-        } else {
-            return nil
-        }
-    }
-    
-    func isEmpty() -> Bool {
-        return list.head.key == nil
-    }
-    
-    func peek() -> T? {
-        return list.head.key
-    }
-}
-
- */
-
 //Find the sum of a queue
 
 func sum(q: Queue<Int>) -> Int? {
@@ -99,28 +44,60 @@ func smallest<T:Comparable>(q: Queue<T>) -> T? {
 //Find out whether or not a queue is in sorted order from smallest to biggest
 //True example:   (Back) 9 - 6 - 2 - 1 (Front)
 //False example   (Back) 4 - 19 - 134 200 (Front)
+
 func isSorted<T: Comparable>(q: Queue<T>) -> Bool? {
     if q.isEmpty() {
-        return nil 
+        return nil
     }
-    let a = q.peek()
+    let first = q.peek()!
     while !q.isEmpty() {
-    
-        
+        let next = q.deQueue()!
+        if next < first {
+            return false
+        } else {
+            continue
+        }
     }
-    return false
+    return true
 }
+
 
 //Return a reversed queue.
 func reverse<T>(q: Queue<T>) -> Queue<T> {
-    return Queue<T>()
+    let tempStack = Stack<T>()
+    while !(q.isEmpty()) {
+        let a = q.deQueue()
+        tempStack.push(element: a!)
+    }
+    while !tempStack.isEmpty() {
+        q.enQueue(newElement: tempStack.pop()!)
+    }
+    
+    return q
 }
 
 //Determine if two queues are equal.
 
 func areEqual<T: Equatable>(qOne: Queue<T>, qTwo: Queue<T>) -> Bool {
+    if qOne.isEmpty() && qTwo.isEmpty() {
+        return true
+    }
+    while (!qOne.isEmpty() && !qTwo.isEmpty()) {
+        let a = qOne.peek()
+        let b = qTwo.peek()
+        if a != b {
+             break
+        }
+        if qOne.deQueue() == qTwo.deQueue() {
+            return true 
+        }
+    }
+
+    
     return false
 }
+
+
 
 //Bonus: Hot Potato
 //https://interactivepython.org/runestone/static/pythonds/BasicDS/SimulationHotPotato.html

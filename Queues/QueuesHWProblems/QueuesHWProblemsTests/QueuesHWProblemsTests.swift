@@ -94,8 +94,8 @@ class QueuesHWProblemsTests: XCTestCase {
         otherQueueCopy.enQueue(newElement: 11)
         otherQueueCopy.enQueue(newElement: 4)
 
-       // XCTAssertTrue(areEqual(qOne: myQueue, qTwo: myQueueCopy))
-        //XCTAssertTrue(areEqual(qOne: otherQueue, qTwo: otherQueueCopy))
+       XCTAssertTrue(areEqual(qOne: myQueue, qTwo: myQueueCopy))
+       XCTAssertTrue(areEqual(qOne: otherQueue, qTwo: otherQueueCopy))
         XCTAssertFalse(areEqual(qOne: myQueue, qTwo: otherQueue))
         XCTAssertFalse(areEqual(qOne: otherQueueCopy, qTwo: emptyQueue))
     }
