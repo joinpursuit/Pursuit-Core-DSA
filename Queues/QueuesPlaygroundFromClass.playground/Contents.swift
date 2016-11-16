@@ -29,7 +29,7 @@ class LinekdList<T> {
 
 
 
-/*
+
 class Queue<T> {
     private var list = LinekdList<T>()
     
@@ -66,6 +66,6 @@ class Queue<T> {
         return list.head.key
     }
 }
- */
+ 
 
 

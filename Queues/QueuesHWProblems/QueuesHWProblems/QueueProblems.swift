@@ -14,18 +14,43 @@ import Foundation
 
 //Find the sum of a queue
 func sum(q: Queue<Int>) -> Int? {
-    return nil
+    guard q.isEmpty() == true else {return nil}
+    
+    var sum = 0
+    
+    let tempQ = Queue<Int>()
+    
+    while q.isEmpty() == false {
+        sum += q.deQueue()!
+        tempQ.enQueue(newElement: q.peek()!)
+        print(sum)
+    }
+    
+    while tempQ.isEmpty() == false {
+        q.enQueue(newElement: tempQ.deQueue()!)
+    }
+    
+    print(q)
+    return sum
 }
 
 //Find the smallest element in a queue
 func smallest<T:Comparable>(q: Queue<T>) -> T? {
-    return nil
+    guard var smallest = q.peek() else {return nil}
+    
+    while q.isEmpty() == false {
+        if let integer = q.deQueue(), integer < smallest {
+            smallest = integer
+        }
+    }
+    
+    return smallest
 }
 
 //Find out whether or not a queue is in sorted order from smallest to biggest
 //True example:   (Back) 9 - 6 - 2 - 1 (Front)
 //False example   (Back) 4 - 19 - 134 200 (Front)
-func isSorted<T: Comparable>(q: Queue<T>) -> Bool {
+func isSorted<T: Comparable>(q: Queue<T>) -> Bool? {
     return false
 }
 

@@ -13,7 +13,17 @@ import Foundation
 //Find the largest integer in a Stack of Ints
 
 func largest(stack: Stack<Int>) -> Int {
-    return 0
+    
+    var largest = stack.peek()
+    
+    while stack.isEmpty() == false {
+        if stack.peek()! > largest! {
+            largest = stack.peek()
+        }
+        _ = stack.pop()
+    }
+    
+    return largest!
 }
 
 
@@ -21,7 +31,13 @@ func largest(stack: Stack<Int>) -> Int {
 //Find the sum of a Stack of Ints
 
 func sum(stack: Stack<Int>) -> Int {
-    return 0
+    
+    var sum = 0
+    
+    while stack.isEmpty() == false {
+        sum += stack.pop()!
+    }
+    return sum
 }
 
 //Problem Three:
@@ -44,7 +60,14 @@ func sum(stack: Stack<Int>) -> Int {
 */
 
 func reverse<T>(stack: Stack<T>) -> Stack<T> {
-    return Stack<T>()
+    
+    let tempStack = Stack<T>()
+    
+    while stack.isEmpty() == false {
+        tempStack.push(element: stack.pop()!)
+    }
+    
+    return tempStack
 }
 
 
@@ -52,7 +75,18 @@ func reverse<T>(stack: Stack<T>) -> Stack<T> {
 //Determine if two stacks are equal
 
 func equalStacks<T: Equatable>(stackOne: Stack<T>, stackTwo: Stack<T>) -> Bool {
-    return false
+    
+    guard stackOne.isEmpty() == true || stackTwo.isEmpty() == true else {return false}
+    
+    while stackOne.isEmpty() == false && stackTwo.isEmpty() == false {
+        if stackOne.peek() != stackTwo.peek() {
+            return false
+        }
+       _ = stackOne.pop()
+       _ = stackTwo.pop()
+    }
+    
+    return true
 }
 
 
@@ -60,6 +94,20 @@ func equalStacks<T: Equatable>(stackOne: Stack<T>, stackTwo: Stack<T>) -> Bool {
 //Write a function that pushes a new element to the bottom of a Stack
 
 func pushBottom<T>(stack: Stack<T>, newElement: T) -> Stack<T> {
+    
+    let tempStack = Stack<T>()
+    
+    
+    while stack.isEmpty() == false {
+        tempStack.push(element: stack.pop()!)
+    }
+    
+    tempStack.push(element: newElement)
+
+    while tempStack.isEmpty() == false {
+        stack.push(element: tempStack.pop()!)
+    }
+
     return Stack<T>()
 }
 
