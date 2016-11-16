@@ -7,7 +7,7 @@ class Node<T> {
     var next: Node<T>?
 }
 
-class LinekdList<T> {
+class LinkedList<T> {
     var head: Node<T>
     var tail: Node<T>
     init() {
@@ -16,22 +16,8 @@ class LinekdList<T> {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
 class Queue<T> {
-    private var list = LinekdList<T>()
+    private var list = LinkedList<T>()
     
     func enQueue(newElement: T) {
         if list.head.key == nil {
@@ -66,6 +52,33 @@ class Queue<T> {
         return list.head.key
     }
 }
- */
 
-
+class QueueTwoStacks<T> {
+    private var enQueueStack = Stack<T>()
+    private var deQueueStack = Stack<T>()
+    
+    func enQueue(newElement: T) {
+        while !(deQueueStack.isEmpty()) {
+            enQueueStack.push(element: deQueueStack.pop())
+        }
+        enQueueStack.push(element: newElement)
+    }
+    
+    func deQueue() -> T? {
+        while !(enQueueStack.isEmpty()) {
+            deQueueStack.push(element: enQueueStack.pop()!)
+        }
+        return deQueueStack.pop()
+    }
+    
+    func peek() -> T? {
+        while !(enQueueStack.isEmpty()) {
+            deQueueStack.push(element: enQueueStack.pop()!)
+        }
+        return deQueueStack.peek()
+    }
+    
+    func isEmpty() -> Bool {
+        return enQueueStack.isEmpty() && deQueueStack.isEmpty()
+    }
+}

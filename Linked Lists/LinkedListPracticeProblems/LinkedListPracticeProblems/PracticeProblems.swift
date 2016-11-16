@@ -8,15 +8,69 @@
 
 import Foundation
 
-//Review One: Write a Node class and a Singly Linked List class that has a variable Node() at the head
-
-//Review Two: Write a print printAllKeys() method in your linked list class
+    //Review One: Write a Node class and a Singly Linked List class that has a variable Node() at the head
 
 
-//Review Three: Write an append(newlement:) method in your linked list class
+class Node<T> {
+    var key: T!
+    var next: Node?
+}
 
+class LinkedList<T: Equatable> {
+    var head = Node<T>()
+    
+    //Review Two: Write a print printAllKeys() method in your linked list class
+    
+    
+    func printAllKeys() {
+        var currentNode = head
+        
+        while currentNode.next != nil {
+            print(currentNode.key)
+            currentNode = currentNode.next!
+        }
+        print(currentNode.key)
+    }
+    
+    //Review Three: Write an append(newlement:) method in your linked list class
+    
+    
+    func append(newElement: T) {
+        var currentNode = head
+        let newNode = Node<T>()
+        
+        if currentNode.key == nil {
+            currentNode.key = newElement
+        }
+        while currentNode.next != nil {
+            currentNode = currentNode.next!
+        }
+        currentNode.next! = newNode
+        newNode.key = newElement
+    }
+    
+    //Review Four: Write a reverse() method in your linked list class
+    
+    func removeLastNode() {
+        var currentNode = head
+        while currentNode.next != nil {
+            currentNode = currentNode.next!
+        }
+        let tempNode = currentNode
+        currentNode.key = nil
+        return tempNode
+        
+    }
+    
+    func reverse() {
+        
+    }
+    
+    
+    
+    
+}
 
-//Review Four: Write a reverse() method in your linked list class
 
 
 

@@ -17,12 +17,6 @@ class QueuesHWProblemsTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-//        while !(myQueue.isEmpty()) {
-//            myQueue.deQueue()
-//        }
-//        while !(otherQueue.isEmpty()) {
-//            otherQueue.deQueue()
-//        }
         
         let myQ = Queue<Int>()
         myQ.enQueue(newElement: 39)
@@ -31,13 +25,13 @@ class QueuesHWProblemsTests: XCTestCase {
         
         let a = myQ.deQueue()
         print(a)
-
+        
         
         myQueue.enQueue(newElement: 5)
         myQueue.enQueue(newElement: 10)
         myQueue.enQueue(newElement: 13)
         myQueue.enQueue(newElement: 17)
-
+        
         otherQueue.enQueue(newElement: 8)
         otherQueue.enQueue(newElement: 11)
         otherQueue.enQueue(newElement: 4)
@@ -76,6 +70,8 @@ class QueuesHWProblemsTests: XCTestCase {
         reversedMyQueue.enQueue(newElement: 5)
         let userReversed = reverse(q: myQueue)
         
+        XCTAssertTrue(!userReversed.isEmpty())
+        
         while !(reversedMyQueue.isEmpty()) && !(userReversed.isEmpty()) {
             XCTAssertTrue(reversedMyQueue.deQueue() == userReversed.deQueue())
         }
@@ -88,12 +84,12 @@ class QueuesHWProblemsTests: XCTestCase {
         myQueueCopy.enQueue(newElement: 10)
         myQueueCopy.enQueue(newElement: 13)
         myQueueCopy.enQueue(newElement: 17)
-
+        
         let otherQueueCopy = Queue<Int>()
         otherQueueCopy.enQueue(newElement: 8)
         otherQueueCopy.enQueue(newElement: 11)
         otherQueueCopy.enQueue(newElement: 4)
-
+        
         XCTAssertTrue(areEqual(qOne: myQueue, qTwo: myQueueCopy))
         XCTAssertTrue(areEqual(qOne: otherQueue, qTwo: otherQueueCopy))
         XCTAssertFalse(areEqual(qOne: myQueue, qTwo: otherQueue))

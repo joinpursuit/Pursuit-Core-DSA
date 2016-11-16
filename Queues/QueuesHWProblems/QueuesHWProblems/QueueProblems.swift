@@ -14,19 +14,58 @@ import Foundation
 
 //Find the sum of a queue
 func sum(q: Queue<Int>) -> Int? {
-    return nil
+    guard !(q.isEmpty()) else { return nil }
+    let tempQ = Queue<Int>()
+    var total = 0
+    while !(q.isEmpty()) {
+        total += q.peek()!
+        q.deQueue()
+    }
+    while !(tempQ.isEmpty()) {
+        tempQ.enQueue(newElement: q.deQueue()!)
+    }
+    return total
 }
 
 //Find the smallest element in a queue
 func smallest<T:Comparable>(q: Queue<T>) -> T? {
-    return nil
+    guard !(q.isEmpty()) else { return nil }
+    let tempQ = Queue<T>()
+    var smallest = q.peek()!
+    while !(q.isEmpty()) {
+        if q.peek()! < smallest {
+            smallest = q.peek()!
+        }
+        tempQ.enQueue(newElement: q.deQueue()!)
+    }
+    while !(tempQ.isEmpty()) {
+        q.enQueue(newElement: tempQ.deQueue()!)
+    }
+    return smallest
 }
 
 //Find out whether or not a queue is in sorted order from smallest to biggest
 //True example:   (Back) 9 - 6 - 2 - 1 (Front)
 //False example   (Back) 4 - 19 - 134 200 (Front)
-func isSorted<T: Comparable>(q: Queue<T>) -> Bool {
-    return false
+func isSorted<T: Comparable>(q: Queue<T>) -> Bool? {
+    guard !(q.isEmpty()) else { return nil }
+    
+    let tempQ = Queue<T>()
+    var temp = q.peek()!
+    var myBool = true
+    while !(q.isEmpty()) {
+        if q.peek()! < temp {
+            myBool = false
+        }
+        else {
+            temp = q.peek()!
+        }
+        tempQ.enQueue(newElement: q.deQueue()!)
+    }
+    while !(tempQ.isEmpty()) {
+        q.enQueue(newElement: tempQ.deQueue()!)
+    }
+    return myBool
 }
 
 //Return a reversed queue.
