@@ -13,7 +13,14 @@ import Foundation
 //Find the largest integer in a Stack of Ints
 
 func largest(stack: Stack<Int>) -> Int {
-    return 0
+    var largest = stack.pop()
+    while !(stack.isEmpty()) {
+        let num = stack.pop()
+        if num! > largest! {
+            largest = num
+        }
+    }
+    return largest!
 }
 
 
@@ -52,7 +59,27 @@ func reverse<T>(stack: Stack<T>) -> Stack<T> {
 //Determine if two stacks are equal
 
 func equalStacks<T: Equatable>(stackOne: Stack<T>, stackTwo: Stack<T>) -> Bool {
-    return false
+    let tempStack = Stack<T>()
+       
+    if stackOne === stackTwo { return true }
+    
+    while !stackOne.isEmpty() || !stackTwo.isEmpty() {
+        guard !stackOne.isEmpty() && !stackTwo.isEmpty() else { return false }
+        guard stackOne.peek() == stackTwo.peek() else { return false }
+        let newOne = stackOne.pop()!
+        let newTwo = stackTwo.pop()!
+        tempStack.push(element: newOne)
+        tempStack.push(element: newTwo)
+    }
+    
+    while !tempStack.isEmpty() {
+        let tempOne = tempStack.pop()!
+        let tempTwo = tempStack.pop()!
+        stackTwo.push(element: tempTwo)
+        stackOne.push(element: tempOne)
+    }
+    
+    return true
 }
 
 

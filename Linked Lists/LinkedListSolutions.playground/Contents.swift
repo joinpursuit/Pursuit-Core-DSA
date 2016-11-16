@@ -5,24 +5,35 @@ import UIKit
 var str = "Hello, playground"
 
 
+
+//Linked List NODES have a key and a next
+
 class Node<T> {
     var key: T!
     var next: Node?
 }
 
 
-
-
+// Equatable is a protocol
 class LinkedList<T: Equatable> {
     var head = Node<T>()
     
+//    func printAllKeys() {
+//        
+//        var currentNode: Node<T>! = head
+//        
+//        while currentNode != nil {
+//            print(currentNode.key)
+//            currentNode = currentNode.next
+//        }
+//    }
+
     func printAllKeys() {
+        var currentNode: Node<T>! = head //Initialize the linked list head node
         
-        var currentNode: Node<T>! = head
-        
-        while currentNode != nil {
+        while currentNode != nil { //When the node exists
             print(currentNode.key)
-            currentNode = currentNode.next
+            currentNode = currentNode.next //Traversing nodes through their pointers
         }
     }
     
@@ -39,7 +50,7 @@ class LinkedList<T: Equatable> {
             return counter
         }
     }
-    
+   
     func append(element newKey: T) {
         guard head.key != nil else {
             head.key = newKey
@@ -110,4 +121,22 @@ class LinkedList<T: Equatable> {
         }
         
     }
+    
+//    func removeLastNode() -> Node<T> {
+//        // figure out last node
+//        var currentNode = head
+//        while currentNode?.next != nil {
+//            currentNode = currentNode?.next
+//        }
+//        let tempNode = currentNode
+//        currentNode = nil
+//        return tempNode()
+//    }
 }
+
+
+
+    let list = LinkedList<Int>()
+    list.append(element: 5)
+
+    print(list)

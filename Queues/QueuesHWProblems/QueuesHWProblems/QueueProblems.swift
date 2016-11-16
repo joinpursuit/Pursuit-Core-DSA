@@ -14,17 +14,21 @@ import Foundation
 
 //Find the sum of a queue
 func sum(q: Queue<Int>) -> Int? {
-    guard !(q.isEmpty()) else {
+    var tempQ = Queue<Int>()
+    var sum = 0
+    guard !q.isEmpty() else {
         return nil
     }
-    var sum = 0
     while !(q.isEmpty()) {
-        let top = q.deQueue()
-        sum += top!
-        
-        
+        let temp = q.deQueue()!
+        sum += temp
+        q.enQueue(newElement: temp)
     }
-    return sum
+    //Rebuild
+    while !(tempQ.isEmpty()) {
+        let temp = tempQ.deQueue()!
+        q.enQueue(newElement: temp)
+    }
     
     
 }
@@ -65,7 +69,7 @@ func isSorted<T: Comparable>(q: Queue<T>) -> Bool? {
     }
     return false
 }
-    
+
 
 //Return a reversed queue.
 func reverse<T>(q: Queue<T>) -> Queue<T> {
@@ -80,7 +84,7 @@ func reverse<T>(q: Queue<T>) -> Queue<T> {
 
 //Determine if two queues are equal.
 
-func areEqual<T: Equatable>(qOne: Queue<T>, qTwo: Queue<T>) -> Bool {
+func areEqual<T: Equatable>(qOne: Queue<T>, qTwo: Queue<T>) -> Bool? {
     
     let q1 = qOne.deQueue()
     let q2 = qTwo.deQueue()
@@ -91,6 +95,8 @@ func areEqual<T: Equatable>(qOne: Queue<T>, qTwo: Queue<T>) -> Bool {
         }
     
     return false
+    }
+    return nil
 }
 
 //Bonus: Hot Potato

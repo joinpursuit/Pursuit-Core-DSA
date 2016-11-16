@@ -10,6 +10,14 @@ import Foundation
 
 //Review One: Write a Node class and a Singly Linked List class that has a variable Node() at the head
 
+class Node<T> {
+    var key: T?
+    var next: Node?
+}
+
+class LinkedList<T: Equatable> {
+    var head = Node<T>()
+}
 //Review Two: Write a print printAllKeys() method in your linked list class
 
 
