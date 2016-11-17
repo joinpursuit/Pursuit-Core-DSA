@@ -2,7 +2,7 @@
 
 import UIKit
 
-var str = "Hello, playground"
+
 
 //Two Dimensional Arrays
 
@@ -17,6 +17,63 @@ let testArr = [[1,2,3],
 let testArrOut = [[7,4,1],
                   [8,5,2],
                   [9,6,3]]
+
+func rotate<T>(arr2d: [[T]]) -> [[T]] {
+    var returnArr = [[T]]()
+    for j in (0..<arr2d.count).reversed() {
+        var tempArr = [T]()
+        for i in (0..<arr2d.count).reversed() {
+            tempArr.append(arr2d[i][j])
+        }
+    returnArr.append(tempArr)
+    }
+    return returnArr
+}
+
+//rotate(arr2d: testArr)
+
+/*
+func rotateArr2<T>(arr2d: [[T]]) -> [[T]] {
+    let myCount = arr2d[0].count
+    let nilArr = Array<T?>(repeating: nil, count: myCount)
+    var returnArr = Array(repeating: nilArr, count: arr2d.count)
+    for rowNumber in 0..<arr2d.count {
+        for columnNumber in 0..<arr2d[0].count {
+            returnArr[rowNumber][columnNumber] = arr2d[rowNumber][columnNumber]
+        }
+    }
+    return returnArr
+}
+ */
+
+func rotating90Degrees<T>(array: [[T]]) -> [[T]] {
+    let reversedArray = Array(array.reversed())
+    var returnedArr = Array(repeating: [T](), count: array[0].count)
+    
+    for arr in reversedArray {
+        for (index, num) in arr.enumerated() {
+            returnedArr[index].append(num)
+        }
+    }
+    return returnedArr
+}
+
+//rotating90Degrees(array: testArr)
+//******
+
+func rotateArrAgain(arr2d: [[Int]]) {
+    for i in 0..<arr2d[0].count {
+            print("HEY \(arr2d[0][i])")
+    }
+    for j in 0..<arr2d[1].count {
+        print("HEY \(arr2d[1][j])")
+    }
+    for k in 0..<arr2d[2].count {
+        print("HEY \(arr2d[2][k])")
+    }
+}
+
+//rotateArrAgain(arr2d: testArr)
 
 //Bonus: Handle arrays that are not square
 
@@ -33,11 +90,25 @@ let testArr2Out = [[5,1],
 
 //Implement a Stack using an Array
 
-class Stack {
-    func pop(){}
-    func push(){}
-    func peek(){}
-    func isEmpty(){}
+class Stack<T> {
+    private var arr = Array<T>()
+    //var arr = [T]() //difference??
+    
+    func pop() {
+        arr.removeLast()
+    }
+    
+    func push(newElement: T) {
+        arr.append(newElement)
+    }
+    
+    func peek() -> T? {
+        return arr[0]
+    }
+    
+    func isEmpty() -> Bool {
+        return arr.count > 0
+    }
 }
 
 
@@ -45,13 +116,24 @@ class Stack {
 
 //Implement a singly linked list with the following methods
 
-class Node{
-
+class Node<T> {
+    var key: T!
+    var next: Node?
+    var head: Node?
 }
 
-class LinkedList {
-    func isEmpty() {}
-    func append(){}
+class LinkedList<T: Equatable> {
+    //instantiation of a Node class of type Generic
+    private var head = Node<T>()
+    
+    func isEmpty() -> Bool {
+        return head.key == nil
+    }
+    
+    func append(newElement: T) {
+        
+    }
+    
     func delete(at: Int){}
     func insert(at: Int){}
     var count: Int = 0
