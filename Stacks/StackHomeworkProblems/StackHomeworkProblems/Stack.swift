@@ -31,3 +31,33 @@ class Stack<T> {
         return arr.count == 0
     }
 }
+
+extension Stack {
+    func map(closure: (Int) -> Int) -> Stack {
+        let reversedStack = Stack()
+        let returnStack = Stack()
+        while !self.isEmpty {
+            let temp = self.pop()!
+            reversedStack.push(temp)
+        }
+        while !reversedStack.isEmpty {
+            let temp = reversedStack.pop()!
+            self.push(temp)
+            let tempWithClosure = closure(temp)
+            returnStack.push(tempWithClosure)
+        }
+        return returnStack
+    }
+}
+
+let myStack = Stack()
+myStack.push(4)
+myStack.push(10)
+myStack.push(7)
+
+let myClosure = {(a: Int) -> (Int) in
+    return a * 2}
+
+let mappedStack = myStack.map{myClosure}
+
+
