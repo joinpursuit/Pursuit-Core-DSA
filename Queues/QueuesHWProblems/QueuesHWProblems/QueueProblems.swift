@@ -18,8 +18,8 @@ func sum(q: Queue<Int>) -> Int? {
   
   var sum = 0
   while !q.isEmpty(){
-    let num = q.deQueue()
-    sum += num!
+    let num = q.deQueue()!
+    sum += num
   }
   return sum
 }

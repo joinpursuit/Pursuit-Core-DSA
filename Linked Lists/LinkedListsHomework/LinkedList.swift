@@ -9,21 +9,12 @@
 import Foundation
 
 class Node<T> {
-<<<<<<< HEAD
   var key: T!
   var next: Node?
-=======
-    var key: T!
-    var next: Node?
-<<<<<<< HEAD
-    var previous: Node?
->>>>>>> 74b60d88e1113a7ee0062358f2eeaf7f3248cd43
-=======
->>>>>>> 508aea3b9a0434e2bbb7125488be8a91c82c7e87
 }
 
 class LinkedList<T: Equatable> {
-<<<<<<< HEAD
+  
   var head  = Node<T>()
   
   func printAllKeys() {
@@ -31,26 +22,11 @@ class LinkedList<T: Equatable> {
     while currentNode.next != nil {
       print(currentNode.key)
       currentNode = currentNode.next!
-=======
-    var head  = Node<T>()
-    
-    func printAllKeys() {
-<<<<<<< HEAD
-        
->>>>>>> 74b60d88e1113a7ee0062358f2eeaf7f3248cd43
-=======
-        var currentNode: Node? = head
-        while currentNode != nil {
-            print(currentNode?.key)
-            currentNode = currentNode?.next
-        }
-
->>>>>>> 508aea3b9a0434e2bbb7125488be8a91c82c7e87
     }
-    print(currentNode.next!)
   }
   
-  var count: Int {
+  func count() -> Int {
+    
     if head.key == nil {
       return 0
     }
@@ -62,6 +38,7 @@ class LinkedList<T: Equatable> {
     }
     return counter
   }
+  
   
   func append(element newKey: T) {
     if head.key == nil {
@@ -151,5 +128,4 @@ class LinkedList<T: Equatable> {
   }
   
 }
-
 
