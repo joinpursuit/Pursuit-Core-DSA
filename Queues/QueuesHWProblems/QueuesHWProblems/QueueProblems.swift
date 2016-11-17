@@ -14,7 +14,22 @@ import Foundation
 
 //Find the sum of a queue
 func sum(q: Queue<Int>) -> Int? {
-    return nil
+    guard !q.isEmpty() else {
+        return nil
+    }
+    let tempQ = Queue<Int>()
+    var sum = 0
+    while !(q.isEmpty()) {
+        let temp = q.deQueue()!
+        sum += temp
+        q.enQueue(newElement: temp)
+    }
+    //Rebuild
+    while !(tempQ.isEmpty()) {
+        let temp = tempQ.deQueue()!
+        q.enQueue(newElement: temp)
+    }
+    return sum
 }
 
 //Find the smallest element in a queue
