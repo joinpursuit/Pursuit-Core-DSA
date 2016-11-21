@@ -14,6 +14,7 @@ import Foundation
 
 //Find the sum of a queue
 func sum(q: Queue<Int>) -> Int? {
+<<<<<<< HEAD
     guard q.isEmpty() == true else {return nil}
     
     var sum = 0
@@ -31,6 +32,23 @@ func sum(q: Queue<Int>) -> Int? {
     }
     
     print(q)
+=======
+    guard !q.isEmpty() else {
+        return nil
+    }
+    let tempQ = Queue<Int>()
+    var sum = 0
+    while !(q.isEmpty()) {
+        let temp = q.deQueue()!
+        sum += temp
+        q.enQueue(newElement: temp)
+    }
+    //Rebuild
+    while !(tempQ.isEmpty()) {
+        let temp = tempQ.deQueue()!
+        q.enQueue(newElement: temp)
+    }
+>>>>>>> 820db60d277bc2ddeaba1ba30f91d2a4dbfef67e
     return sum
 }
 
