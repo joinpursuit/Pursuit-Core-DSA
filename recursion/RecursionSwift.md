@@ -139,29 +139,54 @@ In iterative loops, we count the number of loops in order to figure out the Big 
 
 # Exercises:
 
-1. Print out all elements in an array recursively
+1) Print out all elements in an array recursively
 
-2. Concatenate all the elements in an array of Strings
+2) Concatenate all the elements in an array of Strings
 
 Sample Input: ["Hi", "there", ",", " ", "user","!"]
 
 Sample Output: "Hi there, user!"
 
-2. Find the sum of all the numbers in an array
+3) Find the sum of all the numbers in an array
 
 Sample Input: [3,6,1,3,2]
 
 Sample Output: 15
 
-3. Find the sum of all the even numbers in an array
+4) Find the sum of all the even numbers in an array
 
 Sample Input: [3,6,1,3,2]
 
 Sample Output: 8
 
-4. Find the factorial of a given number
+5) Find the factorial of a given number
 
 Factorial definition:
 
 5 factorial = 5! = 5 * 4 * 3 * 2 * 1 = 120
+
+6) Multiply two given Ints.  Do not use for/while loops or the * operator.
+
+Sample Input: 5 * 6
+
+Sample Output: 30
+
+7) Write a recursive function pow that takes two numbers x and y as input and returns x to the power y.  Do not use for/while loops
+
+Sample Input: 3 ^ 4
+
+Sample Output: 81
+
+8) Write a recursive function harmonicSum(n:) that returns the sum of the first n numbers of the harmoinc series defined below.
+
+[Harmonic series](https://en.wikipedia.org/wiki/Harmonic_series_(mathematics)) : 1 + 1/2 + 1/3 + 1/4 + 1/5 + ... + 1/n-1 + 1/n
+
+Sample Input: 3
+
+Sample Output: 1.83
+
+9) Write a recursive function harmonicSum(n:) that returns the sum of the first n numbers of the geometric series defined below.
+
+[Geometric series](https://en.wikipedia.org/wiki/Geometric_series) : 1/2 + 1/4 + 1/8 + ... + 1/(2^n)
+
 
