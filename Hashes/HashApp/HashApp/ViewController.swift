@@ -9,17 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var stringHash: Hash<String>!
+    var stringHash: Hash<String, Int>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        stringHash = Hash<String>()
-        stringHash.insert("foobar")
-        stringHash.insert("hello")
-        stringHash.insert("my")
+        stringHash = Hash<String, Int>()
+        stringHash.insert("one", 1)
+        stringHash.insert("two", 2)
+        stringHash.insert("five", 5)
         let keys = stringHash.keys()
         print(keys)
+        
+        print(stringHash.get(key:"five")!)
     }
 
     override func didReceiveMemoryWarning() {

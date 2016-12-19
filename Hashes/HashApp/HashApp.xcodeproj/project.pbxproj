@@ -13,6 +13,7 @@
 		1E6201F21DC3C55200953015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E6201F11DC3C55200953015 /* Assets.xcassets */; };
 		1E6201F51DC3C55200953015 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E6201F31DC3C55200953015 /* LaunchScreen.storyboard */; };
 		1E6201FD1DC3C56700953015 /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6201FC1DC3C56700953015 /* Hash.swift */; };
+		1EA96DBE1E0885FD004CC4D0 /* HashTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA96DBD1E0885FD004CC4D0 /* HashTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1E6201F41DC3C55200953015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E6201F61DC3C55200953015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E6201FC1DC3C56700953015 /* Hash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hash.swift; path = ../Hash.swift; sourceTree = "<group>"; };
+		1EA96DBD1E0885FD004CC4D0 /* HashTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				1E6201EA1DC3C55200953015 /* AppDelegate.swift */,
 				1E6201EC1DC3C55200953015 /* ViewController.swift */,
 				1E6201EE1DC3C55200953015 /* Main.storyboard */,
+				1EA96DBD1E0885FD004CC4D0 /* HashTableViewController.swift */,
 				1E6201F11DC3C55200953015 /* Assets.xcassets */,
 				1E6201F31DC3C55200953015 /* LaunchScreen.storyboard */,
 				1E6201F61DC3C55200953015 /* Info.plist */,
@@ -142,6 +145,7 @@
 				1E6201ED1DC3C55200953015 /* ViewController.swift in Sources */,
 				1E6201FD1DC3C56700953015 /* Hash.swift in Sources */,
 				1E6201EB1DC3C55200953015 /* AppDelegate.swift in Sources */,
+				1EA96DBE1E0885FD004CC4D0 /* HashTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
