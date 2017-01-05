@@ -93,7 +93,7 @@ Here's how it works:
 4. Move all the elements equal to the pivot into an array called <i>equal</i>.
 5. Move all the elements greater than the pivot into an array called <i>greater</i>
 6. Return the following:
-7. 
+ 
 This function passing in <i>less</i> as input + <i>equal</i> + this function passing in <i>greater</i> as input.
 
  Let's go through some examples:
