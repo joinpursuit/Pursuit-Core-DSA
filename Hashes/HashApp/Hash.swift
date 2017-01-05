@@ -8,6 +8,17 @@
 
 import Foundation
 
+func countOccurances(arr: [Int]) -> [Int: Int] {
+    var dict = [Int: Int]()
+    
+    for element in arr{
+        dict[element] = (dict[element] ?? 0) + 1
+    }
+    
+    return dict
+}
+
+
 class HashNode<Element: Hashable> {
     var key: Element
     var next: HashNode?

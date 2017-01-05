@@ -1,4 +1,4 @@
-var str = "Hello, playground"
+import Foundation
 
 //Two Dimensional Arrays
 //Write a function that takes a square 2-Dimensional array of Ints and rotates it 90 degrees
@@ -58,23 +58,17 @@ class Stack<T> {
     func isEmpty() -> Bool{
         return arr.count == 0
     }
-    func myMap(closure: ((T) -> T)) -> [T]{
-        var finalArr = [T]()
-        let tempStack = Stack<T>()
+    func myMap(closure: ((T) -> T)) -> Stack<T>{
+        let finalArr = Stack<T>()
         
-        while !isEmpty() {
-            tempStack.push(newElement: self.pop()!)
-        }
-        
-        while !tempStack.isEmpty() {
-            finalArr.append(closure(tempStack.peek()!))
-            self.push(newElement: tempStack.pop()!)
+        for element in self.arr{
+            finalArr.push(newElement: closure(element))
         }
         
         return finalArr
     }
-    func myFilter(closure: ((T) -> Bool)) -> [T]{
-        var finalArr = [T]()
+    func myFilter(closure: ((T) -> Bool)) -> Stack<T>{
+        let finalArr = Stack<T>()
         let tempStack = Stack<T>()
         
         while !self.isEmpty() {
@@ -83,11 +77,9 @@ class Stack<T> {
         
         while !tempStack.isEmpty() {
             if closure(tempStack.peek()!){
-                finalArr.append(tempStack.pop()!)
+                finalArr.push(newElement: tempStack.peek()!)
             }
-            else{
-                self.push(newElement: tempStack.pop()!)
-            }
+            self.push(newElement: tempStack.pop()!)
         }
         
         return finalArr
@@ -114,9 +106,18 @@ let a = Stack<Int>()
 a.push(newElement: 1)
 a.push(newElement: 2)
 a.push(newElement: 3)
+a.push(newElement: 4)
+/*
+let filter = a.myFilter(closure: { $0 % 2 == 0 })
+let map = a.myMap(closure: { $0 * $0 })
+let reduce = a.myReduce(initial: 10, closure: { $0 + $1 })
+dump(reduce)
+ */
 a.pop()
 a.pop()
-a.peek()
+a.pop()
+a.pop()
+
 
 
 //Linked Lists
@@ -129,6 +130,7 @@ class Node<T>{
 class LinkedList<T> {
     
     var head = Node<T>()
+    var count: Int = 0
     
     func isEmpty() -> Bool {
         return count == 0
@@ -162,7 +164,6 @@ class LinkedList<T> {
             return returnElement
         }
         else{
-            
             var currentNode = head
             for _ in 1..<at{
                 currentNode = currentNode.next!
@@ -208,8 +209,39 @@ class LinkedList<T> {
         print(currentNode.key)
     }
     
-    var count: Int = 0
+    func myMap(closure: ((T) -> T)) -> LinkedList<T>{
+        let finalLL = LinkedList<T>()
+        
+        var currentNode = head
+        while currentNode.next != nil {
+            finalLL.append(newElement: closure(currentNode.key))
+            
+            currentNode = currentNode.next!
+        }
+        finalLL.append(newElement: closure(currentNode.key))
+        return finalLL
+    }
+    func myFilter(closure: ((T) -> T)) -> LinkedList<T>{
+        let finalLL = LinkedList<T>()
+        
+        
+        return finalLL
+    }
+    func myReduce(){
+        
+    }
 }
+
+let b = LinkedList<Int>()
+b.append(newElement: 1)
+b.append(newElement: 2)
+b.append(newElement: 3)
+b.append(newElement: 4)
+
+let map = b.myMap(closure: { a in return a * 2 })
+dump(map)
+
+b.printAll()
 
 
 //Queues
