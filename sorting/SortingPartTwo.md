@@ -12,7 +12,7 @@ Resources:
 So far, we've looked at sorts that take O(n<sup>2</sup>) time.  Those were:
 
 - Insertion Sort
-- Merge Sort
+- Bubble Sort
 
 Both of the algorithms are helpful for learning how sorting works, but aren't actually used because they are too slow.
 
