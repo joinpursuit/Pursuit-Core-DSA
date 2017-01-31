@@ -28,7 +28,7 @@ Given an array of integers, 1 ≤ a[i] ≤ n (n = size of array), some elements 
 
 Find all the elements that appear twice in this array.
 
-**Bonus**: Solve it without extra space and in O(n) runtime?
+**Bonus**: Solve it in O(n) runtime.  The only extra space you may use is making a copy of the input array (i.e you could do it in constant space if you could manipulate the input array.  You can also make the function an inout function).
 
 
 |Sample Input | Sample Output | 
