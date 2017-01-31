@@ -44,9 +44,9 @@ Given an array of integers and an integer k, find out whether there are two dist
 
 |Sample Input | Sample Output | 
 |---|---|
-|[1,5,3,9,10,3,4], 2| true |
+|[1,5,3,9,10,3,4], 2| false |
 |[1,5,3,9,10,3,4], 3| true |
-|[1,5,3,9,10,3,4], 4| false | 
+|[1,5,3,9,10,3,4], 4| true | 
 
 
 
