@@ -2,7 +2,7 @@
 
 Welcome to Units 8-10 DSA!
 
-###Goals:
+### Goals:
 
 When participating in an interview, developers will be able to:
 
@@ -13,7 +13,7 @@ When participating in an interview, developers will be able to:
 - Debug code they have written by testing with sample inputs
 
 
-###Topics:
+### Topics:
 
 In Units 4 - 6, you learned the foundational structure of all of the below topics.  In Units 8-10, we will now be practicing applying these skills and how to talk about code.
 
@@ -40,7 +40,7 @@ In Units 4 - 6, you learned the foundational structure of all of the below topic
 - Time complexity
 - Space complexity
 
-###Class format:
+### Class format:
 
 DSA lessons will be held on Mondays and Wednesdays at 11:00 am.
 
@@ -53,13 +53,13 @@ After reviewing the problem as a whole class, the rest of class will be devoted 
 - Student modeling an interview question in front of class
 
 
-###Quick survey
+### Quick survey
 
 Let's take 5 minutes now to fill out [this survey](https://goo.gl/forms/VN8CXgy5SMcU5Htw2) so I can better understand what you are interested in working on.
 
-###DSA Refresher
+### DSA Refresher
 
-####Reverse a String
+#### Reverse a String
 
 - Ask clarifying questions
 - Identify inputs and outputs
@@ -67,7 +67,7 @@ Let's take 5 minutes now to fill out [this survey](https://goo.gl/forms/VN8CXgy5
 - Write code to solve a problem
 - Debug code by testing with sample inputs
 
-###Resources
+### Resources
 
 **Learning sites**
 
