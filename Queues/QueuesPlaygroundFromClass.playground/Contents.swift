@@ -16,23 +16,8 @@ class LinekdList<T> {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
 class Queue<T> {
     private var list = LinekdList<T>()
-    
     func enQueue(newElement: T) {
         if list.head.key == nil {
             list.head.key = newElement
@@ -44,7 +29,6 @@ class Queue<T> {
             list.tail = newNode
         }
     }
-    
     func deQueue() -> T? {
         if let oldHeadKey = list.head.key {
             if let nextNode = list.head.next {
@@ -57,15 +41,23 @@ class Queue<T> {
             return nil
         }
     }
-    
     func isEmpty() -> Bool {
         return list.head.key == nil
     }
-    
     func peek() -> T? {
         return list.head.key
     }
 }
- */
 
 
+let myQueue = Queue<Int>()
+
+myQueue.enQueue(newElement: 19)
+myQueue.enQueue(newElement: 3)
+myQueue.enQueue(newElement: 2)
+myQueue.deQueue()
+myQueue.peek()
+myQueue.isEmpty()
+myQueue.deQueue()
+myQueue.deQueue()
+myQueue.peek()
