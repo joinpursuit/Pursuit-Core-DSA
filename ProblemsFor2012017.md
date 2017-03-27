@@ -1,16 +1,17 @@
 #Problems for 2/01/17
 
-1) Write a function that takes an integer as input, and returns whether or not it is a prime number
-
-2) https://leetcode.com/problems/count-primes/
-
-Count the number of prime numbers less than a non-negative number, n.
-
-3) https://leetcode.com/problems/third-maximum-number/
+1) https://leetcode.com/problems/third-maximum-number/
 
 Given a non-empty array of integers, return the third maximum number in this array. If it does not exist, return the maximum number. 
 
 **Bonus**: The time complexity must be in O(n).
+
+2) Write a function that takes an integer as input, and returns whether or not it is a prime number
+
+3) https://leetcode.com/problems/count-primes/
+
+Count the number of prime numbers less than a non-negative number, n.
+
 
 4) https://leetcode.com/problems/happy-number/
 

@@ -1,4 +1,4 @@
-##Assessment Review Topics
+##Final assessment Review Topics
 
 ###Big O Notation
 
@@ -6,6 +6,11 @@
 - What are examples of O(1), O(n), O(n<sup>2</sup>) runtimes?
 - Given a function, what is its runtime?
 - Why is binary search a O(log(n)) algorithm?
+
+###Data Structures
+
+- Select the best data structure(s) to model a particular situation
+- [Example questions](http://www.cs.cornell.edu/courses/cs2110/2014sp/L09-Lists/data_structures.pdf)
 
 ###Arrays
 
