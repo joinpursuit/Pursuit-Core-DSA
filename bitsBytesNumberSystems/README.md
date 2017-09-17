@@ -1,6 +1,67 @@
-### 3. Binary
+
+### Objectives
+- Represent numbers in base 2, 10 and 16
+- Convert numbers in one base to another base
+- Understand how modern operating systems store numbers in memory
+
+### Readings
 
 [Binary Number System](https://www.mathsisfun.com/binary-number-system.html)
+
+[Storage](https://en.wikipedia.org/wiki/Computer_data_storage)
+
+#### Vocabulary
+
+- Binary
+- Octal
+- Decimal
+- Hexadecimal
+- Place value
+- Base
+- Sign
+- Integer
+- Bit
+- Byte
+
+### 1. Number Types
+
+We saw in class yesterday that we will primarily work with two number types in Swift.  Those two are:
+
+<details>
+<summary> Show types </summary>
+- Int
+- Double
+</details>
+
+By default, if we don't annotate the types ourselves, Swift will always give us one of these types.  This process is called:
+
+<details>
+<summary> Answer </summary>
+Type Inference
+</details>
+
+However, Swift has a host of other number types built in which you will see come up from time to time.  In order to understand what those types are and why they could be useful, we are first going to discuss how information is stored inside a computer.
+
+
+### 2. Storage Introduction
+
+How do we store information?  A computer is a combination of a lot of very complicated pieces of circuitry.  At its most basic level, think of it as a device made up of transistors.  A transistor regulates the current in a circuit, and can be used like a switch.  It can either be on or off.  
+
+If we want to store something on our computer, the only thing we can do is turn transistors on and off.  Then, be reading a series of these transistors, we can recreate the information that we stored originally.
+
+Because transistors are either on or off, we need a way of translating any information to a series of 0s and 1s so that it can be stored on our computers.  We call one piece of information a bit, and eight of them make up one byte.
+
+```
+0 ~ One bit
+10100101 ~ One byte (8 bits)
+```
+
+
+Let's take a look at how we are able to store numbers by breaking them down to 0s and 1s.
+
+
+### 3. Binary
+
 
 Binary is another way of representing values.  While decimal (base 10) uses the digits 0,1,2,3,4,5,6,7,8 and 9, binary only uses the digits 0 and 1.
 
@@ -158,7 +219,7 @@ let maxIntValue = Int.max  // 9223372036854775807
 ```
 </details>
 
-### 5. Signedness
+### 4. Signedness
 
 A "signed" integer can be positive, negative or zero. An "unsigned" integer can only represent a positive number, or zero.
 
@@ -195,3 +256,127 @@ let maxUIntValue = UInt.max  // 18446744073709551615
 </details>
 
 Compare them to their corresponding signed type (e.g. `UInt8` to `Int8`).  What do you notice is different about them?
+
+
+### 5. Overflow Operators
+
+You may see that Swift supports overflow operators. They're not used in everyday coding but the reason they exist is worth looking at quickly. Overflow refers to the result of trying to perform an operation that would result in a value that goes over the maximum, or under the minimum value of the data type.
+
+```swift
+var x: Int8 = 100
+x += 30
+```
+
+That crashes, which is actually what we want it to do. This alerts us to the fact that we have overflow and we're more likely to fix it. There are operators that will make the value wrap around and our program won't crash but most likely the value we get is totally not what we expect.
+
+**Takeaway**: Sometimes it's good to crash.
+
+### 6. Conversion between Integer Types
+
+The range of numbers that can be stored in an integer constant or variable is different for each numeric type. An Int8 constant or variable can store numbers between -128 and 127, whereas a UInt8 constant or variable can store numbers between 0 and 255. A number that will not fit into a constant or variable of a sized integer type is reported as an error when your code is compiled:
+
+```swift
+let cannotBeNegative: UInt8 = -1
+// UInt8 cannot store negative numbers, and so this will report an error
+let tooBig: Int8 = Int8.max + 1
+// Int8 cannot store a number larger than its maximum value,
+// and so this will also report an error
+```
+
+Because each numeric type can store a different range of values, you must opt in to numeric type conversion on a case-by-case basis. This opt-in approach prevents hidden conversion errors and helps make type conversion intentions explicit in your code.
+
+To convert one specific number type to another, you initialize a new number of the desired type with the existing value. In the example below, the constant twoThousand is of type UInt16, whereas the constant one is of type UInt8. They cannot be added together directly, because they are not of the same type. Instead, this example calls UInt16(one) to create a new UInt16 initialized with the value of one, and uses this value in place of the original:
+
+```swift
+let twoThousand: UInt16 = 2_000
+let one: UInt8 = 1
+let twoThousandAndOne = twoThousand + UInt16(one)
+Because both sides of the addition are now of type UInt16, the addition is allowed. The output constant (twoThousandAndOne) is inferred to be of type UInt16, because it is the sum of two UInt16 values.
+```
+### 7. Hexadecmial
+
+Sometimes, instead of representing a number in base 10, we will see a number represented in base 16.  Has anyone seen an example of this before?
+
+<details>
+<summary> One example </summary>
+
+- Colors in HTML
+ 
+</details>
+
+
+Hexadecimal is useful because it still allows to talk in terms of bits and bytes.  16 is a power of 2, so it allows us to transition between binary and Hexademcial.
+
+In Decimal, we have 10 digits (0,1,2,3,4,5,6,7,8, and 9).  In Hexadecimal, we have 16 digits (0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F).  The letters used there signify the following in decimal:
+
+<details>
+<summary>Table</summary>
+
+|Hex symbol| Corresponding Decimal Value|
+|---|---|
+|0|0|
+|1|1|
+|2|2|
+|3|3|
+|4|4|
+|5|5|
+|6|6|
+|7|7|
+|8|8|
+|9|9|
+|A|10|
+|B|11|
+|C|12|
+|D|13|
+|E|14|
+|F|15|
+
+</details>
+
+
+Just like with binary, we can translate Hex numbers to Decimal by using their place value:
+
+```
+0xB3A = (11 * 16 ^ 2) + (3 * 16 ^ 1) + (10 * 16 ^ 0)
+0xB3A = (11 * 256) + (3 * 16) + (10 * 1)
+0xB3A = (11 * 256) + (3 * 16) + (10 * 1)
+0xB3A = (2816) + (48) + (10)
+0xB3A = 2874
+
+```
+
+We write 0x before a Hex number to indicate that it is in Base 16.  This is to avoid confusion for number like:
+
+```
+0x13 = (1 * 16 ^ 1) + (3 * 16 ^ 0)
+0x13 = (16) + (3)
+0x13 = 19
+```
+
+Let's practice some below.  Convert the following Hex numbers into Decimal:
+
+0x100
+
+0xFF
+
+0x10
+
+0xC83
+
+0x8
+
+<details>
+<summary>Solution</summary>
+
+```swift
+0x100 = 256
+
+0xFF = 255
+
+0x10 = 16
+
+0xC83 = 3203
+
+0x8 = 8
+```
+</details>
