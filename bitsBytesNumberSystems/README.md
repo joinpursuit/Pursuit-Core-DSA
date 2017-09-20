@@ -293,7 +293,7 @@ let one: UInt8 = 1
 let twoThousandAndOne = twoThousand + UInt16(one)
 Because both sides of the addition are now of type UInt16, the addition is allowed. The output constant (twoThousandAndOne) is inferred to be of type UInt16, because it is the sum of two UInt16 values.
 ```
-### 7. Hexadecmial
+### 7. Hexadecimal
 
 Sometimes, instead of representing a number in base 10, we will see a number represented in base 16.  Has anyone seen an example of this before?
 
