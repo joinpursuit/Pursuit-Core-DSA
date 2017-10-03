@@ -10,7 +10,7 @@ We measure two types of performance with Big O Notation:
 
 We usally talk much more about time complexity.
 
-##Common Time Complexities of Algorithms
+## Common Time Complexities of Algorithms
 
 |Big O Runtime|Name|Example|
 |---|---|---|
@@ -18,7 +18,7 @@ We usally talk much more about time complexity.
 |O(n) | Linear | Print every string in an array of count *n* |
 |O(n<sup>2</sup>) | Quadratic | Print every character of every string in an array of count *n* (Assume that every string is also of length n) |
 
-###O(1):
+### O(1):
 ```swift
 func constantTime(arr: [String]) {
 	guard arr.count > 0 else {
@@ -201,7 +201,7 @@ We'll get to these all going forwards.  Don't worry about them too much right no
 |O(2<sup>n</sup>) | Exponential | Recursive Fibonacci |
 |O(n!) | Factorial | Generate all the permutations of a list |
 
-##Ranking and Visualizing Big O Runtimes
+## Ranking and Visualizing Big O Runtimes
 From fastest to slowest:
 
 O(1) < O(log(n)) < O(n) < O(nlog(n)) < O(n<sup>2</sup>) < O(2<sup>n</sup>) < O(n!)
@@ -522,7 +522,7 @@ func bar(myArr: [Int]) {
 
 
 
-###Example Four:
+### Example Four:
 ```swift
 func secondSmallestWithSort(myArr: [Int]) -> Int? {
 	guard myArr.count > 1 else {
