@@ -1,6 +1,6 @@
-###Big O Homework
+### Big O Homework
 
-##Instructions
+## Instructions
 
 Work on these problems in your fork of the AC-DSA repo.  Add the runtimes below, then push your commits up.  If you have not yet made a pull request, make a pull request against AC-DSA.
 
