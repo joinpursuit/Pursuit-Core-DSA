@@ -306,7 +306,7 @@ Example:
 **You try**: Rewrite the function using higher ordered functions
 
 
-###**Practice Problem One**
+### **Practice Problem One**
 
 **Write a function that returns how many vowels are in a String**
 
@@ -334,6 +334,8 @@ Example:
 *Sample input*: [9, 0, 6]  [15, 14, 9]
 
 *Sample output*: [135, 0, 54]
+
+### For Later
 
 ## Homework
 Your homework will be several more algorithm solving questions.  This homework is due before class **tomorrow** Oct. 18th.  These homework assignments will be checked for completion.  You will use the testing suite in XCode to get immediate feedback if your algorithms are successful.
