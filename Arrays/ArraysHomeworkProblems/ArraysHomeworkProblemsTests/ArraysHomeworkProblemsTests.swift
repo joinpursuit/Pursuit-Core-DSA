@@ -51,7 +51,13 @@ class ArraysHomeworkProblemsTests: XCTestCase {
     func testproblemFive() {
         XCTAssert(problemFive(arr: [[4,1,2,5],[3,1,9,2],[4,1,3,8],[9,2,4,3]]) == 13)
         XCTAssert(problemFive(arr: [[2,4],[6,7]]) == 1)
-        XCTAssert(problemFive(arr: [[1,5,2,3,6],[123,23,132,1,-1],[924,29,19-13,2],[190,10,313,12,0],[-19,13,102,12,-111]]) == 73)
+        XCTAssert(problemFive(arr: [
+            [1,5,2,3,6],
+            [123,23,132,1,-1],
+            [924,29,19,13,2], // "19,13" was "19-13" before, won't work unless you change this
+            [190,10,313,12,0],
+            [-19,13,102,12,-111]
+            ]) == 73)
     }
     
     func testPerformanceExample() {
