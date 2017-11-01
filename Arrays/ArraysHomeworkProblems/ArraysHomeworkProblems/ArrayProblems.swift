@@ -15,9 +15,18 @@ import Foundation
 //Sample output: [1,2,3,4,5,0]
 
 func problemOne(arr: [Int]) -> [Int] {
-    return []
+    var newArr: [Int] = []
+    newArr = arr
+    newArr.append(newArr.remove(at: 0))
+//    for index in arr.indices {
+//        if index == arr.count-1 {
+//            newArr.append(arr[0])
+//            return newArr
+//        }
+//        newArr.append(arr[index+1])
+//    }
+    return newArr
 }
-
 
 //Problem Two
 //Write an algorithm that moves every element in an array of Ints (x) spaces to the left
@@ -26,7 +35,12 @@ func problemOne(arr: [Int]) -> [Int] {
 //Sample output: [3,4,5,0,1,2]
 
 func problemTwo(arr: [Int], x: Int) -> [Int] {
-    return []
+    var newArr: [Int] = []
+    newArr = arr
+    for _ in 0..<x {
+            newArr.append(newArr.remove(at: 0))
+    }
+    return newArr
 }
 
 //Write a function that accepts two strings, and returns true if one string is rotation of the other, taking letter case into account.
@@ -42,6 +56,13 @@ func problemTwo(arr: [Int], x: Int) -> [Int] {
 //Sample output 3: false
 
 func problemThree(strOne: String, strTwo: String) -> Bool {
+    var newWord = Array(strOne)
+    for _ in newWord.indices {
+        newWord.append(newWord.remove(at: 0))
+        if String(newWord) == strTwo {
+            return true
+        }
+    }
     return false
 }
 
@@ -63,7 +84,21 @@ func problemThree(strOne: String, strTwo: String) -> Bool {
 //|(1 + 5 + 9) - (3 + 5 + 11)| = |15 - 19| = |-4| = 4
 
 func problemFour(arr: [[Int]]) -> Int {
-    return 0
+    var sum1 = 0
+    var sum2 = 0
+    for x in arr.indices {
+        for y in arr[x].indices {
+            if x == y {
+                sum1 += arr[x][y]
+            }
+        }
+        for y in Array(arr[x].reversed()).indices {
+            if x == y {
+                sum2 += Array(arr.reversed())[x][y]
+            }
+        }
+    }
+    return abs(sum1 - sum2)
 }
 
 
@@ -84,6 +119,20 @@ func problemFour(arr: [[Int]]) -> Int {
 //|(4 + 1 + 3 + 3) - (5 + 9 + 1 + 9)| = |11 - 24| = |-13| = 13
 
 func problemFive(arr: [[Int]]) -> Int {
-    return 0
+    var sum1 = 0
+    var sum2 = 0
+    for x in arr.indices {
+        for y in arr[x].indices {
+            if x == y {
+                sum1 += arr[x][y]
+            }
+        }
+        for y in Array(arr[x].reversed()).indices {
+            if x == y {
+                sum2 += Array(arr.reversed())[x][y]
+            }
+        }
+    }
+    return abs(sum1 - sum2)
 }
 
