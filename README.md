@@ -2,6 +2,14 @@
 
 Data Structures and Algorithms Interview Problems
 
+## Problems
+
+- [Array Problems](#array-problems)
+- [Integer Problems](#integer-problems)
+- [Linked List Problems](#linked-list-problems)
+- [Stack Problems](#stack-problems)
+- [String Problems](#string-problems)
+
 ## Array Problems
 
 | Problem | Difficulty| Tags | Solution |
