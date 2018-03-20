@@ -7,7 +7,7 @@
 
 ## Problem Description
 
-Given two sorted lists, write a function that returns a single sorted list with all the elements from the inputs.  Your solution must work in O(1) time.
+Given two sorted arrays, write a function that returns a single sorted list with all the elements from the inputs.  Your solution must work in O(1) time.
 
 ## Sample
 
