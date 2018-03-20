@@ -1,12 +1,12 @@
-#Data Structures and Algorithms
+# Data Structures and Algorithms
 
-##Objectives:
+## Objectives:
 
 - What is a data structure?
 - What is an algorithm?
 - Why are we learning about them?
 
-##Data Structures
+## Data Structures
 A **data structure** is a way of storing and organizing data.
 
 We already have some exposure to using data structures in Swift.  What some examples of data structures?
@@ -40,7 +40,7 @@ Over the course of our class, we will discuss several other data structures incl
  - Trees
  - Graphs
 
-##What's the point of using data structures?
+## What's the point of using data structures?
 
 If we want to use and access data, we need a way to store it.  Data structures help us answer questions like:
 
@@ -52,7 +52,7 @@ An understanding of data structures will enable you to write readable, efficient
 
 Additionally, our programs can be faster or slower depending on how we store and access information.  There is a huge difference between something taking .1 seconds and 1 second!  Knowing which data structures to use can make a huge difference for end users of your app.
 
-##Algorithms
+## Algorithms
 
 An **algorithm** is a set of step-by-step operations that accomplishes a task.
 
@@ -78,7 +78,7 @@ Here is a common algorithm called "FizzBuzz"
 5. Otherwise, write the current number.
 ```
 
-###Practice:  Write FizzBuzz in Swift
+### Practice:  Write FizzBuzz in Swift
 
 <details>
 	<summary>One solution</summary>
@@ -206,16 +206,16 @@ Your solution might look totally diffferent.  There are an infinite amount of wa
 
 </details>
 
-###Discussion:
+### Discussion:
 - Why is the first solution better than the second one?
 
-##Why is any of this important?
+## Why is any of this important?
 1. It will make you a better programmer
 2. It will enable you to pass technical interviews
 3. It's interesting!
 
 
-##Technical Interviews:
+## Technical Interviews:
 Answering technical questions is a necessary part of a technical interview.  Technical questions come in several different forms.
 
 1. iOS/App development Specific topics
@@ -235,7 +235,7 @@ Answering technical questions is a necessary part of a technical interview.  Tec
  - Which data structure would you use to model 
 
  
-##How to solve algorithms 
+## How to solve algorithms 
 1. Clarify the problem (if necessary)
 2. What are the inputs?
 3. What are the outputs?
@@ -306,7 +306,7 @@ Example:
 **You try**: Rewrite the function using higher ordered functions
 
 
-###**Practice Problem One**
+### **Practice Problem One**
 
 **Write a function that returns how many vowels are in a String**
 
@@ -316,7 +316,7 @@ Example:
 
 
 
-###**Practice Problem Two**
+### **Practice Problem Two**
 
 **Write a function that returns the product of an array of Ints with any zeros taken out**
 
@@ -325,7 +325,7 @@ Example:
 *Sample Output*: 96
 
 
-###**Practice Problem Three**
+### **Practice Problem Three**
 
 **Write a function that multiplies the corresponding elements in two [Int]s of the same size.  Two elements are corresponding if their indicies are the same.**
 
@@ -335,5 +335,7 @@ Example:
 
 *Sample output*: [135, 0, 54]
 
-##Homework
+### For Later
+
+## Homework
 Your homework will be several more algorithm solving questions.  This homework is due before class **tomorrow** Oct. 18th.  These homework assignments will be checked for completion.  You will use the testing suite in XCode to get immediate feedback if your algorithms are successful.

@@ -23,6 +23,15 @@
 - Bit
 - Byte
 
+### 0. Review
+
+Follow the link [here](https://itunes.apple.com/us/book/intro-to-app-development-with-swift/id1118575552?mt=11) and get the iBook titled "Intro to App Development with Swift"
+
+Download the zip file at the link [here](https://developer.apple.com/sample-code/swift/downloads/app-dev-curriculum.zip)
+
+Open the file titled "02\_Naming.Playground" and go to Lesson 2 in the iBook.  Complete the exercises in the playground.
+
+
 ### 1. Number Types
 
 We saw in class yesterday that we will primarily work with two number types in Swift.  Those two are:
@@ -293,7 +302,7 @@ let one: UInt8 = 1
 let twoThousandAndOne = twoThousand + UInt16(one)
 Because both sides of the addition are now of type UInt16, the addition is allowed. The output constant (twoThousandAndOne) is inferred to be of type UInt16, because it is the sum of two UInt16 values.
 ```
-### 7. Hexadecmial
+### 7. Hexadecimal
 
 Sometimes, instead of representing a number in base 10, we will see a number represented in base 16.  Has anyone seen an example of this before?
 
