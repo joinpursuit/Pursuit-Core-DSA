@@ -24,7 +24,7 @@ Data Structures and Algorithms Interview Problems
 | [Product of All Except Index](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/ProductOfAllExeptIndex.md) | Easy | [Arrays, Products] | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/ProductOfAllExceptIndexSolution.md) | 
 | [Remove Duplicates](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/RemoveDuplicates.md) | Easy | [Arrays, Duplicates] | [To Do]() | 
 | [Second Largest](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/SecondLargest.md) | Easy | [Arrays, Integers] | [To Do]() | 
-| [Merge Sorted Arrays](https://github.com/C4Q/AC-DSA/blob/master/LinkedListProblems/MergeSortedLists.md) | Medium | [Arrays] | [To Do]() | 
+| [Merge Sorted Arrays](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/MergeSortedLists.md) | Medium | [Arrays] | [To Do]() | 
 | [Shift Zeros](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/ShiftZeros.md) | Medium | [Arrays, Duplicates] | [To Do]() | 
 | [Product of Three](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/ProductOfThree.md) | Medium | [Arrays, Products, Integers] | [To Do]() | 
 | [Keypad](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/Keypad.md) | Hard | [Arrays] | [To Do]() | 
