@@ -1,4 +1,4 @@
-# MergeSortedLists
+# MergeSortedArrays
 
 | Difficulty | Tags | Solution Link
 | --- | --- | --- | 
