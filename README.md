@@ -14,14 +14,14 @@ Data Structures and Algorithms Interview Problems
 
 | Problem | Difficulty| Tags | Solution |
 | --- | --- | --- | --- |
-| [Diagonal Sum](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/DiagonalSum.md) | Easy |  [Arrays, Matrices, Integers] | [To Do]()
-| [Find Repeats](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/FindRepeats.md) | Easy | [Arrays, Integers, Duplicates] | [To Do]() | 
-| [Sum of first five even numbers](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/FirstFiveSum.md) | Easy | [Arrays, Integers] | [To Do]() |
-| [Greatest Row or Column in Matrix](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/GreatestRowOrColumn.md) | Easy | [Arrays, Matrices, Integers] | [To Do]() | 
-| [Largest Product of Two](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/LargestProductOfTwo.md) | Easy | [Arrays, Products] | [To Do]() | 
-| [Matrix Sum Without Corners](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/MatrixSum.md) | Easy | [Arrays, Matrices, Integers] | [To Do]() |
-| [Pair Sum](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/PairSum.md) | Easy | [Arrays, Integers] | [To Do]() | 
-| [Product of All Except Index](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/ProductOfAllExeptIndex.md) | Easy | [Arrays, Products] | [To Do]() | 
+| [Diagonal Sum](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/DiagonalSum.md) | Easy |  [Arrays, Matrices, Integers] | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/DiagonalSumSolution.md)
+| [Find Repeats](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/FindRepeats.md) | Easy | [Arrays, Integers, Duplicates] | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/FindRepeatsSolution.md) | 
+| [Sum of first five even numbers](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/FirstFiveSum.md) | Easy | [Arrays, Integers] | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/FirstFiveSumSolution.md) |
+| [Greatest Row or Column in Matrix](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/GreatestRowOrColumn.md) | Easy | [Arrays, Matrices, Integers] | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/GreatestRoworColumnSolution.md) | 
+| [Largest Product of Two](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/LargestProductOfTwo.md) | Easy | [Arrays, Products] | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/LargestProductofTwoSolution.md) | 
+| [Matrix Sum Without Corners](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/MatrixSum.md) | Easy | [Arrays, Matrices, Integers] | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/MatrixSumSolution.md) |
+| [Pair Sum](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/PairSum.md) | Easy | [Arrays, Integers] | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/PairSumSolution.md) | 
+| [Product of All Except Index](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/ProductOfAllExeptIndex.md) | Easy | [Arrays, Products] | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/ProductOfAllExceptIndexSolution.md) | 
 | [Remove Duplicates](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/RemoveDuplicates.md) | Easy | [Arrays, Duplicates] | [To Do]() | 
 | [Second Largest](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/SecondLargest.md) | Easy | [Arrays, Integers] | [To Do]() | 
 | [Merge Sorted Arrays](https://github.com/C4Q/AC-DSA/blob/master/LinkedListProblems/MergeSortedLists.md) | Medium | [Arrays] | [To Do]() | 
