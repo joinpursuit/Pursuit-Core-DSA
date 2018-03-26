@@ -1,6 +1,6 @@
 # Pair Sum Solution
 
-##Swift
+## Swift
 
 ```
 func pairSum(arr: [Int], target: Int) -> Bool {
