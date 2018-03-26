@@ -22,12 +22,12 @@ Data Structures and Algorithms Interview Problems
 | [Matrix Sum Without Corners](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/MatrixSum.md) | Easy | [Arrays, Matrices, Integers] | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/MatrixSumSolution.md) |
 | [Pair Sum](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/PairSum.md) | Easy | [Arrays, Integers] | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/PairSumSolution.md) | 
 | [Product of All Except Index](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/ProductOfAllExeptIndex.md) | Easy | [Arrays, Products] | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/ProductOfAllExceptIndexSolution.md) | 
-| [Remove Duplicates](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/RemoveDuplicates.md) | Easy | [Arrays, Duplicates] | [To Do]() | 
-| [Second Largest](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/SecondLargest.md) | Easy | [Arrays, Integers] | [To Do]() | 
-| [Merge Sorted Arrays](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/MergeSortedLists.md) | Medium | [Arrays] | [To Do]() | 
-| [Shift Zeros](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/ShiftZeros.md) | Medium | [Arrays, Duplicates] | [To Do]() | 
-| [Product of Three](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/ProductOfThree.md) | Medium | [Arrays, Products, Integers] | [To Do]() | 
-| [Keypad](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/Keypad.md) | Hard | [Arrays] | [To Do]() | 
+| [Remove Duplicates](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/RemoveDuplicates.md) | Easy | [Arrays, Duplicates] | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/RemoveDuplicatesSolution.md) | 
+| [Second Largest](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/SecondLargest.md) | Easy | [Arrays, Integers] | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/SecondLargestSolution.md) | 
+| [Merge Sorted Arrays](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/MergeSortedLists.md) | Medium | [Arrays] | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/MergeSortedArraysSolution.md) | 
+| [Shift Zeros](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/ShiftZeros.md) | Medium | [Arrays, Duplicates] | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/ShiftZerosSolution.md) | 
+| [Product of Three](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/ProductOfThree.md) | Medium | [Arrays, Products, Integers] | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/ProductofThreeSolution.md) | 
+| [Keypad](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/Keypad.md) | Hard | [Arrays] | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/Keypad.md) | 
 
 ## Integer Problems
 
