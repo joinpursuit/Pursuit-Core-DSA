@@ -33,10 +33,10 @@ Data Structures and Algorithms Interview Problems
 
 | Problem | Difficulty| Tags | Solution |
 | --- | --- | --- | --- |
-| [Add Digits](https://github.com/C4Q/AC-DSA/blob/master/IntegerProblems/AddDigits.md) | Medium | [Integers] | [To Do]() | 
-| [Avoid Fives](https://github.com/C4Q/AC-DSA/blob/master/IntegerProblems/AvoidFives.md) | Easy | [Integers] | [To Do]() | 
-| [Backwards Primes](https://github.com/C4Q/AC-DSA/blob/master/IntegerProblems/BackwardsPrimes.md) | Medium | [Integers, Primes] | [To Do]() | 
-| [Happy Numbers](https://github.com/C4Q/AC-DSA/blob/master/IntegerProblems/HappyNumbers.md) | Medium | [Integers, Primes] | [To Do]() | 
+| [Avoid Fives](https://github.com/C4Q/AC-DSA/blob/master/IntegerProblems/AvoidFives.md) | Easy | [Integers] | [Link](https://github.com/C4Q/AC-DSA/blob/master/IntegerSolutions/AvoidFivesSolution.md) | 
+| [Add Digits](https://github.com/C4Q/AC-DSA/blob/master/IntegerProblems/AddDigits.md) | Medium | [Integers] | [Link](https://github.com/C4Q/AC-DSA/blob/master/IntegerSolutions/AddDigitsSolutions.md) | 
+| [Backwards Primes](https://github.com/C4Q/AC-DSA/blob/master/IntegerProblems/BackwardsPrimes.md) | Medium | [Integers, Primes] | [Link](https://github.com/C4Q/AC-DSA/blob/master/IntegerSolutions/BackwardsPrimesSolution.md) | 
+| [Happy Numbers](https://github.com/C4Q/AC-DSA/blob/master/IntegerProblems/HappyNumbers.md) | Medium | [Integers, Primes] | [Link](https://github.com/C4Q/AC-DSA/blob/master/IntegerSolutions/HappyNumbersSolution.md) | 
 
 
 ## Linked List Problems
@@ -55,8 +55,8 @@ Data Structures and Algorithms Interview Problems
 ## String Problems
 | Problem | Difficulty| Tags | Solution |
 | --- | --- | --- | --- |
-| [Palindrome](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/Palindrome.md) | Easy | [Strings] | [To Do]() | 
-| [Pangram](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/Pangram.md) | Easy | [Strings] | [To Do]() | 
-| [Remove Vowels](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/RemoveVowels.md) | Easy | [Integers] | [To Do]() | 
-| [Reverse String](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/ReverseString.md) | Easy | [Strings] | [To Do]() | 
+| [Palindrome](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/Palindrome.md) | Easy | [Strings] | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/Palindrome.md) | 
+| [Pangram](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/Pangram.md) | Easy | [Strings] | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/Pangram.md) | 
+| [Remove Vowels](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/RemoveVowels.md) | Easy | [Integers] | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/RemoveVowels.md) | 
+| [Reverse String](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/ReverseString.md) | Easy | [Strings] | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/ReverseString.md) | 
 
