@@ -14,5 +14,5 @@ Determine if a given string has all the letters in the English alphabet in it.
 
 | Input | Output |
 | --- | --- |
-| The quick brown fox jumped over the lazy dog | true |
+| The quick brown fox jumps over the lazy dog | true |
 | Four square and seven years ago | false |
