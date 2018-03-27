@@ -58,5 +58,4 @@ Data Structures and Algorithms Interview Problems
 | [Palindrome](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/Palindrome.md) | Easy | [Strings] | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolutions/PalindromeSolution.md) | 
 | [Pangram](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/Pangram.md) | Easy | [Strings] | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolutions/PangramSolution.md) | 
 | [Remove Vowels](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/RemoveVowels.md) | Easy | [Integers] | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolutions/RemoveVowelsSolution.md) | 
-| [Reverse String](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/ReverseString.md) | Easy | [Strings] | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolution/ReverseStringSolution.md) | 
-
+| [Reverse String](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/ReverseString.md) | Easy | [Strings] | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolutions/ReverseStringSolution.md) | 
