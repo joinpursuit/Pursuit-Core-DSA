@@ -49,7 +49,7 @@ Data Structures and Algorithms Interview Problems
 
 | Problem | Difficulty| Tags | Solution |
 | --- | --- | --- | --- |
-| [Largest Element](https://github.com/C4Q/AC-DSA/blob/master/StackProblems/LargestElementInStack.md) | Easy | [Stacks] | [Link](https://github.com/C4Q/AC-DSA/blob/master/StackSolutions/Largest\ Element\ Solution.md) | 
+| [Largest Element](https://github.com/C4Q/AC-DSA/blob/master/StackProblems/LargestElementInStack.md) | Easy | [Stacks] | [Link](https://github.com/C4Q/AC-DSA/blob/master/StackSolutions/Largest%20Element%20Solution.md) | 
 | [Valid Parentheses](https://github.com/C4Q/AC-DSA/blob/master/StackProblems/ValidParentheses.md) | Medium | [Strings, Stacks] | [Link](https://github.com/C4Q/AC-DSA/blob/master/StackSolutions/BalancedParensSolution.md) |
 
 ## String Problems
