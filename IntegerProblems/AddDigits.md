@@ -13,7 +13,12 @@ Given a non-negative integer num, repeatedly add all its digits until the result
 38
 3 + 8 = 11
 1 + 1 = 2
-Return 2
+
+
+5419
+5 + 4 + 1 + 9 = 19
+1 + 9 = 10
+1 + 0 = 1
 ```
 
 
@@ -22,3 +27,4 @@ Return 2
 | Input | Output |
 | --- | --- |
 | 38 | 2 |
+| 5419 | 1 |
