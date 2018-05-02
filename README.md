@@ -44,7 +44,7 @@ Data Structures and Algorithms Interview Problems
 | Problem | Difficulty| Tags | Solution |
 | --- | --- | --- | --- |
 
-| [Swap Nodes](https://github.com/C4Q/AC-DSA/blob/master/LinkedListProblems/SwapNodes.md) | Medium | [Linked Lists] | [To Do]() | 
+| [Swap Nodes](https://github.com/C4Q/AC-DSA/blob/master/LinkedListProblems/SwapNodes.md) | Medium | [Linked Lists] | [Link](https://github.com/C4Q/AC-DSA/blob/master/LinkedListSolutions/SwapNodesSolution.md) | 
 
 ## Stack Problems
 
