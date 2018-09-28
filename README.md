@@ -68,3 +68,8 @@ Data Structures and Algorithms Interview Problems
 | Problem | Difficulty | Tags | Solution |
 | --- | --- | --- | --- |
 | [Jugs Of Water](https://github.com/C4Q/AC-DSA/blob/master/LogicProblems/jugsOfWater.md) | Easy | [Logic] | [Link](https://github.com/C4Q/AC-DSA/blob/master/LogicSolutions/jugsOfWaterSolution.md)
+| [Nine Coins](https://github.com/C4Q/AC-DSA/blob/master/LogicProblems/nineCoins.md) | Easy | [Logic] | [Link](https://github.com/C4Q/AC-DSA/blob/master/LogicSolutions/nineCoinsSolution.md)
+| [Trucks](https://github.com/C4Q/AC-DSA/blob/master/LogicProblems/trucks.md) | Medium | [Logic] | [Link](https://github.com/C4Q/AC-DSA/blob/master/LogicSolutions/trucksSolution.md)
+| [Troll](https://github.com/C4Q/AC-DSA/blob/master/LogicProblems/troll.md) | Medium | [Logic] | [Link](https://github.com/C4Q/AC-DSA/blob/master/LogicSolutions/trollSolution.md)
+| [Rope Burning](https://github.com/C4Q/AC-DSA/blob/master/LogicProblems/ropeBurning.md) | Hard | [Logic] | [Link](https://github.com/C4Q/AC-DSA/blob/master/LogicSolutions/ropeBurningSolution.md)
+| [Blue Eyed Island](https://github.com/C4Q/AC-DSA/blob/master/LogicProblems/blueEyedIsland.md) | Hard | [Logic] | [Link](https://github.com/C4Q/AC-DSA/blob/master/LogicSolutions/blueEyedIslandSolution.md)
