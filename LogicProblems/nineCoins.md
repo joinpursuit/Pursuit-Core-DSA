@@ -1,1 +1,1 @@
-There are nine coins, that are identical in weight except one, which is lighter than the others—a counterfeit . The difference is perceptible only by weighing them on scale—but only the coins themselves can be weighed. How can you isolate the counterfeit coin with only two weighings?
+Nine Coins: There are nine coins, that are identical in weight except one, which is lighter than the others—a counterfeit . The difference is perceptible only by weighing them on scale—but only the coins themselves can be weighed. How can you isolate the counterfeit coin with only two weighings?
