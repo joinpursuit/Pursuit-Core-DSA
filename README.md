@@ -1,4 +1,4 @@
-# AC-DSA
+# Pursuit Core Data Structures and Algorithms Curriculum
 
 Data Structures and Algorithms Interview Problems
 
