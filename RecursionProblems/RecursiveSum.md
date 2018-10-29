@@ -1,8 +1,8 @@
 # Recursive Sum
 
-| Difficulty | Tags        | Solution Link                                   |
-| ---------- | ----------- | ----------------------------------------------- |
-| Easy       | [Recursion] | [Here]('../RecursionSolutions/RecursiveSum.md') |
+| Difficulty | Tags        | Solution Link                                                                        |
+| ---------- | ----------- | ------------------------------------------------------------------------------------ |
+| Easy       | [Recursion] | [Here](https://github.com/C4Q/AC-DSA/blob/master/RecursionSolutions/RecursiveSum.md) |
 
 ## Problem Description
 
