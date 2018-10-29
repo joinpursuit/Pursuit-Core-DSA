@@ -54,14 +54,14 @@ Data Structures and Algorithms Interview Problems
 
 ## String Problems
 
-| Problem | Difficulty | Tags | Solution |
-| ------------------------------------------------------------------------------------------------------------- | ---------- | ------------------------------- | ------------------------------------------------------------Â-------------------------------------- |
-| [Palindrome](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/Palindrome.md) | Easy | [Strings] | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolutions/PalindromeSolution.md) |
-| [Pangram](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/Pangram.md) | Easy | [Strings] | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolutions/PangramSolution.md) |
-| [Remove Vowels](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/RemoveVowels.md) | Easy | [Strings] | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolutions/RemoveVowelsSolution.md) |
-| [Reverse String](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/ReverseString.md) | Easy | [Strings] | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolutions/ReverseStringSolution.md) |
-| [Pattern Match](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/PatternMatch.md) | Easy | [Arrays, Strings, Dictionaries] | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolutions/PatternMatchSolution.md) |
-| [Sequence Count in String](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/SequenceCountInString.md) | Medium | [Arrays, Integers] | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolutions/SequenceCountInStringSolution.md) |
+| Problem                                                                                                       | Difficulty | Tags                            | Solution                                                                                           |
+| ------------------------------------------------------------------------------------------------------------- | ---------- | ------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [Palindrome](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/Palindrome.md)                          | Easy       | [Strings]                       | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolutions/PalindromeSolution.md)            |
+| [Pangram](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/Pangram.md)                                | Easy       | [Strings]                       | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolutions/PangramSolution.md)               |
+| [Remove Vowels](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/RemoveVowels.md)                     | Easy       | [Strings]                       | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolutions/RemoveVowelsSolution.md)          |
+| [Reverse String](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/ReverseString.md)                   | Easy       | [Strings]                       | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolutions/ReverseStringSolution.md)         |
+| [Pattern Match](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/PatternMatch.md)                     | Easy       | [Arrays, Strings, Dictionaries] | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolutions/PatternMatchSolution.md)          |
+| [Sequence Count in String](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/SequenceCountInString.md) | Medium     | [Arrays, Integers]              | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolutions/SequenceCountInStringSolution.md) |
 
 ## Logic Problems
 
