@@ -1,3 +1,4 @@
+  ```js
   LinkedList.prototype.removeDuplicates = function () {
         prev = this._head;
         current = this._head.next;
@@ -14,6 +15,7 @@
         }
     }
     
+    ```
     O(N)
     
     No extra memory? Will need to compare each element with each element. O(N^2)
