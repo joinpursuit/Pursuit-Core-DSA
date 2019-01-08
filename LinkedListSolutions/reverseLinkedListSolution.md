@@ -1,3 +1,4 @@
+```js
 const reverseList = function(head) {
     let node = head;
     let previous = null;
