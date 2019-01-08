@@ -1,3 +1,4 @@
+```js
 function returnKthToLast(head, k) {
   if (!head || k < 1) { return null }
 
