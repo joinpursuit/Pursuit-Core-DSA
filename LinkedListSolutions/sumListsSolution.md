@@ -19,6 +19,7 @@ List: 2 -> 1 -> ?
 3. Finally, we add 6, 2 and our "carry;' to get 9. This becomes the final element of our linked list.
 List: 2 -> 1 -> 9.
 
+```js 
 const addTwoNumbers = function(l1, l2) {
     let resultHead = new ListNode(null);
     let head = resultHead;
@@ -44,3 +45,5 @@ const addTwoNumbers = function(l1, l2) {
     }
     return resultHead.next
 };
+
+```
