@@ -44,12 +44,13 @@ Data Structures and Algorithms Interview Problems
 | Problem                                                                                 | Difficulty | Tags           | Solution                                                                                   |
 | --------------------------------------------------------------------------------------- | ---------- | -------------- | ------------------------------------------------------------------------------------------ |
 | [Swap Nodes](https://github.com/C4Q/AC-DSA/blob/master/LinkedListProblems/SwapNodes.md) | Medium     | [Linked Lists] | [Link](https://github.com/C4Q/AC-DSA/blob/master/LinkedListSolutions/SwapNodesSolution.md) |
-| [Remove Duplicates](https://github.com/C4Q/AC-DSA/blob/master/LinkedListProblems/removeDuplicates.md) | Medium     | [Linked Lists] | [Link](https://github.com/C4Q/AC-DSA/blob/master/LinkedListSolutions/removeDuplicatesSolution.md) |
+| [Remove Duplicates](https://github.com/C4Q/AC-DSA/blob/master/LinkedListProblems/removeDuplicates.md) | Medium     | [Linked Lists] | [Link](https://github.com/joinpursuit/Pursuit-Core-DSA/blob/master/LinkedListSolutions/removeDuplicateSolution.md) |
 | [Return Kth From Last](https://github.com/C4Q/AC-DSA/blob/master/LinkedListProblems/returnKthToLast.md) | Medium     | [Linked Lists] | [Link](https://github.com/C4Q/AC-DSA/blob/master/LinkedListSolutions/returnKthToLastSolution.md.md) |
 | [Sum Lists](https://github.com/C4Q/AC-DSA/blob/master/LinkedListProblems/sumLists.md) | Medium     | [Linked Lists] | [Link](https://github.com/C4Q/AC-DSA/blob/master/sumListsSolutions.md) |
 | [Reverse Linked List](https://github.com/C4Q/AC-DSA/blob/master/LinkedListProblems/reverseLinkedList.md) | Easy     | [Linked Lists] | [Link](https://github.com/C4Q/AC-DSA/blob/master/reverseLinkedListSolution.md) |
 | [Linked List Cycle](https://github.com/C4Q/AC-DSA/blob/master/LinkedListProblems/linkedListCycle.md) | Easy     | [Linked Lists] | [Link](https://github.com/C4Q/AC-DSA/blob/master/linkedListCycleSolution.md) |
 | [Middle Node](https://github.com/C4Q/AC-DSA/blob/master/LinkedListProblems/middleNode.md) | Easy     | [Linked Lists] | [Link](https://github.com/C4Q/AC-DSA/blob/master/middleNodeSolution.md) |
+
 
 
 
