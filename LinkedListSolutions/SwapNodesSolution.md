@@ -52,3 +52,5 @@ struct LinkedList<T> {
 }
 
 ```
+
+[JavaScript](http://www.oyewiki.com/tech/linked-list-node-swapping-implementation-in-javascript)
