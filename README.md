@@ -43,16 +43,7 @@ Data Structures and Algorithms Interview Problems
 
 | Problem                                                                                 | Difficulty | Tags           | Solution                                                                                   |
 | --------------------------------------------------------------------------------------- | ---------- | -------------- | ------------------------------------------------------------------------------------------ |
-| [Reverse Linked List](https://github.com/C4Q/AC-DSA/blob/master/LinkedListProblems/reverseLinkedList.md) | Easy     | [Linked Lists] | [Link](https://github.com/joinpursuit/Pursuit-Core-DSA/blob/master/LinkedListSolutions/reverseLinkedListSolution.md) |
-| [Linked List Cycle](https://github.com/C4Q/AC-DSA/blob/master/LinkedListProblems/linkedListCycle.md) | Easy     | [Linked Lists] | [Link](https://github.com/joinpursuit/Pursuit-Core-DSA/blob/master/LinkedListSolutions/linkedListCycleSolution.md) |
-| [Middle Node](https://github.com/C4Q/AC-DSA/blob/master/LinkedListProblems/middleNode.md) | Easy     | [Linked Lists] | [Link](https://github.com/joinpursuit/Pursuit-Core-DSA/blob/master/LinkedListSolutions/middleNodeSolution.md) |
 | [Swap Nodes](https://github.com/C4Q/AC-DSA/blob/master/LinkedListProblems/SwapNodes.md) | Medium     | [Linked Lists] | [Link](https://github.com/C4Q/AC-DSA/blob/master/LinkedListSolutions/SwapNodesSolution.md) |
-| [Remove Duplicates](https://github.com/C4Q/AC-DSA/blob/master/LinkedListProblems/removeDuplicates.md) | Medium     | [Linked Lists] | [Link](https://github.com/joinpursuit/Pursuit-Core-DSA/blob/master/LinkedListSolutions/removeDuplicateSolution.md) |
-| [Return Kth From Last](https://github.com/C4Q/AC-DSA/blob/master/LinkedListProblems/returnKthToLast.md) | Medium     | [Linked Lists] | [Link](https://github.com/joinpursuit/Pursuit-Core-DSA/blob/master/LinkedListSolutions/returnKthToLastSolution.md) |
-| [Sum Lists](https://github.com/C4Q/AC-DSA/blob/master/LinkedListProblems/sumLists.md) | Medium     | [Linked Lists] | [Link](https://github.com/joinpursuit/Pursuit-Core-DSA/blob/master/LinkedListSolutions/sumListsSolution.md) |
-
-
-
 
 ## Stack Problems
 
@@ -60,6 +51,12 @@ Data Structures and Algorithms Interview Problems
 | --------------------------------------------------------------------------------------------------- | ---------- | ----------------- | ------------------------------------------------------------------------------------------------ |
 | [Largest Element](https://github.com/C4Q/AC-DSA/blob/master/StackProblems/LargestElementInStack.md) | Easy       | [Stacks]          | [Link](https://github.com/C4Q/AC-DSA/blob/master/StackSolutions/Largest%20Element%20Solution.md) |
 | [Valid Parentheses](https://github.com/C4Q/AC-DSA/blob/master/StackProblems/ValidParentheses.md)    | Medium     | [Strings, Stacks] | [Link](https://github.com/C4Q/AC-DSA/blob/master/StackSolutions/BalancedParensSolution.md)       |
+
+## Queue Problems
+
+| Problem                                                                              | Difficulty | Tags             | Solution                                                                       |
+| ------------------------------------------------------------------------------------ | ---------- | ---------------- | ------------------------------------------------------------------------------ |
+| [Stack Queue](https://github.com/C4Q/AC-DSA/blob/master/QueueProblems/StackQueue.md) | Medium     | [Queues, Stacks] | [Link](https://github.com/C4Q/AC-DSA/blob/master/QueueSolutions/StackQueue.md) |
 
 ## String Problems
 
