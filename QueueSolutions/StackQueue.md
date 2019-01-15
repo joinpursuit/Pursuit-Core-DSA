@@ -14,7 +14,7 @@ Queue.prototype.dequeue = function() {
   var popping = this.popS;
   var pushing = this.pushS;
 
-  if (popping.top) {
+  if (popping.peek()) {
     var deq = popping.pop();
     console.log("Dequeuing " + deq + " from stack.");
     return deq;
