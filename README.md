@@ -14,6 +14,7 @@
 | 2 | Recursion | [Web](./lessons/Recursion/web) / [iOS](./lessons/Recursion/ios)
 | 3 | Binary Search | [Web](./lessons/binary_search/web) / [iOS](./lessons/binary_search/ios)
 | 4 | Bubble Sort: Intro to Sorting* | [Web](./lessons/bubble_sort/web) / [iOS](./lessons/bubble_sort/ios)
+| 4.5 | Insertion Sort | Web / [iOS](./lessons/insertion_sort/ios)
 | 5 | Merge Sort: Divide & Conquer*  | [Web](./lessons/merge_sort/web) / [iOS](./lessons/merge_sort/ios/README.md)
 | 6 | Quick Sort | Web / [iOS](./lessons/quicksort/ios)
 | 7 | Abstract Data Structures  | [Web](./lessons/abstract_data_structures/web) / [iOS](./lessons/Abstract%20Data%20Structures/ios)
