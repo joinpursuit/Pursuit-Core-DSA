@@ -1,12 +1,12 @@
 # Quicksort
 
 
-Resources:
+## Resources:
 
 1. [Ray Wenderlich Quicksort](https://github.com/raywenderlich/swift-algorithm-club/tree/master/Quicksort)
 1. [Wikipedia Quicksort](https://en.wikipedia.org/wiki/Quicksort)
 
-
+## Quadradic Sorts
 
 So far, we've looked at sorts that take O(n<sup>2</sup>) time.  Those were:
 
@@ -127,4 +127,3 @@ func quickSort(arr: [Int]) -> [Int] {
 4. [Quicksort 2 - Hackerrank](https://www.hackerrank.com/challenges/quicksort2/problem)
 5. [Quicksort 3 - Hackerrank](https://www.hackerrank.com/challenges/quicksort3/problem)
 6. [Codewars - swapped3-7](https://www.codewars.com/kata/sorting-on-planet-twisted-3-7)
-
