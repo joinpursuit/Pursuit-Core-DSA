@@ -1,5 +1,31 @@
 # Pursuit Core Data Structures and Algorithms Curriculum
 
+## Lessons
+
+| Topic | Swift Lesson Link | JavaScript Lesson Link | Swift Lab Link |
+| --- | --- | --- | --- |
+| Introduction to Whiteboarding | [Swift]() | [JavaScript]() | [Swift]() |
+
+
+| Number | Lesson | Link |
+| --- | --- | --- |
+| 1 | Intro to Whiteboarding | [Web/iOS](./lessons/intro_to_whiteboarding)
+| 2 | Big-O Notation | [Web](./lessons/big_o_notation/web) / [iOS](./lessons/big_o_notation/ios)
+| 2 | Recursion | [Web](./lessons/Recursion/web) / [iOS](./lessons/Recursion/lesson-swift.md)
+| 3 | Binary Search | [Web](./lessons/binary_search/web) / [iOS](./lessons/binary_search/ios)
+| 4 | Bubble Sort: Intro to Sorting* | [Web](./lessons/bubble_sort/web) / iOS
+| 5 | Merge Sort: Divide & Conquer*  | [Web](./lessons/merge_sort/web) / [iOS](./lessons/merge_sort/ios/README.md)
+| 6 | Quick Sort | Web / [iOS](./quicksort/ios)
+| 7 | Abstract Data Structures  | [Web](./lessons/abstract_data_structures/web) / [iOS](./lessons/Abstract%20Data%20Structures/lesson-swift.md)
+| 8 | Linked List | [Web](./lessons/linked_lists/web) / [iOS](./lessons/Linked%20List/lesson-swift.md)
+| 9 | Stacks | [Web](./lessons/Stacks/web) / [iOS](./lessons/Stacks/lesson-swift.md)
+| 10 | Queues | [Web](./lessons/Queues/web) / [iOS](./lessons/Queues/lesson-swift.md)
+| 11 | Hash Tables | [Web](./lessons/hash_tables/web) / iOS
+| 12 | Trees | [Web](./lessons/Trees/web) / [iOS](./lessons/Trees/ios/README.md)
+| 13 | Graphs* | Web / iOS
+
+
+
 Data Structures and Algorithms Interview Problems
 
 ## Problems
@@ -15,20 +41,20 @@ Data Structures and Algorithms Interview Problems
 
 | Problem                                                                                                            | Difficulty | Tags                           | Solution                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------ | ---------- | ------------------------------ | --------------------------------------------------------------------------------------------------- |
-| [Diagonal Sum](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/DiagonalSum.md)                             | Easy       | [Arrays, Matrices, Integers]   | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/DiagonalSumSolution.md)             |
-| [Find Repeats](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/FindRepeats.md)                             | Easy       | [Arrays, Integers, Duplicates] | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/FindRepeatsSolution.md)             |
-| [Sum of first five even numbers](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/FirstFiveSum.md)          | Easy       | [Arrays, Integers]             | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/FirstFiveSumSolution.md)            |
-| [Greatest Row or Column in Matrix](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/GreatestRowOrColumn.md) | Easy       | [Arrays, Matrices, Integers]   | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/GreatestRoworColumnSolution.md)     |
-| [Largest Product of Two](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/LargestProductOfTwo.md)           | Easy       | [Arrays, Products]             | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/LargestProductofTwoSolution.md)     |
-| [Matrix Sum Without Corners](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/MatrixSum.md)                 | Easy       | [Arrays, Matrices, Integers]   | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/MatrixSumSolution.md)               |
-| [Pair Sum](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/PairSum.md)                                     | Easy       | [Arrays, Integers]             | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/PairSumSolution.md)                 |
-| [Product of All Except Index](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/ProductOfAllExeptIndex.md)   | Easy       | [Arrays, Products]             | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/ProductOfAllExceptIndexSolution.md) |
-| [Remove Duplicates](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/RemoveDuplicates.md)                   | Easy       | [Arrays, Duplicates]           | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/RemoveDuplicatesSolution.md)        |
-| [Second Largest](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/SecondLargest.md)                         | Easy       | [Arrays, Integers]             | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/SecondLargestSolution.md)           |
-| [Merge Sorted Arrays](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/MergeSortedLists.md)                 | Medium     | [Arrays]                       | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/MergeSortedArraysSolution.md)       |
-| [Shift Zeros](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/ShiftZeros.md)                               | Medium     | [Arrays, Duplicates]           | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/ShiftZerosSolution.md)              |
-| [Product of Three](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/ProductOfThree.md)                      | Medium     | [Arrays, Products, Integers]   | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/ProductofThreeSolution.md)          |
-| [Keypad](https://github.com/C4Q/AC-DSA/blob/master/ArrayProblems/Keypad.md)                                        | Hard       | [Arrays]                       | [Link](https://github.com/C4Q/AC-DSA/blob/master/ArraySolutions/Keypad.md)                          |
+| [Diagonal Sum](./problems/ArrayProblems/DiagonalSum.md)                             | Easy       | [Arrays, Matrices, Integers]   | [Link](./solutions/ArraySolutions/DiagonalSumSolution.md)             |
+| [Find Repeats](./problems/ArrayProblems/FindRepeats.md)                             | Easy       | [Arrays, Integers, Duplicates] | [Link](./solutions/ArraySolutions/FindRepeatsSolution.md)             |
+| [Sum of first five even numbers](./problems/ArrayProblems/FirstFiveSum.md)          | Easy       | [Arrays, Integers]             | [Link](./solutions/ArraySolutions/FirstFiveSumSolution.md)            |
+| [Greatest Row or Column in Matrix](./problems/ArrayProblems/GreatestRowOrColumn.md) | Easy       | [Arrays, Matrices, Integers]   | [Link](./solutions/ArraySolutions/GreatestRoworColumnSolution.md)     |
+| [Largest Product of Two](./problems/ArrayProblems/LargestProductOfTwo.md)           | Easy       | [Arrays, Products]             | [Link](./solutions/ArraySolutions/LargestProductofTwoSolution.md)     |
+| [Matrix Sum Without Corners](./problems/ArrayProblems/MatrixSum.md)                 | Easy       | [Arrays, Matrices, Integers]   | [Link](./solutions/ArraySolutions/MatrixSumSolution.md)               |
+| [Pair Sum](./problems/ArrayProblems/PairSum.md)                                     | Easy       | [Arrays, Integers]             | [Link](./solutions/ArraySolutions/PairSumSolution.md)                 |
+| [Product of All Except Index](./problems/ArrayProblems/ProductOfAllExeptIndex.md)   | Easy       | [Arrays, Products]             | [Link](./solutions/ArraySolutions/ProductOfAllExceptIndexSolution.md) |
+| [Remove Duplicates](./problems/ArrayProblems/RemoveDuplicates.md)                   | Easy       | [Arrays, Duplicates]           | [Link](./solutions/ArraySolutions/RemoveDuplicatesSolution.md)        |
+| [Second Largest](./problems/ArrayProblems/SecondLargest.md)                         | Easy       | [Arrays, Integers]             | [Link](./solutions/ArraySolutions/SecondLargestSolution.md)           |
+| [Merge Sorted Arrays](./problems/ArrayProblems/MergeSortedLists.md)                 | Medium     | [Arrays]                       | [Link](./solutions/ArraySolutions/MergeSortedArraysSolution.md)       |
+| [Shift Zeros](./problems/ArrayProblems/ShiftZeros.md)                               | Medium     | [Arrays, Duplicates]           | [Link](./solutions/ArraySolutions/ShiftZerosSolution.md)              |
+| [Product of Three](./problems/ArrayProblems/ProductOfThree.md)                      | Medium     | [Arrays, Products, Integers]   | [Link](./solutions/ArraySolutions/ProductofThreeSolution.md)          |
+| [Keypad](./problems/ArrayProblems/Keypad.md)                                        | Hard       | [Arrays]                       | [Link](./solutions/ArraySolutions/Keypad.md)                          |
 
 ## Integer Problems
 
