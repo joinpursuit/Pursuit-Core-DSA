@@ -18,7 +18,6 @@
 | Quick Sort | JavaScript / [Swift](./lessons/quicksort/ios) | [Swift] |
 | Trees | [JavaScript](./lessons/Trees/web) / [Swift](./lessons/Trees/ios/) | [Swift] |
 
-Data Structures and Algorithms Interview Problems
 
 ## Problems
 
