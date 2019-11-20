@@ -11,13 +11,12 @@
 | Queues | [JavaScript](./lessons/Queues/web) / [iOS](./lessons/Queues/ios) | [Swift] |
 | Hash Tables | [JavaScript](./lessons/hash_tables/web) / [iOS](./lessons/hash_tables/ios) | [Swift] |
 | Recursion | [Web](./lessons/Recursion/web) / [iOS](./lessons/Recursion/ios) | [Swift] |
-| Binary Search | [Web](./lessons/binary_search/web) / [iOS](./lessons/binary_search/ios) [Swift] |
-| Bubble Sort: Intro to Sorting* | [Web](./lessons/bubble_sort/web) / [iOS](./lessons/bubble_sort/ios) [Swift] |
-| Insertion Sort | Web / [iOS](./lessons/insertion_sort/ios) [Swift] |
-| Merge Sort: Divide & Conquer*  | [Web](./lessons/merge_sort/web) / [iOS](./lessons/merge_sort/ios/README.md) [Swift] |
-| Quick Sort | Web / [iOS](./lessons/quicksort/ios) [Swift] |
-| Trees | [Web](./lessons/Trees/web) / [iOS](./lessons/Trees/ios/) | [Swift]
-
+| Binary Search | [Web](./lessons/binary_search/web) / [iOS](./lessons/binary_search/ios) | [Swift] |
+| Bubble Sort: Intro to Sorting* | [Web](./lessons/bubble_sort/web) / [iOS](./lessons/bubble_sort/ios) | [Swift] |
+| Insertion Sort | Web / [iOS](./lessons/insertion_sort/ios) | [Swift] |
+| Merge Sort: Divide & Conquer*  | [Web](./lessons/merge_sort/web) / [iOS](./lessons/merge_sort/ios/README.md) | [Swift] |
+| Quick Sort | Web / [iOS](./lessons/quicksort/ios) | [Swift] |
+| Trees | [Web](./lessons/Trees/web) / [iOS](./lessons/Trees/ios/) | [Swift] |
 
 Data Structures and Algorithms Interview Problems
 
