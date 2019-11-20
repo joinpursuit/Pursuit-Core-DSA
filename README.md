@@ -5,18 +5,18 @@
 | Topic | Lesson | Lab  |
 | --- | --- | --- |
 | Introduction to Whiteboarding | [link](./lessons/intro_to_whiteboarding) | n/a |
-| Big-O Notation | [JavaScript](./lessons/big_o_notation/web) / [iOS](./lessons/big_o_notation/ios) | n/a |
-| Linked List | [JavaScript](./lessons/linked_lists/web) / [iOS](./lessons/linked_lists/ios) | [Swift] |
-| Stacks | [JavaScript](./lessons/Stacks/web) / [iOS](./lessons/Stacks/ios) | [Swift] | 
-| Queues | [JavaScript](./lessons/Queues/web) / [iOS](./lessons/Queues/ios) | [Swift] |
-| Hash Tables | [JavaScript](./lessons/hash_tables/web) / [iOS](./lessons/hash_tables/ios) | [Swift] |
-| Recursion | [Web](./lessons/Recursion/web) / [iOS](./lessons/Recursion/ios) | [Swift] |
-| Binary Search | [Web](./lessons/binary_search/web) / [iOS](./lessons/binary_search/ios) | [Swift] |
-| Bubble Sort: Intro to Sorting* | [Web](./lessons/bubble_sort/web) / [iOS](./lessons/bubble_sort/ios) | [Swift] |
-| Insertion Sort | Web / [iOS](./lessons/insertion_sort/ios) | [Swift] |
-| Merge Sort: Divide & Conquer*  | [Web](./lessons/merge_sort/web) / [iOS](./lessons/merge_sort/ios/README.md) | [Swift] |
-| Quick Sort | Web / [iOS](./lessons/quicksort/ios) | [Swift] |
-| Trees | [Web](./lessons/Trees/web) / [iOS](./lessons/Trees/ios/) | [Swift] |
+| Big-O Notation | [JavaScript](./lessons/big_o_notation/web) / [Swift](./lessons/big_o_notation/ios) | n/a |
+| Linked List | [JavaScript](./lessons/linked_lists/web) / [Swift](./lessons/linked_lists/ios) | [Swift] |
+| Stacks | [JavaScript](./lessons/Stacks/web) / [Swift](./lessons/Stacks/ios) | [Swift] |
+| Queues | [JavaScript](./lessons/Queues/web) / [Swift](./lessons/Queues/ios) | [Swift] |
+| Hash Tables | [JavaScript](./lessons/hash_tables/web) / [Swift](./lessons/hash_tables/ios) | [Swift] |
+| Recursion | [JavaScript](./lessons/Recursion/web) / [Swift](./lessons/Recursion/ios) | [Swift] |
+| Binary Search | [JavaScript](./lessons/binary_search/web) / [Swift](./lessons/binary_search/ios) | [Swift] |
+| Bubble Sort: Intro to Sorting* | [JavaScript](./lessons/bubble_sort/web) / [Swift](./lessons/bubble_sort/ios) | [Swift] |
+| Insertion Sort | JavaScript / [iOS](./lessons/insertion_sort/ios) | [Swift] |
+| Merge Sort: Divide & Conquer*  | [JavaScript](./lessons/merge_sort/web) / [Swift](./lessons/merge_sort/ios/README.md) | [Swift] |
+| Quick Sort | JavaScript / [iOS](./lessons/quicksort/ios) | [Swift] |
+| Trees | [JavaScript](./lessons/Trees/web) / [Swift](./lessons/Trees/ios/) | [Swift] |
 
 Data Structures and Algorithms Interview Problems
 
