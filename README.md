@@ -11,19 +11,18 @@
 | --- | --- | --- |
 | 1 | Intro to Whiteboarding | [Web/iOS](./lessons/intro_to_whiteboarding)
 | 2 | Big-O Notation | [Web](./lessons/big_o_notation/web) / [iOS](./lessons/big_o_notation/ios)
-| 2 | Recursion | [Web](./lessons/Recursion/web) / [iOS](./lessons/Recursion/iOS)
+| 2 | Recursion | [Web](./lessons/Recursion/web) / [iOS](./lessons/Recursion/ios)
 | 3 | Binary Search | [Web](./lessons/binary_search/web) / [iOS](./lessons/binary_search/ios)
 | 4 | Bubble Sort: Intro to Sorting* | [Web](./lessons/bubble_sort/web) / iOS
 | 5 | Merge Sort: Divide & Conquer*  | [Web](./lessons/merge_sort/web) / [iOS](./lessons/merge_sort/ios/README.md)
 | 6 | Quick Sort | Web / [iOS](./quicksort/ios)
-| 7 | Abstract Data Structures  | [Web](./lessons/abstract_data_structures/web) / [iOS](./lessons/Abstract%20Data%20Structures/iOS)
-| 8 | Linked List | [Web](./lessons/linked_lists/web) / [iOS](./lessons/Linked%20List/iOS)
-| 9 | Stacks | [Web](./lessons/Stacks/web) / [iOS](./lessons/Stacks/iOS)
-| 10 | Queues | [Web](./lessons/Queues/web) / [iOS](./lessons/Queues/iOS)
+| 7 | Abstract Data Structures  | [Web](./lessons/abstract_data_structures/web) / [iOS](./lessons/Abstract%20Data%20Structures/ios)
+| 8 | Linked List | [Web](./lessons/linked_lists/web) / [iOS](./lessons/Linked%20List/ios)
+| 9 | Stacks | [Web](./lessons/Stacks/web) / [iOS](./lessons/Stacks/ios)
+| 10 | Queues | [Web](./lessons/Queues/web) / [iOS](./lessons/Queues/ios)
 | 11 | Hash Tables | [Web](./lessons/hash_tables/web) / iOS
 | 12 | Trees | [Web](./lessons/Trees/web) / [iOS](./lessons/Trees/ios/README.md)
 | 13 | Graphs* | Web / iOS
-
 
 
 Data Structures and Algorithms Interview Problems
