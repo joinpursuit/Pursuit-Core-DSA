@@ -51,56 +51,56 @@
 
 | Problem                                                                                          | Difficulty | Tags               | Solution                                                                                      |
 | ------------------------------------------------------------------------------------------------ | ---------- | ------------------ | --------------------------------------------------------------------------------------------- |
-| [Avoid Fives](https://github.com/C4Q/AC-DSA/blob/master/IntegerProblems/AvoidFives.md)           | Easy       | [Integers]         | [Link](https://github.com/C4Q/AC-DSA/blob/master/IntegerSolutions/AvoidFivesSolution.md)      |
-| [Add Digits](https://github.com/C4Q/AC-DSA/blob/master/IntegerProblems/AddDigits.md)             | Medium     | [Integers]         | [Link](https://github.com/C4Q/AC-DSA/blob/master/IntegerSolutions/AddDigitsSolutions.md)      |
-| [Backwards Primes](https://github.com/C4Q/AC-DSA/blob/master/IntegerProblems/BackwardsPrimes.md) | Medium     | [Integers, Primes] | [Link](https://github.com/C4Q/AC-DSA/blob/master/IntegerSolutions/BackwardsPrimesSolution.md) |
-| [Happy Numbers](https://github.com/C4Q/AC-DSA/blob/master/IntegerProblems/HappyNumbers.md)       | Medium     | [Integers, Primes] | [Link](https://github.com/C4Q/AC-DSA/blob/master/IntegerSolutions/HappyNumbersSolution.md)    |
+| [Avoid Fives](./problems/IntegerProblems/AvoidFives.md)           | Easy       | [Integers]         | [Link](./solutions/IntegerSolutions/AvoidFivesSolution.md)      |
+| [Add Digits](./problems/IntegerProblems/AddDigits.md)             | Medium     | [Integers]         | [Link](./solutions/IntegerSolutions/AddDigitsSolutions.md)      |
+| [Backwards Primes](./problems/IntegerProblems/BackwardsPrimes.md) | Medium     | [Integers, Primes] | [Link](./solutions/IntegerSolutions/BackwardsPrimesSolution.md) |
+| [Happy Numbers](./problems/IntegerProblems/HappyNumbers.md)       | Medium     | [Integers, Primes] | [Link](./solutions/IntegerSolutions/HappyNumbersSolution.md)    |
 
 ## Linked List Problems
 
 | Problem                                                                                 | Difficulty | Tags           | Solution                                                                                   |
 | --------------------------------------------------------------------------------------- | ---------- | -------------- | ------------------------------------------------------------------------------------------ |
-| [Swap Nodes](https://github.com/C4Q/AC-DSA/blob/master/LinkedListProblems/SwapNodes.md) | Medium     | [Linked Lists] | [Link](https://github.com/C4Q/AC-DSA/blob/master/LinkedListSolutions/SwapNodesSolution.md) |
+| [Swap Nodes](./problems/LinkedListProblems/SwapNodes.md) | Medium     | [Linked Lists] | [Link](./solutions/LinkedListSolutions/SwapNodesSolution.md) |
 
 ## Stack Problems
 
 | Problem                                                                                             | Difficulty | Tags              | Solution                                                                                         |
 | --------------------------------------------------------------------------------------------------- | ---------- | ----------------- | ------------------------------------------------------------------------------------------------ |
-| [Largest Element](https://github.com/C4Q/AC-DSA/blob/master/StackProblems/LargestElementInStack.md) | Easy       | [Stacks]          | [Link](https://github.com/C4Q/AC-DSA/blob/master/StackSolutions/Largest%20Element%20Solution.md) |
-| [Valid Parentheses](https://github.com/C4Q/AC-DSA/blob/master/StackProblems/ValidParentheses.md)    | Medium     | [Strings, Stacks] | [Link](https://github.com/C4Q/AC-DSA/blob/master/StackSolutions/BalancedParensSolution.md)       |
+| [Largest Element](./problems/StackProblems/LargestElementInStack.md) | Easy       | [Stacks]          | [Link](./solutions/StackSolutions/Largest%20Element%20Solution.md) |
+| [Valid Parentheses](./problems/StackProblems/ValidParentheses.md)    | Medium     | [Strings, Stacks] | [Link](./solutions/StackSolutions/BalancedParensSolution.md)       |
 
 ## Queue Problems
 
 | Problem                                                                              | Difficulty | Tags             | Solution                                                                       |
 | ------------------------------------------------------------------------------------ | ---------- | ---------------- | ------------------------------------------------------------------------------ |
-| [Stack Queue](https://github.com/C4Q/AC-DSA/blob/master/QueueProblems/StackQueue.md) | Medium     | [Queues, Stacks] | [Link](https://github.com/C4Q/AC-DSA/blob/master/QueueSolutions/StackQueue.md) |
+| [Stack Queue](./problems/QueueProblems/StackQueue.md) | Medium     | [Queues, Stacks] | [Link](./solutions/QueueSolutions/StackQueue.md) |
 
 ## String Problems
 
 | Problem                                                                                                       | Difficulty | Tags                            | Solution                                                                                           |
 | ------------------------------------------------------------------------------------------------------------- | ---------- | ------------------------------- | -------------------------------------------------------------------------------------------------- |
-| [Palindrome](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/Palindrome.md)                          | Easy       | [Strings]                       | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolutions/PalindromeSolution.md)            |
-| [Pangram](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/Pangram.md)                                | Easy       | [Strings]                       | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolutions/PangramSolution.md)               |
-| [Remove Vowels](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/RemoveVowels.md)                     | Easy       | [Strings]                       | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolutions/RemoveVowelsSolution.md)          |
-| [Reverse String](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/ReverseString.md)                   | Easy       | [Strings]                       | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolutions/ReverseStringSolution.md)         |
-| [Pattern Match](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/PatternMatch.md)                     | Easy       | [Arrays, Strings, Dictionaries] | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolutions/PatternMatchSolution.md)          |
-| [Sequence Count in String](https://github.com/C4Q/AC-DSA/blob/master/StringProblems/SequenceCountInString.md) | Medium     | [Arrays, Integers]              | [Link](https://github.com/C4Q/AC-DSA/blob/master/StringSolutions/SequenceCountInStringSolution.md) |
+| [Palindrome](./problems/StringProblems/Palindrome.md)                          | Easy       | [Strings]                       | [Link](./solutions/StringSolutions/PalindromeSolution.md)            |
+| [Pangram](./problems/StringProblems/Pangram.md)                                | Easy       | [Strings]                       | [Link](./solutions/StringSolutions/PangramSolution.md)               |
+| [Remove Vowels](./problems/StringProblems/RemoveVowels.md)                     | Easy       | [Strings]                       | [Link](./solutions/StringSolutions/RemoveVowelsSolution.md)          |
+| [Reverse String](./problems/StringProblems/ReverseString.md)                   | Easy       | [Strings]                       | [Link](./solutions/StringSolutions/ReverseStringSolution.md)         |
+| [Pattern Match](./problems/StringProblems/PatternMatch.md)                     | Easy       | [Arrays, Strings, Dictionaries] | [Link](./solutions/StringSolutions/PatternMatchSolution.md)          |
+| [Sequence Count in String](./problems/StringProblems/SequenceCountInString.md) | Medium     | [Arrays, Integers]              | [Link](./solutions/StringSolutions/SequenceCountInStringSolution.md) |
 
 ## Logic Problems
 
 | Problem                                                                                       | Difficulty | Tags    | Solution                                                                                   |
 | --------------------------------------------------------------------------------------------- | ---------- | ------- | ------------------------------------------------------------------------------------------ |
-| [Jugs Of Water](https://github.com/C4Q/AC-DSA/blob/master/LogicProblems/jugsOfWater.md)       | Easy       | [Logic] | [Link](https://github.com/C4Q/AC-DSA/blob/master/LogicSolutions/jugsOfWaterSolution.md)    |
-| [Nine Coins](https://github.com/C4Q/AC-DSA/blob/master/LogicProblems/nineCoins.md)            | Easy       | [Logic] | [Link](https://github.com/C4Q/AC-DSA/blob/master/LogicSolutions/nineCoinsSolution.md)      |
-| [Trucks](https://github.com/C4Q/AC-DSA/blob/master/LogicProblems/trucks.md)                   | Medium     | [Logic] | [Link](https://github.com/C4Q/AC-DSA/blob/master/LogicSolutions/trucksSolution.md)         |
-| [Troll](https://github.com/C4Q/AC-DSA/blob/master/LogicProblems/troll.md)                     | Medium     | [Logic] | [Link](https://github.com/C4Q/AC-DSA/blob/master/LogicSolutions/trollSolution.md)          |
-| [Rope Burning](https://github.com/C4Q/AC-DSA/blob/master/LogicProblems/ropeBurning.md)        | Hard       | [Logic] | [Link](https://github.com/C4Q/AC-DSA/blob/master/LogicSolutions/ropeBurningSolution.md)    |
-| [Blue Eyed Island](https://github.com/C4Q/AC-DSA/blob/master/LogicProblems/blueEyedIsland.md) | Hard       | [Logic] | [Link](https://github.com/C4Q/AC-DSA/blob/master/LogicSolutions/blueEyedIslandSolution.md) |
+| [Jugs Of Water](./problems/jugsOfWater.md)       | Easy       | [Logic] | [Link](./solutions/LogicSolutions/jugsOfWaterSolution.md)    |
+| [Nine Coins](./problems/LogicProblems/nineCoins.md)            | Easy       | [Logic] | [Link](./solutions/LogicSolutions/nineCoinsSolution.md)      |
+| [Trucks](./problems/LogicProblems/trucks.md)                   | Medium     | [Logic] | [Link](./solutions/LogicSolutions/trucksSolution.md)         |
+| [Troll](./problems/LogicProblems/troll.md)                     | Medium     | [Logic] | [Link](./solutions/LogicSolutions/trollSolution.md)          |
+| [Rope Burning](./problems/LogicProblems/ropeBurning.md)        | Hard       | [Logic] | [Link](./solutions/LogicSolutions/ropeBurningSolution.md)    |
+| [Blue Eyed Island](./problems/LogicProblems/blueEyedIsland.md) | Hard       | [Logic] | [Link](./solutions/LogicSolutions/blueEyedIslandSolution.md) |
 
 ## Recursion Problems
 
 | Problem                                                                                            | Difficulty | Tags                 | Solution                                                                                |
 | -------------------------------------------------------------------------------------------------- | ---------- | -------------------- | --------------------------------------------------------------------------------------- |
-| [Factorial](https://github.com/C4Q/AC-DSA/blob/master/RecursionProblems/Factorial.md)              | Medium     | [Recursion]          | [Link](https://github.com/C4Q/AC-DSA/blob/master/RecursionSolutions/Factorial.md)       |
-| [Recursive Sum](https://github.com/C4Q/AC-DSA/blob/master/RecursionProblems/RecursiveSum.md)       | Easy       | [Recursion]          | [Link](https://github.com/C4Q/AC-DSA/blob/master/RecursionSolutions/RecursiveSum.md)    |
-| [Reverse Sentence](https://github.com/C4Q/AC-DSA/blob/master/RecursionProblems/ReverseSentence.md) | Medium     | [Recursion, Strings] | [Link](https://github.com/C4Q/AC-DSA/blob/master/RecursionSolutions/ReverseSentence.md) |
+| [Factorial](./problems/RecursionProblems/Factorial.md)              | Medium     | [Recursion]          | [Link](./solutions/RecursionSolutions/Factorial.md)       |
+| [Recursive Sum](./problems/RecursionProblems/RecursiveSum.md)       | Easy       | [Recursion]          | [Link](./solutions/RecursionSolutions/RecursiveSum.md)    |
+| [Reverse Sentence](./problems/RecursionProblems/ReverseSentence.md) | Medium     | [Recursion, Strings] | [Link](./solutions/RecursionSolutions/ReverseSentence.md) |
