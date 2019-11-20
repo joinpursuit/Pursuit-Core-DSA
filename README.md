@@ -13,9 +13,9 @@
 | Recursion | [JavaScript](./lessons/Recursion/web) / [Swift](./lessons/Recursion/ios) | [Swift] |
 | Binary Search | [JavaScript](./lessons/binary_search/web) / [Swift](./lessons/binary_search/ios) | [Swift] |
 | Bubble Sort: Intro to Sorting* | [JavaScript](./lessons/bubble_sort/web) / [Swift](./lessons/bubble_sort/ios) | [Swift] |
-| Insertion Sort | JavaScript / [iOS](./lessons/insertion_sort/ios) | [Swift] |
+| Insertion Sort | JavaScript / [Swift](./lessons/insertion_sort/ios) | [Swift] |
 | Merge Sort: Divide & Conquer*  | [JavaScript](./lessons/merge_sort/web) / [Swift](./lessons/merge_sort/ios/README.md) | [Swift] |
-| Quick Sort | JavaScript / [iOS](./lessons/quicksort/ios) | [Swift] |
+| Quick Sort | JavaScript / [Swift](./lessons/quicksort/ios) | [Swift] |
 | Trees | [JavaScript](./lessons/Trees/web) / [Swift](./lessons/Trees/ios/) | [Swift] |
 
 Data Structures and Algorithms Interview Problems
