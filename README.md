@@ -90,7 +90,7 @@
 
 | Problem                                                                                       | Difficulty | Tags    | Solution                                                                                   |
 | --------------------------------------------------------------------------------------------- | ---------- | ------- | ------------------------------------------------------------------------------------------ |
-| [Jugs Of Water](./problems/jugsOfWater.md)       | Easy       | [Logic] | [Link](./solutions/LogicSolutions/jugsOfWaterSolution.md)    |
+| [Jugs Of Water](./problems/LogicProblems/jugsOfWater.md)       | Easy       | [Logic] | [Link](./solutions/LogicSolutions/jugsOfWaterSolution.md)    |
 | [Nine Coins](./problems/LogicProblems/nineCoins.md)            | Easy       | [Logic] | [Link](./solutions/LogicSolutions/nineCoinsSolution.md)      |
 | [Trucks](./problems/LogicProblems/trucks.md)                   | Medium     | [Logic] | [Link](./solutions/LogicSolutions/trucksSolution.md)         |
 | [Troll](./problems/LogicProblems/troll.md)                     | Medium     | [Logic] | [Link](./solutions/LogicSolutions/trollSolution.md)          |
