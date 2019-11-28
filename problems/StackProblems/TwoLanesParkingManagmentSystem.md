@@ -1,9 +1,9 @@
 # Two-Lane Parking Management System
 
 
-| Difficulty | Tags     | Solution Link |
-| ---------- | -------- | ------------- |
-| Medium     | [Stacks] | [To Do]()     |
+| Difficulty | Tags     | Solution Link                                                                |
+| ---------- | -------- | ---------------------------------------------------------------------------- |
+| Medium     | [Stacks] | [Solution 1](../../solutions/StackSolutions/Two-LaneParkingManagementSystem) |
 
 ## Problem Description
 
