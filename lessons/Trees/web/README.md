@@ -13,7 +13,7 @@
 
 ## What's a Tree?
 
-![Tree Diagram](assets/tree-diagram.png)
+![Tree Diagram](../assets/tree-diagram.png)
 
 Trees play a major role in computer science. It is used to tackle many recurring challenges in software development, such as:
 - Representing hierarchical relationships
@@ -43,25 +43,25 @@ As you can tell by now Nodes are the building blocks of basically all Abstract D
 
 That ability to chain and link together Nodes is what essentially makes an ADS. 
 
-![Node Diagram](assets/node-diagram.png)
+![Node Diagram](../assets/node-diagram.png)
 
 ### Root
 
 The first and topmost Node in a tree is called the Root. This Node has no parent or any previous Node linking to it.
 
-![Root Diagram](assets/root-diagram.png)
+![Root Diagram](../assets/root-diagram.png)
 
 ### Parent / Child
 
 Whenever a Node has a link to other Nodes it creates this Parent / Child relationship. The parent is the top Node that links to the new Nodes (child nodes).
 
-![Parent/Child Diagram](assets/parent-child-diagram.png)
+![Parent/Child Diagram](../assets/parent-child-diagram.png)
 
 ### Leaf
 
 A Leaf is any Node that does not contain any children Nodes. Essentially, they are the end of the line for the tree for that particular branch. 
 
-![Leaf Diagram](assets/leaf-diagram.png)
+![Leaf Diagram](../assets/leaf-diagram.png)
 
 ### General Purpose Tree
 
@@ -126,7 +126,7 @@ dog.add("Corgi");
 
 Would result in the following relationship:
 
-![Animal Tree](assets/animals-tree.png)
+![Animal Tree](../assets/animals-tree.png)
 
 ### Traversing 
 
