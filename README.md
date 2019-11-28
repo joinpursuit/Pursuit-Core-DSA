@@ -68,6 +68,7 @@
 | --------------------------------------------------------------------------------------------------- | ---------- | ----------------- | ------------------------------------------------------------------------------------------------ |
 | [Largest Element](./problems/StackProblems/LargestElementInStack.md) | Easy       | [Stacks]          | [Link](./solutions/StackSolutions/Largest%20Element%20Solution.md) |
 | [Valid Parentheses](./problems/StackProblems/ValidParentheses.md)    | Medium     | [Strings, Stacks] | [Link](./solutions/StackSolutions/BalancedParensSolution.md)       |
+| [Two-Lane Parking Management System ](./problems/StackProblems/TwoLanesParkingManagmentSystem.md)    | Medium     | [Stacks, Objects] | [Link](./solutions/StackSolutions/Two-LaneParkingManagementSystem)       |
 
 ## Queue Problems
 
