@@ -22,11 +22,11 @@ This information is presented in a new way then what we have seen before.  Inste
 
 Trees are comprised of nodes, and are very similar to Linked Lists.  Just like a LinkedListNode, a TreeNode has a value.  While a LinkedListNode has only one `next` Node, a TreeNode can have any number of `next` Nodes.  The most common type of tree is called a *Binary Tree* where each TreeNode can have up to two `next` Nodes.
 
-```
+```swift
 class TreeNode {
    let val: Int
-   let left: TreeNode?
-   let right: TreeNode?
+   var left: TreeNode?
+   var right: TreeNode?
    init(_ val: Int) {
       self.val = val
    }
