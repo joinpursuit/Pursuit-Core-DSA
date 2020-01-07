@@ -105,3 +105,8 @@
 | [Factorial](./problems/RecursionProblems/Factorial.md)              | Medium     | [Recursion]          | [Link](./solutions/RecursionSolutions/Factorial.md)       |
 | [Recursive Sum](./problems/RecursionProblems/RecursiveSum.md)       | Easy       | [Recursion]          | [Link](./solutions/RecursionSolutions/RecursiveSum.md)    |
 | [Reverse Sentence](./problems/RecursionProblems/ReverseSentence.md) | Medium     | [Recursion, Strings] | [Link](./solutions/RecursionSolutions/ReverseSentence.md) |
+
+
+## Whiteboarding JS Prompts for Mock Interview Pairs
+
+- https://github.com/joinpursuit/whiteboarding
