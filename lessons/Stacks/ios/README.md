@@ -9,7 +9,7 @@ Understand:
 
 A Stack is an abstract data structure we use in storing data.
 
-A stack like in real life is a piled structure of items, such as a stack of plates as pictured below.  You can only add or take away dishes at the top of the stack (pile).
+A stack, like in real life, is a piled structure of items, such as a stack of plates as pictured below.  You can only add or take away dishes at the top of the stack (pile).
 
 ![Dishes Stack](http://www.dabillgh.com/wp-content/gallery/kitchen-and-crockery/DbillGH2343466.jpg)
 
