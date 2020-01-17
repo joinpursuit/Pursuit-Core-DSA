@@ -106,6 +106,10 @@
 | [Recursive Sum](./problems/RecursionProblems/RecursiveSum.md)       | Easy       | [Recursion]          | [Link](./solutions/RecursionSolutions/RecursiveSum.md)    |
 | [Reverse Sentence](./problems/RecursionProblems/ReverseSentence.md) | Medium     | [Recursion, Strings] | [Link](./solutions/RecursionSolutions/ReverseSentence.md) |
 
+## Tree Problems
+| Problem                                                                                            | Difficulty | Tags                 | Solution                                                                                |
+| [Print Binary Tree With a Stack](./problems/TreeProblems/PrintBinaryTreeWithStack.md)              | Medium     | [Recursion]          | [Link](./solutions/TreeSolutions/PrintBinaryTreeWithStackSolution.md)       |
+
 
 ## Whiteboarding JS Prompts for Mock Interview Pairs
 
