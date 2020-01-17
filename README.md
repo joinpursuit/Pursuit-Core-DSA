@@ -108,6 +108,7 @@
 
 ## Tree Problems
 | Problem                                                                                            | Difficulty | Tags                 | Solution                                                                                |
+| -------------------------------------------------------------------------------------------------- | ---------- | -------------------- | --------------------------------------------------------------------------------------- |
 | [Print Binary Tree With a Stack](./problems/TreeProblems/PrintBinaryTreeWithStack.md)              | Medium     | [Recursion]          | [Link](./solutions/TreeSolutions/PrintBinaryTreeWithStackSolution.md)       |
 
 
