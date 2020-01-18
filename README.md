@@ -27,6 +27,8 @@
 - [Stack Problems](#stack-problems)
 - [String Problems](#string-problems)
 - [Logic Problems](#logic-problems)
+- [Recursion Problems](#recursion-problems)
+- [Tree Problems](#tree-problems)
 
 ## Array Problems
 
