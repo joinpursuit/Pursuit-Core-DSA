@@ -114,9 +114,9 @@
 | [Print Binary Tree With a Stack](./problems/TreeProblems/PrintBinaryTreeWithStack.md)       | Medium     | [Tree]           | [Link](./solutions/TreeSolutions/PrintBinaryTreeWithStackSolution.md)       |
 | [Print Binary Tree With Recursion](./problems/TreeProblems/PrintBinaryTreeWithRecursion.md) | Medium     | [Tree,Recursion] | [Link](./solutions/TreeSolutions/PrintBinaryTreeWithRecursionSolution.md)       |
 | [Sum Values in Tree](./problems/TreeProblems/SumValuesInTree.md)                            | Medium     | [Tree]           | [Link](./solutions/TreeSolutions/SumValuesInTreeSolution.md)       |
+| [Max Value in Tree](./problems/TreeProblems/MaxValueInTree.md)                              | Hard       | [Tree]           | [Link](./solutions/TreeSolutions/MaxValueInTreeSolution.md)       |
 | [Tree Height (or Depth)](./problems/TreeProblems/TreeHeight.md)                             | Hard       | [Tree]           | [Link](./solutions/TreeSolutions/TreeHeightSolution.md)       |
 | [Is Tree Balanced](./problems/TreeProblems/TreeBalanced.md)                                 | Hard       | [Tree]           | [Link](./solutions/TreeSolutions/TreeBalancedSolution.md)       |
-| [Max Value in Tree](./problems/TreeProblems/MaxValueInTree.md)                              | Hard       | [Tree]           | [Link](./solutions/TreeSolutions/MaxValueInTreeSolution.md)       |
 | [Tree Equality](./problems/TreeProblems/TreeEquality.md)                                    | Hard+      | [Tree]           | [Link](./solutions/TreeSolutions/TreeEqualitySolution.md)       |
 
 
