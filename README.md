@@ -42,7 +42,7 @@
 | [Product of All Except Index](./problems/ArrayProblems/ProductOfAllExeptIndex.md)   | Easy       | [Arrays, Products]             | [Link](./solutions/ArraySolutions/ProductOfAllExceptIndexSolution.md) |
 | [Remove Duplicates](./problems/ArrayProblems/RemoveDuplicates.md)                   | Easy       | [Arrays, Duplicates]           | [Link](./solutions/ArraySolutions/RemoveDuplicatesSolution.md)        |
 | [Second Largest](./problems/ArrayProblems/SecondLargest.md)                         | Easy       | [Arrays, Integers]             | [Link](./solutions/ArraySolutions/SecondLargestSolution.md)           |
-| [Merge Sorted Arrays](./problems/ArrayProblems/MergeSortedLists.md)                 | Medium     | [Arrays]                       | [Link](./solutions/ArraySolutions/MergeSortedArraysSolution.md)       |
+| [Merge Sorted Arrays](./problems/ArrayProblems/MergeSortedArrays.md)                 | Medium     | [Arrays]                       | [Link](./solutions/ArraySolutions/MergeSortedArraysSolution.md)       |
 | [Shift Zeros](./problems/ArrayProblems/ShiftZeros.md)                               | Medium     | [Arrays, Duplicates]           | [Link](./solutions/ArraySolutions/ShiftZerosSolution.md)              |
 | [Product of Three](./problems/ArrayProblems/ProductOfThree.md)                      | Medium     | [Arrays, Products, Integers]   | [Link](./solutions/ArraySolutions/ProductofThreeSolution.md)          |
 | [Keypad](./problems/ArrayProblems/Keypad.md)                                        | Hard       | [Arrays]                       | [Link](./solutions/ArraySolutions/Keypad.md)                          |
