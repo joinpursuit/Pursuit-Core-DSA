@@ -6,9 +6,9 @@
 | --- | --- | --- |
 | Introduction to Whiteboarding | [link](./lessons/intro_to_whiteboarding) | n/a |
 | Big-O Notation | [JavaScript](./lessons/big_o_notation/web) / [Swift](./lessons/big_o_notation/ios) | n/a |
-| Linked List | [JavaScript](./lessons/linked_lists/web) / [Swift](./lessons/linked_lists/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Linked-List-Exercises) |
 | Stacks | [JavaScript](./lessons/Stacks/web) / [Swift](./lessons/Stacks/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Stacks-Lab) |
 | Queues | [JavaScript](./lessons/Queues/web) / [Swift](./lessons/Queues/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Queue-Lab) |
+| Linked List | [JavaScript](./lessons/linked_lists/web) / [Swift](./lessons/linked_lists/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Linked-List-Exercises) |
 | Hash Tables | [JavaScript](./lessons/hash_tables/web) / [Swift](./lessons/hash_tables/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Hashmap-Lab/tree/master) |
 | Recursion | [JavaScript](./lessons/Recursion/web) / [Swift](./lessons/Recursion/ios) | tbd |
 | Binary Search | [JavaScript](./lessons/binary_search/web) / [Swift](./lessons/binary_search/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Binary-Search-Lab/tree/master) |
