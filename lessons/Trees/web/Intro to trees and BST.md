@@ -258,6 +258,26 @@ const postOrderPrint = (root) => {
 
 Given our tree, `postOrderPrint` would print the values in the order: `D, E, C, F, B, I, J, H, K, G, A`.
 
+#### Iteratively with a Stack
+Iterative Depth First Traversal will require the use of a [Stack](https://github.com/joinpursuit/Pursuit-Core-DSA/tree/master/lessons/Stacks/web). Guess what? the recursive approaches above didn't need an explicit stack because the recursion is already using the internal **call stack**. For simplicity and illustration purposes let us use an array as a Stack.
+
+```js
+const iterativeDFS = (root) => {
+  let stack = [root]
+  
+  while (stack.length) {      
+    let currNode = stack.pop()
+
+    console.log(currNode.value) // Visiting/accessing the node
+    
+    if (currNode.right) stack.push(currNode.right)
+    if (currNode.left) stack.push(currNode.left)
+  }
+}
+
+```
+Given our tree, `iterativeDFS` would print the values in the order: `A, B, C, D, E, F, G, H, I, J, K`
+
 ### Breadth First Search/Traversal (BFS)
 Also known as Level-Order traversal. Trees can be traversed in breadth-first fashion, where we visit every node on a level before going to a lower level. This search is referred to as breadth-first search (BFS), as the search tree is broadened as much as possible on each depth before going to the next depth.
 
@@ -266,7 +286,7 @@ Also known as Level-Order traversal. Trees can be traversed in breadth-first fas
 Given the above tree if we traverse in level-order the order would be `F, B, G, A, D, I, C, E, H`.
 
 ### Implementation
-Level order will require the use of a [Queue](https://github.com/joinpursuit/Pursuit-Core-DSA/tree/master/lessons/Queues/web) to aid us in visiting the nodes in a level-order fashion. For simplicity and illustration purposes let us use an array as a queue.
+Level order will require the use of a [Queue](https://github.com/joinpursuit/Pursuit-Core-DSA/tree/master/lessons/Queues/web) to aid us in visiting the nodes in a level-order fashion. For simplicity and illustration purposes let us use an array as a queue (note that this is less than optimal).
 
 ```js
 const breadthFirst = (root) => {
@@ -275,7 +295,7 @@ const breadthFirst = (root) => {
 
     // Continue running the algorithm while there are still nodes on the queue. As long a queue.length is truthy
     while (queue.length) {
-        // Dequeue. Remove the front node from the queue. 
+        // Dequeue. Remove the front node in the queue. 
         let node = queue.shift();
 
         // The node we just removed is now "visited", so print it
@@ -347,13 +367,10 @@ const binarySearch = (root, value) => {
 }
 ```
 
-### Coming up later
-* DFS iteratively with a Stack
-* Inserting a new value into a binary search tree
-
 ### Resources
 * [Tree Traversal](https://en.wikipedia.org/wiki/Tree_traversal)
 * [Tree - Data Structure - Wikipedia](https://en.wikipedia.org/wiki/Tree_(data_structure))   
 * [Trees - Ray Wenderlich](https://github.com/raywenderlich/swift-algorithm-club/tree/master/Tree) 
+* [The iterative solution to inorder tree traversal, easily explained](https://medium.com/@amyhuajs/the-iterative-solution-to-inorder-tree-traversal-easily-explained-f25f09e5435b)
 
 
