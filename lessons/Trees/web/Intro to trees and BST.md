@@ -37,7 +37,7 @@ Before we dive into the binary trees. We must understand what every tree has in 
 2. Root
 3. Parent / Child
 4. Leaf
-5. Edges
+5. Edges (lines connecting the nodes)
 
 ### Node 
 
@@ -152,16 +152,16 @@ h.right = j;
 * How many levels does the tree have?
 * Having access only to the root, is there a way to get to the node with value `D`? If so how?
 * Having access only to the root, is there a way to get to the node with value `J`? How?
-* Code the following tree
+* Similarly to what we did above to build a tree, write the code that will construct the following tree:
 ```
           (8)
      (4)       (9)
    (2) (5)  (7)   (10)
  (1)(3)   (6)(8)
 ```
-  * Only through the root access the node with value 9
-  * Only through the root node access the node with value 3
-  * Only thorough the root change the value of the node with value 10 to 20
+  * Only through the root access(console.log) the node with value 9
+  * Only through the root node access(console.log) the node with value 3
+  * Only thorough the root change the value of the node with value 10 to 20. And console.log the before and after.
 
 ## Tree Traversal
 
@@ -178,7 +178,7 @@ As their name suggest one goes deeper first and the other goes wide first. You c
 
 ### Depth First Search/Traversal (DFS)
 
-There are three recursive algorithms to traverse a tree (visit all the nodes) and one iterative in a depth first fashion. The algorithms are structurally the same, however they will differ in what order the values are 'visited'. All three of our algorithms will be recursive and have the same base case.
+There are three recursive and one iterative algorithms to traverse a tree (visit all the nodes) in a depth first fashion. The algorithms are structurally the same, however they will differ in what order the values are 'visited'. Lets see the three algorithms that are recursive and have the same base case.
 
 We'll use the tree that you built earlier:
 ```
@@ -259,29 +259,29 @@ const postOrderPrint = (root) => {
 Given our tree, `postOrderPrint` would print the values in the order: `D, E, C, F, B, I, J, H, K, G, A`.
 
 ### Breadth First Search/Traversal (BFS)
-Also known as Level-Order traversal. Trees can be traversed in breadth-firs fashion, where we visit every node on a level before going to a lower level. This search is referred to as breadth-first search (BFS), as the search tree is broadened as much as possible on each depth before going to the next depth.
+Also known as Level-Order traversal. Trees can be traversed in breadth-first fashion, where we visit every node on a level before going to a lower level. This search is referred to as breadth-first search (BFS), as the search tree is broadened as much as possible on each depth before going to the next depth.
 
 ![level-order-traversal](https://upload.wikimedia.org/wikipedia/commons/d/d1/Sorted_binary_tree_breadth-first_traversal.svg)
 
 Given the above tree if we traverse in level-order the order would be `F, B, G, A, D, I, C, E, H`.
 
 ### Implementation
-Level order will require the use of a [Queue](https://github.com/joinpursuit/Pursuit-Core-DSA/tree/master/lessons/Queues/web) to aid us in visiting th . For simplicity and illustration purposes let us use an array as a queue.
+Level order will require the use of a [Queue](https://github.com/joinpursuit/Pursuit-Core-DSA/tree/master/lessons/Queues/web) to aid us in visiting the nodes in a level-order fashion. For simplicity and illustration purposes let us use an array as a queue.
 
 ```js
 const breadthFirst = (root) => {
-    // initialize the queue with the root node
+    // Initialize the queue with the root node
     let queue = [ root ];
 
-    // continue running the algorithm while there are still nodes on the queue
+    // Continue running the algorithm while there are still nodes on the queue. As long a queue.length is truthy
     while (queue.length) {
-        // remove the front node from the queue
+        // Dequeue. Remove the front node from the queue. 
         let node = queue.shift();
 
-        // the node we just removed is now "visited", so print it
+        // The node we just removed is now "visited", so print it
         console.log(node.value);
 
-        // add the left and right children to the back of the queue, if they exist
+        // Add/enqueue the left and right children to the back of the queue, if they exist.
         if (node.left) queue.push(node.left);
         if (node.right) queue.push(node.right);
     }
@@ -290,8 +290,8 @@ const breadthFirst = (root) => {
 
 **Exercise**: 
 
-* Write a function `searchInTree` that searches a tree for a value and returns true or false depending on whether or not the value was found. Your function signature would be `searchInTree(root, value)`. Use any of the traversal algorithms.
-* Write a function `inOrderToArray` that traverses a tree in-order a returns an array with its values
+* Write a function `treeIncludes` that searches a tree for a value and returns true or false depending on whether or not the value was found. Your function signature would be `treeIncludes(root, value)`. Use any of the traversal algorithms.
+* Write a function `treeToArrayInOrder` that traverses a tree in-order a returns an array with its values.
 * What is the time complexity of these algorithms?
 
 ### Binary Search Tree (BST)
