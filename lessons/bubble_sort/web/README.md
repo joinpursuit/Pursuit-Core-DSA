@@ -16,22 +16,25 @@ Given the following array of numbers find the lowest value:
 ```javascript
 let numbers = [ 4 , 1, 7, 9, 0, 55, 2 ];
 ```
+
 <details>
-    <summary>Solution to Challenge #1</summary>
+<summary>Solution to Challenge #1</summary>
 
-    let numbers = [ 4 , 1, 7, 9, 0, 55, 2 ];
+```js
+let numbers = [ 4 , 1, 7, 9, 0, 55, 2 ];
 
-    function lowestVal(arr) {
-        let lowest = arr[0];
-        for (let i = 1; i < arr.length; i++) {
-            if (lowest > arr[i]) {
-                lowest = arr[i];
-            }
+function lowestVal(arr) {
+    let lowest = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (lowest > arr[i]) {
+            lowest = arr[i];
         }
-        return lowest;
     }
+    return lowest;
+}
 
-    lowestVal(numbers); // Returns 0
+lowestVal(numbers); // Returns 0
+```
 </details>
 
 <details>
@@ -49,7 +52,7 @@ let thirdLowest = numbersSorted[2]; // 1
 Time complexity: O(1)
 
 ## Real world examples of Sorting
-- Organizing customers on Amazon based on the most purchases
+- Ordering your files by the date they were last modified in your computer
 - Getting the best player in the NBA based on various stats (Points, Assists)
 
 ## Sorting Algorithms
@@ -61,17 +64,23 @@ There are many creative ways computer scientists went onto solving sorting probl
 - Bubble Sort
 - Merge Sort
 
-|Algorithm| Average Time Complexity |
-|--|--|
-| Selection Sort | O(n^2) |
-| Insertion Sort | O(n^2) |
-| Bubble Sort | O(n^2) |
-| Merge Sort | O(n Log(n)) |
-| Quick Sort | O(n Log(n)) |
+| Algorithm      | Average Time Complexity |
+| -------------- | ----------------------- |
+| Selection Sort | O(n^2)                  |
+| Insertion Sort | O(n^2)                  |
+| Bubble Sort    | O(n^2)                  |
+| Merge Sort     | O(n Log(n))             |
+| Quick Sort     | O(n Log(n))             |
 
 Sorting algorithms can be very complicated to wrap your head around, but if you can break down the fundemental problems it can be easy. 
 
 It's important to understand very basic algorithms to be able to code more complex ones. 
+
+
+## Bubble Sort
+Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
+
+![Bubble Sort](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
 
 ## Simple Algorithms Practice 1
 
@@ -82,7 +91,7 @@ Loop through an array from end to beginning. Basically in reverse.
     <summary>Solution to Challenge #2</summary>
 
 ```javascript
-let numbers = [ 4 , 1, 7, 9, 0, 55, 2 ];
+let numbers = [4 , 1, 7, 9, 0, 55, 2];
 
 function loopReverse(arr) {
     for (let i = arr.length - 1; i >= 0; i--) {
@@ -116,10 +125,6 @@ console.log(numbers);
 
 </details>
 
-## Bubble Sort
-Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
-
-![Bubble Sort](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
 
 **Steps to solve this problem:**
 1. Understand how many cycles the algorithm will need to go through.
@@ -175,6 +180,32 @@ function bubbleSort(arr) {
     return arr;
 }
 ```
+
+<details> 
+
+<summary>Another implementation </summary>
+
+```js
+export const bubbleSort = (arr) => {
+  let swap = true;
+  let n = arr.length - 1;
+  while (swap) {
+    swap = false
+    for (let i = 0; i < n; i++) {
+      if (arr[i] > arr[i + 1]) {
+        let temp = arr[i];
+        arr[i] = arr[i + 1];
+        arr[i + 1] = temp;
+        swap = true;
+      }
+    }
+    n--
+  }
+  return arr;
+}
+```
+
+</details>
 
 Bubble sort is a simple algorithm to program but it's very slow with a O(n^2) time complexity. 
 
