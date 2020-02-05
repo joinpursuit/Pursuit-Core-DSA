@@ -14,21 +14,26 @@
 | Binary Search | [JavaScript](./lessons/binary_search/web) / [Swift](./lessons/binary_search/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Binary-Search-Lab/tree/master) |
 | Bubble Sort: Intro to Sorting* | [JavaScript](./lessons/bubble_sort/web) / [Swift](./lessons/bubble_sort/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Bubble-Sort-Lab) |
 | Insertion Sort | JavaScript / [Swift](./lessons/insertion_sort/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Insertion-Sort-Lab/tree/master) |
-| Quick Sort | JavaScript / [Swift](./lessons/quicksort/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Quicksort-Lab) |
+| Quick Sort | [JavaScript](./lessons/quicksort/web) / [Swift](./lessons/quicksort/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Quicksort-Lab) |
 | Merge Sort | [JavaScript](./lessons/merge_sort/web) / [Swift](./lessons/merge_sort/ios/README.md) | [Swift](https://github.com/joinpursuit/Pursuit-Core-Merge-Sort-Lab/blob/master/README.md) |
 | Trees | [JavaScript](./lessons/Trees/web) / [Swift](./lessons/Trees/ios/) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Trees-Lab/blob/master/README.md) |
 
 
 ## Problems
 
-- [Array Problems](#array-problems)
-- [Integer Problems](#integer-problems)
-- [Linked List Problems](#linked-list-problems)
-- [Stack Problems](#stack-problems)
-- [String Problems](#string-problems)
-- [Logic Problems](#logic-problems)
-- [Recursion Problems](#recursion-problems)
-- [Tree Problems](#tree-problems)
+- [Pursuit Core Data Structures and Algorithms Curriculum](#pursuit-core-data-structures-and-algorithms-curriculum)
+  - [Lessons](#lessons)
+  - [Problems](#problems)
+  - [Array Problems](#array-problems)
+  - [Integer Problems](#integer-problems)
+  - [Linked List Problems](#linked-list-problems)
+  - [Stack Problems](#stack-problems)
+  - [Queue Problems](#queue-problems)
+  - [String Problems](#string-problems)
+  - [Logic Problems](#logic-problems)
+  - [Recursion Problems](#recursion-problems)
+  - [Tree Problems](#tree-problems)
+  - [Whiteboarding JS Prompts for Mock Interview Pairs](#whiteboarding-js-prompts-for-mock-interview-pairs)
 
 ## Array Problems
 
