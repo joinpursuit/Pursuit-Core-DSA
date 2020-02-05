@@ -1,4 +1,4 @@
-## Insertion Sort
+# Insertion Sort
 
 ### Resources
 * [visualgo - Insertion Sort](https://visualgo.net/en/sorting?slide=8)
