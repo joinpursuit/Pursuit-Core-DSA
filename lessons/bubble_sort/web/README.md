@@ -60,9 +60,7 @@ Time complexity: O(1)
 There are many ways to sort through a set of data. That is why we call these "algorithms". 
 > Algorithm: An algorithm is a set of instructions designed to perform a specific task. 
 
-There are many creative ways computer scientists went onto solving sorting problems. Today we will be discussing two:
-- Bubble Sort
-- Merge Sort
+There are many creative ways computer scientists went onto solving sorting problems. Today we will be discussing Bubble Sort
 
 | Algorithm      | Average Time Complexity |
 | -------------- | ----------------------- |
