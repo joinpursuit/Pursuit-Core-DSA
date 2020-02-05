@@ -1,18 +1,18 @@
-# Sorting Algorithms
-## Merge Sort: Divide & Conquer
+# Merge Sort: Divide & Conquer
 
-## Goals
+### Goals
 * Understand how to improve sorting efficiency
 * Understand what a Divide & Conquer algorithm is
 * Write Merge Sort in code
 
-## Lesson
-
-### Better Sorting 
-
-We have done sorting with Bubble Sort previously. But there are ways to solve this problem in a more efficient manner. 
+### Resources
+* [Khan Academy - Merge Sort](https://www.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/divide-and-conquer-algorithms)
+* [visualgo - Merge Sort](https://visualgo.net/en/sorting?slide=10)
+* [w3resource - Merge Sort](https://www.w3resource.com/javascript-exercises/searching-and-sorting-algorithm/searching-and-sorting-algorithm-exercise-2.php)
+* [Wikipedia - Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)
 
 ## Merge Sort
+We have done sorting with Bubble Sort previously. But there are ways to solve this problem in a more efficient manner Merge Sort is in average more efficient. 
 
 Merge Sort is a Divide and Conquer algorithm. It divides input array in two halves, calls itself for the two halves and then merges the two sorted halves.
 
@@ -28,7 +28,7 @@ This image describes the steps a merge sort algorithm takes to solve the problem
 
 ![Mergesort](https://www.geeksforgeeks.org/wp-content/uploads/Merge-Sort-Tutorial.png)
 
-## Simple Algorithms Practice
+### Simple Algorithms Practice
 
 **Challenge #1**
 
@@ -84,7 +84,7 @@ let right = arr.slice(mid);
 </details>
 
 
-## Solving Merge Sort
+### Solving Merge Sort
 
 **Steps to solve this problem:**
 1. Understand that there are going to be TWO functions
