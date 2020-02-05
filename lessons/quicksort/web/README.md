@@ -120,7 +120,7 @@ const quickSort = (arr) => {
 }
 ```
 
-### Time Complexity O (n log n):
+### Time Complexity: O(n log n)
 
 ![https://s3.amazonaws.com/hr-challenge-images/quick-sort/RecursionTree.png](https://s3.amazonaws.com/hr-challenge-images/quick-sort/RecursionTree.png)
 
