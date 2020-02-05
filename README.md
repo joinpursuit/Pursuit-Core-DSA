@@ -13,7 +13,7 @@
 | Recursion | [JavaScript](./lessons/Recursion/web) / [Swift](./lessons/Recursion/ios) | tbd |
 | Binary Search | [JavaScript](./lessons/binary_search/web) / [Swift](./lessons/binary_search/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Binary-Search-Lab/tree/master) |
 | Bubble Sort: Intro to Sorting* | [JavaScript](./lessons/bubble_sort/web) / [Swift](./lessons/bubble_sort/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Bubble-Sort-Lab) |
-| Insertion Sort | JavaScript / [Swift](./lessons/insertion_sort/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Insertion-Sort-Lab/tree/master) |
+| Insertion Sort | [JavaScript](./lessons/insertion_sort/web) / [Swift](./lessons/insertion_sort/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Insertion-Sort-Lab/tree/master) |
 | Quick Sort | [JavaScript](./lessons/quicksort/web) / [Swift](./lessons/quicksort/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Quicksort-Lab) |
 | Merge Sort | [JavaScript](./lessons/merge_sort/web) / [Swift](./lessons/merge_sort/ios/README.md) | [Swift](https://github.com/joinpursuit/Pursuit-Core-Merge-Sort-Lab/blob/master/README.md) |
 | Trees | [JavaScript](./lessons/Trees/web) / [Swift](./lessons/Trees/ios/) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Trees-Lab/blob/master/README.md) |
