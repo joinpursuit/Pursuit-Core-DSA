@@ -235,3 +235,5 @@ function merge(left, right) {
 }
 ```
 
+Final version [here](./mergeSort.js)
+
