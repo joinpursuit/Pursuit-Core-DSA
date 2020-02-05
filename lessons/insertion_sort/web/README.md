@@ -3,8 +3,8 @@
 ### Resources
 * [visualgo - Insertion Sort](https://visualgo.net/en/sorting?slide=8)
 * [Khan Academy - Insertion Sort](https://www.khanacademy.org/computing/computer-science/algorithms/insertion-sort/a/insertion-sort)
+* [w3resource Insertion Sort](https://www.w3resource.com/javascript-exercises/searching-and-sorting-algorithm/searching-and-sorting-algorithm-exercise-4.php)
 * [Wikipedia](https://en.wikipedia.org/wiki/Insertion_sort)
-
 
 ### Pseudo code
 The insertion sort algorithm works as follows:
@@ -24,7 +24,14 @@ for each unsorted element X
     break loop and insert X here
 ```
 
-## Insertion Sort Implementation
+### Visualization
+#### 1)
+![insertion sort animation from wikipedia](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)
+
+#### 2)
+![insertion sort ilustration by w3resources](https://www.w3resource.com/w3r_images/insertion-sort.png)
+
+### Insertion Sort Implementation
 
 ```js
 const insertionSort = (nums) => {
