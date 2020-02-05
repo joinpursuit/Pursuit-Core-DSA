@@ -22,6 +22,14 @@ In this lesson, we will look a recursive sorting algorithm and understand why it
 
 ## Quicksort
 
+### Visualization
+
+#### 1)
+Picking as pivot the middle element. Everything less than the pivot goes to the left and everything that is greater to the right
+
+![quick sort diagram with middle pivot](https://qnaplus.com/wp-content/uploads/2017/05/quick_sort.png)
+
+#### 2)
 [![Quicksort](http://img.youtube.com/vi/8hEyhs3OV1w/0.jpg)](https://www.youtube.com/watch?v=8hEyhs3OV1w)
 
 
