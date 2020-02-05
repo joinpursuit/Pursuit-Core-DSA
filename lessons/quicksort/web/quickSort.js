@@ -27,5 +27,5 @@ const quickSort = (arr) => {
   return result
 }
 
-const arr = [9, 7, 6, 5, 2, 1, 0]
+const arr = [2, 5, 7, 6, 9, 0, 1]
 console.log(quickSort(arr))
