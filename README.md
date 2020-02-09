@@ -26,6 +26,7 @@
 - [Linked List Problems](#linked-list-problems)
 - [Stack Problems](#stack-problems)
 - [String Problems](#string-problems)
+- [Hash Table Problems](#hash-table-problems)
 - [Logic Problems](#logic-problems)
 - [Recursion Problems](#recursion-problems)
 - [Tree Problems](#tree-problems)
@@ -88,6 +89,14 @@
 | [Reverse String](./problems/StringProblems/ReverseString.md)                   | Easy       | [Strings]                       | [Link](./solutions/StringSolutions/ReverseStringSolution.md)         |
 | [Pattern Match](./problems/StringProblems/PatternMatch.md)                     | Easy       | [Arrays, Strings, Dictionaries] | [Link](./solutions/StringSolutions/PatternMatchSolution.md)          |
 | [Sequence Count in String](./problems/StringProblems/SequenceCountInString.md) | Medium     | [Arrays, Integers]              | [Link](./solutions/StringSolutions/SequenceCountInStringSolution.md) |
+
+## Hash Table Problems
+
+| Problem                                                                                                       | Difficulty | Tags                            | Solution                                                                                           |
+| ------------------------------------------------------------------------------------------------------------- | ---------- | ------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [Keyboard Row](./problems/HashTableProblems/KeyboardRow.md)                          | Easy       | [Hash Tables]                       | [Link](./solutions/HashTableSolutions/KeyboardRowSolution.md)            |
+| [Unique Occurrences](./problems/HashTableProblems/UniqueOccurrences.md)                          | Medium       | [Hash Tables]                       | [Link](./solutions/HashTableSolutions/UniqueOccurrencesSolution.md)            |
+| [Longest Substring Without Repeating Characters](./problems/HashTableProblems/LongestSubstringWithoutRepeatingCharacters.md)                          | Hard       | [Hash Tables]                       | [Link](./solutions/HashTableSolutions/LongestSubstringWithoutRepeatingCharactersSolution.md)            |
 
 ## Logic Problems
 
