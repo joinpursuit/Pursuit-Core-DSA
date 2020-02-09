@@ -6,30 +6,35 @@
 | --- | --- | --- |
 | Introduction to Whiteboarding | [link](./lessons/intro_to_whiteboarding) | n/a |
 | Big-O Notation | [JavaScript](./lessons/big_o_notation/web) / [Swift](./lessons/big_o_notation/ios) | n/a |
-| Linked List | [JavaScript](./lessons/linked_lists/web) / [Swift](./lessons/linked_lists/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Linked-List-Exercises) |
 | Stacks | [JavaScript](./lessons/Stacks/web) / [Swift](./lessons/Stacks/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Stacks-Lab) |
 | Queues | [JavaScript](./lessons/Queues/web) / [Swift](./lessons/Queues/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Queue-Lab) |
+| Linked List | [JavaScript](./lessons/linked_lists/web) / [Swift](./lessons/linked_lists/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Linked-List-Exercises) |
 | Hash Tables | [JavaScript](./lessons/hash_tables/web) / [Swift](./lessons/hash_tables/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Hashmap-Lab/tree/master) |
 | Recursion | [JavaScript](./lessons/Recursion/web) / [Swift](./lessons/Recursion/ios) | tbd |
 | Binary Search | [JavaScript](./lessons/binary_search/web) / [Swift](./lessons/binary_search/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Binary-Search-Lab/tree/master) |
 | Bubble Sort: Intro to Sorting* | [JavaScript](./lessons/bubble_sort/web) / [Swift](./lessons/bubble_sort/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Bubble-Sort-Lab) |
-| Insertion Sort | JavaScript / [Swift](./lessons/insertion_sort/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Insertion-Sort-Lab/tree/master) |
-| Quick Sort | JavaScript / [Swift](./lessons/quicksort/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Quicksort-Lab) |
+| Insertion Sort | [JavaScript](./lessons/insertion_sort/web) / [Swift](./lessons/insertion_sort/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Insertion-Sort-Lab/tree/master) |
+| Quick Sort | [JavaScript](./lessons/quicksort/web) / [Swift](./lessons/quicksort/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Quicksort-Lab) |
 | Merge Sort | [JavaScript](./lessons/merge_sort/web) / [Swift](./lessons/merge_sort/ios/README.md) | [Swift](https://github.com/joinpursuit/Pursuit-Core-Merge-Sort-Lab/blob/master/README.md) |
 | Trees | [JavaScript](./lessons/Trees/web) / [Swift](./lessons/Trees/ios/) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Trees-Lab/blob/master/README.md) |
 
 
 ## Problems
 
-- [Array Problems](#array-problems)
-- [Integer Problems](#integer-problems)
-- [Linked List Problems](#linked-list-problems)
-- [Stack Problems](#stack-problems)
-- [String Problems](#string-problems)
-- [Hash Table Problems](#hash-table-problems)
-- [Logic Problems](#logic-problems)
-- [Recursion Problems](#recursion-problems)
-- [Tree Problems](#tree-problems)
+- [Pursuit Core Data Structures and Algorithms Curriculum](#pursuit-core-data-structures-and-algorithms-curriculum)
+  - [Lessons](#lessons)
+  - [Problems](#problems)
+  - [Array Problems](#array-problems)
+  - [Integer Problems](#integer-problems)
+  - [Linked List Problems](#linked-list-problems)
+  - [Stack Problems](#stack-problems)
+  - [Queue Problems](#queue-problems)
+  - [String Problems](#string-problems)
+  - [Hash Table Problems](#hash-table-problems)
+  - [Logic Problems](#logic-problems)
+  - [Recursion Problems](#recursion-problems)
+  - [Tree Problems](#tree-problems)
+  - [Whiteboarding JS Prompts for Mock Interview Pairs](#whiteboarding-js-prompts-for-mock-interview-pairs)
 
 ## Array Problems
 
