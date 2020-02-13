@@ -123,6 +123,7 @@
 | [Factorial](./problems/RecursionProblems/Factorial.md)              | Medium     | [Recursion]          | [Link](./solutions/RecursionSolutions/Factorial.md)       |
 | [Recursive Sum](./problems/RecursionProblems/RecursiveSum.md)       | Easy       | [Recursion]          | [Link](./solutions/RecursionSolutions/RecursiveSum.md)    |
 | [Reverse Sentence](./problems/RecursionProblems/ReverseSentence.md) | Medium     | [Recursion, Strings] | [Link](./solutions/RecursionSolutions/ReverseSentence.md) |
+| [Pascal's Triangle](./problems/RecursionProblems/PascalsTriangle.md) | Medium | [Recursion] | [Link](./solutions/RecursionSolutions/PascalsTriangle.md) | 
 
 ## Tree Problems
 | Problem                                                                                     | Difficulty | Tags             | Solution                                                                                |
