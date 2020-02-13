@@ -54,6 +54,7 @@
 | [Shift Zeros](./problems/ArrayProblems/ShiftZeros.md)                               | Medium     | [Arrays, Duplicates]           | [Link](./solutions/ArraySolutions/ShiftZerosSolution.md)              |
 | [Product of Three](./problems/ArrayProblems/ProductOfThree.md)                      | Medium     | [Arrays, Products, Integers]   | [Link](./solutions/ArraySolutions/ProductofThreeSolution.md)          |
 | [Keypad](./problems/ArrayProblems/Keypad.md)                                        | Hard       | [Arrays]                       | [Link](./solutions/ArraySolutions/Keypad.md)                          |
+| [N or More Occurrences](./problems/ArrayProblems/NorMoreOccurrences.md) | Easy | [Arrays] | [Link](./solutions/ArraySolutions/NorMoreOccurrences.md)
 
 ## Integer Problems
 
