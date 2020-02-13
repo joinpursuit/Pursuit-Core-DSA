@@ -174,3 +174,4 @@ function binarySearch (list, value) {
 ## Resources
 * [Binary Search - Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
 * [Binary Search Visualizer - USFCA](https://www.cs.usfca.edu/~galles/visualization/Search.html)
+* [Binary Search Video - CTCI Author](https://www.youtube.com/watch?v=P3YID7liBug)
