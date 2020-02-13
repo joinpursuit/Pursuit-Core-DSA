@@ -16,7 +16,7 @@
 | Insertion Sort | [JavaScript](./lessons/insertion_sort/web) / [Swift](./lessons/insertion_sort/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Insertion-Sort-Lab/tree/master) |
 | Quick Sort | [JavaScript](./lessons/quicksort/web) / [Swift](./lessons/quicksort/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Quicksort-Lab) |
 | Merge Sort | [JavaScript](./lessons/merge_sort/web) / [Swift](./lessons/merge_sort/ios/README.md) | [Swift](https://github.com/joinpursuit/Pursuit-Core-Merge-Sort-Lab/blob/master/README.md) |
-| Trees | [JavaScript](./lessons/Trees/web) / [Swift](./lessons/Trees/ios/) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Trees-Lab/blob/master/README.md) |
+| Trees | [JavaScript](./lessons/Trees/web/Intro%20to%20trees%20and%20BST.md) / [Swift](./lessons/Trees/ios/) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Trees-Lab/blob/master/README.md) |
 
 
 ## Problems
