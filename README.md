@@ -85,6 +85,7 @@
 | Problem                                                                              | Difficulty | Tags             | Solution                                                                       |
 | ------------------------------------------------------------------------------------ | ---------- | ---------------- | ------------------------------------------------------------------------------ |
 | [Stack Queue](./problems/QueueProblems/StackQueue.md) | Medium     | [Queues, Stacks] | [Link](./solutions/QueueSolutions/StackQueue.md) |
+| [Queue Range](./problems/QueueProblems/QueueRange.md) | Easy | [Queues] | [Link](./solutions/QueueSolutions/QueueRange.md)
 
 ## String Problems
 
