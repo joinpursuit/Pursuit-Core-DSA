@@ -69,6 +69,7 @@
 | Problem                                                                                 | Difficulty | Tags           | Solution                                                                                   |
 | --------------------------------------------------------------------------------------- | ---------- | -------------- | ------------------------------------------------------------------------------------------ |
 | [Swap Nodes](./problems/LinkedListProblems/SwapNodes.md) | Medium     | [Linked Lists] | [Link](./solutions/LinkedListSolutions/SwapNodesSolution.md) |
+| [Traverse / Pretty Print](./problems/LinkedListProblems/traverse.md) | Easy | [Linked Lists] | [Link](./solutions/LinkedListSolutions/traverseSolution.md)
 
 ## Stack Problems
 
@@ -137,3 +138,7 @@
 ## Whiteboarding JS Prompts for Mock Interview Pairs
 
 - https://github.com/joinpursuit/whiteboarding
+
+## Algorithms visualized
+
+https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
