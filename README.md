@@ -54,6 +54,8 @@
 | [Shift Zeros](./problems/ArrayProblems/ShiftZeros.md)                               | Medium     | [Arrays, Duplicates]           | [Link](./solutions/ArraySolutions/ShiftZerosSolution.md)              |
 | [Product of Three](./problems/ArrayProblems/ProductOfThree.md)                      | Medium     | [Arrays, Products, Integers]   | [Link](./solutions/ArraySolutions/ProductofThreeSolution.md)          |
 | [Keypad](./problems/ArrayProblems/Keypad.md)                                        | Hard       | [Arrays]                       | [Link](./solutions/ArraySolutions/Keypad.md)                          |
+| [N or More Occurrences](./problems/ArrayProblems/NorMoreOccurrences.md) | Easy | [Arrays] | [Link](./solutions/ArraySolutions/NorMoreOccurrences.md)
+| [Binary Search / Git Bisect](./problems/ArrayProblems/BinarySearch.md) | Medium | [Arrays] | [Link](./solutions/ArraySolutions/BinarySearchSolution.md)
 
 ## Integer Problems
 
@@ -69,6 +71,7 @@
 | Problem                                                                                 | Difficulty | Tags           | Solution                                                                                   |
 | --------------------------------------------------------------------------------------- | ---------- | -------------- | ------------------------------------------------------------------------------------------ |
 | [Swap Nodes](./problems/LinkedListProblems/SwapNodes.md) | Medium     | [Linked Lists] | [Link](./solutions/LinkedListSolutions/SwapNodesSolution.md) |
+| [Traverse / Pretty Print](./problems/LinkedListProblems/traverse.md) | Easy | [Linked Lists] | [Link](./solutions/LinkedListSolutions/traverseSolution.md)
 
 ## Stack Problems
 
@@ -83,6 +86,7 @@
 | Problem                                                                              | Difficulty | Tags             | Solution                                                                       |
 | ------------------------------------------------------------------------------------ | ---------- | ---------------- | ------------------------------------------------------------------------------ |
 | [Stack Queue](./problems/QueueProblems/StackQueue.md) | Medium     | [Queues, Stacks] | [Link](./solutions/QueueSolutions/StackQueue.md) |
+| [Queue Range](./problems/QueueProblems/QueueRange.md) | Easy | [Queues] | [Link](./solutions/QueueSolutions/QueueRange.md)
 
 ## String Problems
 
@@ -121,6 +125,7 @@
 | [Factorial](./problems/RecursionProblems/Factorial.md)              | Medium     | [Recursion]          | [Link](./solutions/RecursionSolutions/Factorial.md)       |
 | [Recursive Sum](./problems/RecursionProblems/RecursiveSum.md)       | Easy       | [Recursion]          | [Link](./solutions/RecursionSolutions/RecursiveSum.md)    |
 | [Reverse Sentence](./problems/RecursionProblems/ReverseSentence.md) | Medium     | [Recursion, Strings] | [Link](./solutions/RecursionSolutions/ReverseSentence.md) |
+| [Pascal's Triangle](./problems/RecursionProblems/PascalsTriangle.md) | Medium | [Recursion] | [Link](./solutions/RecursionSolutions/PascalsTriangle.md) | 
 
 ## Tree Problems
 | Problem                                                                                     | Difficulty | Tags             | Solution                                                                                |
@@ -137,3 +142,7 @@
 ## Whiteboarding JS Prompts for Mock Interview Pairs
 
 - https://github.com/joinpursuit/whiteboarding
+
+## Algorithms visualized
+
+https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
