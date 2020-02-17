@@ -6,29 +6,35 @@
 | --- | --- | --- |
 | Introduction to Whiteboarding | [link](./lessons/intro_to_whiteboarding) | n/a |
 | Big-O Notation | [JavaScript](./lessons/big_o_notation/web) / [Swift](./lessons/big_o_notation/ios) | n/a |
-| Linked List | [JavaScript](./lessons/linked_lists/web) / [Swift](./lessons/linked_lists/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Linked-List-Exercises) |
 | Stacks | [JavaScript](./lessons/Stacks/web) / [Swift](./lessons/Stacks/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Stacks-Lab) |
 | Queues | [JavaScript](./lessons/Queues/web) / [Swift](./lessons/Queues/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Queue-Lab) |
+| Linked List | [JavaScript](./lessons/linked_lists/web) / [Swift](./lessons/linked_lists/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Linked-List-Exercises) |
 | Hash Tables | [JavaScript](./lessons/hash_tables/web) / [Swift](./lessons/hash_tables/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Hashmap-Lab/tree/master) |
 | Recursion | [JavaScript](./lessons/Recursion/web) / [Swift](./lessons/Recursion/ios) | tbd |
 | Binary Search | [JavaScript](./lessons/binary_search/web) / [Swift](./lessons/binary_search/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Binary-Search-Lab/tree/master) |
 | Bubble Sort: Intro to Sorting* | [JavaScript](./lessons/bubble_sort/web) / [Swift](./lessons/bubble_sort/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Bubble-Sort-Lab) |
-| Insertion Sort | JavaScript / [Swift](./lessons/insertion_sort/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Insertion-Sort-Lab/tree/master) |
-| Quick Sort | JavaScript / [Swift](./lessons/quicksort/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Quicksort-Lab) |
+| Insertion Sort | [JavaScript](./lessons/insertion_sort/web) / [Swift](./lessons/insertion_sort/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Insertion-Sort-Lab/tree/master) |
+| Quick Sort | [JavaScript](./lessons/quicksort/web) / [Swift](./lessons/quicksort/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Quicksort-Lab) |
 | Merge Sort | [JavaScript](./lessons/merge_sort/web) / [Swift](./lessons/merge_sort/ios/README.md) | [Swift](https://github.com/joinpursuit/Pursuit-Core-Merge-Sort-Lab/blob/master/README.md) |
-| Trees | [JavaScript](./lessons/Trees/web) / [Swift](./lessons/Trees/ios/) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Trees-Lab/blob/master/README.md) |
+| Trees | [JavaScript](./lessons/Trees/web/Intro%20to%20trees%20and%20BST.md) / [Swift](./lessons/Trees/ios/) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Trees-Lab/blob/master/README.md) |
 
 
 ## Problems
 
-- [Array Problems](#array-problems)
-- [Integer Problems](#integer-problems)
-- [Linked List Problems](#linked-list-problems)
-- [Stack Problems](#stack-problems)
-- [String Problems](#string-problems)
-- [Logic Problems](#logic-problems)
-- [Recursion Problems](#recursion-problems)
-- [Tree Problems](#tree-problems)
+- [Pursuit Core Data Structures and Algorithms Curriculum](#pursuit-core-data-structures-and-algorithms-curriculum)
+  - [Lessons](#lessons)
+  - [Problems](#problems)
+  - [Array Problems](#array-problems)
+  - [Integer Problems](#integer-problems)
+  - [Linked List Problems](#linked-list-problems)
+  - [Stack Problems](#stack-problems)
+  - [Queue Problems](#queue-problems)
+  - [String Problems](#string-problems)
+  - [Hash Table Problems](#hash-table-problems)
+  - [Logic Problems](#logic-problems)
+  - [Recursion Problems](#recursion-problems)
+  - [Tree Problems](#tree-problems)
+  - [Whiteboarding JS Prompts for Mock Interview Pairs](#whiteboarding-js-prompts-for-mock-interview-pairs)
 
 ## Array Problems
 
@@ -48,6 +54,8 @@
 | [Shift Zeros](./problems/ArrayProblems/ShiftZeros.md)                               | Medium     | [Arrays, Duplicates]           | [Link](./solutions/ArraySolutions/ShiftZerosSolution.md)              |
 | [Product of Three](./problems/ArrayProblems/ProductOfThree.md)                      | Medium     | [Arrays, Products, Integers]   | [Link](./solutions/ArraySolutions/ProductofThreeSolution.md)          |
 | [Keypad](./problems/ArrayProblems/Keypad.md)                                        | Hard       | [Arrays]                       | [Link](./solutions/ArraySolutions/Keypad.md)                          |
+| [N or More Occurrences](./problems/ArrayProblems/NorMoreOccurrences.md) | Easy | [Arrays] | [Link](./solutions/ArraySolutions/NorMoreOccurrences.md)
+| [Binary Search / Git Bisect](./problems/ArrayProblems/BinarySearch.md) | Medium | [Arrays] | [Link](./solutions/ArraySolutions/BinarySearchSolution.md)
 
 ## Integer Problems
 
@@ -63,6 +71,7 @@
 | Problem                                                                                 | Difficulty | Tags           | Solution                                                                                   |
 | --------------------------------------------------------------------------------------- | ---------- | -------------- | ------------------------------------------------------------------------------------------ |
 | [Swap Nodes](./problems/LinkedListProblems/SwapNodes.md) | Medium     | [Linked Lists] | [Link](./solutions/LinkedListSolutions/SwapNodesSolution.md) |
+| [Traverse / Pretty Print](./problems/LinkedListProblems/traverse.md) | Easy | [Linked Lists] | [Link](./solutions/LinkedListSolutions/traverseSolution.md)
 
 ## Stack Problems
 
@@ -77,6 +86,7 @@
 | Problem                                                                              | Difficulty | Tags             | Solution                                                                       |
 | ------------------------------------------------------------------------------------ | ---------- | ---------------- | ------------------------------------------------------------------------------ |
 | [Stack Queue](./problems/QueueProblems/StackQueue.md) | Medium     | [Queues, Stacks] | [Link](./solutions/QueueSolutions/StackQueue.md) |
+| [Queue Range](./problems/QueueProblems/QueueRange.md) | Easy | [Queues] | [Link](./solutions/QueueSolutions/QueueRange.md)
 
 ## String Problems
 
@@ -88,6 +98,14 @@
 | [Reverse String](./problems/StringProblems/ReverseString.md)                   | Easy       | [Strings]                       | [Link](./solutions/StringSolutions/ReverseStringSolution.md)         |
 | [Pattern Match](./problems/StringProblems/PatternMatch.md)                     | Easy       | [Arrays, Strings, Dictionaries] | [Link](./solutions/StringSolutions/PatternMatchSolution.md)          |
 | [Sequence Count in String](./problems/StringProblems/SequenceCountInString.md) | Medium     | [Arrays, Integers]              | [Link](./solutions/StringSolutions/SequenceCountInStringSolution.md) |
+
+## Hash Table Problems
+
+| Problem                                                                                                       | Difficulty | Tags                            | Solution                                                                                           |
+| ------------------------------------------------------------------------------------------------------------- | ---------- | ------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [Keyboard Row](./problems/HashTableProblems/KeyboardRow.md)                          | Easy       | [Hash Tables]                       | [Link](./solutions/HashTableSolutions/KeyboardRowSolution.md)            |
+| [Unique Occurrences](./problems/HashTableProblems/UniqueOccurrences.md)                          | Medium       | [Hash Tables]                       | [Link](./solutions/HashTableSolutions/UniqueOccurrencesSolution.md)            |
+| [Longest Substring Without Repeating Characters](./problems/HashTableProblems/LongestSubstringWithoutRepeatingCharacters.md)                          | Hard       | [Hash Tables]                       | [Link](./solutions/HashTableSolutions/LongestSubstringWithoutRepeatingCharactersSolution.md)            |
 
 ## Logic Problems
 
@@ -107,6 +125,7 @@
 | [Factorial](./problems/RecursionProblems/Factorial.md)              | Medium     | [Recursion]          | [Link](./solutions/RecursionSolutions/Factorial.md)       |
 | [Recursive Sum](./problems/RecursionProblems/RecursiveSum.md)       | Easy       | [Recursion]          | [Link](./solutions/RecursionSolutions/RecursiveSum.md)    |
 | [Reverse Sentence](./problems/RecursionProblems/ReverseSentence.md) | Medium     | [Recursion, Strings] | [Link](./solutions/RecursionSolutions/ReverseSentence.md) |
+| [Pascal's Triangle](./problems/RecursionProblems/PascalsTriangle.md) | Medium | [Recursion] | [Link](./solutions/RecursionSolutions/PascalsTriangle.md) | 
 
 ## Tree Problems
 | Problem                                                                                     | Difficulty | Tags             | Solution                                                                                |
@@ -123,3 +142,7 @@
 ## Whiteboarding JS Prompts for Mock Interview Pairs
 
 - https://github.com/joinpursuit/whiteboarding
+
+## Algorithms visualized
+
+https://www.cs.usfca.edu/~galles/visualization/Algorithms.html

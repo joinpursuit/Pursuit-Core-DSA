@@ -19,7 +19,7 @@ Let's dive in.
 
 ### So why Recursion?
 
-![](assets/boxes_in_boxes.jpg)
+![](../assets/boxes_in_boxes.jpg)
 
 Imagine there is a big box with smaller boxes in it. These smaller boxes can have more smaller boxes in them. Ultimately, there is ONE key hidden away in one of the boxes. Your job is to search and find that key. 
 
@@ -55,7 +55,7 @@ sayHi() is a recursive function. It will priint "hi", then call itself, which wi
 <details>
 <summary>Recursive Patrick</summary>
 
-![recursive patrick](assets/patrick_recursive.gif)
+![recursive patrick](../assets/patrick_recursive.gif)
 </details>
 
 So, how do we get the function to stop?
@@ -251,7 +251,7 @@ const fib = (n) => {
 ```
 </details>
 
-![recursive fib](assets/fib_rec.png)
+![recursive fib](../assets/fib_rec.png)
 
 ### When to use recursion
 

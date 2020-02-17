@@ -236,14 +236,13 @@ func recursiveFibDynamicProgramming(num: Int) -> Int {
     return fibonacci
   }
 
-  guard num > 1 else {
-    fibValues[num] = num
+  guard num > 2 else {
     return 1
   }
 
   let fibonacci = recursiveFibDynamicProgramming(num: num - 1) + recursiveFibDynamicProgramming(num: num - 2)
   fibValues[num] = fibonacci
-  return fibonacci // 19 times
+  return fibonacci
 }
 ```
 

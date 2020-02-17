@@ -28,7 +28,7 @@ There are two conditions that need to be met before binary search may be used:
 
 ### Binary Search Logic
 
-![](assets/search-31.png)
+![binary search on array visualization](../assets/search-31.png)
 
 #### Step 1: Find the middle index
 The first step is to find the middle index of the collection
@@ -168,6 +168,10 @@ function binarySearch (list, value) {
   // if the current middle item is what we're looking for return it's index, else return -1
   return (list[middle] !== value) ? -1 : middle;
 }
-```</details>
+```
+</details>
 
-
+## Resources
+* [Binary Search - Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
+* [Binary Search Visualizer - USFCA](https://www.cs.usfca.edu/~galles/visualization/Search.html)
+* [Binary Search Video - CTCI Author](https://www.youtube.com/watch?v=P3YID7liBug)
