@@ -42,21 +42,17 @@ What is irrelevant? Are you sure?
 
 Sometimes problems aren't worded very clearly - this can be on purpose or not. Read carefully!
 
-## Restate the problem in your own words
+## Summarize & Restate the problem in your own words
 
 This helps you to start down the road of developing a plan. Also, trying to explain what you just read/heard is a way of checking your own understanding.
 
 ## Outline some high level steps
 
-What needs to happen?
-
-What's the end goal (usually this means: what does my function need to return?)
-
-Is it easier to work backward, or forward? Or some combination of the two?
-
-Try to have an idea of where you're going before you start coding, but you don't have to know the entire process.
-
-Write out pseudocode, which looks something like this:
+1. What needs to happen? (Restating the problem)
+1. What's the end goal (usually this means: what does my function need to return?)
+1. Is it easier to work backward, or forward? Or some combination of the two?
+1. Try to have an idea of where you're going before you start coding, but you don't have to know the entire process. If you can solve the whole thing in your head before you start coding, great. Otherwise, try to break it down into steps. This is the hardest and most time consuming part.
+1. As part of step 4, write out pseudocode which looks something like this:
 
 ```js
 // split input string into array of strings
@@ -69,7 +65,9 @@ Write out pseudocode, which looks something like this:
 // etc...
 ```
 
-### How to push through when you're stuck
+Having a plan / some structure to fall back on will help you when you get stuck. It's like having a map of where you need to go.
+
+## How to push through when you're stuck
 
 - RELAX
   - Getting lots of practice really helps make this part easier.
