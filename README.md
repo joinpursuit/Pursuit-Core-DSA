@@ -50,10 +50,11 @@
 | [Product of All Except Index](./problems/ArrayProblems/ProductOfAllExeptIndex.md)   | Easy       | [Arrays, Products]             | [Link](./solutions/ArraySolutions/ProductOfAllExceptIndexSolution.md) |
 | [Remove Duplicates](./problems/ArrayProblems/RemoveDuplicates.md)                   | Easy       | [Arrays, Duplicates]           | [Link](./solutions/ArraySolutions/RemoveDuplicatesSolution.md)        |
 | [Second Largest](./problems/ArrayProblems/SecondLargest.md)                         | Easy       | [Arrays, Integers]             | [Link](./solutions/ArraySolutions/SecondLargestSolution.md)           |
+| [List Min Abs Diff](./problems/ArrayProblems/ListMinAbsDiff.md)                         | Easy       | [Arrays, Integers]             | [Link](./solutions/ArraySolutions/ListMinAbsDiffSolution.md)           |
 | [Merge Sorted Arrays](./problems/ArrayProblems/MergeSortedArrays.md)                 | Medium     | [Arrays]                       | [Link](./solutions/ArraySolutions/MergeSortedArraysSolution.md)       |
 | [Shift Zeros](./problems/ArrayProblems/ShiftZeros.md)                               | Medium     | [Arrays, Duplicates]           | [Link](./solutions/ArraySolutions/ShiftZerosSolution.md)              |
 | [Product of Three](./problems/ArrayProblems/ProductOfThree.md)                      | Medium     | [Arrays, Products, Integers]   | [Link](./solutions/ArraySolutions/ProductofThreeSolution.md)          |
-| [Merge Overlapping Intervals](./problems/ArrayProblems/MergeIntervals.md)                      | Medium     | [Arrays, Intervals]            | [Link](./solutions/ArraySolutions/MergeIntervalsSolution.md)          |
+| [Merge Overlapping Intervals](./problems/ArrayProblems/MergeIntervals.md)                      | Hard+ | [Arrays, Intervals]            | [Link](./solutions/ArraySolutions/MergeIntervalsSolution.md)          |
 | [Keypad](./problems/ArrayProblems/Keypad.md)                                        | Hard       | [Arrays]                       | [Link](./solutions/ArraySolutions/Keypad.md)                          |
 | [N or More Occurrences](./problems/ArrayProblems/NorMoreOccurrences.md) | Easy | [Arrays] | [Link](./solutions/ArraySolutions/NorMoreOccurrences.md)
 | [Binary Search / Git Bisect](./problems/ArrayProblems/BinarySearch.md) | Medium | [Arrays] | [Link](./solutions/ArraySolutions/BinarySearchSolution.md)
