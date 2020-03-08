@@ -4,7 +4,7 @@
 
 ```swift
 func isPangram(str: String) -> Bool {
-    let alphabet = "abcdefghijklmnopqrstuvwxyz"
-    return Set(str.lowercased().filter{alphabet.contains($0)}).count == alphabet.count
+    let alphaSet = Set("abcdefghijklmnopqrstuvwxyz")
+    return Set(str.lowercased().filter{alphaSet.contains($0)}).count == alphabet.count
 }
 ```
