@@ -190,8 +190,6 @@ A Binary Search Tree is Binary Tree with two conditions:
 - Every node in the `right` child's subtree its parent
 - (Generally BSTs are defined to have unique values)
 
-Typically, when people talk about trees they are talking about Binary Search Trees.
-
 <details>
 <summary>Example</summary>
 
