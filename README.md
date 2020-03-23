@@ -10,7 +10,7 @@
 | Queues | [JavaScript](./lessons/Queues/web) / [Swift](./lessons/Queues/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Queue-Lab) |
 | Linked List | [JavaScript](./lessons/linked_lists/web) / [Swift](./lessons/linked_lists/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Linked-List-Exercises) |
 | Hash Tables | [JavaScript](./lessons/hash_tables/web) / [Swift](./lessons/hash_tables/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Hashmap-Lab/tree/master) |
-| Recursion | [JavaScript](./lessons/Recursion/web) / [Swift](./lessons/Recursion/ios) | tbd |
+| Recursion | [JavaScript](./lessons/Recursion/web) / [Swift](./lessons/Recursion/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS/tree/master/obj-c-and-advanced-topics/standard-reassessments/dsa/dsa-3-recursion) |
 | Binary Search | [JavaScript](./lessons/binary_search/web) / [Swift](./lessons/binary_search/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Binary-Search-Lab/tree/master) |
 | Bubble Sort: Intro to Sorting* | [JavaScript](./lessons/bubble_sort/web) / [Swift](./lessons/bubble_sort/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Bubble-Sort-Lab) |
 | Insertion Sort | [JavaScript](./lessons/insertion_sort/web) / [Swift](./lessons/insertion_sort/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Insertion-Sort-Lab/tree/master) |
