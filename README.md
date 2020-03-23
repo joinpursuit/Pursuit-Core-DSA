@@ -4,7 +4,7 @@
 
 | Topic | Lesson | Lab  |
 | --- | --- | --- |
-| Introduction to Whiteboarding | [link](./lessons/intro_to_whiteboarding) | n/a |
+| Introduction to Whiteboarding | [All Stacks](./lessons/intro_to_whiteboarding) | n/a |
 | Big-O Notation | [JavaScript](./lessons/big_o_notation/web) / [Swift](./lessons/big_o_notation/ios) | n/a |
 | Stacks | [JavaScript](./lessons/Stacks/web) / [Swift](./lessons/Stacks/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Stacks-Lab) |
 | Queues | [JavaScript](./lessons/Queues/web) / [Swift](./lessons/Queues/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Queue-Lab) |
