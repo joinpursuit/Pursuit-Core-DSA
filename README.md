@@ -1,6 +1,6 @@
 # Pursuit Core Data Structures and Algorithms Curriculum
 
-## Lessons
+## Core Lessons
 
 | Topic | Lesson | Lab  |
 | --- | --- | --- |
@@ -18,8 +18,78 @@
 | Merge Sort | [JavaScript](./lessons/merge_sort/web) / [Swift](./lessons/merge_sort/ios/README.md) | [Swift](https://github.com/joinpursuit/Pursuit-Core-Merge-Sort-Lab/blob/master/README.md) |
 | Trees | [JavaScript](./lessons/Trees/web/Intro%20to%20trees%20and%20BST.md) / [Swift](./lessons/Trees/ios/) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Trees-Lab/blob/master/README.md) |
 
+## DSA Standards Reassessments
 
-## Problems
+### DSA-1-b: Linked Lists
+
+- [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
+- [Binary Linked List to Int](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/)
+- [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/)
+- [Merge Two Sorted Linked Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
+- [Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/)
+
+### DSA-1-d: Hash Tables
+
+- [Two Sum](https://leetcode.com/problems/two-sum/)
+- [Find Common Characters](https://leetcode.com/problems/find-common-characters/)
+- [Keyboard Words](https://leetcode.com/problems/keyboard-row/)
+- [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/)
+- [Find Words That Can Be Formed By Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/)
+
+
+### DSA-1-e: Stacks
+
+- [Queue with Stacks](https://leetcode.com/problems/implement-queue-using-stacks)
+- [Min Stack](https://leetcode.com/problems/min-stack)
+- [Palindrome](https://www.hackerrank.com/challenges/30-queues-stacks/problem?h_r=internal-search)
+- [Equal Stacks](https://www.hackerrank.com/challenges/equal-stacks/problem)
+- [Balanced Brackets](https://www.hackerrank.com/challenges/balanced-brackets/problem)
+
+### DSA-1-f: Queues
+
+- [Implement a Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)
+- [Rotting Oranges](https://leetcode.com/problems/rotting-oranges)
+- [Design Circular Queue](https://leetcode.com/problems/design-circular-queue/)
+- [Design Circular Deque](https://leetcode.com/problems/design-circular-deque/)
+
+### DSA-1-g: Trees
+
+- [Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/)
+- [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
+- [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+- [Leaf Similar Trees](https://leetcode.com/problems/leaf-similar-trees/)
+- [Same Tree](https://leetcode.com/problems/same-tree/)
+
+### DSA-3: Recursion
+
+- [Factorial](https://www.hackerrank.com/challenges/30-recursion/problem)
+- [nth Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)
+- [Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path/)
+- [Range Sum of Binary Search Tree](https://leetcode.com/problems/range-sum-of-bst/)
+- [Coin Change Problem](https://www.hackerrank.com/challenges/coin-change/problem)
+
+### DSA-4: Sorting Algorithms
+
+- [Bubble Sort](https://www.hackerrank.com/challenges/ctci-bubble-sort/problem)
+- [Insertion Sort Part One](https://www.hackerrank.com/challenges/insertionsort1/problem) + [Insertion Sort Part Two](https://www.hackerrank.com/challenges/insertionsort2/problem)
+- [Quicksort Part One](https://www.hackerrank.com/challenges/quicksort1/problem) + [Quicksort Part Two](https://www.hackerrank.com/challenges/quicksort2/problem)
+- [Merge Sort](https://www.hackerrank.com/contests/hw1/challenges/merge-sort)
+
+### DSA-5-b: Binary Search
+
+- [Binary Search](https://leetcode.com/problems/binary-search/)
+- [Peak Index in Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)
+- [Search Index Position](https://leetcode.com/problems/search-insert-position/)
+- [Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/)
+- [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)
+
+
+## Advanced DSA Topics
+
+| Topic | Lesson | Lab |
+| Advanced Linked Lists | tbd | tbd |
+
+## Additional Practice Problems
 
 - [Pursuit Core Data Structures and Algorithms Curriculum](#pursuit-core-data-structures-and-algorithms-curriculum)
   - [Lessons](#lessons)
@@ -127,7 +197,7 @@
 | [Factorial](./problems/RecursionProblems/Factorial.md)              | Medium     | [Recursion]          | [Link](./solutions/RecursionSolutions/Factorial.md)       |
 | [Recursive Sum](./problems/RecursionProblems/RecursiveSum.md)       | Easy       | [Recursion]          | [Link](./solutions/RecursionSolutions/RecursiveSum.md)    |
 | [Reverse Sentence](./problems/RecursionProblems/ReverseSentence.md) | Medium     | [Recursion, Strings] | [Link](./solutions/RecursionSolutions/ReverseSentence.md) |
-| [Pascal's Triangle](./problems/RecursionProblems/PascalsTriangle.md) | Medium | [Recursion] | [Link](./solutions/RecursionSolutions/PascalsTriangle.md) | 
+| [Pascal's Triangle](./problems/RecursionProblems/PascalsTriangle.md) | Medium | [Recursion] | [Link](./solutions/RecursionSolutions/PascalsTriangle.md) |
 
 ## Tree Problems
 | Problem                                                                                     | Difficulty | Tags             | Solution                                                                                |
