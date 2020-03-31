@@ -63,6 +63,7 @@ This repo contains lessons and practice problems for our Data Structures and Alg
 | Dynamic Programming and Memoization | tbd | tbd |
 | Bits | tbd | tbd |
 | Math | tbd | tbd |
+| Threading and Memory Management | tbd | tbd |
 | Databases and SQL | tbd | tbd |
 | Object Oriented Design | tbd | tbd |
 | System Design and Scalability | tbd | tbd |
