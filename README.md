@@ -1,5 +1,23 @@
 # Pursuit Core Data Structures and Algorithms Curriculum
 
+This repo contains lessons and practice problems for our Data Structures and Algorithms Curriculum.
+
+- [Core Lessons](#Core-Lessons)
+- [Standards Reassessments](#Standards-Reassessments)
+- [Advanced Topics](#Advanced-Topics)
+- [Additional Practice Problems](#Additional-Practice-Problems)
+  - [Array Problems](#array-problems)
+  - [Integer Problems](#integer-problems)
+  - [Linked List Problems](#linked-list-problems)
+  - [Stack Problems](#stack-problems)
+  - [Queue Problems](#queue-problems)
+  - [String Problems](#string-problems)
+  - [Hash Table Problems](#hash-table-problems)
+  - [Logic Problems](#logic-problems)
+  - [Recursion Problems](#recursion-problems)
+  - [Tree Problems](#tree-problems)
+  - [Whiteboarding JS Prompts for Mock Interview Pairs](#whiteboarding-js-prompts-for-mock-interview-pairs)
+
 ## Core Lessons
 
 | Topic | Lesson | Lab  |
@@ -18,7 +36,7 @@
 | Merge Sort | [JavaScript](./lessons/merge_sort/web) / [Swift](./lessons/merge_sort/ios/README.md) | [Swift](https://github.com/joinpursuit/Pursuit-Core-Merge-Sort-Lab/blob/master/README.md) |
 | Trees | [JavaScript](./lessons/Trees/web/Intro%20to%20trees%20and%20BST.md) / [Swift](./lessons/Trees/ios/) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Trees-Lab/blob/master/README.md) |
 
-## DSA Standards Reassessments
+## Standards Reassessments
 
 | Standard | Problems |
 | --- | --- |
@@ -31,7 +49,7 @@
 | DSA-4: Sorting Algorithms| <ul><li>[Bubble Sort](https://www.hackerrank.com/challenges/ctci-bubble-sort/problem)</li><li>[Insertion Sort Part One](https://www.hackerrank.com/challenges/insertionsort1/problem) + [Insertion Sort Part Two](https://www.hackerrank.com/challenges/insertionsort2/problem)</li><li>[Quicksort Part One](https://www.hackerrank.com/challenges/quicksort1/problem) + [Quicksort Part Two](https://www.hackerrank.com/challenges/quicksort2/problem)</li><li>[Merge Sort](https://www.hackerrank.com/contests/hw1/challenges/merge-sort)</li></ul> |
 | DSA-5-b: Binary Search | <ul><li>[Binary Search](https://leetcode.com/problems/binary-search/)</li><li>[Peak Index in Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)</li><li>[Search Index Position](https://leetcode.com/problems/search-insert-position/)</li><li>[Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/)</li><li>[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)</li></ul> |
 
-## Advanced DSA Topics
+## Advanced Topics
 
 | Topic | Lesson | Lab |
 | --- | --- | --- |
@@ -39,22 +57,9 @@
 
 ## Additional Practice Problems
 
-- [Pursuit Core Data Structures and Algorithms Curriculum](#pursuit-core-data-structures-and-algorithms-curriculum)
-  - [Lessons](#lessons)
-  - [Problems](#problems)
-  - [Array Problems](#array-problems)
-  - [Integer Problems](#integer-problems)
-  - [Linked List Problems](#linked-list-problems)
-  - [Stack Problems](#stack-problems)
-  - [Queue Problems](#queue-problems)
-  - [String Problems](#string-problems)
-  - [Hash Table Problems](#hash-table-problems)
-  - [Logic Problems](#logic-problems)
-  - [Recursion Problems](#recursion-problems)
-  - [Tree Problems](#tree-problems)
-  - [Whiteboarding JS Prompts for Mock Interview Pairs](#whiteboarding-js-prompts-for-mock-interview-pairs)
+This section contains additional problems separated by domain.  If you see an error or have a contribution to add, please open a Pull Request against this repo.
 
-## Array Problems
+### Array Problems
 
 | Problem                                                                                                            | Difficulty | Tags                           | Solution                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------ | ---------- | ------------------------------ | --------------------------------------------------------------------------------------------------- |
@@ -77,7 +82,7 @@
 | [N or More Occurrences](./problems/ArrayProblems/NorMoreOccurrences.md) | Easy | [Arrays] | [Link](./solutions/ArraySolutions/NorMoreOccurrences.md)
 | [Binary Search / Git Bisect](./problems/ArrayProblems/BinarySearch.md) | Medium | [Arrays] | [Link](./solutions/ArraySolutions/BinarySearchSolution.md)
 
-## Integer Problems
+### Integer Problems
 
 | Problem                                                                                          | Difficulty | Tags               | Solution                                                                                      |
 | ------------------------------------------------------------------------------------------------ | ---------- | ------------------ | --------------------------------------------------------------------------------------------- |
@@ -86,14 +91,14 @@
 | [Backwards Primes](./problems/IntegerProblems/BackwardsPrimes.md) | Medium     | [Integers, Primes] | [Link](./solutions/IntegerSolutions/BackwardsPrimesSolution.md) |
 | [Happy Numbers](./problems/IntegerProblems/HappyNumbers.md)       | Medium     | [Integers, Primes] | [Link](./solutions/IntegerSolutions/HappyNumbersSolution.md)    |
 
-## Linked List Problems
+### Linked List Problems
 
 | Problem                                                                                 | Difficulty | Tags           | Solution                                                                                   |
 | --------------------------------------------------------------------------------------- | ---------- | -------------- | ------------------------------------------------------------------------------------------ |
 | [Swap Nodes](./problems/LinkedListProblems/SwapNodes.md) | Medium     | [Linked Lists] | [Link](./solutions/LinkedListSolutions/SwapNodesSolution.md) |
 | [Traverse / Pretty Print](./problems/LinkedListProblems/traverse.md) | Easy | [Linked Lists] | [Link](./solutions/LinkedListSolutions/traverseSolution.md)
 
-## Stack Problems
+### Stack Problems
 
 | Problem                                                                                             | Difficulty | Tags              | Solution                                                                                         |
 | --------------------------------------------------------------------------------------------------- | ---------- | ----------------- | ------------------------------------------------------------------------------------------------ |
@@ -101,14 +106,14 @@
 | [Valid Parentheses](./problems/StackProblems/ValidParentheses.md)    | Medium     | [Strings, Stacks] | [Link](./solutions/StackSolutions/BalancedParensSolution.md)       |
 | [Two-Lane Parking Management System ](./problems/StackProblems/TwoLanesParkingManagmentSystem.md)    | Medium     | [Stacks, Objects] | [Link](./solutions/StackSolutions/Two-LaneParkingManagementSystem)       |
 
-## Queue Problems
+### Queue Problems
 
 | Problem                                                                              | Difficulty | Tags             | Solution                                                                       |
 | ------------------------------------------------------------------------------------ | ---------- | ---------------- | ------------------------------------------------------------------------------ |
 | [Stack Queue](./problems/QueueProblems/StackQueue.md) | Medium     | [Queues, Stacks] | [Link](./solutions/QueueSolutions/StackQueue.md) |
 | [Queue Range](./problems/QueueProblems/QueueRange.md) | Easy | [Queues] | [Link](./solutions/QueueSolutions/QueueRange.md)
 
-## String Problems
+### String Problems
 
 | Problem                                                                                                       | Difficulty | Tags                            | Solution                                                                                           |
 | ------------------------------------------------------------------------------------------------------------- | ---------- | ------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -119,7 +124,7 @@
 | [Pattern Match](./problems/StringProblems/PatternMatch.md)                     | Easy       | [Arrays, Strings, Dictionaries] | [Link](./solutions/StringSolutions/PatternMatchSolution.md)          |
 | [Sequence Count in String](./problems/StringProblems/SequenceCountInString.md) | Medium     | [Arrays, Integers]              | [Link](./solutions/StringSolutions/SequenceCountInStringSolution.md) |
 
-## Hash Table Problems
+### Hash Table Problems
 
 | Problem                                                                                                       | Difficulty | Tags                            | Solution                                                                                           |
 | ------------------------------------------------------------------------------------------------------------- | ---------- | ------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -127,7 +132,7 @@
 | [Unique Occurrences](./problems/HashTableProblems/UniqueOccurrences.md)                          | Medium       | [Hash Tables]                       | [Link](./solutions/HashTableSolutions/UniqueOccurrencesSolution.md)            |
 | [Longest Substring Without Repeating Characters](./problems/HashTableProblems/LongestSubstringWithoutRepeatingCharacters.md)                          | Hard       | [Hash Tables]                       | [Link](./solutions/HashTableSolutions/LongestSubstringWithoutRepeatingCharactersSolution.md)            |
 
-## Logic Problems
+### Logic Problems
 
 | Problem                                                                                       | Difficulty | Tags    | Solution                                                                                   |
 | --------------------------------------------------------------------------------------------- | ---------- | ------- | ------------------------------------------------------------------------------------------ |
@@ -138,7 +143,7 @@
 | [Rope Burning](./problems/LogicProblems/ropeBurning.md)        | Hard       | [Logic] | [Link](./solutions/LogicSolutions/ropeBurningSolution.md)    |
 | [Blue Eyed Island](./problems/LogicProblems/blueEyedIsland.md) | Hard       | [Logic] | [Link](./solutions/LogicSolutions/blueEyedIslandSolution.md) |
 
-## Recursion Problems
+### Recursion Problems
 
 | Problem                                                                                            | Difficulty | Tags                 | Solution                                                                                |
 | -------------------------------------------------------------------------------------------------- | ---------- | -------------------- | --------------------------------------------------------------------------------------- |
@@ -147,7 +152,7 @@
 | [Reverse Sentence](./problems/RecursionProblems/ReverseSentence.md) | Medium     | [Recursion, Strings] | [Link](./solutions/RecursionSolutions/ReverseSentence.md) |
 | [Pascal's Triangle](./problems/RecursionProblems/PascalsTriangle.md) | Medium | [Recursion] | [Link](./solutions/RecursionSolutions/PascalsTriangle.md) |
 
-## Tree Problems
+### Tree Problems
 | Problem                                                                                     | Difficulty | Tags             | Solution                                                                                |
 | --------------------------------------------------------------------------------------------| ---------- | ---------------- | --------------------------------------------------------------------------------------- |
 | [Print Binary Tree With a Stack](./problems/TreeProblems/PrintBinaryTreeWithStack.md)       | Medium     | [Tree]           | [Link](./solutions/TreeSolutions/PrintBinaryTreeWithStackSolution.md)       |
@@ -159,10 +164,10 @@
 | [Tree Equality](./problems/TreeProblems/TreeEquality.md)                                    | Hard+      | [Tree]           | [Link](./solutions/TreeSolutions/TreeEqualitySolution.md)       |
 
 
-## Whiteboarding JS Prompts for Mock Interview Pairs
+### Whiteboarding JS Prompts for Mock Interview Pairs
 
 - https://github.com/joinpursuit/whiteboarding
 
-## Algorithms visualized
+### Algorithms visualized
 
 https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
