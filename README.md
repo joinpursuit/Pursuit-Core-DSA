@@ -5,9 +5,9 @@ This repo contains lessons and practice problems for our Data Structures and Alg
 - [Core Lessons](#Core-Lessons)
 - [Standards Reassessments](#Standards-Reassessments)
 - [Advanced Topics](#Advanced-Topics)
-- [JavaScript / iOS Coding Challenges](#JavaScript-/-iOS-Coding-Challenges)
+- [JavaScript and iOS Coding Challenges](#JavaScript-and-iOS-Coding-Challenges)
 - [DSA Timed Coding Challenges](#DSA-Timed-Coding-Challenges)
-- [1:1 Interview Bank](#1:1-Interview-Bank)
+- [Mock Interviews](#Mock-Interviews)
 - [Additional Practice Problems](#Additional-Practice-Problems)
   - [Array Problems](#array-problems)
   - [Integer Problems](#integer-problems)
@@ -67,7 +67,7 @@ This repo contains lessons and practice problems for our Data Structures and Alg
 | Object Oriented Design | tbd | tbd |
 | System Design and Scalability | tbd | tbd |
 
-## JavaScript / iOS Coding Challenges
+## JavaScript and iOS Coding Challenges
 
 tbd
 
@@ -75,7 +75,7 @@ tbd
 
 tbd
 
-## 1:1 Interview Bank
+## Mock Interviews
 
 - [JavaScript](https://github.com/joinpursuit/whiteboarding)
 
