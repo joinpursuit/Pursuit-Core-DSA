@@ -22,13 +22,7 @@
 
 | Standard | Problems |
 | --- | --- |
-| DSA-1-b: Linked Lists | <ul>
-<li>[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)</li>
-<li>[Binary Linked List to Int](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/)</li>
-<li>[Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/)</li>
-<li>[Merge Two Sorted Linked Lists](https://leetcode.com/problems/merge-two-sorted-lists/)</li>
-<li>[Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/)</li>
-</ul> |
+| DSA-1-b: Linked Lists | <ul><li>[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)</li><li>[Binary Linked List to Int](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/)</li><li>[Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/)</li><li>[Merge Two Sorted Linked Lists](https://leetcode.com/problems/merge-two-sorted-lists/)</li><li>[Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/)</li></ul> |
 | DSA-1-d: Hash Tables | <ul>
 <li>[Two Sum](https://leetcode.com/problems/two-sum/)</li>
 <li>[Find Common Characters](https://leetcode.com/problems/find-common-characters/)</li>
