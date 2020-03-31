@@ -23,53 +23,13 @@
 | Standard | Problems |
 | --- | --- |
 | DSA-1-b: Linked Lists | <ul><li>[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)</li><li>[Binary Linked List to Int](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/)</li><li>[Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/)</li><li>[Merge Two Sorted Linked Lists](https://leetcode.com/problems/merge-two-sorted-lists/)</li><li>[Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/)</li></ul> |
-| DSA-1-d: Hash Tables | <ul>
-<li>[Two Sum](https://leetcode.com/problems/two-sum/)</li>
-<li>[Find Common Characters](https://leetcode.com/problems/find-common-characters/)</li>
-<li>[Keyboard Words](https://leetcode.com/problems/keyboard-row/)</li>
-<li>[Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/)</li>
-<li>[Find Words That Can Be Formed By Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/)</li>
-</ul> |
-| DSA-1-e: Stacks | <ul>
-<li>[Queue with Stacks](https://leetcode.com/problems/implement-queue-using-stacks)</li>
-<li>[Min Stack](https://leetcode.com/problems/min-stack)</li>
-<li>[Palindrome](https://www.hackerrank.com/challenges/30-queues-stacks/problem?h_r=internal-search)</li>
-<li>[Equal Stacks](https://www.hackerrank.com/challenges/equal-stacks/problem)</li>
-<li>[Balanced Brackets](https://www.hackerrank.com/challenges/balanced-brackets/problem)</li>
-</ul> |
-| DSA-1-f: Queues | <ul>
-<li>[Implement a Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)</li>
-<li>[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)</li>
-<li>[Design Circular Queue](https://leetcode.com/problems/design-circular-queue/)</li>
-<li>[Design Circular Deque](https://leetcode.com/problems/design-circular-deque/)</li>
-</ul> |
-| DSA-1-g: Trees | <ul>
-<li>[Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/)</li>
-<li>[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)</li>
-<li>[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)</li>
-<li>[Leaf Similar Trees](https://leetcode.com/problems/leaf-similar-trees/)</li>
-<li>[Same Tree](https://leetcode.com/problems/same-tree/)</li>
-</ul> |
-| DSA-3: Recursion | <ul>
-<li>[Factorial](https://www.hackerrank.com/challenges/30-recursion/problem)</li>
-<li>[nth Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)</li>
-<li>[Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path/)</li>
-<li>[Range Sum of Binary Search Tree](https://leetcode.com/problems/range-sum-of-bst/)</li>
-<li>[Coin Change Problem](https://www.hackerrank.com/challenges/coin-change/problem)</li>
-</ul> |
-| DSA-4: Sorting Algorithms| <ul>
-<li>[Bubble Sort](https://www.hackerrank.com/challenges/ctci-bubble-sort/problem)</li>
-<li>[Insertion Sort Part One](https://www.hackerrank.com/challenges/insertionsort1/problem) + [Insertion Sort Part Two](https://www.hackerrank.com/challenges/insertionsort2/problem)</li>
-<li>[Quicksort Part One](https://www.hackerrank.com/challenges/quicksort1/problem) + [Quicksort Part Two](https://www.hackerrank.com/challenges/quicksort2/problem)</li>
-<li>[Merge Sort](https://www.hackerrank.com/contests/hw1/challenges/merge-sort)</li>
-</ul> |
-| DSA-5-b: Binary Search | <ul>
-<li>[Binary Search](https://leetcode.com/problems/binary-search/)</li>
-<li>[Peak Index in Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)</li>
-<li>[Search Index Position](https://leetcode.com/problems/search-insert-position/)</li>
-<li>[Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/)</li>
-<li>[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)</li>
-</ul> |
+| DSA-1-d: Hash Tables | <ul><li>[Two Sum](https://leetcode.com/problems/two-sum/)</li><li>[Find Common Characters](https://leetcode.com/problems/find-common-characters/)</li><li>[Keyboard Words](https://leetcode.com/problems/keyboard-row/)</li><li>[Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/)</li><li>[Find Words That Can Be Formed By Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/)</li></ul> |
+| DSA-1-e: Stacks | <ul><li>[Queue with Stacks](https://leetcode.com/problems/implement-queue-using-stacks)</li><li>[Min Stack](https://leetcode.com/problems/min-stack)</li><li>[Palindrome](https://www.hackerrank.com/challenges/30-queues-stacks/problem?h_r=internal-search)</li><li>[Equal Stacks](https://www.hackerrank.com/challenges/equal-stacks/problem)</li><li>[Balanced Brackets](https://www.hackerrank.com/challenges/balanced-brackets/problem)</li></ul> |
+| DSA-1-f: Queues | <ul><li>[Implement a Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)</li><li>[Rotting Oranges](https://leetcode.com/problems/rotting-oranges)</li><li>[Design Circular Queue](https://leetcode.com/problems/design-circular-queue/)</li><li>[Design Circular Deque](https://leetcode.com/problems/design-circular-deque/)</li></ul> |
+| DSA-1-g: Trees | <ul><li>[Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/)</li><li>[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)</li><li>[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)</li><li>[Leaf Similar Trees](https://leetcode.com/problems/leaf-similar-trees/)</li><li>[Same Tree](https://leetcode.com/problems/same-tree/)</li></ul> |
+| DSA-3: Recursion | <ul><li>[Factorial](https://www.hackerrank.com/challenges/30-recursion/problem)</li><li>[nth Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)</li><li>[Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path/)</li><li>[Range Sum of Binary Search Tree](https://leetcode.com/problems/range-sum-of-bst/)</li><li>[Coin Change Problem](https://www.hackerrank.com/challenges/coin-change/problem)</li></ul> |
+| DSA-4: Sorting Algorithms| <ul><li>[Bubble Sort](https://www.hackerrank.com/challenges/ctci-bubble-sort/problem)</li><li>[Insertion Sort Part One](https://www.hackerrank.com/challenges/insertionsort1/problem) + [Insertion Sort Part Two](https://www.hackerrank.com/challenges/insertionsort2/problem)</li><li>[Quicksort Part One](https://www.hackerrank.com/challenges/quicksort1/problem) + [Quicksort Part Two](https://www.hackerrank.com/challenges/quicksort2/problem)</li><li>[Merge Sort](https://www.hackerrank.com/contests/hw1/challenges/merge-sort)</li></ul> |
+| DSA-5-b: Binary Search | <ul><li>[Binary Search](https://leetcode.com/problems/binary-search/)</li><li>[Peak Index in Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)</li><li>[Search Index Position](https://leetcode.com/problems/search-insert-position/)</li><li>[Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/)</li><li>[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)</li></ul> |
 
 ## Advanced DSA Topics
 
