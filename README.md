@@ -54,6 +54,27 @@ This repo contains lessons and practice problems for our Data Structures and Alg
 | Topic | Lesson | Lab |
 | --- | --- | --- |
 | Advanced Linked Lists | tbd | tbd |
+| Advanced Sorting | tbd | tbd |
+| Advanced Trees | tbd | tbd |
+| Graphs | tbd | tbd |
+| Dynamic Programming and Memoization | tbd | tbd |
+| Bits | tbd | tbd |
+| Math | tbd | tbd |
+| Databases and SQL | tbd | tbd |
+| Object Oriented Design | tbd | tbd |
+| System Design and Scalability | tbd | tbd |
+
+## JavaScript / iOS Coding Challenges
+
+tbd
+
+## DSA Timed Coding Challenges
+
+tbd
+
+## 1:1 Interview Bank
+
+- [JavaScript](https://github.com/joinpursuit/whiteboarding)
 
 ## Additional Practice Problems
 
@@ -163,10 +184,6 @@ This section contains additional problems separated by domain.  If you see an er
 | [Is Tree Balanced](./problems/TreeProblems/TreeBalanced.md)                                 | Hard       | [Tree]           | [Link](./solutions/TreeSolutions/TreeBalancedSolution.md)       |
 | [Tree Equality](./problems/TreeProblems/TreeEquality.md)                                    | Hard+      | [Tree]           | [Link](./solutions/TreeSolutions/TreeEqualitySolution.md)       |
 
-
-### Whiteboarding JS Prompts for Mock Interview Pairs
-
-- https://github.com/joinpursuit/whiteboarding
 
 ### Algorithms visualized
 
