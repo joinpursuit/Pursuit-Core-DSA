@@ -56,7 +56,7 @@ This repo contains lessons and practice problems for our Data Structures and Alg
 
 | Topic | Lesson | Lab |
 | --- | --- | --- |
-| Advanced Linked Lists | [Swift](./lessons/advanced_linked_lists/ios) | tbd |
+| Advanced Linked Lists | [Swift](./lessons/advanced_linked_lists/ios) | <ul><li>[Linked List Cycle I](https://leetcode.com/problems/linked-list-cycle/)</li><li>[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)</li><li>[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)</li><li>[Partition Linked List](https://leetcode.com/problems/partition-list/)</li></ul> |
 | Advanced Sorting | tbd | tbd |
 | Advanced Trees | tbd | tbd |
 | Graphs | tbd | tbd |
