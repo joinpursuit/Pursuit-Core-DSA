@@ -56,7 +56,7 @@ This repo contains lessons and practice problems for our Data Structures and Alg
 
 | Topic | Lesson | Lab |
 | --- | --- | --- |
-| Advanced Linked Lists | tbd | tbd |
+| Advanced Linked Lists | [Swift](./lessons/advanced_linked_lists/ios) | tbd |
 | Advanced Sorting | tbd | tbd |
 | Advanced Trees | tbd | tbd |
 | Graphs | tbd | tbd |
