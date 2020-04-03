@@ -55,18 +55,18 @@ This repo contains lessons and practice problems for our Data Structures and Alg
 ## Advanced Topics
 
 | Topic | Lesson | Lab | Video |
-| --- | --- | --- |
-| Advanced Linked Lists | [Swift](./lessons/advanced_linked_lists/ios) | <ul><li>[Linked List Cycle I](https://leetcode.com/problems/linked-list-cycle/)</li><li>[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)</li><li>[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)</li><li>[Partition Linked List](https://leetcode.com/problems/partition-list/)</li></ul> | tbd |
-| Advanced Sorting | tbd | tbd |
-| Advanced Trees | tbd | tbd |
-| Graphs | tbd | tbd |
-| Dynamic Programming and Memoization | tbd | tbd |
-| Bits | tbd | tbd |
-| Math | tbd | tbd |
-| Threading and Memory Management | tbd | tbd |
-| Databases and SQL | tbd | tbd |
-| Object Oriented Design | tbd | tbd |
-| System Design and Scalability | tbd | tbd |
+| --- | --- | --- | --- |
+| Advanced Linked Lists | [Swift](./lessons/advanced_linked_lists/ios) | <ul><li>[Linked List Cycle I](https://leetcode.com/problems/linked-list-cycle/)</li><li>[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)</li><li>[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)</li><li>[Partition Linked List](https://leetcode.com/problems/partition-list/)</li></ul> | tbd | tbd | 
+| Advanced Sorting | tbd | tbd | tbd | 
+| Advanced Trees | tbd | tbd | tbd | 
+| Graphs | tbd | tbd | tbd | 
+| Dynamic Programming and Memoization | tbd | tbd | tbd |
+| Bits | tbd | tbd | tbd |
+| Math | tbd | tbd | tbd |
+| Threading and Memory Management | tbd | tbd | tbd |
+| Databases and SQL | tbd | tbd | tbd |
+| Object Oriented Design | tbd | tbd | tbd |
+| System Design and Scalability | tbd | tbd | tbd |
 
 ## JavaScript and iOS Coding Challenges
 
