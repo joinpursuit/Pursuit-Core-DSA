@@ -1,7 +1,7 @@
 # Toeplitz Matrix
 
 ### 1st Solution.
-Can be optimized. There is no need to check the whole diagonals.
+Can be optimized. There is no need to check the diagonals all the way through like this does.
 ```js
 let m = [
   [1, 2, 3, 4],
