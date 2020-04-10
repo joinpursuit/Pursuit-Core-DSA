@@ -10,4 +10,8 @@
 
 ### Quicksort
 
-## 
+## In-place Implementations
+
+## Quicksort Partitioning Schemes
+
+## Radix Sort

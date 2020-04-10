@@ -56,13 +56,13 @@ This repo contains lessons and practice problems for our Data Structures and Alg
 
 | Topic | Lesson | Lab | Video |
 | --- | --- | --- | --- |
-| Advanced Linked Lists | [Swift](./lessons/advanced_linked_lists/ios) | <ul><li>[Linked List Cycle I](https://leetcode.com/problems/linked-list-cycle/)</li><li>[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)</li><li>[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)</li><li>[Partition Linked List](https://leetcode.com/problems/partition-list/)</li></ul> | tbd | tbd | 
+| Advanced Linked Lists | [Swift](./lessons/advanced_linked_lists/ios) | <ul><li>[Linked List Cycle I](https://leetcode.com/problems/linked-list-cycle/)</li><li>[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)</li><li>[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)</li><li>[Partition Linked List](https://leetcode.com/problems/partition-list/)</li></ul> | tbd | tbd |
 | Advanced Sorting | [Swift](./lessons/advanced_sorting/ios) | tbd | tbd |
-| Advanced Trees | tbd | tbd | tbd |
-| Graphs | tbd | tbd | tbd |
-| Dynamic Programming and Memoization | tbd | tbd | tbd |
-| Bits | tbd | tbd | tbd |
-| Math | tbd | tbd | tbd |
+| Advanced Trees | [Swift](./lessons/advanced_trees/ios) | tbd | tbd |
+| Graphs | [Swift](./lessons/graphs/ios) | tbd | tbd |
+| Dynamic Programming and Memoization | [Swift](./lessons/dynamic_programming_and_memoization/ios) | tbd | tbd |
+| Bits | [Swift](./lessons/bits/ios) | tbd | tbd |
+| Math | [Swift](./lessons/math/ios) | tbd | tbd |
 | Threading and Memory Management | tbd | tbd | tbd |
 | Databases and SQL | tbd | tbd | tbd |
 | Object Oriented Design | tbd | tbd | tbd |
