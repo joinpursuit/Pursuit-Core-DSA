@@ -58,7 +58,7 @@ This repo contains lessons and practice problems for our Data Structures and Alg
 | --- | --- | --- | --- |
 | Advanced Linked Lists | [Swift](./lessons/advanced_linked_lists/ios) | <ul><li>[Linked List Cycle I](https://leetcode.com/problems/linked-list-cycle/)</li><li>[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)</li><li>[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)</li><li>[Partition Linked List](https://leetcode.com/problems/partition-list/)</li></ul> | tbd | tbd |
 | Advanced Sorting | [Swift](./lessons/advanced_sorting/ios) | tbd | tbd |
-| Advanced Trees | [Swift](./lessons/advanced_trees/ios) | <ul><li>[Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/)</li><li>[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)</li><li>[Minimum Depth](https://leetcode.com/problems/minimum-depth-of-binary-tree/)</li><li>[Distrubute Coins](https://leetcode.com/problems/distribute-coins-in-binary-tree/)</li></ul> | tbd |
+| Advanced Trees | [Swift](./lessons/advanced_trees/ios) | <ul><li>[Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/)</li><li>[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)</li><li>[Minimum Depth](https://leetcode.com/problems/minimum-depth-of-binary-tree/)</li><li>[Distrubute Coins](https://leetcode.com/problems/distribute-coins-in-binary-tree/)</li></ul> | [Swift](https://www.youtube.com/watch?v=6JxJUXxDlYo) |
 | Graphs | [Swift](./lessons/graphs/ios) | tbd | tbd |
 | Dynamic Programming and Memoization | [Swift](./lessons/dynamic_programming_and_memoization/ios) | tbd | tbd |
 | Bits | [Swift](./lessons/bits/ios) | tbd | tbd |
