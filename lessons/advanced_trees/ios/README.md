@@ -26,7 +26,7 @@ class Node {
 
 # 3.Binary Search Trees
 
-![BST](https://lh3.googleusercontent.com/proxy/E_5m3hgYVNNAAhpR7QQISvtq23OvEaJWy97bLJwhQp_AVgeDcGZNFwikXCmT4E9U7YskSRjD87mJvu324c2NyHruO76uoNRAZSatRi00f2nLne0XyQ0u7IR6_L89WqIeM15tH5DtTgVKqt0HlVuhwyGuBem7hXYXIzVoleXOXpgcPUUScIiA6xiVc-H1YA)
+![BST](https://koenig-media.raywenderlich.com/uploads/2016/08/SwiftAlgClub-BinarySearch-feature.png)
 
 Binary Search Trees are binary trees that perform insertions and deletions while staying sorted. This allows for a search runtime of  O(log n).
 
