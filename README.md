@@ -70,7 +70,7 @@ This repo contains lessons and practice problems for our Data Structures and Alg
 
 ## JavaScript and iOS Coding Challenges
 
-tbd
+- [iOS Calculator](https://github.com/joinpursuit/Pursuit-Core-iOS-Calculator)
 
 ## DSA Timed Coding Challenges
 
