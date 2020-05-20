@@ -12,26 +12,26 @@ We usually talk much more about time complexity.
 
 ## Common Time Complexities of Algorithms
 
-|Big O Runtime|Name|Example|
-|---|---|---|
-|O(1) | Constant | Print the first string in an array of length *n* |
-|O(n) | Linear | Print every string in an array of length *n* |
-|O(n<sup>2</sup>) | Quadratic | Print every character of every string in an array of length *n* (Assume that every string is also of length n) |
+| Big O Runtime    | Name      | Example                                                                                                        |
+| ---------------- | --------- | -------------------------------------------------------------------------------------------------------------- |
+| O(1)             | Constant  | Print the first string in an array of length *n*                                                               |
+| O(n)             | Linear    | Print every string in an array of length *n*                                                                   |
+| O(n<sup>2</sup>) | Quadratic | Print every character of every string in an array of length *n* (Assume that every string is also of length n) |
 
 ### O(1):
 ```js
 function constantTime(arr) {
-     if (arr.length === 0) { return }
-	   console.log(arr[0])
+  if (arr.length === 0) return 
+  console.log(arr[0])
 }
 ```
 Let's assume it takes 10 ms to print a string.  
 
-|arr.length (n) | Runtime |
-|---|---|
-| 1 | 10 ms |
-| 10 | 10 ms |
-| 100 | 10 ms |
+| arr.length (n) | Runtime |
+| -------------- | ------- |
+| 1              | 10 ms   |
+| 10             | 10 ms   |
+| 100            | 10 ms   |
 
 We can see that the time it takes to run constantTime() does not vary.  No matter how large *n* is, it will always take a constant amount of time to run our function.
 
@@ -40,18 +40,18 @@ We can see that the time it takes to run constantTime() does not vary.  No matte
 
 ```js
 function linearTime(arr) {
-     for (elem of arr) {
-        console.log(elem)
-	}
+  for (let elem of arr) {
+    console.log(elem)
+  }
 }
 ```
 
-|arr.length (n) | Runtime |
-|---|---|
-| 1 | 10 ms |
-| 10 | 100 ms |
-| 50 | 500 ms |
-| 1000 | 10,000 ms = 10 s |
+| arr.length (n) | Runtime          |
+| -------------- | ---------------- |
+| 1              | 10 ms            |
+| 10             | 100 ms           |
+| 50             | 500 ms           |
+| 1000           | 10,000 ms = 10 s |
 
 In this example, increasing the size of our array does increase how long it takes our function to run.  Going back to our days with algebra, we can even make a math function that explains the relationship between the length and the runtime:
 
@@ -74,8 +74,8 @@ In this example, increasing the size of our array does increase how long it take
 ```js
 //Print out who selected which character.  Two players can select the same character.
 function quadraticTime(arr) {
-  for (elemOne of arr) {
-    for (elemTwo of arr) {
+  for (let elemOne of arr) {
+    for (let elemTwo of arr) {
 	    console.log("Player One: " + elemOne + ", Player Two: " + elemTwo)
     }
   }
@@ -150,12 +150,12 @@ Our code will then print out each pair of names.  Here's are a few sample inputs
 Let's format the length of the array, number of print statements and the runtime.
 
 
-|arr.length (n) | Number of print statements | Runtime |
-|---|---|---|
-| 1 | 1 | 10 ms |
-| 2 | 4 | 40 ms |
-| 3 | 9 | 90 ms |
-| 4 | 16 | 160 ms |
+| arr.length (n) | Number of print statements | Runtime |
+| -------------- | -------------------------- | ------- |
+| 1              | 1                          | 10 ms   |
+| 2              | 4                          | 40 ms   |
+| 3              | 9                          | 90 ms   |
+| 4              | 16                         | 160 ms  |
 
 <details>
 	<summary> What function describes the relationship between *n* and the runtime? </summary>
@@ -170,23 +170,23 @@ Let's format the length of the array, number of print statements and the runtime
 
 We can then extrapolate to fill in the same chart we were using above.
 
-|arr.length (n) | Runtime |
-|---|---|
-| 1 | 10 ms |
-| 10 | 1000 ms = 1 s |
-| 50 | 25000 ms = 25 s |
-| 1000 | 10,000,000 ms = 2.78 hours |
+| arr.length (n) | Runtime                    |
+| -------------- | -------------------------- |
+| 1              | 10 ms                      |
+| 10             | 1000 ms = 1 s              |
+| 50             | 25000 ms = 25 s            |
+| 1000           | 10,000,000 ms = 2.78 hours |
 
 As the !  
 
 Let's put all the charts together:
 
-|arr.length (n) | Runtime: O(1) | Runtime: O(n) | Runtime: O(n<sup>2</sup>) |
-|---|---|---|---|
-| 1 | 10 ms | 10 ms |10 ms |
-| 10 | 10 ms | 100 ms | 1000 ms = 1 s |
-| 50 | 10 ms | 500 ms | 25000 ms = 25 s |
-| 1000 | 10 ms | 10,000 ms = 10 s | 10,000,000 ms = 2.78 hours |
+| arr.length (n) | Runtime: O(1) | Runtime: O(n)    | Runtime: O(n<sup>2</sup>)  |
+| -------------- | ------------- | ---------------- | -------------------------- |
+| 1              | 10 ms         | 10 ms            | 10 ms                      |
+| 10             | 10 ms         | 100 ms           | 1000 ms = 1 s              |
+| 50             | 10 ms         | 500 ms           | 25000 ms = 25 s            |
+| 1000           | 10 ms         | 10,000 ms = 10 s | 10,000,000 ms = 2.78 hours |
 
 
 ## Other Runtimes
@@ -194,12 +194,12 @@ Let's put all the charts together:
 
 We'll get to these all going forwards.  Don't worry about them too much right now.
 
-|Big O Runtime|Name|Example|
-|---|---|---|
-|O( log(n) )| Logarithmic | Binary Search |
-|O(n * log(n)) | Linearithmic | Merge Sort/Quick Sort |
-|O(2<sup>n</sup>) | Exponential | Recursive Fibonacci |
-|O(n!) | Factorial | Generate all the permutations of a list |
+| Big O Runtime    | Name         | Example                                 |
+| ---------------- | ------------ | --------------------------------------- |
+| O( log(n) )      | Logarithmic  | Binary Search                           |
+| O(n * log(n))    | Linearithmic | Merge Sort/Quick Sort                   |
+| O(2<sup>n</sup>) | Exponential  | Recursive Fibonacci                     |
+| O(n!)            | Factorial    | Generate all the permutations of a list |
 
 ## Ranking and Visualizing Big O Runtimes
 From fastest to slowest:
@@ -216,13 +216,13 @@ We just saw an example of how to derive the runtime of a function.  Let's try it
 
 ```js
 function exampleOne(string, targetChar) {
-  for (char of string) {
-    if (char === targetChar) {
+  for (let char of string) {
+    if (let char === targetChar) {
       return true
     }
   }
   return false
-}			
+}
 ```
 
 <details>
@@ -259,7 +259,7 @@ function exampleTwo(arr) {
 ```js
 function exampleThree(arr) {
    let count = 0
-   for (elem of arr) {
+   for (let elem of arr) {
      if (contains(arr, elem + 1)) {
        count += 1
      }
@@ -268,7 +268,7 @@ function exampleThree(arr) {
 }
 
 function contains(arr, targetElem) {
-  for (elem of arr) {
+  for (let elem of arr) {
     if (elem === targetElem) {
       return true
     }
@@ -303,14 +303,14 @@ function bestAverageAndWorstFunc(arr) {
         return
     }
     if (arr[0] + arr[1] == 24601) {
-        for (elem of arr) {
-            for (elem of arr) {
+        for (let elem of arr) {
+            for (let elem of arr) {
                 console.log("Gotcha!")
             }
         }
         return
     }
-    for (elem of arr) {
+    for (let elem of arr) {
         console.log(elem)
     }
 }
@@ -337,13 +337,13 @@ Examples (copied from the previous section):
 
 ```js
 function exampleOne(string, targetChar) {
-  for (char of string) {
-    if (char === targetChar) {
+  for (let char of string) {
+    if (let char === targetChar) {
       return true
     }
   }
   return false
-}			
+}
 ```
 
 <details>
@@ -393,7 +393,7 @@ function exampleTwo(arr) {
 ```js
 function exampleThree(arr) {
    let count = 0
-   for (elem of arr) {
+   for (let elem of arr) {
      if (contains(arr, elem + 1)) {
        count += 1
      }
@@ -402,7 +402,7 @@ function exampleThree(arr) {
 }
 
 function contains(arr, targetElem) {
-  for (elem of arr) {
+  for (let elem of arr) {
     if (elem === targetElem) {
       return true
     }
@@ -437,7 +437,7 @@ function compoundRuntimes(arr) {
   for (let i = 0; i < 1000; i++) {
     console.log("Hi")
   }
-	for (num of arr) {
+	for (let num of arr) {
 	  console.log(num)
 	}
   for (let i = 0; i < arr.length; i++) {
@@ -456,12 +456,12 @@ function compoundRuntimes(arr) {
 
 Let's see how the runtime increases with length using our chart from above
 
-|arr.length (n) | Runtime: O(1) | Runtime: O(n) | Runtime: O(n<sup>2</sup>) | <details><summary>compoundRuntimes(arr:)</summary>Runtime: O(1) + O(n) + O(n<sup>2</sup>) |
-|---|---|---|---|---|
-| 1 | 10 ms | 10 ms |10 ms | 30 ms |
-| 10 | 10 ms | 100 ms | 1000 ms = 1 s | 1110 ms = 1.11 s |
-| 50 | 10 ms | 500 ms | 25000 ms = 25 s | 25510 ms = 25.51 s |
-| 1000 | 10 ms | 10,000 ms = 10 s | 10,000,000 ms = 2.78 hours | 10,010,010 ms = 2.78 hours |
+| arr.length (n) | Runtime: O(1) | Runtime: O(n)    | Runtime: O(n<sup>2</sup>)  | <details><summary>compoundRuntimes(arr:)</summary>Runtime: O(1) + O(n) + O(n<sup>2</sup>) |
+| -------------- | ------------- | ---------------- | -------------------------- | ----------------------------------------------------------------------------------------- |
+| 1              | 10 ms         | 10 ms            | 10 ms                      | 30 ms                                                                                     |
+| 10             | 10 ms         | 100 ms           | 1000 ms = 1 s              | 1110 ms = 1.11 s                                                                          |
+| 50             | 10 ms         | 500 ms           | 25000 ms = 25 s            | 25510 ms = 25.51 s                                                                        |
+| 1000           | 10 ms         | 10,000 ms = 10 s | 10,000,000 ms = 2.78 hours | 10,010,010 ms = 2.78 hours                                                                |
 
 As the length gets bigger and bigger, the only term that matters is the O(n<sup>2</sup>) term.  Therefore, we say that the runtime of compoundRuntimes(arr:) is O(n<sup>2</sup>)
 
@@ -475,9 +475,9 @@ For the examples below, give the average case runtime
 ### Example One:
 ```js
 function doStuff(arr) {
-  for (num of arr) {
-    for (num of arr) {
-	    for (num of arr) {
+  for (let num of arr) {
+    for (let num of arr) {
+	    for (let num of arr) {
 		    console.log(num)
       }
 		}
@@ -492,16 +492,16 @@ O(n<sup>3</sup>)
 ### Example Two:
 ```js
 function doOtherStuff(arr) {
-  for (num of arr) {
+  for (let num of arr) {
     console.log(num)
   }
-  for (num of arr) {
-    for (num of arr) {
+  for (let num of arr) {
+    for (let num of arr) {
 	    console.log(num)
     }
   }
   console.log(num)
-  for (num of arr) {
+  for (let num of arr) {
       print(num)
   }
 }
@@ -514,7 +514,7 @@ O(n<sup>2</sup>)
 ### Example Three:
 ```js
 function foo(arr) {
-  for (num of arr) {
+  for (let num of arr) {
     console.log(num)
   }
 }
