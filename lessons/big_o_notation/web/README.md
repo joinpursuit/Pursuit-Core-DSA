@@ -437,9 +437,11 @@ function compoundRuntimes(arr) {
   for (let i = 0; i < 1000; i++) {
     console.log("Hi")
   }
+
 	for (let num of arr) {
 	  console.log(num)
-	}
+  }
+
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr.length; j++) {
       if (arr[i] === arr[j] && i !== j) {
@@ -477,10 +479,10 @@ For the examples below, give the average case runtime
 function doStuff(arr) {
   for (let num of arr) {
     for (let num of arr) {
-	    for (let num of arr) {
-		    console.log(num)
+      for (let num of arr) {
+        console.log(num)
       }
-		}
+    }
   }
 }
 ```
