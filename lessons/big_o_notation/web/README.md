@@ -217,7 +217,7 @@ We just saw an example of how to derive the runtime of a function.  Let's try it
 ```js
 function exampleOne(string, targetChar) {
   for (let char of string) {
-    if (let char === targetChar) {
+    if (char === targetChar) {
       return true
     }
   }
@@ -338,7 +338,7 @@ Examples (copied from the previous section):
 ```js
 function exampleOne(string, targetChar) {
   for (let char of string) {
-    if (let char === targetChar) {
+    if (char === targetChar) {
       return true
     }
   }
