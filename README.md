@@ -2,24 +2,25 @@
 
 This repo contains lessons and practice problems for our Data Structures and Algorithms Curriculum.
 
-- [Core Lessons](#Core-Lessons)
-- [Standards Reassessments](#Standards-Reassessments)
-- [Advanced Topics](#Advanced-Topics)
-- [JavaScript and iOS Coding Challenges](#JavaScript-and-iOS-Coding-Challenges)
-- [DSA Timed Coding Challenges](#DSA-Timed-Coding-Challenges)
-- [Mock Interviews](#Mock-Interviews)
-- [Additional Practice Problems](#Additional-Practice-Problems)
-  - [Array Problems](#array-problems)
-  - [Integer Problems](#integer-problems)
-  - [Linked List Problems](#linked-list-problems)
-  - [Stack Problems](#stack-problems)
-  - [Queue Problems](#queue-problems)
-  - [String Problems](#string-problems)
-  - [Hash Table Problems](#hash-table-problems)
-  - [Logic Problems](#logic-problems)
-  - [Recursion Problems](#recursion-problems)
-  - [Tree Problems](#tree-problems)
-  - [Whiteboarding JS Prompts for Mock Interview Pairs](#whiteboarding-js-prompts-for-mock-interview-pairs)
+- [Pursuit Core Data Structures and Algorithms Curriculum](#pursuit-core-data-structures-and-algorithms-curriculum)
+  - [Core Lessons](#core-lessons)
+  - [Standards Reassessments](#standards-reassessments)
+  - [Advanced Topics](#advanced-topics)
+  - [JavaScript and iOS Coding Challenges](#javascript-and-ios-coding-challenges)
+  - [DSA Timed Coding Challenges](#dsa-timed-coding-challenges)
+  - [Mock Interviews](#mock-interviews)
+  - [Additional Practice Problems](#additional-practice-problems)
+    - [Array Problems](#array-problems)
+    - [Integer Problems](#integer-problems)
+    - [Linked List Problems](#linked-list-problems)
+    - [Stack Problems](#stack-problems)
+    - [Queue Problems](#queue-problems)
+    - [String Problems](#string-problems)
+    - [Hash Table Problems](#hash-table-problems)
+    - [Logic Problems](#logic-problems)
+    - [Recursion Problems](#recursion-problems)
+    - [Tree Problems](#tree-problems)
+    - [Algorithms visualized](#algorithms-visualized)
 
 ## Core Lessons
 
@@ -40,6 +41,9 @@ This repo contains lessons and practice problems for our Data Structures and Alg
 | Trees | [JavaScript](./lessons/Trees/web/Intro%20to%20trees%20and%20BST.md) / [Swift](./lessons/Trees/ios/) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Trees-Lab/blob/master/README.md) |
 
 ## Standards Reassessments
+
+To get reassessed solve the problems in the table below and [see here](https://github.com/joinpursuit/Pursuit-Core-Web/tree/master/reassessments#dsa-standards)
+
 
 | Standard | Problems |
 | --- | --- |
