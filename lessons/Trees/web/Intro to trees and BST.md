@@ -9,7 +9,7 @@
 
 ## What's a Tree?
 
-![Tree Diagram](../assets/tree-diagram.png)
+<img alt="Tree Diagram" src="../assets/tree-diagram.png" width="500px" />
 
 Trees play a major role in computer science. It is used to tackle many recurring challenges in software development, such as:
 - Representing hierarchical relationships
@@ -18,13 +18,12 @@ Trees play a major role in computer science. It is used to tackle many recurring
   
 **Exercise**: Talk to your classmates about real world examples that could be represented by trees. Anything with branching possibilities? or hierarchy?
 
-There are many types of trees each with their unique quirks and purposes.
-These are some: 
+There are many types of trees each with their unique quirks and purposes. These are some: 
 
 * General Purpose Tree
 * Binary Tree
-  * Binary Search Tree
-  * AVL tree
+  * Binary Search Tree (a.k.a BST)
+  * AVL tree (Self Balancing BST)
 * N-ary Tree
 
 From here, today we will focus on the Binary and Binary search trees.
@@ -47,25 +46,25 @@ As you can tell by now Nodes are the building blocks of basically all Abstract D
 
 That ability to chain and link together Nodes is what essentially makes an ADS. 
 
-![Node Diagram](../assets/node-diagram.png)
+<img alt="Node Diagram" src="../assets/node-diagram.png" width="300px" />
 
 ### Root
 
 The first and topmost Node in a tree is called the Root. This Node has no parent or any previous Node linking to it.
 
-![Root Diagram](../assets/root-diagram.png)
+<img alt="Root Diagram" src="../assets/root-diagram.png" width="300px" />
 
 ### Parent / Child
 
 Whenever a Node has a link to other Nodes it creates this Parent / Child relationship. The parent is the top Node that links to the new Nodes (child nodes).
 
-![Parent/Child Diagram](../assets/parent-child-diagram.png)
+<img alt="Parent/Child Diagram" src="../assets/parent-child-diagram.png" width="300px" />
 
 ### Leaf
 
 A Leaf is any Node that does not contain any children Nodes. Essentially, they are the end of the line for the tree for that particular branch. 
 
-![Leaf Diagram](../assets/leaf-diagram.png)
+<img alt="Leaf Diagram" src="../assets/leaf-diagram.png" width="300px" />
 
 ## Binary Tree
 In computer science, a binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child.
@@ -83,6 +82,8 @@ In computer science, a binary tree is a tree data structure in which each node h
 <details>
 <summary>Not a Binary Tree Example</summary>
 
+💡 This is an N-ary Tree. It can have N number of child nodes, not just two.
+
 ![tern](https://upload.wikimedia.org/wikipedia/commons/2/23/Ternary_tree.png)
 
 (source: wikipedia)
@@ -93,7 +94,7 @@ In computer science, a binary tree is a tree data structure in which each node h
 
 #### Node
 
-To implement a Binary Tree Node we need a way to store a value and somehow a reference or a pointer to a left and right children. So lets have a JavaScript object that will represent a Tree Node with such properties and create a Class to initialize such objects.
+There are multiple similar way to implement a Binary Tree. We will do a simple implementation that consists of just Tree Nodes instances. To implement a Binary Tree Node we need a way to store a value and somehow a reference or a pointer to a left and right children. So lets have a JavaScript object that will represent a Tree Node with such properties and create a Class to initialize such objects.
 
 ```javascript
 class TreeNode {
@@ -109,7 +110,7 @@ class TreeNode {
 
 **Exercise:** Compare this to a Linked List implementation. What differences and similarities do you find?
 
-Now, just with that we can already build our first tree
+Now, just with that we can already build our first tree, albeit very manually.
 
 ```js
 let a = new TreeNode("A");
@@ -151,17 +152,31 @@ h.right = j;
 * How many nodes are in the tree?
 * How many levels does the tree have?
 * Having access only to the root, is there a way to get to the node with value `D`? If so how?
+  <details>
+  <summary>Answer</summary>
+
+  ```js
+  console.log(a.left.left.left.value)
+  ```
+  </details>
 * Having access only to the root, is there a way to get to the node with value `J`? How?
+  <details>
+  <summary>Answer</summary>
+
+  ```js
+  console.log(a.right.left.right.value)
+  ```
+  </details>
 * Similarly to what we did above to build a tree, write the code that will construct the following tree:
-```
-          (8)
-     (4)       (9)
-   (2) (5)  (7)   (10)
- (1)(3)   (6)(8)
-```
+  ```
+            (8)
+      (4)       (9)
+    (2) (5)  (7)   (10)
+  (1)(3)   (6)(8)
+  ```
   * Only through the root access(console.log) the node with value 9
   * Only through the root node access(console.log) the node with value 3
-  * Only thorough the root change the value of the node with value 10 to 20. And console.log the before and after.
+  * Only thorough the root change the value of the node with value 10 to 20. And console.log the value of that node before and after the change.
 
 ## Tree Traversal
 
@@ -191,12 +206,12 @@ We'll use the tree that you built earlier:
 Lets say we want to print all the nodes in a tree. We can do so in the three following ways.
 
 #### In-Order
-Since our algorithms will be recursive we need to think of our base case. As always out base case needs to cover the scenario were the input is trivially small so that our program doesn't perform further calculation or crashes. 
+Since our algorithms will be recursive we need to think of our base case. As usual our base case needs to cover the scenario were the input is trivially small so that our program doesn't perform further calculation or crashes. 
 
 ```js
 const inOrderPrint(root) {
   if (root === null) return;
-  // ...
+  // ... rest of the code
 }
 ```
 
@@ -217,9 +232,8 @@ const inOrderPrint(root) {
   console.log(root.value)
   inOrderPrint(root.right)
 }
-
 ```
-Giver our tree, inOrderPrint would print the values in the order `D, C, E, B, F, A, I, H, J, G, K`.  In-Order has the pattern of left, self, right.
+Given our tree, inOrderPrint would print the values in the order `D, C, E, B, F, A, I, H, J, G, K`.  In-Order has the pattern of left, self(root), right.
 
 #### Pre-Order
 
@@ -279,7 +293,7 @@ const iterativeDFS = (root) => {
 Given our tree, `iterativeDFS` would print the values in the order: `A, B, C, D, E, F, G, H, I, J, K`
 
 ### Breadth First Search/Traversal (BFS)
-Also known as Level-Order traversal. Trees can be traversed in breadth-first fashion, where we visit every node on a level before going to a lower level. This search is referred to as breadth-first search (BFS), as the search tree is broadened as much as possible on each depth before going to the next depth.
+Also known as Level-Order traversal. Trees can be traversed in a breadth-first fashion, where we visit every node on a level before going to a lower level. This search is referred to as breadth-first search (BFS), as the search tree is broadened as much as possible on each depth before going to the next depth.
 
 ![level-order-traversal](https://upload.wikimedia.org/wikipedia/commons/d/d1/Sorted_binary_tree_breadth-first_traversal.svg)
 
@@ -316,7 +330,7 @@ const breadthFirst = (root) => {
 
 ### Binary Search Tree (BST)
 
-A Binary Search Tree is a Binary Tree first and foremost. Its a tree that with one extra constraint acquires a huge benefit. A BST is a tree in which each node has at most two children, and additionally it satisfies the binary search property, which states that the value in each node must be greater than or equal to any value stored in the left sub-tree, and less than or equal to any value stored in the right sub-tree.
+A Binary Search Tree is a Binary Tree first and foremost. Its a tree that with **one** extra constraint acquires a huge benefit. A BST is a tree in which each node has at most two children, and additionally it satisfies the binary search property, which states that the value in each node must be greater than or equal to any value stored in the left sub-tree, and less than or equal to any value stored in the right sub-tree.
 
 Another way of thinking about this is, a BST having two conditions:
 - Every node's value in the `left` subtree must be less than that node's parent value
@@ -335,7 +349,7 @@ Typically, BSTs are defined to have unique values and when people talk about tre
 <details>
 <summary>Not a BST Example</summary>
 
-![bin](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Max-Heap.svg/1200px-Max-Heap.svg.png)
+<img alt="not a binary search tree" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Max-Heap.svg/1200px-Max-Heap.svg.png" width="300px" />
 
 (source: wikipedia)
 
@@ -344,6 +358,10 @@ Typically, BSTs are defined to have unique values and when people talk about tre
 **Exercises**
 * By hand, draw a Binary Search Tree for the following list of numbers `11, 25, 34, 42, 58, 60, 78, 86, 99, 100` 
 * Similarly to what we did before to build a tree, code your tree by creating nodes and connecting them.
+
+### How to Search a BST?
+
+Well, with a [Binary Search Algorithm](https://github.com/joinpursuit/Pursuit-Core-DSA/tree/master/lessons/binary_search/web) applied to this Tree data structure.
 
 ```js
 const binarySearch = (root, value) => {
@@ -366,6 +384,11 @@ const binarySearch = (root, value) => {
   }
 }
 ```
+
+**Exercises**
+
+* How does this algorithm compare to the search you implemented earlier on a non-search binary tree?
+* What is the time complexity of this algorithm and why?
 
 ### Resources
 * [Tree Traversal](https://en.wikipedia.org/wiki/Tree_traversal)
