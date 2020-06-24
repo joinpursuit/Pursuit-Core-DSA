@@ -72,7 +72,7 @@ In computer science, a binary tree is a tree data structure in which each node h
 <details>
 <summary>Binary Tree Example</summary>
 
-![bin](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Binary_tree.svg/1200px-Binary_tree.svg.png)
+<img alt="binary search tree example" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Binary_tree.svg/1200px-Binary_tree.svg.png" width="200px" />
 
 (source: wikipedia)
 
@@ -84,17 +84,18 @@ In computer science, a binary tree is a tree data structure in which each node h
 
 💡 This is an N-ary Tree. It can have N number of child nodes, not just two.
 
-![tern](https://upload.wikimedia.org/wikipedia/commons/2/23/Ternary_tree.png)
+<img alt="n-ary tree" src="https://upload.wikimedia.org/wikipedia/commons/2/23/Ternary_tree.png" width="300px" />
 
 (source: wikipedia)
 
 </details>
 
 ### Binary Tree implementation
+We can implement a Binary Tree with just connected nodes or we could have a `Tree` and `TreeNode` classes, where `TreeNode` keeps track of the value, left and right properties and have a `Tree` class to have methods that operate on those nodes like `insert()`, `find()` `remove()` etc. This is similar to how we can have a [LinkedList and Node classes](../../linked_lists/web) or just Nodes when implementing Linked Lists. For now we will do a simple implementation of a Tree that consists of only TreeNode instances. 
 
 #### Node
 
-There are multiple similar way to implement a Binary Tree. We will do a simple implementation that consists of just Tree Nodes instances. To implement a Binary Tree Node we need a way to store a value and somehow a reference or a pointer to a left and right children. So lets have a JavaScript object that will represent a Tree Node with such properties and create a Class to initialize such objects.
+To implement a Binary Tree Node we need a way to store a value and somehow a reference or a pointer to a left and right children. So lets have a JavaScript object that will represent a Tree Node with such properties and create a Class to initialize such objects.
 
 ```javascript
 class TreeNode {
@@ -190,6 +191,8 @@ There are two approaches to traverse/search a tree:
 * Breadth First
 
 As their name suggest one goes deeper first and the other goes wide first. You could think about it with the visualizations we have done as going vertical down(depth) and horizontal left to right(breath)
+
+<img alt="tree traversals visualization" src="https://dev-to-uploads.s3.amazonaws.com/i/e2ru41fjhqs4ombbcedf.png" />
 
 ### Depth First Search/Traversal (DFS)
 
