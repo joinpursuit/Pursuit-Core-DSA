@@ -39,7 +39,7 @@ The first step is to find the middle index of the collection
 #### Step 2: Check the element at the middle index
 Check the element stored at the middle index. If it matches the value you’re looking for, you return the index. Otherwise, you’ll continue to Step 3
 
-#### Step 3: Recursively call Binary Search
+#### Step 3: Decide whether to search the left or right side and repeat.
 Is the number you are looking for GREATER or LESS than the number you're looking for?
 
 If the value you’re searching for is less than the middle value, you search the left subset. If it is greater than the middle value, you search the right subset.
@@ -218,6 +218,7 @@ Finally, we need a fail case. We want to return -1 if the value does not exist i
   ```js
   let commits = [true, true, true, true, true, true, true, false, false, false]
 
+  // Finds last good commit
   const findBuggyCommit = (arr) => {
     let low = 0;
     let high = arr.length - 1;
