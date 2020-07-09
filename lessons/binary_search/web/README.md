@@ -9,6 +9,9 @@
 
 ### What is Binary Search & why use it?
 
+#### [Harvard CS50 Short Video Intro](https://youtu.be/jjqgP9dpD1k?t=1290)
+
+
 Let's say you had a phone book and you wanted to find someone's name. The person is "John Smith".
 
 What do we know?
@@ -77,6 +80,30 @@ console.log(binarySearch(nums, -1)) // -> null
 ```
 
 #### Recursive Approach
+
+##### Passing low and high
+```js
+const binarySearchRec = (arr, target, low, high) => {
+  // Base case
+  if (low > high) return -1
+
+  let mid = Math.floor((low + high) / 2);
+  let guess = arr[mid]
+  if (guess === target) {
+    return mid
+  } else if (guess > target) { // guess too high, lower high to mid
+    return binarySearchRec(arr, target, low,  mid - 1);
+  } else {
+    return binarySearchRec(arr, target, mid + 1, high);
+  }
+}
+
+let nums =  [1, 3, 5, 7, 9]
+console.log(binarySearchRec(nums, 3, 0, nums.length - 1))// -> 1
+console.log(binarySearchRec(nums, 4, 0, nums.length -1)) // -> -1
+```
+
+##### Actually splitting the array in halves
 
 ##### Step 1: Find the middle index
 
@@ -171,6 +198,46 @@ const binarySearch = (arr, value) => {
 ```
 
 Finally, we need a fail case. We want to return -1 if the value does not exist in the array. We check if the array length ends up being zero or if the value is greater than the value of the last element in the array. 
+
+## Exercises
+* You have a sorted list of 128 names, and you’re searching through it using binary search. What’s the maximum number of steps it would take?
+* What's the maximum number of steps if you double the size of the list?.
+* Using binary search find the number of negative numbers in a sorted array. **Example** Input: `[10, 8, 7, 4, 3, 2, 1, 0, -1, -4, -5]`. Output: `3`
+* In an array that contains booleans representing commits, if the commit is `true` the commit has a bug `false` means the commit does not have the bug. 
+  * Find the index last good commit (the one right before the bug)
+  * Or find the index of commit that introduced the bug
+  ```js
+  // Most recent commit is at index 0
+  // Oldest commit is at index 9
+  input = [true, true, true, true, true, true, true, false, false, false]
+  output = 7 // last good commit is at index 7
+  ```
+  <details>
+  <summary>Solution</summary> 
+
+  ```js
+  let commits = [true, true, true, true, true, true, true, false, false, false]
+
+  const findBuggyCommit = (arr) => {
+    let low = 0;
+    let high = arr.length - 1;
+
+    while (high > low) {
+      let mid = Math.floor((low + high) / 2);
+      let guess = arr[mid]
+
+      if (guess === false) { 
+        high = mid;
+      } else {
+        low = mid + 1;
+      }
+    }
+    return high
+  }
+
+  console.log(findBuggyCommit(commits))
+  ```
+  </details>
 
 ## Resources
 * [Binary Search - Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
