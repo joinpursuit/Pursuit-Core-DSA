@@ -10,18 +10,18 @@ function identifyFirstBadCommit(commits) {
 
   while (frontPointer < backPointer) {
     if (
-      commits[currentPointer].status === "bad" &&
-      commits[currentPointer - 1].status === "good"
+      commits[currentPointer].status === "good" &&
+      commits[currentPointer - 1].status === "bad"
     ) {
-      return { commit: commits[currentPointer], index: currentPointer };
+      return { commit: commits[currentPointer - 1], index: currentPointer - 1};
     }
 
     currentPointer = Math.round((frontPointer + backPointer) / 2);
     let midCommit = commits[currentPointer];
 
-    if (midCommit.status === "bad") {
+    if (midCommit.status === "good") {
       backPointer = currentPointer;
-    } else if (midCommit.status === "good") {
+    } else if (midCommit.status === "bad") {
       frontPointer = currentPointer;
     }
   }
@@ -37,9 +37,9 @@ const identifyFirstBadCommit = (commits) => {
   const middleIndex = Math.floor(commits.length / 2);
   let beforeCommits = commits.slice(0, middleIndex);
   let afterCommits = commits.slice(middleIndex);
-  if (commits[middleIndex].status === "bad") {
-    if (commits[middleIndex - 1].status === "good") {
-      return commits[middleIndex]
+  if (commits[middleIndex].status === "good") {
+    if (commits[middleIndex - 1].status === "bad") {
+      return commits[middleIndex - 1]
     }
     return identifyFirstBadCommit(beforeCommits)
   } else {
