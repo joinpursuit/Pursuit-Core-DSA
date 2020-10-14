@@ -236,3 +236,4 @@ Add the following methods to your DynamicArray and remember to not use any array
 * [Dynamic Array - Interview Cake](https://www.interviewcake.com/concept/java/dynamic-array)
 * [Dynamic Array - Wikipedia](https://en.wikipedia.org/wiki/Dynamic_array)
 * [How do JavaScript arrays work under the hood?](https://ryanpeden.com/how-do-javascript-arrays-work-under-the-hood/)
+* [Amortized Time of Algorithms](https://medium.com/@satorusasozaki/amortized-time-in-the-time-complexity-of-an-algorithm-6dd9a5d38045)
