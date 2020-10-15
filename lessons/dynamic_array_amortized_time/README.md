@@ -9,17 +9,17 @@ At the lowest level an array is just a contiguous allocation of space in compute
 
 ![array in memory](./assets/array-start.png)
 
-In JavaScript, [Numbers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) are stored using 64 bits. So our array in total will occupy 320 bits (64 x 5) of memory.
+In JavaScript, [Numbers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) are stored using 64 bits. So our array in total will occupy 384 bits (64 x 6) of memory.
 
 When you say:
 ```js
 let arr = [90, 1, 5, 25, 70, 10]
 ```
 
-`arr` is really a reference to beginning of our array, or more explicitly `arr` is pointer that is storing the memory address where our array starts. In this case let's say our array starts at memory address `1230`
+`arr` is really a reference to beginning of our array, in other words `arr` is a pointer that is storing the memory address where our array starts. In this case let's say our array starts at memory address `1230`
 
-## Pointer Arithmetic
-Let's learn how is it that we are able to access elements of an array by its index and in constant time. For the example in the image above we know the address the Array starts at and we know that each element occupies 64 bits.
+## Constant time lookup (Pointer Arithmetic)
+Let's learn how is it that the computer is able to access elements of an array by its index and in constant time. For the example in the image above we know the address the Array starts at (`1230`) and we know that each element occupies `64` bits.
 
 * Array Start Address (`ASA`): `1230`
 * Element Size: `64`
@@ -34,7 +34,7 @@ Let's learn how is it that we are able to access elements of an array by its ind
 | `4`   | `1230 + (4 * 64)` | `1486`                          | `70`    |
 | `5`   | `1230 + (5 * 64)` | `1550`                          | `10`    |
 
-Accessing elements in an array by index is a constant time operation because because computers are really good at math and it takes them not time to calculate the location of an element in an array knowing the address at which the array start and the size of the elements. Its simple multiplication.
+Accessing elements in an array by index is a constant time operation because computers are really good at math and it takes them no time to calculate the location of an element in an array knowing the address at which the array start and the size of the elements. Its simple multiplication.
 
 ![array element addresses](./assets/array-addresses.png)
 
@@ -161,21 +161,23 @@ class DynamicArray {
 
   push(element) {
     if (this.size === this.capacity) {
-      this.resize() // If we have reached the capacity of our array resize our array
+      this.resize()
     }
 
-    this.internalArr[this.size] = element  // Use the size as the index to perform the adding
-    this.size++ // Increase the size
+    this.internalArr[this.size] = element
+    this.size++
   }
 
   resize() {
-    let newCapacity = this.capacity * 2
-    let newArray = new Array(newCapacity);  // Allocate new array with double capacity
+    let newCapacity = this.capacity * 2;
+    let newArray = new Array(newCapacity)
+
     for (let i = 0; i < this.size; i++) {
-      newArray[i] = this.internalArr[i];    // Copy elements from internal array to new array
+      newArray[i] = this.internalArr[i]
     }
-    this.internalArr = newArray;            // Make the new array the new internalArr
-    this.capacity = newCapacity             // Update capacity
+
+    this.internalArr = newArray;
+    this.capacity = newCapacity
   }
 
   get(index) {
@@ -186,16 +188,20 @@ class DynamicArray {
   }
 
   remove(index) {
+    if (index >= this.size) throw new Error('Index out of bounds')
+
+    let elem = this.internalArr[index]
+
     for (let i = index; i < this.size; i++) {
       if (this.internalArr[i + 1] !== undefined) {
         this.internalArr[i] = this.internalArr[i + 1];
       }
     }
     this.size = this.size - 1
+    this.internalArr[this.size] = null
+    return elem
   }
-}
-
-
+} 
 // Example
 let arr = new DynamicArray(2)
 
@@ -212,18 +218,45 @@ console.log(arr.get(arr.size - 1))
 
 
 ## Amortized Time
-* The time cost of each special O(n) "doubling append" doubles each time.
-* At the same time, the number of O(1)O(1) appends you get until the next doubling append also doubles.
+* The time cost of every time we have to resize ("doubling") our array doubles each time.
+* At the same time, the number of O(1) pushes you get until the next "doubling" also doubles.
 
-These two things sort of "cancel out," and we can say each append has an average cost or amortized cost of O(1)
+These two things sort of "cancel out," and we can say each append has an average cost or **amortized** cost of O(1)
 
-Given this, in industry we usually wave our hands and say dynamic arrays have a time cost of O(1) for appends, even though strictly speaking that's only true for the average case or the amortized cost.
+Example:
+```js
+let arr = new DynamicArray(1)
 
-> From [Interview Cake](https://www.interviewcake.com/concept/java/dynamic-array)
+arr.push(1) // -> O(1)
+arr.push(2) // -> resize O(n), new capacity = 2
+arr.push(3) // -> resize O(n), new capacity = 4
+arr.push(4) // -> O(1)
+arr.push(5) // -> resize O(n), new capacity = 8
+arr.push(6) // -> O(1)
+arr.push(7) // -> O(1)
+arr.push(8) // -> O(1)
+arr.push(9) // -> resize O(n), new capacity = 16
+arr.push(10) // -> O(1)
+arr.push(11) // -> O(1)
+arr.push(12) // -> O(1)
+arr.push(13) // -> O(1)
+arr.push(14) // -> O(1)
+arr.push(15) // -> O(1)
+arr.push(16) // -> O(1)
+arr.push(17) // -> resize O(n), new capacity = 32
+// Next resize won't happened until we have reached capacity 32 
+// Which means the next 15 pushes will happen in constant time O(1)
+console.log('size', arr.size) 
+console.log('capacity', arr.capacity) 
+```
+
+Given this, we usually just say dynamic arrays have a time cost of O(1) for pushes or appends, even though strictly speaking that's only true for the average case or the amortized cost.
+
+📑 For more details see CTCI page 43 or [Amortized Time](https://www.google.com/search?q=amortized+time)
 
 ## Exercises
 
-Add the following methods to your DynamicArray and remember to not use any array method on `internalArr`
+Add the following methods to your DynamicArray and remember to **not** use any array method on `internalArr`
 
 * `pop()`
 * `slice()`
