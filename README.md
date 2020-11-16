@@ -40,10 +40,7 @@ This repo contains lessons and practice problems for our Data Structures and Alg
 | Merge Sort | [JavaScript](./lessons/merge_sort/web) / [Swift](./lessons/merge_sort/ios/README.md) | [Swift](https://github.com/joinpursuit/Pursuit-Core-Merge-Sort-Lab/blob/master/README.md) |
 | Trees | [JavaScript](./lessons/Trees/web) / [Swift](./lessons/Trees/ios/) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Trees-Lab/blob/master/README.md) |
 
-## Standards Reassessments
-
-To get reassessed solve the problems in the table below and [see here](https://github.com/joinpursuit/Pursuit-Core-Web/tree/master/reassessments#dsa-standards)
-
+## Recommended Problems
 
 | Standard | Problems |
 | --- | --- |
