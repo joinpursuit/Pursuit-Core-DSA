@@ -14,7 +14,7 @@
 
 ### Storing Data Sequentially
 
-A Linked List is the most fundemental data structure you can make. One of the first problems you probably encountered as a programmer: how do I store a collection of data? Like a group of fruits, or To-Dos for your tasks. This is when you were introduced you to Arrays.
+A Linked List is the most fundamental data structure you can make. One of the first problems you probably encountered as a programmer: how do I store a collection of data? Like a group of fruits, or To-Dos for your tasks. This is when you were introduced you to Arrays.
 
 ### Arrays
 
@@ -199,7 +199,7 @@ append(value) {
 Let's say we want to print the list like the following: 
 
 ```
--> 1 -> 2 -> 3 -> null
+1 -> 2 -> 3
 ```
 
 What is our approach? We need to actually go through each Node one by one and print right? Correct. This is called **traversal**. Traversing through a linked list and other linked data structures is very important.
@@ -207,14 +207,17 @@ What is our approach? We need to actually go through each Node one by one and pr
 ```javascript 
 print() {
   // Lets create a string to add onto 
-  let display = "-> ";
+  let display = "";
   // We need a pointer variable that will start in the head and work its way down
   let pointer = this.head;
   
-  // Keep traversing to the next aslong as pointer isn't null
+  // Keep traversing to the next as long as pointer isn't null
   while(pointer !== null) {
     // Update display string 
-    display += pointer.value + " -> ";
+    display += pointer.value 
+    if (pointer.next !== null) {
+      display += " -> ";
+    }
     // Update pointer to the next Node
     pointer = pointer.next;
   }
@@ -225,34 +228,36 @@ print() {
 }
 ```
 
-### nodeAt(index)
+### get(index)
 
-Lets say we want the following indexes:
+It will be useful to be able to get any element by its index position. 
+
+Say we want the following list `fruits`:
 
 ```javascript
-// -> Apple -> Orange -> Lemon -> null
+// Apple -> Orange -> Lemon -> null
 
-fruits.nodeAt(0); // Apple
-fruits.nodeAt(2); // Lemon
+fruits.get(0); // Apple
+fruits.get(2); // Lemon
 ```
 
 How would we go on about doing this? We need to traverse through the list like the previous example, but this time we stop at a counter. 
 
 ```javascript 
-nodeAt(index) {
+get(index) {
   let counter = 0;
   let pointer = this.head;
 
-  while(counter < index && pointer /* returns null if index > counter */) {
-    pointer = pointer.next;
-    counter++;
-  }
-
+    if (index > this.length - 1) return
+    while (counter < index) {
+      pointer = pointer.next;
+      counter++;
+    }
   return pointer.value;
 }
 ```
 
-This is fairly similiar to the previous traversal example. In this case we start with the 'Head', which happens to be 'Zero' index, then work our way down the nodes as long as the counter isn't matching the index we are searching for. 
+This is fairly similar to the previous traversal example. In this case we start with the 'Head', which happens to be 'Zero' index, then work our way down the nodes as long as the counter isn't matching the index we are searching for. 
 
 Finally, when we do arrive at the index, we return the Node to the user. Where they can easily access the value or any associated pointers. 
 
@@ -297,7 +302,7 @@ pop() {
 
 So, as you can see being able to properly traverse down a linked data structure is crucial. You will use this same traversal techniques for more advanced data structures.
 
-## Exercise
+## Exercises
 
 Implement the following Linked List Methods:
 
@@ -306,3 +311,6 @@ Implement the following Linked List Methods:
 3. **find(value) :** Find and return the index of the node with passed value. If value doesn't exist in the list return -1. 
 4. **toArray() :** Returns an array with the values of the linked list.
 
+## Resources
+* [Intro to Linked Lists. PC6.2 Lesson]([https://www.youtube.com/watch?v=tlBHH8fd8og&list=PLvQtbvxnE8UH9HAk856102ilGII9KVdBV&index=11)
+* [Linked List Visualization](./assets/LinkedLists%20Visualization.pdf)
