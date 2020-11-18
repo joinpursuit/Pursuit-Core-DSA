@@ -312,5 +312,5 @@ Implement the following Linked List Methods:
 4. **toArray() :** Returns an array with the values of the linked list.
 
 ## Resources
-* [Intro to Linked Lists. PC6.2 Lesson]([https://www.youtube.com/watch?v=tlBHH8fd8og&list=PLvQtbvxnE8UH9HAk856102ilGII9KVdBV&index=11)
+* [Intro to Linked Lists. PC6.2 Lesson](https://www.youtube.com/watch?v=tlBHH8fd8og&list=PLvQtbvxnE8UH9HAk856102ilGII9KVdBV&index=11)
 * [Linked List Visualization PDF](./assets/LinkedLists%20Visualization.pdf)
