@@ -136,7 +136,7 @@ Essentially we want the container class to contain three properties: head, tail 
 
 3. **print() :** Prints all the elements in the list sequentially.
 
-4. **nodeAt(index) :** Returns value at the passed index.
+4. **get(index) :** Returns value found at the passed index and `undefined` otherwise.
 
 5. **pop() :** Removes the last element in the list and returns it.
 
@@ -313,4 +313,4 @@ Implement the following Linked List Methods:
 
 ## Resources
 * [Intro to Linked Lists. PC6.2 Lesson]([https://www.youtube.com/watch?v=tlBHH8fd8og&list=PLvQtbvxnE8UH9HAk856102ilGII9KVdBV&index=11)
-* [Linked List Visualization](./assets/LinkedLists%20Visualization.pdf)
+* [Linked List Visualization PDF](./assets/LinkedLists%20Visualization.pdf)
