@@ -177,6 +177,11 @@ Let's made an iterative solution first, then let's compare it to a recursive sol
 ```javascript
 const factorialize = (num) => {
   let result = num;
+  if (num < 0) {
+    // Negative Factorial doesn't make sense for Mathematicians so let's return -1 
+    // to signal we can't do negative factorials
+    return -1 
+  }
   if (num === 0 || num === 1) 
     return 1; 
   while (num > 1) { 
@@ -201,9 +206,8 @@ const factorialize = (num) => {
     return -1;
   else if (num == 0) 
     return 1;
-  else {
+  else
     return (num * factorialize(num - 1));
-  }
 }
 ```
 </details>
@@ -257,6 +261,8 @@ const fib = (n) => {
 
 In general, you should only use recursion if it would be significantly simpler than the iterative solution. A good rule of thumb is to use recursion when it helps makes your code more readable. In most cases iterative solutions are preferable over recursive solutions because recursion has some added performance costs, like extra function calls.
 
+### Exercises:
+Complete all recursive exercises in [CodingJS - Recursion1 section](https://the-winter.github.io/codingjs/)
 
 
 
