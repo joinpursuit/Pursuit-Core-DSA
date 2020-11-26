@@ -14,7 +14,7 @@
 
 ### Storing Data Sequentially
 
-A Linked List is the most fundamental data structure you can make. One of the first problems you probably encountered as a programmer: how do I store a collection of data? Like a group of fruits, or To-Dos for your tasks. This is when you were introduced you to Arrays.
+A Linked List is the most fundamental data structure you can make. One of the first problems you probably encountered as a programmer: how do I store a collection of data? Like a group of fruits, or To-Dos for your tasks. This is when you were introduced to Arrays.
 
 ### Arrays
 
@@ -91,7 +91,7 @@ node1.next = node2; // 1 -> 2 -> null
 node2.next = node3; // 1 -> 2 -> 3 -> null
 ```
 
-Cool, now that we manually chained the Nodes together, we finally have a Linked List right? Eh, kind of. This is actually pretty tedious to do. We have to manually create and attach the Nodes in the order we want. This is not the proper way to create an [Abstract Data Structure](https://github.com/mmosayed/DSA-Curriculum/blob/master/Abstract%20Data%20Structures/lesson-js.md). We only want to focus on the high level and have the Linked List manage it's own Nodes.
+Cool, now that we manually chained the Nodes together, we finally have a Linked List right? Eh, kind of. This is actually pretty tedious to do. We have to manually create and attach the Nodes in the order we want. This is not the proper way to create an [Abstract Data Structure](https://github.com/mmosayed/DSA-Curriculum/blob/master/Abstract%20Data%20Structures/lesson-js.md). We only want to focus on the high level and have the Linked List manage its own Nodes.
 
 ## Linked List Implementation
 
