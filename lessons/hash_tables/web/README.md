@@ -1,7 +1,7 @@
 # Hash Tables
 
 ## Goals
-- What's is a Hash Table?
+- What's a Hash Table?
 - Hash Function
 - Mapping & Collision
 - Implementation
@@ -213,8 +213,8 @@ insert(key, value) {
 ```
 
 1. **1st Case:** If the array index does not contain any other node, that means this is the first one. You can insert the node.
-2. **2nd Case:** A Node exists in the index. Checking if the Node's keys match. If they match, then you are just updating the value.
-3. **3rd Case:** A chain of Nodes exists in the index. Traverse through the linked list, checking each time if the Keys match. If they match assign and update value. If none of them match, then attach the new Node at the end of the list.
+2. **2nd Case:** A Node exists in the index. Check if the Node's keys match. If they match, then you are just updating the value.
+3. **3rd Case:** A chain of Nodes exists in the index. Traverse through the linked list, checking each time if the Keys match. If they match, assign and update value. If none of them match, then attach the new Node at the end of the list.
 
 ### Get
 
@@ -313,10 +313,10 @@ class HashTable {
 
 To this implementation of a `HashTable`
 
-1. Add a method `has(key)` that returns a boolean indicating whether an element with the specified key exists or not.
+1. Add a method `hash(key)` that returns a boolean indicating whether an element with the specified key exists or not.
 2. Add a method `delete(key)` that removes and returns the element at the specified `key`.
-3. Add a method `keys()` returns an array that contains the keys for each element in the `HashTable` object. 
-4. Add a method `values()` returns an array that contains the values for each element in the `HashTable` object. 
+3. Add a method `keys()` that returns an array that contains the keys for each element in the `HashTable` object. 
+4. Add a method `values()` that returns an array that contains the values for each element in the `HashTable` object. 
 5. Add a method `clear()` that removes all elements from a `HashTable` object.
 6. Add a method `forEach(callback)` that executes a provided function once per each key/value pair in the `HashTable` object. The `callback` would receive the value of the given element as its argument. 
 
