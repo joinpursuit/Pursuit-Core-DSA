@@ -36,7 +36,7 @@ Write a basic Factorial recursive function.
 
 For example: 5! = 1 * 2 * 3 * 4 * 5 = 120
 <details>
-    <summary>Solution to Challenge #4</summary>
+    <summary>Solution to Challenge #1</summary>
 
 ```javascript
 function factorial(num) {
@@ -51,34 +51,95 @@ function factorial(num) {
 }
 factorial(5); 
 ```
-
 </details>
+<br/>
 
 **Challenge #2**
 
-Given the following array, how do you break it into two halves?
-```javascript
-let arr = [ 4 , 1, 7, 9, 0, 55, 2 ];
+Write function `halveArray` divides an array into halves and returns and object with two properties `left` and `right`.
 
-// Left Half [ 4, 1, 7 ]
-// Right Half [ 9, 0, 55, 2 ]
+For example: 
+```js
+let arr = [6, 5, 3, 1, 8, 7, 2, 4]
+halveArray(arr) // => {
+//                      left: [6, 5, 3, 1],
+//                      right: [8, 7, 2, 4]
+//                    } 
 
 ```
 <details>
-    <summary>Solution to Challenge #5</summary>
+    <summary>Solution to Challenge #2</summary>
 
 ```javascript
-let arr = [ 4 , 1, 7, 9, 0, 55, 2 ];
+const halveArray = (arr) => {
+  if (arr.length < 2) return arr;
 
-// Get the middle index of array
-let mid = Math.floor(arr.length/2);
+  // Mid point of the array and halves
+  let middle = Math.floor(arr.length / 2)
+  let left = arr.slice(0, middle)
+  let right = arr.slice(middle)
 
-// Use slice to get the left and right half 
-// The slice() method selects the elements starting at the given start argument, and ends at, but does not include, the given end argument.
-// If slice() is only given one arguement, it starts their and ends at the end of the array
-let left = arr.slice(0, mid);
-let right = arr.slice(mid);
+  return {
+      left: left,
+      right: right
+  }
+}
 
+```
+
+</details>
+<br/>
+
+**Challenge #3**
+
+Write a function `merge` that takes in two sorted arrays `a` and `b`, merge them in order and returns a new sorted array.
+
+For Example
+```js
+let a = [1, 2, 3, 4]
+let b = [5, 6, 7, 8]
+
+merge(a, b) // => [1, 2, 3, 4, 5, 6, 7, 8]
+```
+<details>
+    <summary>Solution to Challenge #3</summary>
+
+```js
+const merge = (left, right) => {
+  // Understand that you will need two pointers/indices to compare each array
+  let l = 0;
+  let r = 0;
+
+  // We need to store the values from least to greatest in an array and return it
+  let result = [];
+
+
+  // We need to loop through both left and right at the same time 
+  while (l < left.length && r < right.length) {
+
+    // Compare values at both pointers/indices and push the smaller value to the result array
+    if (left[l] < right[r]) {
+      result.push(left[l])
+      l++;
+    } else {
+      result.push(right[r])
+      r++;
+    }
+  }
+
+  // Add any leftovers to the result array    
+  while (l < left.length) {
+    result.push(left[l])
+    l++
+  }
+
+  while (r < right.length) {
+    result.push(right[r])
+    r++
+  }
+
+  return result
+}
 ```
 
 </details>
