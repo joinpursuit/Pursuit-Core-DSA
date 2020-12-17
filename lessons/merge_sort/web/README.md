@@ -96,8 +96,8 @@ Write a function `merge` that takes in two sorted arrays `a` and `b`, merge them
 
 For Example
 ```js
-let a = [1, 2, 3, 4]
-let b = [5, 6, 7, 8]
+let a = [1, 3, 4, 7]
+let b = [2, 5, 6, 8]
 
 merge(a, b) // => [1, 2, 3, 4, 5, 6, 7, 8]
 ```
