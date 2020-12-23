@@ -22,6 +22,22 @@ In this lesson, we will look a recursive sorting algorithm and understand why it
 
 ## Quicksort
 
+### Simple Algorithms Practice
+
+Write a function called `partition` that takes in an array and partitions it in three parts. Let the middle element of the array be called `pivot`. Partition the array around the `pivot` in three subarrays `lessThanPivot`, `equalToPivot` and `greaterThanPivot`. Return the subarrays in an object with properties `lessThanPivot`, `equalToPivot`, `greaterThanPivot`
+
+**Example**
+
+```js
+// pivot, middle element arr[3] = 10
+partition([11,8,15,10,4,14,2])// => {
+//                                    lessThanPivot: [8, 4, 2],
+//                                    equalToPivot: [10],
+//                                    greaterThanPivot: [11, 15, 14]
+//                                  }
+```
+* What does it return for arr = `[27, 38, 12, 39, 27, 16]`?
+
 ### Visualization
 
 #### 1)
