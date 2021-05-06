@@ -29,7 +29,7 @@ This repo contains lessons and practice problems for our Data Structures and Alg
 | Introduction to Whiteboarding | [All Stacks](./lessons/intro_to_whiteboarding) | n/a |
 | Big-O Notation | [JavaScript](./lessons/big_o_notation/web) / [Swift](./lessons/big_o_notation/ios) | n/a |
 | Stacks | [JavaScript](./lessons/Stacks/web) / [Swift](./lessons/Stacks/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Stacks-Lab) |
-| Queues | [JavaScript](./lessons/Queues/web) / [Swift](./lessons/Queues/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Queue-Lab) |
+| Queues | [JavaScript](./lessons/Queues/web) / [Swift](./lessons/Queues/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Queue-Lab) / [JavaScript](https://github.com/joinpursuit/Pursuit-Core-DSA-Web-Queues-Lab) |
 | Linked List | [JavaScript](./lessons/linked_lists/web) / [Swift](./lessons/linked_lists/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Linked-List-Exercises) |
 | Hash Tables | [JavaScript](./lessons/hash_tables/web) / [Swift](./lessons/hash_tables/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS-Hashmap-Lab/tree/master) |
 | Recursion | [JavaScript](./lessons/Recursion/web) / [Swift](./lessons/Recursion/ios) | [Swift](https://github.com/joinpursuit/Pursuit-Core-iOS/tree/master/obj-c-and-advanced-topics/standard-reassessments/dsa/dsa-3-recursion) |
